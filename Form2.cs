@@ -26,11 +26,7 @@ namespace TAU_Complex
             double T = Convert.ToDouble(textBoxT.Text);
             double tk = Convert.ToDouble(textBoxtk.Text);
             double w = Convert.ToDouble(textBoxW.Text);
-            double T2 = 0.1;
-            GraphPane pane1 = zedGraphControl1.GraphPane;
-            pane1.CurveList.Clear();
-            GraphPane pane2 = zedGraphControl2.GraphPane;
-            pane2.CurveList.Clear();
+            double T2 = 0.1;            
             PointPairList list_1 = new PointPairList();
             PointPairList list_2 = new PointPairList();
             double Dt = 0.001;
@@ -50,16 +46,8 @@ namespace TAU_Complex
                 list_2.Add(k - Math.Pow(i, 2) * (T + T2), i - T * T2 * Math.Pow(i, 3));
             }
 
-            LineItem myCurve1 = pane1.AddCurve("Исходная функция", list_1, Color.Red, SymbolType.None);
-            pane1.YAxis.Scale.MinAuto = true;
-            pane1.YAxis.Scale.MaxAuto = true;
-            pane1.AxisChange();
-            zedGraphControl1.Invalidate();
-            LineItem myCurve2 = pane2.AddCurve("Исходная функция", list_2, Color.Red, SymbolType.None);
-            pane2.YAxis.Scale.MinAuto = true;
-            pane2.YAxis.Scale.MaxAuto = true;
-            pane2.AxisChange();
-            zedGraphControl2.Invalidate();
+            DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
+            DrawGraph(zedGraphControl2, list_2, "Годограф Михайлова", "u(w)", "vj(w)");
         }
         private double NonEnertion(double xv, double k)
         {
@@ -87,6 +75,57 @@ namespace TAU_Complex
         {            
             zedGraphControl1.Height = panel3.Size.Height / 2;
             zedGraphControl2.Height = panel3.Size.Height / 2;
+        }
+        private void DrawGraph(ZedGraphControl zedGraphControl, PointPairList list_1, string TitleText, string YText, string XText)
+        {
+            GraphPane pane = zedGraphControl.GraphPane;
+            pane.CurveList.Clear();
+            LineItem myCurve1 = pane.AddCurve("", list_1, Color.Red, SymbolType.None);
+            pane.Title.Text = TitleText;
+            pane.YAxis.Title.Text = YText;
+            pane.XAxis.Title.Text = XText;
+            // !!!
+            // Включаем отображение сетки напротив крупных рисок по оси X
+            pane.XAxis.MajorGrid.IsVisible = true;
+
+            // Задаем вид пунктирной линии для крупных рисок по оси X:
+            // Длина штрихов равна 10 пикселям, ...
+            pane.XAxis.MajorGrid.DashOn = 10;
+
+            // затем 5 пикселей - пропуск
+            pane.XAxis.MajorGrid.DashOff = 5;
+
+
+            // Включаем отображение сетки напротив крупных рисок по оси Y
+            pane.YAxis.MajorGrid.IsVisible = true;
+
+            // Аналогично задаем вид пунктирной линии для крупных рисок по оси Y
+            pane.YAxis.MajorGrid.DashOn = 10;
+            pane.YAxis.MajorGrid.DashOff = 5;
+
+
+            // Включаем отображение сетки напротив мелких рисок по оси X
+            pane.YAxis.MinorGrid.IsVisible = true;
+
+            // Задаем вид пунктирной линии для крупных рисок по оси Y:
+            // Длина штрихов равна одному пикселю, ...
+            pane.YAxis.MinorGrid.DashOn = 1;
+
+            // затем 2 пикселя - пропуск
+            pane.YAxis.MinorGrid.DashOff = 2;
+
+            // Включаем отображение сетки напротив мелких рисок по оси Y
+            pane.XAxis.MinorGrid.IsVisible = true;
+
+            // Аналогично задаем вид пунктирной линии для крупных рисок по оси Y
+            pane.XAxis.MinorGrid.DashOn = 1;
+            pane.XAxis.MinorGrid.DashOff = 2;
+            myCurve1.Line.IsVisible = true;
+            pane.YAxis.Scale.MinAuto = true;
+            pane.YAxis.Scale.MaxAuto = true;
+            pane.AxisChange();
+            zedGraphControl.AxisChange();
+            zedGraphControl.Invalidate();
         }
     }
 }
