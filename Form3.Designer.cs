@@ -32,17 +32,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBoxNu = new System.Windows.Forms.ComboBox();
             this.textBoxK2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxW = new System.Windows.Forms.TextBox();
             this.textBoxtk = new System.Windows.Forms.TextBox();
-            this.textBoxT = new System.Windows.Forms.TextBox();
+            this.textBoxT1 = new System.Windows.Forms.TextBox();
             this.textBoxK1 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.zedGraphControl2 = new ZedGraph.ZedGraphControl();
             this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
-            this.comboBoxNu = new System.Windows.Forms.ComboBox();
+            this.textBoxT2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -74,12 +75,13 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel2.Controls.Add(this.textBoxT2);
             this.panel2.Controls.Add(this.comboBoxNu);
             this.panel2.Controls.Add(this.textBoxK2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.textBoxW);
             this.panel2.Controls.Add(this.textBoxtk);
-            this.panel2.Controls.Add(this.textBoxT);
+            this.panel2.Controls.Add(this.textBoxT1);
             this.panel2.Controls.Add(this.textBoxK1);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -87,6 +89,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(166, 529);
             this.panel2.TabIndex = 1;
+            // 
+            // comboBoxNu
+            // 
+            this.comboBoxNu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxNu.FormattingEnabled = true;
+            this.comboBoxNu.Items.AddRange(new object[] {
+            "0",
+            "1"});
+            this.comboBoxNu.Location = new System.Drawing.Point(50, 193);
+            this.comboBoxNu.MaxDropDownItems = 2;
+            this.comboBoxNu.Name = "comboBoxNu";
+            this.comboBoxNu.Size = new System.Drawing.Size(100, 21);
+            this.comboBoxNu.TabIndex = 14;
             // 
             // textBoxK2
             // 
@@ -119,12 +134,12 @@
             this.textBoxtk.Size = new System.Drawing.Size(100, 20);
             this.textBoxtk.TabIndex = 10;
             // 
-            // textBoxT
+            // textBoxT1
             // 
-            this.textBoxT.Location = new System.Drawing.Point(50, 63);
-            this.textBoxT.Name = "textBoxT";
-            this.textBoxT.Size = new System.Drawing.Size(100, 20);
-            this.textBoxT.TabIndex = 9;
+            this.textBoxT1.Location = new System.Drawing.Point(50, 63);
+            this.textBoxT1.Name = "textBoxT1";
+            this.textBoxT1.Size = new System.Drawing.Size(46, 20);
+            this.textBoxT1.TabIndex = 9;
             // 
             // textBoxK1
             // 
@@ -190,18 +205,12 @@
             this.zedGraphControl1.TabIndex = 6;
             this.zedGraphControl1.UseExtendedPrintDialog = true;
             // 
-            // comboBoxNu
+            // textBoxT2
             // 
-            this.comboBoxNu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxNu.FormattingEnabled = true;
-            this.comboBoxNu.Items.AddRange(new object[] {
-            "0",
-            "1"});
-            this.comboBoxNu.Location = new System.Drawing.Point(50, 193);
-            this.comboBoxNu.MaxDropDownItems = 2;
-            this.comboBoxNu.Name = "comboBoxNu";
-            this.comboBoxNu.Size = new System.Drawing.Size(100, 21);
-            this.comboBoxNu.TabIndex = 14;
+            this.textBoxT2.Location = new System.Drawing.Point(104, 63);
+            this.textBoxT2.Name = "textBoxT2";
+            this.textBoxT2.Size = new System.Drawing.Size(46, 20);
+            this.textBoxT2.TabIndex = 15;
             // 
             // Form3
             // 
@@ -233,12 +242,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxW;
         private System.Windows.Forms.TextBox textBoxtk;
-        private System.Windows.Forms.TextBox textBoxT;
+        private System.Windows.Forms.TextBox textBoxT1;
         private System.Windows.Forms.TextBox textBoxK1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private ZedGraph.ZedGraphControl zedGraphControl2;
         private ZedGraph.ZedGraphControl zedGraphControl1;
         private System.Windows.Forms.TextBox textBoxK2;
         private System.Windows.Forms.ComboBox comboBoxNu;
+        private System.Windows.Forms.TextBox textBoxT2;
     }
 }

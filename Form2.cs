@@ -22,11 +22,14 @@ namespace TAU_Complex
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double k = Math.Pow(Convert.ToDouble(textBoxK.Text), 1d / 3d);
-            double T = Convert.ToDouble(textBoxT.Text);
+            // double k = Math.Pow(Convert.ToDouble(textBoxK1.Text), 1d / 3d);
+            double k1 = Convert.ToDouble(textBoxK1.Text);
+            double k2 = Convert.ToDouble(textBoxK2.Text);
+            double k3 = Convert.ToDouble(textBoxK3.Text);
+            double T1 = Convert.ToDouble(textBoxT1.Text);
+            double T2 = Convert.ToDouble(textBoxT2.Text);
             double tk = Convert.ToDouble(textBoxtk.Text);
-            double w = Convert.ToDouble(textBoxW.Text);
-            double T2 = 0.1;            
+            double w = Convert.ToDouble(textBoxW.Text);                       
             PointPairList list_1 = new PointPairList();
             PointPairList list_2 = new PointPairList();
             double Dt = 0.001;
@@ -35,19 +38,19 @@ namespace TAU_Complex
             double xv = 1;
             for (double i = 0; i < tk; i += Dt)
             {
-                XNon = NonEnertion(xv - XInte, k);
-                (XAper, x1A) = Aperiodic(XNon, k, T, x1A, Dt);
-                (XInte, x1I, x2I) = Integrating(XAper, k, 0.1, Dt, x1I, x2I);
+                XNon = NonEnertion(xv - XInte, k1);
+                (XAper, x1A) = Aperiodic(XNon, k2, T1, x1A, Dt);
+                (XInte, x1I, x2I) = Integrating(XAper, k3, T2, Dt, x1I, x2I);
                 list_1.Add(i, XInte);
             }
 
             for (double i = 0; i < w; i += 0.01)
             {
-                list_2.Add(k - Math.Pow(i, 2) * (T + T2), i - T * T2 * Math.Pow(i, 3));
+                list_2.Add(k1*k2*k3 - Math.Pow(i, 2) * (T1 + T2), i - T1 * T2 * Math.Pow(i, 3));
             }
 
             DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
-            DrawGraph(zedGraphControl2, list_2, "Годограф Михайлова", "u(w)", "vj(w)");
+            DrawGraph(zedGraphControl2, list_2, "Годограф Михайлова", "jv(w)", "u(w)");
         }
         private double NonEnertion(double xv, double k)
         {

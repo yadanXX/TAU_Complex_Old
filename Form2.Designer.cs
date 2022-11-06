@@ -35,13 +35,16 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxW = new System.Windows.Forms.TextBox();
             this.textBoxtk = new System.Windows.Forms.TextBox();
-            this.textBoxT = new System.Windows.Forms.TextBox();
-            this.textBoxK = new System.Windows.Forms.TextBox();
+            this.textBoxT1 = new System.Windows.Forms.TextBox();
+            this.textBoxK1 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.zedGraphControl2 = new ZedGraph.ZedGraphControl();
             this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBoxT2 = new System.Windows.Forms.TextBox();
+            this.textBoxK2 = new System.Windows.Forms.TextBox();
+            this.textBoxK3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -74,11 +77,14 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel2.Controls.Add(this.textBoxK3);
+            this.panel2.Controls.Add(this.textBoxK2);
+            this.panel2.Controls.Add(this.textBoxT2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.textBoxW);
             this.panel2.Controls.Add(this.textBoxtk);
-            this.panel2.Controls.Add(this.textBoxT);
-            this.panel2.Controls.Add(this.textBoxK);
+            this.panel2.Controls.Add(this.textBoxT1);
+            this.panel2.Controls.Add(this.textBoxK1);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -111,19 +117,19 @@
             this.textBoxtk.Size = new System.Drawing.Size(100, 20);
             this.textBoxtk.TabIndex = 4;
             // 
-            // textBoxT
+            // textBoxT1
             // 
-            this.textBoxT.Location = new System.Drawing.Point(56, 70);
-            this.textBoxT.Name = "textBoxT";
-            this.textBoxT.Size = new System.Drawing.Size(100, 20);
-            this.textBoxT.TabIndex = 3;
+            this.textBoxT1.Location = new System.Drawing.Point(56, 70);
+            this.textBoxT1.Name = "textBoxT1";
+            this.textBoxT1.Size = new System.Drawing.Size(51, 20);
+            this.textBoxT1.TabIndex = 3;
             // 
-            // textBoxK
+            // textBoxK1
             // 
-            this.textBoxK.Location = new System.Drawing.Point(56, 31);
-            this.textBoxK.Name = "textBoxK";
-            this.textBoxK.Size = new System.Drawing.Size(100, 20);
-            this.textBoxK.TabIndex = 2;
+            this.textBoxK1.Location = new System.Drawing.Point(56, 31);
+            this.textBoxK1.Name = "textBoxK1";
+            this.textBoxK1.Size = new System.Drawing.Size(33, 20);
+            this.textBoxK1.TabIndex = 2;
             // 
             // pictureBox3
             // 
@@ -191,6 +197,27 @@
             this.panel3.Size = new System.Drawing.Size(834, 529);
             this.panel3.TabIndex = 6;
             // 
+            // textBoxT2
+            // 
+            this.textBoxT2.Location = new System.Drawing.Point(113, 70);
+            this.textBoxT2.Name = "textBoxT2";
+            this.textBoxT2.Size = new System.Drawing.Size(43, 20);
+            this.textBoxT2.TabIndex = 7;
+            // 
+            // textBoxK2
+            // 
+            this.textBoxK2.Location = new System.Drawing.Point(95, 31);
+            this.textBoxK2.Name = "textBoxK2";
+            this.textBoxK2.Size = new System.Drawing.Size(33, 20);
+            this.textBoxK2.TabIndex = 8;
+            // 
+            // textBoxK3
+            // 
+            this.textBoxK3.Location = new System.Drawing.Point(134, 31);
+            this.textBoxK3.Name = "textBoxK3";
+            this.textBoxK3.Size = new System.Drawing.Size(29, 20);
+            this.textBoxK3.TabIndex = 9;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,10 +251,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxW;
         private System.Windows.Forms.TextBox textBoxtk;
-        private System.Windows.Forms.TextBox textBoxT;
-        private System.Windows.Forms.TextBox textBoxK;
+        private System.Windows.Forms.TextBox textBoxT1;
+        private System.Windows.Forms.TextBox textBoxK1;
         private ZedGraph.ZedGraphControl zedGraphControl2;
         private ZedGraph.ZedGraphControl zedGraphControl1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox textBoxT2;
+        private System.Windows.Forms.TextBox textBoxK3;
+        private System.Windows.Forms.TextBox textBoxK2;
     }
 }

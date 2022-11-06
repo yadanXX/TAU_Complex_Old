@@ -22,8 +22,8 @@ namespace TAU_Complex
         {
             double k1 = Convert.ToDouble(textBoxK1.Text);
             double k2 = Convert.ToDouble(textBoxK2.Text);
-            double T1 = Convert.ToDouble(textBoxT.Text);
-            double T2 = 0.1;
+            double T1 = Convert.ToDouble(textBoxT1.Text);
+            double T2 = Convert.ToDouble(textBoxT2.Text);
             double tk = Convert.ToDouble(textBoxtk.Text);
             double w = Convert.ToDouble(textBoxW.Text);
             PointPairList list_1 = new PointPairList();
@@ -46,8 +46,8 @@ namespace TAU_Complex
                 for (double i = 0; i < w; i += 0.01)
                 {
                     u = k1 * k2 * (1 - Math.Pow(i, 2) * T1 * T2);
-                    v = -(i * k1 * k2 * (T1 + T2));
-                    deter = ((Math.Pow(i, 2) * T1 + 1) * (Math.Pow(i, 2) * T2 + 1));
+                    v = -i * k1 * k2 * (T1 + T2);
+                    deter = (Math.Pow(i, 2) * Math.Pow(T1, 2) + 1d) * (Math.Pow(i, 2) * Math.Pow(T2, 2) + 1d);
                     list_2.Add(u / deter, v / deter);
                 }
             }
@@ -64,17 +64,15 @@ namespace TAU_Complex
 
                 for (double i = 0; i < w; i += 0.01)
                 {
-                    u = k1 * k2 * (T1 + T2);
-                    v = k1 * k2 * (1d - Math.Pow(i, 2) * T1 * T2);
-                    deter = (i * T2 + 1) * (i * T1 + 1);
-                    list_2.Add(u / deter, v / deter * i);
+                    u = -k1 * k2 * (T1 + T2);
+                    v = -k1 * k2 * (1d - Math.Pow(i, 2) * T1 * T2);
+                    deter = (Math.Pow(i, 2) * Math.Pow(T2, 2) + 1) * (Math.Pow(i, 2) * Math.Pow(T1, 2) + 1);
+                    list_2.Add(u / deter * i, v / deter);
                 }
-
             }
 
-
             DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
-            DrawGraph(zedGraphControl2, list_2, "Годограф Найквиста", "u(w)", "vj(w)");
+            DrawGraph(zedGraphControl2, list_2, "Годограф Найквиста", "jv(w)", "u(w)");
         }
         private (double, double) Aperiodic(double xv, double k, double T, double x1, double Dt)
         {
