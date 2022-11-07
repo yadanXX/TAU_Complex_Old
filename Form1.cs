@@ -15,13 +15,13 @@ namespace TAU_Complex
     public partial class Form1 : Form
     {
         PointPairList list_1;
-
+        string legend;
 
         public Form1()
         {
             InitializeComponent();
         }
-        string legend;
+        
         private void Form2_Load(object sender, EventArgs e)
         {
 
@@ -299,7 +299,7 @@ namespace TAU_Complex
 
         private void buttonS_Click(object sender, EventArgs e)
         {
-            FormSeparate_ZedGraph f = new FormSeparate_ZedGraph(list_1,legend);
+            FormSeparate_ZedGraph f = new FormSeparate_ZedGraph(list_1, legend);
             f.Show();
         }
     }

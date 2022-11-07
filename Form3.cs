@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ZedGraph;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TAU_Complex
 {
@@ -17,6 +19,11 @@ namespace TAU_Complex
         {
             InitializeComponent();
         }
+
+        PointPairList list1;
+        string legend1;
+        PointPairList list2;
+        string legend2;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -40,7 +47,8 @@ namespace TAU_Complex
                     (XAper, x2A) = Aperiodic(XAper, k2, T2, x2A, Dt);
                     list_1.Add(i, XAper);
                 }
-
+                list1 = list_1;
+                legend1 = $"k1={textBoxK1.Text} k2={textBoxK2.Text} T1={textBoxT1.Text} T2={textBoxT2.Text} tk={textBoxtk.Text}";
                 double u, v, deter; // u - действительная часть, v - мнимая, deter - общий знаменатель
 
                 for (double i = 0; i < w; i += 0.01)
@@ -50,6 +58,8 @@ namespace TAU_Complex
                     deter = (Math.Pow(i, 2) * Math.Pow(T1, 2) + 1d) * (Math.Pow(i, 2) * Math.Pow(T2, 2) + 1d);
                     list_2.Add(u / deter, v / deter);
                 }
+                list2 = list_2;
+                legend2 = $"k1={textBoxK1.Text} k2={textBoxK2.Text} T1={textBoxT1.Text} T2={textBoxT2.Text} w={textBoxW.Text}";
             }
             else
             {
@@ -59,7 +69,8 @@ namespace TAU_Complex
                     (XInt, x1I, x2I) = Integrating(XAper, k2, T2, x1I, x2I, Dt);
                     list_1.Add(i, XInt);
                 }
-
+                list1 = list_1;
+                legend1 = $"k1={textBoxK1.Text} k2={textBoxK2.Text} T1={textBoxT1.Text} T2={textBoxT2.Text} tk={textBoxtk.Text}";
                 double u, v, deter; // u - действительная часть, v - мнимая, deter - общий знаменатель
 
                 for (double i = 0; i < w; i += 0.01)
@@ -69,6 +80,8 @@ namespace TAU_Complex
                     deter = (Math.Pow(i, 2) * Math.Pow(T2, 2) + 1) * (Math.Pow(i, 2) * Math.Pow(T1, 2) + 1);
                     list_2.Add(u / deter * i, v / deter);
                 }
+                list2 = list_2;
+                legend2 = $"k1={textBoxK1.Text} k2={textBoxK2.Text} T1={textBoxT1.Text} T2={textBoxT2.Text} w={textBoxW.Text}";
             }
 
             DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
@@ -173,5 +186,22 @@ namespace TAU_Complex
             zedGraphControl.Invalidate();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormSeparate_ZedGraph f = new FormSeparate_ZedGraph(list1, legend1);
+            f.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormSeparate_ZedGraph f = new FormSeparate_ZedGraph(list2, legend2, title: "Годограф Найквиста", Ytitle: "jv(w)", Xtitle: "u(w)");
+            f.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormDouble_Separete_ZedGraph f = new FormDouble_Separete_ZedGraph(list1, legend1, list2, legend2, title2: "Годограф Найквиста");
+            f.Show();
+        }
     }
 }

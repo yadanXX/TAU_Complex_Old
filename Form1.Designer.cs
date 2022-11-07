@@ -203,8 +203,8 @@
             this.panel7.Controls.Add(this.textBox7k);
             this.panel7.Controls.Add(this.button7);
             this.panel7.Controls.Add(this.pictureBox17);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 3150);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(360, 525);
             this.panel7.TabIndex = 6;
@@ -291,8 +291,8 @@
             this.panel6.Controls.Add(this.textBox6k);
             this.panel6.Controls.Add(this.button6);
             this.panel6.Controls.Add(this.pictureBox16);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 2625);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(360, 525);
             this.panel6.TabIndex = 5;
@@ -377,8 +377,8 @@
             this.panel5.Controls.Add(this.textBox5k);
             this.panel5.Controls.Add(this.pictureBox14);
             this.panel5.Controls.Add(this.button5);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 2100);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(360, 525);
             this.panel5.TabIndex = 4;
@@ -451,8 +451,8 @@
             this.panel4.Controls.Add(this.textBox4k);
             this.panel4.Controls.Add(this.pictureBox10);
             this.panel4.Controls.Add(this.button4);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 1575);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(360, 525);
             this.panel4.TabIndex = 3;
@@ -557,8 +557,8 @@
             this.panel3.Controls.Add(this.textBox3k);
             this.panel3.Controls.Add(this.pictureBox6);
             this.panel3.Controls.Add(this.button3);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 1050);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(360, 525);
             this.panel3.TabIndex = 2;
@@ -661,8 +661,8 @@
             this.panel2.Controls.Add(this.textBox2k);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 525);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(360, 525);
             this.panel2.TabIndex = 1;
@@ -747,7 +747,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.textBox1k);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(360, 525);

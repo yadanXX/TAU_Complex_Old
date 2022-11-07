@@ -9,11 +9,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ZedGraph;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TAU_Complex
 {
     public partial class Form2 : Form
-    {        
+    {
+        PointPairList list1;
+        string legend1;
+        PointPairList list2;
+        string legend2;
         public Form2()
         {
             InitializeComponent();
@@ -43,12 +48,14 @@ namespace TAU_Complex
                 (XInte, x1I, x2I) = Integrating(XAper, k3, T2, Dt, x1I, x2I);
                 list_1.Add(i, XInte);
             }
-
+            list1 = list_1;
+            legend1 = $"k1={textBoxK1.Text} k2={textBoxK2.Text} k3={textBoxK3.Text} T1={textBoxT1.Text} T2={textBoxT2.Text} tk={textBoxtk.Text}";
             for (double i = 0; i < w; i += 0.01)
             {
                 list_2.Add(k1*k2*k3 - Math.Pow(i, 2) * (T1 + T2), i - T1 * T2 * Math.Pow(i, 3));
             }
-
+            list2 = list_2;
+            legend2 = $"k1={textBoxK1.Text} k2={textBoxK2.Text} k3={textBoxK3.Text} T1={textBoxT1.Text} T2={textBoxT2.Text} w={textBoxW.Text}";
             DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
             DrawGraph(zedGraphControl2, list_2, "Годограф Михайлова", "jv(w)", "u(w)");
         }
@@ -129,6 +136,25 @@ namespace TAU_Complex
             pane.AxisChange();
             zedGraphControl.AxisChange();
             zedGraphControl.Invalidate();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormSeparate_ZedGraph f = new FormSeparate_ZedGraph(list1, legend1);
+            f.Show();
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormSeparate_ZedGraph f = new FormSeparate_ZedGraph(list2, legend2,title: "Годограф Михайлова",Ytitle: "jv(w)",Xtitle: "u(w)");
+            f.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormDouble_Separete_ZedGraph f = new FormDouble_Separete_ZedGraph(list1, legend1, list2, legend2);
+            f.Show();
         }
     }
 }

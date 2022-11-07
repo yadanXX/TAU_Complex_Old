@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.SqlServer.Server;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,28 +9,36 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ZedGraph;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView;
 
 namespace TAU_Complex
 {
     public partial class FormSeparate_ZedGraph : Form
     {
-        public FormSeparate_ZedGraph(PointPairList list, string legend1)
+        public FormSeparate_ZedGraph(PointPairList list, string legend1, string title = "График переходной характеристики", string Ytitle = "h(t)", string Xtitle = "t")
         {
             list_1 = list;
             legend = legend1;
+            this.title = title;
+            this.Ytitle = Ytitle;
+            this.Xtitle = Xtitle;
             InitializeComponent();
+
         }
         PointPairList list_1;
         string legend;
+        string title;
+        string Ytitle;
+        string Xtitle;
         private void FormSeparate_ZedGraph_Load(object sender, EventArgs e)
         {
             GraphPane pane = zedGraphControlSeparate.GraphPane;
             pane.CurveList.Clear();
-            LineItem myCurve1 = pane.AddCurve(legend, list_1, Color.Red, SymbolType.None);            
-            pane.Title.Text = "График переходной характеристики";
-            pane.YAxis.Title.Text = "h(t)";
-            pane.XAxis.Title.Text = "t";
-           
+            LineItem myCurve1 = pane.AddCurve(legend, list_1, Color.Red, SymbolType.None);
+            pane.Title.Text = title;
+            pane.YAxis.Title.Text = Ytitle;
+            pane.XAxis.Title.Text = Xtitle;
+
             // !!!
             // Указываем, что расположение легенды мы будет задавать
             // в виде координат левого верхнего угла
@@ -86,9 +95,7 @@ namespace TAU_Complex
             pane.YAxis.Scale.MinAuto = true;
             pane.YAxis.Scale.MaxAuto = true;
             pane.AxisChange();
-            zedGraphControlSeparate.Invalidate();
             zedGraphControlSeparate.AxisChange();
-
             zedGraphControlSeparate.Invalidate();
         }
     }
