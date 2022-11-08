@@ -53,7 +53,7 @@ namespace TAU_Complex
 
                 for (double i = 0; i < w; i += 0.01)
                 {
-                    u = k1 * k2 * (1 - Math.Pow(i, 2) * T1 * T2);
+                    u = k1 * k2 * (1d - Math.Pow(i, 2) * T1 * T2);
                     v = -i * k1 * k2 * (T1 + T2);
                     deter = (Math.Pow(i, 2) * Math.Pow(T1, 2) + 1d) * (Math.Pow(i, 2) * Math.Pow(T2, 2) + 1d);
                     list_2.Add(u / deter, v / deter);
@@ -72,13 +72,12 @@ namespace TAU_Complex
                 list1 = list_1;
                 legend1 = $"k1={textBoxK1.Text} k2={textBoxK2.Text} T1={textBoxT1.Text} T2={textBoxT2.Text} tk={textBoxtk.Text}";
                 double u, v, deter; // u - действительная часть, v - мнимая, deter - общий знаменатель
-
                 for (double i = 0; i < w; i += 0.01)
                 {
-                    u = -k1 * k2 * (T1 + T2);
-                    v = -k1 * k2 * (1d - Math.Pow(i, 2) * T1 * T2);
-                    deter = (Math.Pow(i, 2) * Math.Pow(T2, 2) + 1) * (Math.Pow(i, 2) * Math.Pow(T1, 2) + 1);
-                    list_2.Add(u / deter * i, v / deter);
+                    u = - k1 * k2 * (T1 + T2);
+                    v = - k1 * k2 * (1d - Math.Pow(i, 2) * T1 * T2);
+                    deter = (Math.Pow(i, 2) * Math.Pow(T1, 2) + 1d) * (Math.Pow(i, 2) * Math.Pow(T2, 2) + 1d);
+                    list_2.Add(u / deter, v / (deter * i));
                 }
                 list2 = list_2;
                 legend2 = $"k1={textBoxK1.Text} k2={textBoxK2.Text} T1={textBoxT1.Text} T2={textBoxT2.Text} w={textBoxW.Text}";
