@@ -127,7 +127,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(250, 80);
             this.button4.TabIndex = 5;
-            this.button4.Text = "Исследование устойчивости систем по критерию Гурвица";
+            this.button4.Text = "Исследование устойчивости САУ со звеном чистого запаздывания";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
