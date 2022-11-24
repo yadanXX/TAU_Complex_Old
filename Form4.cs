@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 using org.mariuszgromada.math.mxparser;
 using ZedGraph;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -43,17 +44,39 @@ namespace TAU_Complex
             double w = Convert.ToDouble(textBoxw.Text);
 
             PointPairList list_1 = new PointPairList();
-            double Dt = 0.001;
-            double XInt = 0, Xe = 0;
-            double x1I = 0, x2I = 0;
-            double xv = 1;
-            for (double i = 0; i < tk; i += Dt)
+            PointPairList list_2 = new PointPairList();
+
             {
-                (XInt, x1I, x2I) = Integrating(xv - Xe, k, T, x1I, x2I, Dt);
-                Xe = XInt * (i - tau);
-                list_1.Add(i, Xe);
+                double Dt = 0.001;
+                double XInt = 0;
+                double x1I = 0, x2I = 0;
+                double xv = 1;
+                double err = 0;
+                List<double> delay = new List<double>();
+                for (double i = 0; i < tk; i += Dt)
+                {
+                    (XInt, x1I, x2I) = Integrating(xv - err, k, T, x1I, x2I, Dt);
+                    delay.Add(XInt);
+                    if (delay.Count == tau / Dt)
+                    {
+                        err = delay[0];
+                        list_1.Add(i, delay[0]);
+                        delay.RemoveAt(0);
+                    }
+                }
+                DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
             }
-            DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
+
+
+            double u = 0, v = 0;
+
+            for (double i = 0; i < w; i += 0.01)
+            {
+                u = i - k * Math.Sin(tau * i);
+                v = -T * Math.Pow(i, 2) + k * Math.Sin(tau * i);
+                list_2.Add(u, v);
+            }
+            DrawGraph(zedGraphControl2, list_2, "АФЧХ", "jv(w)", "u(w)");
         }
 
         private (double, double, double) Integrating(double xv, double k, double T, double x1, double x2, double Dt)
