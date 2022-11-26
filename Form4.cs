@@ -68,15 +68,18 @@ namespace TAU_Complex
             }
 
 
-            double u = 0, v = 0;
+            double u = 0, v = 0, deter = 0;
 
             for (double i = 0; i < w; i += 0.01)
             {
-                u = i - k * Math.Sin(tau * i);
-                v = -T * Math.Pow(i, 2) + k * Math.Sin(tau * i);
-                list_2.Add(u, v);
+                u = k * (T * i * Math.Sin(i * tau) + Math.Cos(i * tau));
+                v = k * (Math.Cos(i * tau) - T * i * Math.Sin(i * tau));
+                deter = -i * (Math.Pow(T, 2) * Math.Pow(i, 2) + 1d);
+                //u = Math.Cos(i * tau);
+                //v = -Math.Sin(i * tau);
+                list_2.Add(u / deter, v / deter);
             }
-            DrawGraph(zedGraphControl2, list_2, "АФЧХ", "jv(w)", "u(w)");
+            DrawGraph(zedGraphControl3, list_2, "АФЧХ", "jv(w)", "u(w)");
         }
 
         private (double, double, double) Integrating(double xv, double k, double T, double x1, double x2, double Dt)
