@@ -45,6 +45,7 @@ namespace TAU_Complex
 
             PointPairList list_1 = new PointPairList();
             PointPairList list_2 = new PointPairList();
+            PointPairList list_3 = new PointPairList();
 
             {
                 double Dt = 0.001;
@@ -67,19 +68,25 @@ namespace TAU_Complex
                 DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
             }
 
+            {
+                double u = 0, v = 0, deter = 0;
 
-            double u = 0, v = 0, deter = 0;
+                for (double i = 0; i < w; i += 0.01)
+                {
+                    u = -k * (Math.Sin(tau * i) + T * i * Math.Cos(tau * i));
+                    v = -k * (Math.Cos(tau * i) - T * i * Math.Sin(tau * i));
+                    deter = Math.Pow(T, 2) * Math.Pow(i, 3) + i;
+                    list_2.Add(u / deter, v / deter);
+                }
+                DrawGraph(zedGraphControl2, list_2, "АФЧХ", "jv(w)", "u(w)");
+            }
+
 
             for (double i = 0; i < w; i += 0.01)
             {
-                u = k * (T * i * Math.Sin(i * tau) + Math.Cos(i * tau));
-                v = k * (Math.Cos(i * tau) - T * i * Math.Sin(i * tau));
-                deter = -i * (Math.Pow(T, 2) * Math.Pow(i, 2) + 1d);
-                //u = Math.Cos(i * tau);
-                //v = -Math.Sin(i * tau);
-                list_2.Add(u / deter, v / deter);
+                list_3.Add(i / (Math.Sin(tau * i)), 1d / (i * Math.Tan(tau * i)));
             }
-            DrawGraph(zedGraphControl3, list_2, "АФЧХ", "jv(w)", "u(w)");
+            DrawGraph(zedGraphControl3, list_3, "Область устойчивости", "T", "K");
         }
 
         private (double, double, double) Integrating(double xv, double k, double T, double x1, double x2, double Dt)
