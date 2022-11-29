@@ -81,10 +81,16 @@ namespace TAU_Complex
                 DrawGraph(zedGraphControl2, list_2, "АФЧХ", "jv(w)", "u(w)");
             }
 
-
-            for (double i = 0; i < w; i += 0.01)
+            double sus_k, sus_t;
+            for (double i = 0; i < Math.PI / (2 * tau); i += 0.01)
             {
-                list_3.Add(i / (Math.Sin(tau * i)), 1d / (i * Math.Tan(tau * i)));
+                sus_k = i / (Math.Sin(tau * i));
+                sus_t = 1d / (i * Math.Tan(tau * i));
+                //if (sus_k < 0 || sus_t < 0)
+                //{
+                //    break;
+                //}
+                list_3.Add(sus_k, sus_t);
             }
             DrawGraph(zedGraphControl3, list_3, "Область устойчивости", "T", "K");
         }
