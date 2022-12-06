@@ -118,5 +118,10 @@ namespace TAU_Complex
         {
             OpenChildForm(new Form4(), sender);
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Form5(), sender);
+        }
     }
 }

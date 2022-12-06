@@ -43,9 +43,9 @@ namespace TAU_Complex
             double xv = 1;
             for (double i = 0; i < tk; i += Dt)
             {
-                XNon = NonEnertion(xv - XInte, k1);
-                (XAper, x1A) = Aperiodic(XNon, k2, T1, x1A, Dt);
-                (XInte, x1I, x2I) = Integrating(XAper, k3, T2, Dt, x1I, x2I);
+                XNon = Wlink.NonEnertion(xv - XInte, k1);
+                (XAper, x1A) = Wlink.Aperiodic(XNon, k2, T1, x1A, Dt);
+                (XInte, x1I, x2I) = Wlink.Integrating(XAper, k3, T2, Dt, x1I, x2I);
                 list_1.Add(i, XInte);
             }
             list1 = list_1;
@@ -58,28 +58,7 @@ namespace TAU_Complex
             legend2 = $"k1={textBoxK1.Text} k2={textBoxK2.Text} k3={textBoxK3.Text} T1={textBoxT1.Text} T2={textBoxT2.Text} w={textBoxW.Text}";
             DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
             DrawGraph(zedGraphControl2, list_2, "Годограф Михайлова", "jv(w)", "u(w)");
-        }
-        private double NonEnertion(double xv, double k)
-        {
-            return xv * k;
-        }
-        private (double, double) Aperiodic(double xv, double k, double T, double x1, double Dt)
-        {
-            double x, x2;
-            x2 = (xv - x1) / T;
-            x1 = (x1 + Dt * x2);
-            x = k * x1;
-            return (x, x1);
-        }
-        private (double, double, double) Integrating(double xv, double k, double T, double Dt, double x1, double x2)
-        {
-            double x, x3;
-            x3 = xv - x2;
-            x2 = x2 + (x3 * Dt) / T;
-            x1 = x1 + x2 * Dt;
-            x = k * x1;
-            return (x, x1, x2);
-        }
+        }       
 
         private void Form2_Resize(object sender, EventArgs e)
         {            

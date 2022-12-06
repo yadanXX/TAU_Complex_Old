@@ -43,8 +43,8 @@ namespace TAU_Complex
             {
                 for (double i = 0; i < tk; i += Dt)
                 {
-                    (XAper, x1A) = Aperiodic(xv - XAper, k1, T1, x1A, Dt);
-                    (XAper, x2A) = Aperiodic(XAper, k2, T2, x2A, Dt);
+                    (XAper, x1A) =Wlink.Aperiodic(xv - XAper, k1, T1, x1A, Dt);
+                    (XAper, x2A) = Wlink.Aperiodic(XAper, k2, T2, x2A, Dt);
                     list_1.Add(i, XAper);
                 }
                 list1 = list_1;
@@ -65,8 +65,8 @@ namespace TAU_Complex
             {
                 for (double i = 0; i < tk; i += Dt)
                 {
-                    (XAper, x1A) = Aperiodic(xv - XInt, k1, T1, x1A, Dt);
-                    (XInt, x1I, x2I) = Integrating(XAper, k2, T2, x1I, x2I, Dt);
+                    (XAper, x1A) =Wlink.Aperiodic(xv - XInt, k1, T1, x1A, Dt);
+                    (XInt, x1I, x2I) = Wlink.Integrating(XAper, k2, T2, x1I, x2I, Dt);
                     list_1.Add(i, XInt);
                 }
                 list1 = list_1;
@@ -86,40 +86,7 @@ namespace TAU_Complex
             DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
             DrawGraph(zedGraphControl2, list_2, "Годограф Найквиста", "jv(w)", "u(w)");
         }
-        private (double, double) Aperiodic(double xv, double k, double T, double x1, double Dt)
-        {
-            /* xv - вход
-             * k - коэф усиления
-             * T - постоянная времени
-             * x1 - предыдущий выход1(промежуточный), после изменения текущий1
-             * Dt - дельта t
-             * x2 - выход1' (промежуточный производный)
-             * x - выход
-             */
-            double x, x2;
-            x2 = (xv - x1) / T;
-            x1 = (x1 + Dt * x2);
-            x = k * x1;
-            return (x, x1);
-        }
-        private (double, double, double) Integrating(double xv, double k, double T, double x1, double x2, double Dt)
-        {
-            /* xv - вход
-             * k - коэф усиления
-             * T - постоянная времени
-             * x1 - предыдущий выход1(промежуточный), после изменения текущий1
-             * x2 - предыдущий выход2(промежуточный), после изменения текущий2 x'
-             * Dt - дельта t
-             * x3 - выход1'' (промежуточный производный)
-             * x - выход
-             */
-            double x, x3;
-            x3 = xv - x2;
-            x2 = x2 + (x3 * Dt) / T;
-            x1 = x1 + x2 * Dt;
-            x = k * x1;
-            return (x, x1, x2);
-        }
+       
         private void Form3_Resize(object sender, EventArgs e)
         {
             // событие по равномерному изменению по высоте двух графов 

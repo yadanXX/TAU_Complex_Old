@@ -8,93 +8,94 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
-using org.mariuszgromada.math.mxparser;
 using ZedGraph;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-
 namespace TAU_Complex
 {
-    public partial class Form4 : Form
+    public partial class Form5 : Form
     {
-        public Form4()
+        public Form5()
         {
             InitializeComponent();
         }
 
-
-        private void Form4_Resize(object sender, EventArgs e)
+        private void Form5_Resize(object sender, EventArgs e)
         {
-            // !!!!!!!!
-            panel1.Height = panelmain.Height / 2;
-            panel1.Width = panelmain.Width / 2;
-            panel2.Height = panelmain.Height / 2;
-            panel2.Width = panelmain.Width / 2;
-            panel3.Height = panelmain.Height / 2;
-            panel3.Width = panelmain.Width / 2;
-            panel4.Height = panelmain.Height / 2;
-            panel4.Width = panelmain.Width / 2;
+            zedGraphControl1.Height = panel1.Height / 2;
+            zedGraphControl2.Height = panel1.Height / 2;
         }
+
+        public delegate double Deleg(double value1, double value2);
 
         private void button1_Click(object sender, EventArgs e)
         {
             double k = Convert.ToDouble(textBoxK.Text);
             double T = Convert.ToDouble(textBoxT.Text);
             double tk = Convert.ToDouble(textBoxtk.Text);
-            double tau = Convert.ToDouble(textBoxtau.Text);
-            double w = Convert.ToDouble(textBoxw.Text);
+            double Tky = 1;
+            double KRamp = Convert.ToDouble(textBoxRamp.Text);
+            if (radioButtonDif.Checked || radioButtonExo.Checked)
+            {
+                Tky = Convert.ToDouble(textBoxTky.Text);
+            }
+
+            double Dt = 0.001;
 
             PointPairList list_1 = new PointPairList();
             PointPairList list_2 = new PointPairList();
-            PointPairList list_3 = new PointPairList();
+            // неявное определение делегата        
+            Deleg xv = NS;
+            if (radioButtonStep.Checked)
+            {
+                xv = step;
+            }
+            else if (radioButtonRamp.Checked)
+            {
+
+                xv = ramp;
+            }
 
 
-            double Dt = 0.001;
-            double XInt = 0;
-            double x1I = 0, x2I = 0;
-            double xv = 1;
-            double err = 0;
-            List<double> delay = new List<double>();
+            double wv1 = 0, wv2 = 0, wv3 = 0, temp1 = 0, temp2 = 0, temp31 = 0, temp32 = 0;
+
             for (double i = 0; i < tk; i += Dt)
             {
-                (XInt, x1I, x2I) = Wlink.Integrating(xv - err, k, T, x1I, x2I, Dt);
-                delay.Add(XInt);
-                if (delay.Count == tau / Dt)
+                if (radioButtonAmp.Checked)
                 {
-                    err = delay[0];
-                    list_1.Add(i, delay[0]);
-                    delay.RemoveAt(0);
+                    (wv1) = Wlink.NonEnertion(xv(i, KRamp) - wv3, k);
                 }
+                else if (radioButtonDif.Checked)
+                {
+                    (wv1, temp1) = Wlink.Difdelay(xv(i, KRamp) - wv3, k, Tky, 1, temp1, Dt);
+                }
+                else if (radioButtonExo.Checked)
+                {
+                    (wv1, temp1) = Wlink.Exodrom(xv(i, KRamp) - wv3, k, Tky, 1, temp1, Dt);
+                }
+                (wv2, temp2) = Wlink.Aperiodic(wv1, 1, T, temp2, Dt);
+                (wv3, temp31, temp32) = Wlink.Integrating(wv2, 1, 1, temp31, temp32, Dt);
+                list_1.Add(i, wv3);
+                list_2.Add(i, xv(i, KRamp) - wv3);
             }
             DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
+            DrawGraph(zedGraphControl2, list_2, "Ошибка", "E(t)", "t");
 
-
-            double u = 0, v = 0, deter = 0;
-
-            for (double i = 0; i < w; i += 0.01)
-            {
-                u = -k * (Math.Sin(tau * i) + T * i * Math.Cos(tau * i));
-                v = -k * (Math.Cos(tau * i) - T * i * Math.Sin(tau * i));
-                deter = Math.Pow(T, 2) * Math.Pow(i, 3) + i;
-                list_2.Add(u / deter, v / deter);
-            }
-            DrawGraph(zedGraphControl2, list_2, "АФЧХ", "jv(w)", "u(w)");
-
-
-            double sus_k, sus_t;
-            for (double i = 0; i < Math.PI / (2 * tau); i += 0.01)
-            {
-                sus_k = i / (Math.Sin(tau * i));
-                sus_t = 1d / (i * Math.Tan(tau * i));
-                //if (sus_k < 0 || sus_t < 0)
-                //{
-                //    break;
-                //}
-                list_3.Add(sus_k, sus_t);
-            }
-            DrawGraph(zedGraphControl3, list_3, "Область устойчивости", "T", "K");
         }
 
+
+        double ramp(double x, double k)
+        {
+            return x * k;
+        }
+        double step(double x, double k)
+        {
+            return 1;
+        }
+        double NS(double x, double k)
+        {
+            return 0;
+        }
         private void DrawGraph(ZedGraphControl zedGraphControl, PointPairList list_1, string TitleText, string YText, string XText)
         {
             /*
