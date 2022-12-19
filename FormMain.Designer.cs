@@ -38,10 +38,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.buttonClose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panelWorkSpace = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelWorkSpace.SuspendLayout();
@@ -95,8 +95,9 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(250, 80);
             this.button6.TabIndex = 7;
-            this.button6.Text = "Buttom NULL";
+            this.button6.Text = "Исследование инвариантности систем";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -206,21 +207,6 @@
             this.panel2.TabIndex = 1;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
-            // buttonClose
-            // 
-            this.buttonClose.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buttonClose.FlatAppearance.BorderSize = 0;
-            this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonClose.Image = global::TAU_Complex.Properties.Resources.icons8_умножение_30;
-            this.buttonClose.Location = new System.Drawing.Point(0, 0);
-            this.buttonClose.Name = "buttonClose";
-            this.buttonClose.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonClose.Size = new System.Drawing.Size(42, 50);
-            this.buttonClose.TabIndex = 1;
-            this.buttonClose.UseVisualStyleBackColor = true;
-            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
-            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -253,6 +239,21 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // buttonClose
+            // 
+            this.buttonClose.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonClose.FlatAppearance.BorderSize = 0;
+            this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonClose.Image = global::TAU_Complex.Properties.Resources.icons8_умножение_30;
+            this.buttonClose.Location = new System.Drawing.Point(0, 0);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buttonClose.Size = new System.Drawing.Size(42, 50);
+            this.buttonClose.TabIndex = 1;
+            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // FormMain
             // 

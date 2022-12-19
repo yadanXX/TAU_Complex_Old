@@ -62,7 +62,7 @@
             this.zedGraphControl1.ScrollMinX = 0D;
             this.zedGraphControl1.ScrollMinY = 0D;
             this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(443, 281);
+            this.zedGraphControl1.Size = new System.Drawing.Size(462, 281);
             this.zedGraphControl1.TabIndex = 0;
             this.zedGraphControl1.UseExtendedPrintDialog = true;
             // 
@@ -78,7 +78,7 @@
             this.zedGraphControl2.ScrollMinX = 0D;
             this.zedGraphControl2.ScrollMinY = 0D;
             this.zedGraphControl2.ScrollMinY2 = 0D;
-            this.zedGraphControl2.Size = new System.Drawing.Size(443, 285);
+            this.zedGraphControl2.Size = new System.Drawing.Size(462, 285);
             this.zedGraphControl2.TabIndex = 1;
             this.zedGraphControl2.UseExtendedPrintDialog = true;
             // 
@@ -87,9 +87,9 @@
             this.panel1.Controls.Add(this.zedGraphControl1);
             this.panel1.Controls.Add(this.zedGraphControl2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(453, 0);
+            this.panel1.Location = new System.Drawing.Point(434, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(443, 572);
+            this.panel1.Size = new System.Drawing.Size(462, 572);
             this.panel1.TabIndex = 2;
             // 
             // radioButtonStep
@@ -172,28 +172,28 @@
             // 
             // textBoxK
             // 
-            this.textBoxK.Location = new System.Drawing.Point(281, 31);
+            this.textBoxK.Location = new System.Drawing.Point(214, 15);
             this.textBoxK.Name = "textBoxK";
             this.textBoxK.Size = new System.Drawing.Size(100, 20);
             this.textBoxK.TabIndex = 10;
             // 
             // textBoxT
             // 
-            this.textBoxT.Location = new System.Drawing.Point(281, 57);
+            this.textBoxT.Location = new System.Drawing.Point(214, 41);
             this.textBoxT.Name = "textBoxT";
             this.textBoxT.Size = new System.Drawing.Size(100, 20);
             this.textBoxT.TabIndex = 11;
             // 
             // textBoxtk
             // 
-            this.textBoxtk.Location = new System.Drawing.Point(281, 83);
+            this.textBoxtk.Location = new System.Drawing.Point(214, 67);
             this.textBoxtk.Name = "textBoxtk";
             this.textBoxtk.Size = new System.Drawing.Size(100, 20);
             this.textBoxtk.TabIndex = 12;
             // 
             // textBoxTky
             // 
-            this.textBoxTky.Location = new System.Drawing.Point(281, 109);
+            this.textBoxTky.Location = new System.Drawing.Point(214, 93);
             this.textBoxTky.Name = "textBoxTky";
             this.textBoxTky.Size = new System.Drawing.Size(100, 20);
             this.textBoxTky.TabIndex = 13;
