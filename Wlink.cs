@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TAU_Complex
+﻿namespace TAU_Complex
 {
     public static class Wlink
     {
@@ -88,7 +82,7 @@ namespace TAU_Complex
                  * Dt - дельта t
                  * x - выход
                  */
-            double x;            
+            double x;
             x = (xv - xi1) * k / Dt;
             xi1 = xv;
             return (x, xi1);

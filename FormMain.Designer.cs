@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -38,15 +39,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel_tool_menu = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panelWorkSpace = new System.Windows.Forms.Panel();
-            this.slide_timer = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonRoll = new System.Windows.Forms.Button();
             this.buttonShut_down = new System.Windows.Forms.Button();
             this.button_options = new System.Windows.Forms.Button();
             this.button_help = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
             this.slide_button = new System.Windows.Forms.Button();
+            this.panelWorkSpace = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.slide_timer = new System.Windows.Forms.Timer(this.components);
             this.panelSideMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelWorkSpace.SuspendLayout();
@@ -200,33 +201,6 @@
             this.panel2.TabIndex = 1;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
-            // panelWorkSpace
-            // 
-            this.panelWorkSpace.Controls.Add(this.pictureBox1);
-            this.panelWorkSpace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelWorkSpace.Location = new System.Drawing.Point(250, 50);
-            this.panelWorkSpace.Margin = new System.Windows.Forms.Padding(0);
-            this.panelWorkSpace.Name = "panelWorkSpace";
-            this.panelWorkSpace.Size = new System.Drawing.Size(776, 611);
-            this.panelWorkSpace.TabIndex = 2;
-            // 
-            // slide_timer
-            // 
-            this.slide_timer.Interval = 1;
-            this.slide_timer.Tick += new System.EventHandler(this.slide_timer_Tick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::TAU_Complex.Properties.Resources.togu;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(776, 611);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // buttonRoll
             // 
             this.buttonRoll.BackgroundImage = global::TAU_Complex.Properties.Resources.min;
@@ -323,6 +297,33 @@
             this.slide_button.UseVisualStyleBackColor = true;
             this.slide_button.Click += new System.EventHandler(this.slide_button_Click);
             // 
+            // panelWorkSpace
+            // 
+            this.panelWorkSpace.Controls.Add(this.pictureBox1);
+            this.panelWorkSpace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelWorkSpace.Location = new System.Drawing.Point(250, 50);
+            this.panelWorkSpace.Margin = new System.Windows.Forms.Padding(0);
+            this.panelWorkSpace.Name = "panelWorkSpace";
+            this.panelWorkSpace.Size = new System.Drawing.Size(776, 611);
+            this.panelWorkSpace.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::TAU_Complex.Properties.Resources.togu;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(776, 611);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // slide_timer
+            // 
+            this.slide_timer.Interval = 1;
+            this.slide_timer.Tick += new System.EventHandler(this.slide_timer_Tick);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -334,10 +335,11 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(875, 650);
             this.Name = "FormMain";
-            this.Text = "Form1";
+            this.Text = "Тау комплекс";
             this.panelSideMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panelWorkSpace.ResumeLayout(false);

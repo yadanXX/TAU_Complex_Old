@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ZedGraph;
 
@@ -68,8 +62,8 @@ namespace TAU_Complex
                     if (sigma <= 0) throw new Exception();
                     legend += $"Мат. Ожидание = {mu} Дисперсия = {sigma} ";
 
-                }             
-                            
+                }
+
                 tk = Convert.ToDouble(textBoxtk.Text);
                 if (tk <= 0) throw new Exception();
                 if (radioButtonRamp.Checked)
@@ -177,7 +171,7 @@ namespace TAU_Complex
             // do
             // {
             //double mu = 0.5;
-           // double sigma = mu / 3;
+            // double sigma = mu / 3;
             var u1 = rnd.NextDouble();
             var u2 = rnd.NextDouble();
             var rand_std_normal = Math.Sqrt(-2.0 * Math.Log(u1)) * Math.Sin(2.0 * Math.PI * u2);
@@ -271,7 +265,7 @@ namespace TAU_Complex
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {            
+        {
             if (comboBox1.SelectedIndex == 1)
             {
                 labelG1.Visible = true;

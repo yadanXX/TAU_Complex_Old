@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using ZedGraph;
+using System.Windows.Forms;
 
 namespace TAU_Complex
 {
@@ -111,9 +104,9 @@ namespace TAU_Complex
 
         private void button_help_Click(object sender, EventArgs e)
         {
-            
-             Form_help f = new Form_help();
-             f.Show();
+
+            Form_help f = new Form_help();
+            f.Show();
         }
 
         private void button_options_Click(object sender, EventArgs e)

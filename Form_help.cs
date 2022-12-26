@@ -1,19 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace TAU_Complex
 {
     public partial class Form_help : Form
     {
 
-        
+
         public Form_help()
         {
 
@@ -59,7 +51,7 @@ namespace TAU_Complex
                 default:
                     break;
             }
-            
+
         }
     }
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ZedGraph;
+﻿using ZedGraph;
 
 namespace TAU_Complex
 {
@@ -16,7 +11,7 @@ namespace TAU_Complex
         public static string legend1;
         public static string title1;
         public static string Ytitle1;
-        public static string Xtitle1; 
+        public static string Xtitle1;
 
         public static PointPairList list2;
         public static string legend2;

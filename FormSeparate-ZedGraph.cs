@@ -1,15 +1,7 @@
-﻿using Microsoft.SqlServer.Server;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ZedGraph;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView;
 
 namespace TAU_Complex
 {
