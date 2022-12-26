@@ -118,64 +118,160 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ScreenShot_20220926160235" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ScreenShot_20220926160235.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tau.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ScreenShot_20220926180942" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ScreenShot_20220926180942.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="k1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\k1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="blazon-contour" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blazon-contour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Апериодическое инерционное" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Апериодическое инерционное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ScreenShot_20220926174846" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ScreenShot_20220926174846.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Tky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tky.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-умножение-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-умножение-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Kу" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kу.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ScreenShot_20220926155119" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ScreenShot_20220926155119.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Идеальное интегрирующие" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Идеальное интегрирующие.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="png-transparent-line-angle-point-symmetry-white-line-angle-white-text" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png-transparent-line-angle-point-symmetry-white-line-angle-white-text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="инерционное реальное интегрирующие" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\инерционное реальное интегрирующие.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ScreenShot_20220926184812" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ScreenShot_20220926184812.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Wk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ScreenShot_20220926160243" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ScreenShot_20220926160243.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Схема точности" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Схема точности.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hi10_KaiYari_-_08_BD_1080p_UCCUSS_6F174804.mkv_snapshot_22.01.983" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hi10_KaiYari_-_08_BD_1080p_UCCUSS_6F174804.mkv_snapshot_22.01.983.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Идеальное усилительное безынерционное" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Идеальное усилительное безынерционное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ScreenShot_20220926154823" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ScreenShot_20220926154823.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="найквист" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\найквист.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ScreenShot_20220926174758" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ScreenShot_20220926174758.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="запаздывание" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\запаздывание.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ScreenShot_20221010144350" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ScreenShot_20221010144350.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="T2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\T2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4PJtZURCRo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4PJtZURCRo4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Колебательное звено" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Колебательное звено.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ScreenShot_20220926155754" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ScreenShot_20220926155754.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Инерционное реально интегрирующие" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Инерционное реально интегрирующие.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ScreenShot_20220926185135" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ScreenShot_20220926185135.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Инерционное дифферинцирующие" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Инерционное дифферинцирующие.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-умножение-60" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-умножение-60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="k" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\k.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ScreenShot_20221010144753" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ScreenShot_20221010144753.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Апериодическое звено ворого порядка" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Апериодическое звено ворого порядка.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ScreenShot_20220926185514" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ScreenShot_20220926185514.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Kп" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kп.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ScreenShot_20221010144830" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ScreenShot_20221010144830.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="точность" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\точность.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kд" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kд.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Схема михайлов" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Схема михайлов.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Апериодическое инерционное " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Апериодическое инерционное .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="options" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\options.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="k2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\k2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="togu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\togu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Схема запаздывания" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Схема запаздывания.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="k3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\k3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Колебательное" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Колебательное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kр" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kр.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="min" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\min.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Апериодическое второго порядка" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Апериодическое второго порядка.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="T" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\T.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Идеально интегрирующие" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Идеально интегрирующие.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="T1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\T1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Михайлов" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Михайлов.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slide_button_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slide_button_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Инерционно дифферинцирующие " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Инерционно дифферинцирующие .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="схема инвариатность" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\схема инвариатность.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tу" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tу.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tд" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tд.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Инвариантность" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Инвариантность.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Идеальное усилительное" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Идеальное усилительное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="схема найквист" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\схема найквист.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

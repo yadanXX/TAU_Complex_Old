@@ -22,22 +22,42 @@ namespace TAU_Complex
         public Form2()
         {
             InitializeComponent();
-
+            Data.active_value = 8;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             // double k = Math.Pow(Convert.ToDouble(textBoxK1.Text), 1d / 3d);
-            double k1 = Convert.ToDouble(textBoxK1.Text);
-            double k2 = Convert.ToDouble(textBoxK2.Text);
-            double k3 = Convert.ToDouble(textBoxK3.Text);
-            double T1 = Convert.ToDouble(textBoxT1.Text);
-            double T2 = Convert.ToDouble(textBoxT2.Text);
-            double tk = Convert.ToDouble(textBoxtk.Text);
-            double w = Convert.ToDouble(textBoxW.Text);                       
+            double k1;
+            double k2;
+            double k3;
+            double T1;
+            double T2;
+            double tk;
+            double w;
+            try
+            {
+                k1 = Convert.ToDouble(textBoxK1.Text);
+                k2 = Convert.ToDouble(textBoxK2.Text);
+                k3 = Convert.ToDouble(textBoxK3.Text);
+                T1 = Convert.ToDouble(textBoxT1.Text);
+                T2 = Convert.ToDouble(textBoxT2.Text);
+                tk = Convert.ToDouble(textBoxtk.Text);
+                if (tk <= 0) throw new Exception();
+                w = Convert.ToDouble(textBoxW.Text);
+            }
+            catch (Exception)
+            {
+                Form_error f = new Form_error();
+                f.ShowDialog();
+                return;
+            }
+            double Dt;
+            if (Data.Dt != 0) Dt = Data.Dt;
+            else Dt = tk / 1000;
             PointPairList list_1 = new PointPairList();
             PointPairList list_2 = new PointPairList();
-            double Dt = 0.001;
+
             double XNon, XAper, XInte = 0;
             double x1A = 0, x1I = 0, x2I = 0;
             double xv = 1;
@@ -50,18 +70,31 @@ namespace TAU_Complex
             }
             list1 = list_1;
             legend1 = $"k1={textBoxK1.Text} k2={textBoxK2.Text} k3={textBoxK3.Text} T1={textBoxT1.Text} T2={textBoxT2.Text} tk={textBoxtk.Text}";
-            for (double i = 0; i < w; i += 0.01)
+            for (double i = 0; i < w; i += Dt)
             {
-                list_2.Add(k1*k2*k3 - Math.Pow(i, 2) * (T1 + T2), i - T1 * T2 * Math.Pow(i, 3));
+                list_2.Add(k1 * k2 * k3 - Math.Pow(i, 2) * (T1 + T2), i - T1 * T2 * Math.Pow(i, 3));
             }
             list2 = list_2;
             legend2 = $"k1={textBoxK1.Text} k2={textBoxK2.Text} k3={textBoxK3.Text} T1={textBoxT1.Text} T2={textBoxT2.Text} w={textBoxW.Text}";
             DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
             DrawGraph(zedGraphControl2, list_2, "Годограф Михайлова", "jv(w)", "u(w)");
-        }       
+
+            Data.list1 = list_1;
+            Data.legend1 = legend1;
+            Data.title1 = "График переходной характеристики";
+            Data.Ytitle1 = "h(t)";
+            Data.Xtitle1 = "t";
+
+            Data.list2 = list_2;
+            Data.legend2 = legend2;
+            Data.title2 = "Годограф Михайлова";
+            Data.Ytitle2 = "jv(w)";
+            Data.Xtitle2 = "u(w)";
+
+        }
 
         private void Form2_Resize(object sender, EventArgs e)
-        {            
+        {
             zedGraphControl1.Height = panel3.Size.Height / 2;
             zedGraphControl2.Height = panel3.Size.Height / 2;
         }
@@ -117,23 +150,5 @@ namespace TAU_Complex
             zedGraphControl.Invalidate();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            FormSeparate_ZedGraph f = new FormSeparate_ZedGraph(list1, legend1);
-            f.Show();
-            
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            FormSeparate_ZedGraph f = new FormSeparate_ZedGraph(list2, legend2,title: "Годограф Михайлова",Ytitle: "jv(w)",Xtitle: "u(w)");
-            f.Show();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            FormDouble_Separete_ZedGraph f = new FormDouble_Separete_ZedGraph(list1, legend1, list2, legend2);
-            f.Show();
-        }
     }
 }

@@ -8,21 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-// ало,батон будешь?
+using ZedGraph;
+
 namespace TAU_Complex
 {
     public partial class FormMain : Form
     {
-        private Button currentButton;
-        private Form activeForm;
-        //тест
-        //здравствуйте
+        bool sidebarExpand = true;
+
+        public Button currentButton;
+        public Form activeForm;
         public FormMain()
         {
             InitializeComponent();
             this.Text = String.Empty;
             this.ControlBox = false;
             buttonClose.Visible = false;
+            button_help.Visible = false;
+            button_options.Visible = false;
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -37,16 +40,16 @@ namespace TAU_Complex
                 if (currentButton != (Button)btnSender)
                 {
                     DisableButton();
-                   // Color color = SelectThemeColor();
+                    // Color color = SelectThemeColor();
                     currentButton = (Button)btnSender;
-                   // currentButton.BackColor = color;
+                    // currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
                     currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     currentButton.BackColor = Color.FromArgb(5, 34, 53);
-                  //  panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
-                   // ThemeColor.PrimaryColor = color;
-                   // ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(color, -0.3);
-                   // btnCloseChildForm.Visible = true;
+                    //  panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
+                    // ThemeColor.PrimaryColor = color;
+                    // ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(color, -0.3);
+                    // btnCloseChildForm.Visible = true;
                 }
             }
         }
@@ -77,8 +80,9 @@ namespace TAU_Complex
             this.panelWorkSpace.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            // lblTitle.Text = childForm.Text;
             buttonClose.Visible = true;
+            button_help.Visible = true;
+            button_options.Visible = true;
         }
 
         private void panel2_MouseDown(object sender, MouseEventArgs e)
@@ -96,12 +100,26 @@ namespace TAU_Complex
         {
             if (activeForm != null)
             {
-            activeForm.Close();
+                activeForm.Close();
             }
             DisableButton();
-            label1.Text = " ";
             currentButton = null;
             buttonClose.Visible = false;
+            button_help.Visible = false;
+            button_options.Visible = false;
+        }
+
+        private void button_help_Click(object sender, EventArgs e)
+        {
+            
+             Form_help f = new Form_help();
+             f.Show();
+        }
+
+        private void button_options_Click(object sender, EventArgs e)
+        {
+            Form_options f = new Form_options();
+            f.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -127,6 +145,43 @@ namespace TAU_Complex
         private void button6_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Form6(), sender);
+        }
+
+        private void slide_button_Click(object sender, EventArgs e)
+        {
+            slide_timer.Start();
+        }
+
+        private void slide_timer_Tick(object sender, EventArgs e)
+        {
+            if (sidebarExpand)
+            {
+                panelSideMenu.Width -= 20;
+                if (panelSideMenu.Width == panelSideMenu.MinimumSize.Width)
+                {
+                    sidebarExpand = false;
+                    slide_timer.Stop();
+                }
+            }
+            else
+            {
+                panelSideMenu.Width += 20;
+                if (panelSideMenu.Width == panelSideMenu.MaximumSize.Width)
+                {
+                    sidebarExpand = true;
+                    slide_timer.Stop();
+                }
+            }
+        }
+
+        private void buttonShut_down_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void buttonRoll_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

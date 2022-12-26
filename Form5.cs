@@ -18,6 +18,7 @@ namespace TAU_Complex
         public Form5()
         {
             InitializeComponent();
+            Data.active_value = 11;
         }
 
         private void Form5_Resize(object sender, EventArgs e)
@@ -30,17 +31,44 @@ namespace TAU_Complex
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double k = Convert.ToDouble(textBoxK.Text);
-            double T = Convert.ToDouble(textBoxT.Text);
-            double tk = Convert.ToDouble(textBoxtk.Text);
+            double k = 1;
+            double T;
+            double tk;
             double Tky = 1;
-            double KRamp = Convert.ToDouble(textBoxRamp.Text);
-            if (radioButtonDif.Checked || radioButtonExo.Checked)
+            double KRamp = 1;
+            string legend = "";
+            try
             {
-                Tky = Convert.ToDouble(textBoxTky.Text);
+                if (radioButtonAmp.Checked)
+                {
+                    k = Convert.ToDouble(textBoxK.Text);
+                    legend += $"k = {k} ";
+                }
+                T = Convert.ToDouble(textBoxT.Text);
+                legend += $"T = {T} ";
+                tk = Convert.ToDouble(textBoxtk.Text);
+                if (tk <= 0) throw new Exception();
+                if (radioButtonDif.Checked || radioButtonExo.Checked)
+                {
+                    Tky = Convert.ToDouble(textBoxTky.Text);
+                    legend += $"Tky = {Tky} ";
+                }
+                if (radioButtonRamp.Checked)
+                {
+                    KRamp = Convert.ToDouble(textBoxRamp.Text);
+                    legend += $"Коэф. наклона = {KRamp}  ";
+                }
+            }
+            catch (Exception)
+            {
+                Form_error f = new Form_error();
+                f.ShowDialog();
+                return;
             }
 
-            double Dt = 0.001;
+            double Dt;
+            if (Data.Dt != 0) Dt = Data.Dt;
+            else Dt = tk / 1000;
 
             PointPairList list_1 = new PointPairList();
             PointPairList list_2 = new PointPairList();
@@ -74,6 +102,19 @@ namespace TAU_Complex
             DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
             DrawGraph(zedGraphControl2, list_2, "Ошибка", "E(t)", "t");
 
+
+
+            Data.list1 = list_1;
+            Data.legend1 = legend;
+            Data.title1 = "График переходной характеристики";
+            Data.Ytitle1 = "h(t)";
+            Data.Xtitle1 = "t";
+
+            Data.list2 = list_2;
+            Data.legend2 = legend;
+            Data.title2 = "Ошибка";
+            Data.Ytitle2 = "E(t)";
+            Data.Xtitle2 = "t";
         }
 
 
@@ -146,6 +187,30 @@ namespace TAU_Complex
             pane.AxisChange();
             zedGraphControl.AxisChange();
             zedGraphControl.Invalidate();
+        }
+
+        private void radioButtonRamp_CheckedChanged(object sender, EventArgs e)
+        {
+            labelKramp.Visible = radioButtonRamp.Checked;
+            textBoxRamp.Visible = radioButtonRamp.Checked;
+        }
+
+        private void radioButtonAmp_CheckedChanged(object sender, EventArgs e)
+        {
+            pictureBoxK.Visible = radioButtonAmp.Checked;
+            textBoxK.Visible = radioButtonAmp.Checked;
+        }
+
+        private void radioButtonDif_CheckedChanged(object sender, EventArgs e)
+        {
+            pictureBoxTky.Visible = radioButtonDif.Checked;
+            textBoxTky.Visible = radioButtonDif.Checked;
+        }
+
+        private void radioButtonExo_CheckedChanged(object sender, EventArgs e)
+        {
+            pictureBoxTky.Visible = radioButtonExo.Checked;
+            textBoxTky.Visible = radioButtonExo.Checked;
         }
     }
 }

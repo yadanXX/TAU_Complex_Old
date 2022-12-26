@@ -11,11 +11,13 @@ using ZedGraph;
 
 namespace TAU_Complex
 {
+    //  sigma и mu сделать регулириемии
     public partial class Form6 : Form
     {
         public Form6()
         {
             InitializeComponent();
+            Data.active_value = 12;
         }
 
         private static Random rnd = new Random();
@@ -30,20 +32,68 @@ namespace TAU_Complex
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double k = Convert.ToDouble(textBoxK.Text);
-            double kp = Convert.ToDouble(textBoxKp.Text);
-            double ky = Convert.ToDouble(textBoxKy.Text);
-            double kd = Convert.ToDouble(textBoxKd.Text);
-            double kr = Convert.ToDouble(textBoxKr.Text);
-            double T = Convert.ToDouble(textBoxT.Text);
-            double T1 = Convert.ToDouble(textBoxT1.Text);
-            double T2 = Convert.ToDouble(textBoxT2.Text);
-            double Ty = Convert.ToDouble(textBoxTy.Text);
-            double Td = Convert.ToDouble(textBoxTd.Text);
-            double tk = Convert.ToDouble(textBoxtk.Text);
-            double kramp = Convert.ToDouble(textBoxKRamp.Text);
+            double k;
+            double kp;
+            double ky;
+            double kd;
+            double kr;
+            double T;
+            double T1;
+            double T2;
+            double Ty;
+            double Td;
+            double tk;
+            double kramp = 0;
+            double rand_value = 0;
+            double sigma = 0;
+            double mu = 0;
+            string legend = "";
+            try
+            {
+                k = Convert.ToDouble(textBoxK.Text);
+                kp = Convert.ToDouble(textBoxKp.Text);
+                ky = Convert.ToDouble(textBoxKy.Text);
+                kd = Convert.ToDouble(textBoxKd.Text);
+                kr = Convert.ToDouble(textBoxKr.Text);
+                T = Convert.ToDouble(textBoxT.Text);
+                T1 = Convert.ToDouble(textBoxT1.Text);
+                T2 = Convert.ToDouble(textBoxT2.Text);
+                Ty = Convert.ToDouble(textBoxTy.Text);
+                Td = Convert.ToDouble(textBoxTd.Text);
+                legend += $"K = {k} Kp = {kp} Ky = {ky} Kd = {kd} Kr = {kr} T = {T} T1 = {T1} T2 = {T2} Ty = {Ty} Td = {Td} ";
+                if (radioButtonRandom.Checked && comboBox1.SelectedIndex == 1)
+                {
+                    mu = Convert.ToDouble(textBoxG1.Text);
+                    sigma = Convert.ToDouble(textBoxG2.Text);
+                    if (sigma <= 0) throw new Exception();
+                    legend += $"Мат. Ожидание = {mu} Дисперсия = {sigma} ";
 
-            double Dt = 0.001;
+                }             
+                            
+                tk = Convert.ToDouble(textBoxtk.Text);
+                if (tk <= 0) throw new Exception();
+                if (radioButtonRamp.Checked)
+                {
+                    kramp = Convert.ToDouble(textBoxKRamp.Text);
+                    legend += $"Коэф. наклона = {kramp} ";
+                }
+                if (radioButtonRandom.Checked)
+                {
+                    rand_value = Convert.ToDouble(textBoxRV.Text);
+                    legend += $"Кол-во случайных значений = {rand_value} ";
+                }
+            }
+            catch (Exception)
+            {
+
+                Form_error f = new Form_error();
+                f.ShowDialog();
+                return;
+            }
+
+            double Dt;
+            if (Data.Dt != 0) Dt = Data.Dt;
+            else Dt = tk / 1000;
 
             PointPairList list_1 = new PointPairList();
             PointPairList list_2 = new PointPairList();
@@ -59,7 +109,7 @@ namespace TAU_Complex
             }
             double wv1, wv01, wv02, wv03, wv04, wv2, wv3, wv4 = 0, temp01 = 0, temp02 = 0, temp03 = 0, temp04 = 0, temp2 = 0, temp31 = 0, temp32 = 0;
             double enter = 0;
-            double randFreq = tk / kramp;
+            double randFreq = tk / rand_value;
             double randCurStage = 0;
             for (double i = 0; i < tk; i += Dt)
             {
@@ -67,7 +117,7 @@ namespace TAU_Complex
                 {
                     if (i >= randCurStage)
                     {
-                        enter = xv(i, kramp);
+                        enter = xv(mu, sigma);
                         randCurStage += randFreq;
                     }
                 }
@@ -87,6 +137,24 @@ namespace TAU_Complex
             DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
             DrawGraph(zedGraphControl2, list_2, "Ошибка", "E(t)", "t");
             DrawGraph(zedGraphControl3, list_3, "Входной сигнал", "h(t)", "t");
+
+            Data.list1 = list_1;
+            Data.legend1 = legend;
+            Data.title1 = "График переходной характеристики";
+            Data.Ytitle1 = "h(t)";
+            Data.Xtitle1 = "t";
+
+            Data.list2 = list_2;
+            Data.legend2 = legend;
+            Data.title2 = "Ошибка";
+            Data.Ytitle2 = "E(t)";
+            Data.Xtitle2 = "t";
+
+            Data.list3 = list_3;
+            Data.legend3 = legend;
+            Data.title3 = "Входной сигнал";
+            Data.Ytitle3 = "h(t)";
+            Data.Xtitle3 = "t";
         }
         private double ramp(double x, double k)
         {
@@ -100,21 +168,21 @@ namespace TAU_Complex
         {
             return Math.Round(rnd.NextDouble(), 1);
         }
-        public static double NextGaussian(double x, double k)
+        public static double NextGaussian(double mu, double sigma)
         {
             // рандом по нормальному закону 
             // mu - пик
             // sigma - разброс
             double rand_normal;
-            do
-            {
-                double mu = 0.5;
-                double sigma = 0.5;
-                var u1 = rnd.NextDouble();
-                var u2 = rnd.NextDouble();
-                var rand_std_normal = Math.Sqrt(-2.0 * Math.Log(u1)) * Math.Sin(2.0 * Math.PI * u2);
-                rand_normal = mu + sigma * rand_std_normal;
-            } while (rand_normal < 0 || rand_normal > 1);
+            // do
+            // {
+            //double mu = 0.5;
+           // double sigma = mu / 3;
+            var u1 = rnd.NextDouble();
+            var u2 = rnd.NextDouble();
+            var rand_std_normal = Math.Sqrt(-2.0 * Math.Log(u1)) * Math.Sin(2.0 * Math.PI * u2);
+            rand_normal = mu + sigma * rand_std_normal;
+            //} while (rand_normal < 0 || rand_normal > 1);
             return Math.Round(rand_normal, 1);
         }
         private void DrawGraph(ZedGraphControl zedGraphControl, PointPairList list_1, string TitleText, string YText, string XText)
@@ -174,6 +242,50 @@ namespace TAU_Complex
             pane.AxisChange();
             zedGraphControl.AxisChange();
             zedGraphControl.Invalidate();
+        }
+
+        private void radioButtonRamp_CheckedChanged(object sender, EventArgs e)
+        {
+            labelRamp.Visible = radioButtonRamp.Checked;
+            textBoxKRamp.Visible = radioButtonRamp.Checked;
+        }
+
+        private void radioButtonRandom_CheckedChanged(object sender, EventArgs e)
+        {
+            labelRandom.Visible = radioButtonRandom.Checked;
+            textBoxRV.Visible = radioButtonRandom.Checked;
+            if (!radioButtonRandom.Checked)
+            {
+                labelG1.Visible = false;
+                textBoxG1.Visible = false;
+                labelG2.Visible = false;
+                textBoxG2.Visible = false;
+            }
+            else if (comboBox1.SelectedIndex == 1)
+            {
+                labelG1.Visible = true;
+                textBoxG1.Visible = true;
+                labelG2.Visible = true;
+                textBoxG2.Visible = true;
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {            
+            if (comboBox1.SelectedIndex == 1)
+            {
+                labelG1.Visible = true;
+                textBoxG1.Visible = true;
+                labelG2.Visible = true;
+                textBoxG2.Visible = true;
+            }
+            else
+            {
+                labelG1.Visible = false;
+                textBoxG1.Visible = false;
+                labelG2.Visible = false;
+                textBoxG2.Visible = false;
+            }
         }
     }
 }

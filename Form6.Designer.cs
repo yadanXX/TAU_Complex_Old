@@ -50,25 +50,60 @@
             this.radioButtonRandom = new System.Windows.Forms.RadioButton();
             this.textBoxKRamp = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.textBoxG1 = new System.Windows.Forms.TextBox();
+            this.textBoxG2 = new System.Windows.Forms.TextBox();
+            this.labelG2 = new System.Windows.Forms.Label();
+            this.labelG1 = new System.Windows.Forms.Label();
+            this.labelRandom = new System.Windows.Forms.Label();
+            this.textBoxRV = new System.Windows.Forms.TextBox();
+            this.labelRamp = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBoxTd = new System.Windows.Forms.PictureBox();
+            this.pictureBoxTy = new System.Windows.Forms.PictureBox();
+            this.pictureBoxT2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxT1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxT = new System.Windows.Forms.PictureBox();
+            this.pictureBoxtk = new System.Windows.Forms.PictureBox();
+            this.pictureBoxKr = new System.Windows.Forms.PictureBox();
+            this.pictureBoxKd = new System.Windows.Forms.PictureBox();
+            this.pictureBoxKy = new System.Windows.Forms.PictureBox();
+            this.pictureBoxKp = new System.Windows.Forms.PictureBox();
+            this.pictureBoxK = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxtk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxK)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.zedGraphControl2);
             this.panel1.Controls.Add(this.zedGraphControl1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(443, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(508, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(469, 611);
+            this.panel1.Size = new System.Drawing.Size(628, 723);
             this.panel1.TabIndex = 0;
             // 
             // zedGraphControl2
             // 
             this.zedGraphControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.zedGraphControl2.Location = new System.Drawing.Point(0, 306);
-            this.zedGraphControl2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.zedGraphControl2.Location = new System.Drawing.Point(0, 370);
+            this.zedGraphControl2.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.zedGraphControl2.Name = "zedGraphControl2";
             this.zedGraphControl2.ScrollGrace = 0D;
             this.zedGraphControl2.ScrollMaxX = 0D;
@@ -77,7 +112,7 @@
             this.zedGraphControl2.ScrollMinX = 0D;
             this.zedGraphControl2.ScrollMinY = 0D;
             this.zedGraphControl2.ScrollMinY2 = 0D;
-            this.zedGraphControl2.Size = new System.Drawing.Size(469, 305);
+            this.zedGraphControl2.Size = new System.Drawing.Size(628, 353);
             this.zedGraphControl2.TabIndex = 1;
             this.zedGraphControl2.UseExtendedPrintDialog = true;
             // 
@@ -85,7 +120,7 @@
             // 
             this.zedGraphControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.zedGraphControl1.Location = new System.Drawing.Point(0, 0);
-            this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.zedGraphControl1.Name = "zedGraphControl1";
             this.zedGraphControl1.ScrollGrace = 0D;
             this.zedGraphControl1.ScrollMaxX = 0D;
@@ -94,14 +129,15 @@
             this.zedGraphControl1.ScrollMinX = 0D;
             this.zedGraphControl1.ScrollMinY = 0D;
             this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(469, 305);
+            this.zedGraphControl1.Size = new System.Drawing.Size(628, 364);
             this.zedGraphControl1.TabIndex = 0;
             this.zedGraphControl1.UseExtendedPrintDialog = true;
             // 
             // zedGraphControl3
             // 
-            this.zedGraphControl3.Location = new System.Drawing.Point(116, 338);
-            this.zedGraphControl3.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.zedGraphControl3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.zedGraphControl3.Location = new System.Drawing.Point(0, 445);
+            this.zedGraphControl3.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
             this.zedGraphControl3.Name = "zedGraphControl3";
             this.zedGraphControl3.ScrollGrace = 0D;
             this.zedGraphControl3.ScrollMaxX = 0D;
@@ -110,117 +146,120 @@
             this.zedGraphControl3.ScrollMinX = 0D;
             this.zedGraphControl3.ScrollMinY = 0D;
             this.zedGraphControl3.ScrollMinY2 = 0D;
-            this.zedGraphControl3.Size = new System.Drawing.Size(318, 261);
+            this.zedGraphControl3.Size = new System.Drawing.Size(508, 278);
             this.zedGraphControl3.TabIndex = 1;
             this.zedGraphControl3.UseExtendedPrintDialog = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(13, 572);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(0, 405);
+            this.button1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 27);
+            this.button1.Size = new System.Drawing.Size(508, 40);
             this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
+            this.button1.Text = "Построить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBoxK
             // 
-            this.textBoxK.Location = new System.Drawing.Point(15, 15);
-            this.textBoxK.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxK.Location = new System.Drawing.Point(42, 126);
+            this.textBoxK.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.textBoxK.Name = "textBoxK";
-            this.textBoxK.Size = new System.Drawing.Size(116, 21);
+            this.textBoxK.Size = new System.Drawing.Size(60, 22);
             this.textBoxK.TabIndex = 3;
             // 
             // textBoxKp
             // 
-            this.textBoxKp.Location = new System.Drawing.Point(14, 45);
-            this.textBoxKp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxKp.Location = new System.Drawing.Point(42, 154);
+            this.textBoxKp.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.textBoxKp.Name = "textBoxKp";
-            this.textBoxKp.Size = new System.Drawing.Size(116, 21);
+            this.textBoxKp.Size = new System.Drawing.Size(60, 22);
             this.textBoxKp.TabIndex = 4;
             // 
             // textBoxKy
             // 
-            this.textBoxKy.Location = new System.Drawing.Point(14, 75);
-            this.textBoxKy.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxKy.Location = new System.Drawing.Point(42, 186);
+            this.textBoxKy.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.textBoxKy.Name = "textBoxKy";
-            this.textBoxKy.Size = new System.Drawing.Size(116, 21);
+            this.textBoxKy.Size = new System.Drawing.Size(60, 22);
             this.textBoxKy.TabIndex = 5;
             // 
             // textBoxKd
             // 
-            this.textBoxKd.Location = new System.Drawing.Point(14, 105);
-            this.textBoxKd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxKd.Location = new System.Drawing.Point(42, 218);
+            this.textBoxKd.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.textBoxKd.Name = "textBoxKd";
-            this.textBoxKd.Size = new System.Drawing.Size(116, 21);
+            this.textBoxKd.Size = new System.Drawing.Size(60, 22);
             this.textBoxKd.TabIndex = 6;
             // 
             // textBoxKr
             // 
-            this.textBoxKr.Location = new System.Drawing.Point(15, 135);
-            this.textBoxKr.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxKr.Location = new System.Drawing.Point(42, 250);
+            this.textBoxKr.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.textBoxKr.Name = "textBoxKr";
-            this.textBoxKr.Size = new System.Drawing.Size(116, 21);
+            this.textBoxKr.Size = new System.Drawing.Size(60, 22);
             this.textBoxKr.TabIndex = 7;
             // 
             // textBoxtk
             // 
-            this.textBoxtk.Location = new System.Drawing.Point(15, 165);
-            this.textBoxtk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxtk.Location = new System.Drawing.Point(42, 282);
+            this.textBoxtk.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.textBoxtk.Name = "textBoxtk";
-            this.textBoxtk.Size = new System.Drawing.Size(116, 21);
+            this.textBoxtk.Size = new System.Drawing.Size(60, 22);
             this.textBoxtk.TabIndex = 8;
             // 
             // textBoxT
             // 
-            this.textBoxT.Location = new System.Drawing.Point(303, 15);
-            this.textBoxT.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxT.Location = new System.Drawing.Point(150, 126);
+            this.textBoxT.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.textBoxT.Name = "textBoxT";
-            this.textBoxT.Size = new System.Drawing.Size(116, 21);
+            this.textBoxT.Size = new System.Drawing.Size(60, 22);
             this.textBoxT.TabIndex = 9;
             // 
             // textBoxT1
             // 
-            this.textBoxT1.Location = new System.Drawing.Point(303, 45);
-            this.textBoxT1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxT1.Location = new System.Drawing.Point(149, 154);
+            this.textBoxT1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.textBoxT1.Name = "textBoxT1";
-            this.textBoxT1.Size = new System.Drawing.Size(116, 21);
+            this.textBoxT1.Size = new System.Drawing.Size(60, 22);
             this.textBoxT1.TabIndex = 10;
             // 
             // textBoxT2
             // 
-            this.textBoxT2.Location = new System.Drawing.Point(303, 75);
-            this.textBoxT2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxT2.Location = new System.Drawing.Point(150, 186);
+            this.textBoxT2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.textBoxT2.Name = "textBoxT2";
-            this.textBoxT2.Size = new System.Drawing.Size(116, 21);
+            this.textBoxT2.Size = new System.Drawing.Size(60, 22);
             this.textBoxT2.TabIndex = 11;
             // 
             // textBoxTy
             // 
-            this.textBoxTy.Location = new System.Drawing.Point(303, 105);
-            this.textBoxTy.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxTy.Location = new System.Drawing.Point(150, 218);
+            this.textBoxTy.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.textBoxTy.Name = "textBoxTy";
-            this.textBoxTy.Size = new System.Drawing.Size(116, 21);
+            this.textBoxTy.Size = new System.Drawing.Size(60, 22);
             this.textBoxTy.TabIndex = 12;
             // 
             // textBoxTd
             // 
-            this.textBoxTd.Location = new System.Drawing.Point(303, 135);
-            this.textBoxTd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxTd.Location = new System.Drawing.Point(150, 250);
+            this.textBoxTd.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.textBoxTd.Name = "textBoxTd";
-            this.textBoxTd.Size = new System.Drawing.Size(116, 21);
+            this.textBoxTd.Size = new System.Drawing.Size(60, 22);
             this.textBoxTd.TabIndex = 13;
             // 
             // radioButtonStep
             // 
             this.radioButtonStep.AutoSize = true;
             this.radioButtonStep.Checked = true;
-            this.radioButtonStep.Location = new System.Drawing.Point(15, 227);
-            this.radioButtonStep.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.radioButtonStep.Location = new System.Drawing.Point(12, 21);
+            this.radioButtonStep.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.radioButtonStep.Name = "radioButtonStep";
-            this.radioButtonStep.Size = new System.Drawing.Size(107, 19);
+            this.radioButtonStep.Size = new System.Drawing.Size(119, 20);
             this.radioButtonStep.TabIndex = 14;
             this.radioButtonStep.TabStop = true;
             this.radioButtonStep.Text = "Ступеньчатое";
@@ -229,78 +268,319 @@
             // radioButtonRamp
             // 
             this.radioButtonRamp.AutoSize = true;
-            this.radioButtonRamp.Location = new System.Drawing.Point(14, 254);
-            this.radioButtonRamp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.radioButtonRamp.Location = new System.Drawing.Point(11, 50);
+            this.radioButtonRamp.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.radioButtonRamp.Name = "radioButtonRamp";
-            this.radioButtonRamp.Size = new System.Drawing.Size(164, 19);
+            this.radioButtonRamp.Size = new System.Drawing.Size(182, 20);
             this.radioButtonRamp.TabIndex = 15;
             this.radioButtonRamp.Text = "Линейно возрастающие";
             this.radioButtonRamp.UseVisualStyleBackColor = true;
+            this.radioButtonRamp.CheckedChanged += new System.EventHandler(this.radioButtonRamp_CheckedChanged);
             // 
             // radioButtonRandom
             // 
             this.radioButtonRandom.AutoSize = true;
-            this.radioButtonRandom.Location = new System.Drawing.Point(14, 280);
-            this.radioButtonRandom.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.radioButtonRandom.Location = new System.Drawing.Point(11, 78);
+            this.radioButtonRandom.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.radioButtonRandom.Name = "radioButtonRandom";
-            this.radioButtonRandom.Size = new System.Drawing.Size(118, 19);
+            this.radioButtonRandom.Size = new System.Drawing.Size(134, 20);
             this.radioButtonRandom.TabIndex = 16;
             this.radioButtonRandom.Text = "Случайно измен";
             this.radioButtonRandom.UseVisualStyleBackColor = true;
+            this.radioButtonRandom.CheckedChanged += new System.EventHandler(this.radioButtonRandom_CheckedChanged);
             // 
             // textBoxKRamp
             // 
-            this.textBoxKRamp.Location = new System.Drawing.Point(15, 306);
+            this.textBoxKRamp.Location = new System.Drawing.Point(327, 250);
             this.textBoxKRamp.Name = "textBoxKRamp";
-            this.textBoxKRamp.Size = new System.Drawing.Size(100, 21);
+            this.textBoxKRamp.Size = new System.Drawing.Size(60, 22);
             this.textBoxKRamp.TabIndex = 17;
+            this.textBoxKRamp.Visible = false;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Случайные значения по равномерному закону",
-            "Случайные значения по нормальному закону"});
-            this.comboBox1.Location = new System.Drawing.Point(31, 277);
+            "Случайное по равномерному закону",
+            "Случайное по нормальному закону"});
+            this.comboBox1.Location = new System.Drawing.Point(30, 74);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(297, 23);
+            this.comboBox1.Size = new System.Drawing.Size(252, 24);
             this.comboBox1.TabIndex = 18;
-            this.comboBox1.SelectedIndex = 0;
-
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.textBoxG1);
+            this.panel2.Controls.Add(this.textBoxG2);
+            this.panel2.Controls.Add(this.labelG2);
+            this.panel2.Controls.Add(this.labelG1);
+            this.panel2.Controls.Add(this.labelRandom);
+            this.panel2.Controls.Add(this.textBoxRV);
+            this.panel2.Controls.Add(this.labelRamp);
+            this.panel2.Controls.Add(this.groupBox1);
+            this.panel2.Controls.Add(this.pictureBoxTd);
+            this.panel2.Controls.Add(this.pictureBoxTy);
+            this.panel2.Controls.Add(this.pictureBoxT2);
+            this.panel2.Controls.Add(this.pictureBoxT1);
+            this.panel2.Controls.Add(this.pictureBoxT);
+            this.panel2.Controls.Add(this.pictureBoxtk);
+            this.panel2.Controls.Add(this.pictureBoxKr);
+            this.panel2.Controls.Add(this.pictureBoxKd);
+            this.panel2.Controls.Add(this.pictureBoxKy);
+            this.panel2.Controls.Add(this.pictureBoxKp);
+            this.panel2.Controls.Add(this.pictureBoxK);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.textBoxT2);
+            this.panel2.Controls.Add(this.zedGraphControl3);
+            this.panel2.Controls.Add(this.textBoxKRamp);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.textBoxK);
+            this.panel2.Controls.Add(this.textBoxKp);
+            this.panel2.Controls.Add(this.textBoxKy);
+            this.panel2.Controls.Add(this.textBoxKd);
+            this.panel2.Controls.Add(this.textBoxKr);
+            this.panel2.Controls.Add(this.textBoxtk);
+            this.panel2.Controls.Add(this.textBoxTd);
+            this.panel2.Controls.Add(this.textBoxT);
+            this.panel2.Controls.Add(this.textBoxTy);
+            this.panel2.Controls.Add(this.textBoxT1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(508, 723);
+            this.panel2.TabIndex = 20;
+            // 
+            // textBoxG1
+            // 
+            this.textBoxG1.Location = new System.Drawing.Point(415, 279);
+            this.textBoxG1.Name = "textBoxG1";
+            this.textBoxG1.Size = new System.Drawing.Size(60, 22);
+            this.textBoxG1.TabIndex = 38;
+            this.textBoxG1.Visible = false;
+            // 
+            // textBoxG2
+            // 
+            this.textBoxG2.Location = new System.Drawing.Point(307, 309);
+            this.textBoxG2.Name = "textBoxG2";
+            this.textBoxG2.Size = new System.Drawing.Size(60, 22);
+            this.textBoxG2.TabIndex = 37;
+            this.textBoxG2.Visible = false;
+            // 
+            // labelG2
+            // 
+            this.labelG2.AutoSize = true;
+            this.labelG2.Location = new System.Drawing.Point(218, 312);
+            this.labelG2.Name = "labelG2";
+            this.labelG2.Size = new System.Drawing.Size(77, 16);
+            this.labelG2.TabIndex = 36;
+            this.labelG2.Text = "Дисперсия";
+            this.labelG2.Visible = false;
+            // 
+            // labelG1
+            // 
+            this.labelG1.AutoSize = true;
+            this.labelG1.Location = new System.Drawing.Point(218, 282);
+            this.labelG1.Name = "labelG1";
+            this.labelG1.Size = new System.Drawing.Size(187, 16);
+            this.labelG1.TabIndex = 35;
+            this.labelG1.Text = "Математическое ожидание";
+            this.labelG1.Visible = false;
+            // 
+            // labelRandom
+            // 
+            this.labelRandom.AutoSize = true;
+            this.labelRandom.Location = new System.Drawing.Point(218, 253);
+            this.labelRandom.Name = "labelRandom";
+            this.labelRandom.Size = new System.Drawing.Size(191, 16);
+            this.labelRandom.TabIndex = 34;
+            this.labelRandom.Text = "Кол-во случайных значений";
+            this.labelRandom.Visible = false;
+            // 
+            // textBoxRV
+            // 
+            this.textBoxRV.Location = new System.Drawing.Point(415, 250);
+            this.textBoxRV.Name = "textBoxRV";
+            this.textBoxRV.Size = new System.Drawing.Size(60, 22);
+            this.textBoxRV.TabIndex = 33;
+            this.textBoxRV.Visible = false;
+            // 
+            // labelRamp
+            // 
+            this.labelRamp.AutoSize = true;
+            this.labelRamp.Location = new System.Drawing.Point(218, 253);
+            this.labelRamp.Name = "labelRamp";
+            this.labelRamp.Size = new System.Drawing.Size(103, 16);
+            this.labelRamp.TabIndex = 32;
+            this.labelRamp.Text = "Коэф. наклона";
+            this.labelRamp.Visible = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.radioButtonStep);
+            this.groupBox1.Controls.Add(this.radioButtonRamp);
+            this.groupBox1.Controls.Add(this.radioButtonRandom);
+            this.groupBox1.Location = new System.Drawing.Point(217, 126);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(291, 114);
+            this.groupBox1.TabIndex = 31;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Входное воздействие:";
+            // 
+            // pictureBoxTd
+            // 
+            this.pictureBoxTd.Image = global::TAU_Complex.Properties.Resources.Tд;
+            this.pictureBoxTd.Location = new System.Drawing.Point(117, 250);
+            this.pictureBoxTd.Name = "pictureBoxTd";
+            this.pictureBoxTd.Size = new System.Drawing.Size(25, 22);
+            this.pictureBoxTd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxTd.TabIndex = 30;
+            this.pictureBoxTd.TabStop = false;
+            // 
+            // pictureBoxTy
+            // 
+            this.pictureBoxTy.Image = global::TAU_Complex.Properties.Resources.Tу;
+            this.pictureBoxTy.Location = new System.Drawing.Point(117, 218);
+            this.pictureBoxTy.Name = "pictureBoxTy";
+            this.pictureBoxTy.Size = new System.Drawing.Size(25, 22);
+            this.pictureBoxTy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxTy.TabIndex = 29;
+            this.pictureBoxTy.TabStop = false;
+            // 
+            // pictureBoxT2
+            // 
+            this.pictureBoxT2.Image = global::TAU_Complex.Properties.Resources.T2;
+            this.pictureBoxT2.Location = new System.Drawing.Point(117, 186);
+            this.pictureBoxT2.Name = "pictureBoxT2";
+            this.pictureBoxT2.Size = new System.Drawing.Size(25, 22);
+            this.pictureBoxT2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxT2.TabIndex = 28;
+            this.pictureBoxT2.TabStop = false;
+            // 
+            // pictureBoxT1
+            // 
+            this.pictureBoxT1.Image = global::TAU_Complex.Properties.Resources.T1;
+            this.pictureBoxT1.Location = new System.Drawing.Point(117, 154);
+            this.pictureBoxT1.Name = "pictureBoxT1";
+            this.pictureBoxT1.Size = new System.Drawing.Size(25, 22);
+            this.pictureBoxT1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxT1.TabIndex = 27;
+            this.pictureBoxT1.TabStop = false;
+            // 
+            // pictureBoxT
+            // 
+            this.pictureBoxT.Image = global::TAU_Complex.Properties.Resources.T;
+            this.pictureBoxT.Location = new System.Drawing.Point(120, 126);
+            this.pictureBoxT.Name = "pictureBoxT";
+            this.pictureBoxT.Size = new System.Drawing.Size(22, 22);
+            this.pictureBoxT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxT.TabIndex = 26;
+            this.pictureBoxT.TabStop = false;
+            // 
+            // pictureBoxtk
+            // 
+            this.pictureBoxtk.Image = global::TAU_Complex.Properties.Resources.tk;
+            this.pictureBoxtk.Location = new System.Drawing.Point(12, 282);
+            this.pictureBoxtk.Name = "pictureBoxtk";
+            this.pictureBoxtk.Size = new System.Drawing.Size(22, 22);
+            this.pictureBoxtk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxtk.TabIndex = 25;
+            this.pictureBoxtk.TabStop = false;
+            // 
+            // pictureBoxKr
+            // 
+            this.pictureBoxKr.Image = global::TAU_Complex.Properties.Resources.Kр;
+            this.pictureBoxKr.Location = new System.Drawing.Point(9, 250);
+            this.pictureBoxKr.Name = "pictureBoxKr";
+            this.pictureBoxKr.Size = new System.Drawing.Size(25, 22);
+            this.pictureBoxKr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxKr.TabIndex = 24;
+            this.pictureBoxKr.TabStop = false;
+            // 
+            // pictureBoxKd
+            // 
+            this.pictureBoxKd.Image = global::TAU_Complex.Properties.Resources.Kд;
+            this.pictureBoxKd.Location = new System.Drawing.Point(9, 218);
+            this.pictureBoxKd.Name = "pictureBoxKd";
+            this.pictureBoxKd.Size = new System.Drawing.Size(25, 22);
+            this.pictureBoxKd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxKd.TabIndex = 23;
+            this.pictureBoxKd.TabStop = false;
+            // 
+            // pictureBoxKy
+            // 
+            this.pictureBoxKy.Image = global::TAU_Complex.Properties.Resources.Kу;
+            this.pictureBoxKy.Location = new System.Drawing.Point(9, 186);
+            this.pictureBoxKy.Name = "pictureBoxKy";
+            this.pictureBoxKy.Size = new System.Drawing.Size(25, 22);
+            this.pictureBoxKy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxKy.TabIndex = 22;
+            this.pictureBoxKy.TabStop = false;
+            // 
+            // pictureBoxKp
+            // 
+            this.pictureBoxKp.Image = global::TAU_Complex.Properties.Resources.Kп;
+            this.pictureBoxKp.Location = new System.Drawing.Point(9, 154);
+            this.pictureBoxKp.Name = "pictureBoxKp";
+            this.pictureBoxKp.Size = new System.Drawing.Size(25, 22);
+            this.pictureBoxKp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxKp.TabIndex = 21;
+            this.pictureBoxKp.TabStop = false;
+            // 
+            // pictureBoxK
+            // 
+            this.pictureBoxK.Image = global::TAU_Complex.Properties.Resources.KB;
+            this.pictureBoxK.Location = new System.Drawing.Point(12, 126);
+            this.pictureBoxK.Name = "pictureBoxK";
+            this.pictureBoxK.Size = new System.Drawing.Size(22, 22);
+            this.pictureBoxK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxK.TabIndex = 20;
+            this.pictureBoxK.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::TAU_Complex.Properties.Resources.схема_инвариатность;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(508, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
             // 
             // Form6
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(912, 611);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBoxKRamp);
-            this.Controls.Add(this.radioButtonRandom);
-            this.Controls.Add(this.radioButtonRamp);
-            this.Controls.Add(this.radioButtonStep);
-            this.Controls.Add(this.textBoxTd);
-            this.Controls.Add(this.textBoxTy);
-            this.Controls.Add(this.textBoxT2);
-            this.Controls.Add(this.textBoxT1);
-            this.Controls.Add(this.textBoxT);
-            this.Controls.Add(this.textBoxtk);
-            this.Controls.Add(this.textBoxKr);
-            this.Controls.Add(this.textBoxKd);
-            this.Controls.Add(this.textBoxKy);
-            this.Controls.Add(this.textBoxKp);
-            this.Controls.Add(this.textBoxK);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.zedGraphControl3);
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(1136, 723);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Controls.Add(this.panel2);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Name = "Form6";
             this.Text = "Form6";
             this.Resize += new System.EventHandler(this.Form6_Resize);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxtk)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxK)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -327,5 +607,26 @@
         private System.Windows.Forms.RadioButton radioButtonRandom;
         private System.Windows.Forms.TextBox textBoxKRamp;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBoxTd;
+        private System.Windows.Forms.PictureBox pictureBoxTy;
+        private System.Windows.Forms.PictureBox pictureBoxT2;
+        private System.Windows.Forms.PictureBox pictureBoxT1;
+        private System.Windows.Forms.PictureBox pictureBoxT;
+        private System.Windows.Forms.PictureBox pictureBoxtk;
+        private System.Windows.Forms.PictureBox pictureBoxKr;
+        private System.Windows.Forms.PictureBox pictureBoxKd;
+        private System.Windows.Forms.PictureBox pictureBoxKy;
+        private System.Windows.Forms.PictureBox pictureBoxKp;
+        private System.Windows.Forms.PictureBox pictureBoxK;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label labelRamp;
+        private System.Windows.Forms.TextBox textBoxRV;
+        private System.Windows.Forms.Label labelRandom;
+        private System.Windows.Forms.TextBox textBoxG1;
+        private System.Windows.Forms.TextBox textBoxG2;
+        private System.Windows.Forms.Label labelG2;
+        private System.Windows.Forms.Label labelG1;
     }
 }
