@@ -191,6 +191,7 @@
             this.comboBoxNu.Name = "comboBoxNu";
             this.comboBoxNu.Size = new System.Drawing.Size(72, 30);
             this.comboBoxNu.TabIndex = 14;
+            this.comboBoxNu.SelectedIndex = 0;
             // 
             // textBoxK2
             // 

@@ -67,9 +67,9 @@
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(0);
-            this.panelSideMenu.MaximumSize = new System.Drawing.Size(250, 0);
+            this.panelSideMenu.MaximumSize = new System.Drawing.Size(222, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(250, 661);
+            this.panelSideMenu.Size = new System.Drawing.Size(222, 543);
             this.panelSideMenu.TabIndex = 0;
             // 
             // button6
@@ -80,10 +80,10 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button6.ForeColor = System.Drawing.Color.LightGray;
-            this.button6.Location = new System.Drawing.Point(0, 450);
+            this.button6.Location = new System.Drawing.Point(0, 360);
             this.button6.Margin = new System.Windows.Forms.Padding(0);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(250, 80);
+            this.button6.Size = new System.Drawing.Size(222, 64);
             this.button6.TabIndex = 7;
             this.button6.Text = "Исследование инвариантности систем";
             this.button6.UseVisualStyleBackColor = false;
@@ -97,10 +97,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button5.ForeColor = System.Drawing.Color.LightGray;
-            this.button5.Location = new System.Drawing.Point(0, 370);
+            this.button5.Location = new System.Drawing.Point(0, 296);
             this.button5.Margin = new System.Windows.Forms.Padding(0);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(250, 80);
+            this.button5.Size = new System.Drawing.Size(222, 64);
             this.button5.TabIndex = 6;
             this.button5.Text = "Исследование точности САУ";
             this.button5.UseVisualStyleBackColor = false;
@@ -114,10 +114,10 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button4.ForeColor = System.Drawing.Color.LightGray;
-            this.button4.Location = new System.Drawing.Point(0, 290);
+            this.button4.Location = new System.Drawing.Point(0, 232);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(250, 80);
+            this.button4.Size = new System.Drawing.Size(222, 64);
             this.button4.TabIndex = 5;
             this.button4.Text = "Исследование устойчивости САУ со звеном чистого запаздывания";
             this.button4.UseVisualStyleBackColor = false;
@@ -131,12 +131,12 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button3.ForeColor = System.Drawing.Color.LightGray;
-            this.button3.Location = new System.Drawing.Point(0, 210);
+            this.button3.Location = new System.Drawing.Point(0, 168);
             this.button3.Margin = new System.Windows.Forms.Padding(0);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(250, 80);
+            this.button3.Size = new System.Drawing.Size(222, 64);
             this.button3.TabIndex = 4;
-            this.button3.Text = "Исследование устойчивости систем по критерию Найквикса";
+            this.button3.Text = "Исследование устойчивости систем по критерию Найквикста";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -148,12 +148,12 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button2.ForeColor = System.Drawing.Color.LightGray;
-            this.button2.Location = new System.Drawing.Point(0, 130);
+            this.button2.Location = new System.Drawing.Point(0, 104);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(250, 80);
+            this.button2.Size = new System.Drawing.Size(222, 64);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Исследование устойчивости систем по критерию Михайлову";
+            this.button2.Text = "Исследование устойчивости систем по критерию Михайлова";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -165,10 +165,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(0, 50);
+            this.button1.Location = new System.Drawing.Point(0, 40);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(250, 80);
+            this.button1.Size = new System.Drawing.Size(222, 64);
             this.button1.TabIndex = 2;
             this.button1.Text = "Исследование переходных характиристик типовых динамических звеньев";
             this.button1.UseVisualStyleBackColor = false;
@@ -181,7 +181,7 @@
             this.panel_tool_menu.Location = new System.Drawing.Point(0, 0);
             this.panel_tool_menu.Margin = new System.Windows.Forms.Padding(0);
             this.panel_tool_menu.Name = "panel_tool_menu";
-            this.panel_tool_menu.Size = new System.Drawing.Size(250, 50);
+            this.panel_tool_menu.Size = new System.Drawing.Size(222, 40);
             this.panel_tool_menu.TabIndex = 1;
             // 
             // panel2
@@ -194,10 +194,10 @@
             this.panel2.Controls.Add(this.buttonClose);
             this.panel2.Controls.Add(this.slide_button);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(250, 0);
+            this.panel2.Location = new System.Drawing.Point(222, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(776, 50);
+            this.panel2.Size = new System.Drawing.Size(741, 40);
             this.panel2.TabIndex = 1;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
@@ -208,9 +208,10 @@
             this.buttonRoll.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonRoll.FlatAppearance.BorderSize = 0;
             this.buttonRoll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRoll.Location = new System.Drawing.Point(676, 0);
+            this.buttonRoll.Location = new System.Drawing.Point(653, 0);
+            this.buttonRoll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonRoll.Name = "buttonRoll";
-            this.buttonRoll.Size = new System.Drawing.Size(50, 50);
+            this.buttonRoll.Size = new System.Drawing.Size(44, 40);
             this.buttonRoll.TabIndex = 4;
             this.buttonRoll.TabStop = false;
             this.buttonRoll.UseVisualStyleBackColor = true;
@@ -223,9 +224,10 @@
             this.buttonShut_down.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonShut_down.FlatAppearance.BorderSize = 0;
             this.buttonShut_down.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonShut_down.Location = new System.Drawing.Point(726, 0);
+            this.buttonShut_down.Location = new System.Drawing.Point(697, 0);
+            this.buttonShut_down.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonShut_down.Name = "buttonShut_down";
-            this.buttonShut_down.Size = new System.Drawing.Size(50, 50);
+            this.buttonShut_down.Size = new System.Drawing.Size(44, 40);
             this.buttonShut_down.TabIndex = 3;
             this.buttonShut_down.TabStop = false;
             this.buttonShut_down.UseVisualStyleBackColor = true;
@@ -239,10 +241,11 @@
             this.button_options.FlatAppearance.BorderSize = 0;
             this.button_options.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_options.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button_options.Location = new System.Drawing.Point(150, 0);
+            this.button_options.Location = new System.Drawing.Point(132, 0);
+            this.button_options.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_options.Name = "button_options";
             this.button_options.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button_options.Size = new System.Drawing.Size(50, 50);
+            this.button_options.Size = new System.Drawing.Size(44, 40);
             this.button_options.TabIndex = 2;
             this.button_options.TabStop = false;
             this.button_options.UseVisualStyleBackColor = true;
@@ -256,10 +259,11 @@
             this.button_help.FlatAppearance.BorderSize = 0;
             this.button_help.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_help.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button_help.Location = new System.Drawing.Point(100, 0);
+            this.button_help.Location = new System.Drawing.Point(88, 0);
+            this.button_help.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_help.Name = "button_help";
             this.button_help.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button_help.Size = new System.Drawing.Size(50, 50);
+            this.button_help.Size = new System.Drawing.Size(44, 40);
             this.button_help.TabIndex = 1;
             this.button_help.TabStop = false;
             this.button_help.UseVisualStyleBackColor = true;
@@ -273,10 +277,11 @@
             this.buttonClose.FlatAppearance.BorderSize = 0;
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonClose.Location = new System.Drawing.Point(50, 0);
+            this.buttonClose.Location = new System.Drawing.Point(44, 0);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonClose.Size = new System.Drawing.Size(50, 50);
+            this.buttonClose.Size = new System.Drawing.Size(44, 40);
             this.buttonClose.TabIndex = 0;
             this.buttonClose.TabStop = false;
             this.buttonClose.UseVisualStyleBackColor = true;
@@ -290,8 +295,9 @@
             this.slide_button.FlatAppearance.BorderSize = 0;
             this.slide_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.slide_button.Location = new System.Drawing.Point(0, 0);
+            this.slide_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.slide_button.Name = "slide_button";
-            this.slide_button.Size = new System.Drawing.Size(50, 50);
+            this.slide_button.Size = new System.Drawing.Size(44, 40);
             this.slide_button.TabIndex = 0;
             this.slide_button.TabStop = false;
             this.slide_button.UseVisualStyleBackColor = true;
@@ -301,10 +307,10 @@
             // 
             this.panelWorkSpace.Controls.Add(this.pictureBox1);
             this.panelWorkSpace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelWorkSpace.Location = new System.Drawing.Point(250, 50);
+            this.panelWorkSpace.Location = new System.Drawing.Point(222, 40);
             this.panelWorkSpace.Margin = new System.Windows.Forms.Padding(0);
             this.panelWorkSpace.Name = "panelWorkSpace";
-            this.panelWorkSpace.Size = new System.Drawing.Size(776, 611);
+            this.panelWorkSpace.Size = new System.Drawing.Size(741, 503);
             this.panelWorkSpace.TabIndex = 2;
             // 
             // pictureBox1
@@ -313,8 +319,9 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::TAU_Complex.Properties.Resources.togu;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(776, 611);
+            this.pictureBox1.Size = new System.Drawing.Size(741, 503);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -326,18 +333,18 @@
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1026, 661);
+            this.ClientSize = new System.Drawing.Size(963, 543);
             this.Controls.Add(this.panelWorkSpace);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(875, 650);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MinimumSize = new System.Drawing.Size(780, 528);
             this.Name = "FormMain";
             this.Text = "Тау комплекс";
             this.panelSideMenu.ResumeLayout(false);

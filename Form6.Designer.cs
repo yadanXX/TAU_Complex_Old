@@ -169,7 +169,7 @@
             this.textBoxK.Location = new System.Drawing.Point(51, 139);
             this.textBoxK.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxK.Name = "textBoxK";
-            this.textBoxK.Size = new System.Drawing.Size(72, 30);
+            this.textBoxK.Size = new System.Drawing.Size(72, 26);
             this.textBoxK.TabIndex = 3;
             // 
             // textBoxKp
@@ -177,7 +177,7 @@
             this.textBoxKp.Location = new System.Drawing.Point(51, 169);
             this.textBoxKp.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxKp.Name = "textBoxKp";
-            this.textBoxKp.Size = new System.Drawing.Size(72, 30);
+            this.textBoxKp.Size = new System.Drawing.Size(72, 26);
             this.textBoxKp.TabIndex = 4;
             // 
             // textBoxKy
@@ -185,7 +185,7 @@
             this.textBoxKy.Location = new System.Drawing.Point(51, 205);
             this.textBoxKy.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxKy.Name = "textBoxKy";
-            this.textBoxKy.Size = new System.Drawing.Size(72, 30);
+            this.textBoxKy.Size = new System.Drawing.Size(72, 26);
             this.textBoxKy.TabIndex = 5;
             // 
             // textBoxKd
@@ -193,7 +193,7 @@
             this.textBoxKd.Location = new System.Drawing.Point(51, 240);
             this.textBoxKd.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxKd.Name = "textBoxKd";
-            this.textBoxKd.Size = new System.Drawing.Size(72, 30);
+            this.textBoxKd.Size = new System.Drawing.Size(72, 26);
             this.textBoxKd.TabIndex = 6;
             // 
             // textBoxKr
@@ -201,7 +201,7 @@
             this.textBoxKr.Location = new System.Drawing.Point(51, 275);
             this.textBoxKr.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxKr.Name = "textBoxKr";
-            this.textBoxKr.Size = new System.Drawing.Size(72, 30);
+            this.textBoxKr.Size = new System.Drawing.Size(72, 26);
             this.textBoxKr.TabIndex = 7;
             // 
             // textBoxtk
@@ -209,7 +209,7 @@
             this.textBoxtk.Location = new System.Drawing.Point(51, 310);
             this.textBoxtk.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxtk.Name = "textBoxtk";
-            this.textBoxtk.Size = new System.Drawing.Size(72, 30);
+            this.textBoxtk.Size = new System.Drawing.Size(72, 26);
             this.textBoxtk.TabIndex = 8;
             // 
             // textBoxT
@@ -217,7 +217,7 @@
             this.textBoxT.Location = new System.Drawing.Point(183, 139);
             this.textBoxT.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxT.Name = "textBoxT";
-            this.textBoxT.Size = new System.Drawing.Size(72, 30);
+            this.textBoxT.Size = new System.Drawing.Size(72, 26);
             this.textBoxT.TabIndex = 9;
             // 
             // textBoxT1
@@ -225,7 +225,7 @@
             this.textBoxT1.Location = new System.Drawing.Point(182, 169);
             this.textBoxT1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxT1.Name = "textBoxT1";
-            this.textBoxT1.Size = new System.Drawing.Size(72, 30);
+            this.textBoxT1.Size = new System.Drawing.Size(72, 26);
             this.textBoxT1.TabIndex = 10;
             // 
             // textBoxT2
@@ -233,7 +233,7 @@
             this.textBoxT2.Location = new System.Drawing.Point(183, 205);
             this.textBoxT2.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxT2.Name = "textBoxT2";
-            this.textBoxT2.Size = new System.Drawing.Size(72, 30);
+            this.textBoxT2.Size = new System.Drawing.Size(72, 26);
             this.textBoxT2.TabIndex = 11;
             // 
             // textBoxTy
@@ -241,7 +241,7 @@
             this.textBoxTy.Location = new System.Drawing.Point(183, 240);
             this.textBoxTy.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxTy.Name = "textBoxTy";
-            this.textBoxTy.Size = new System.Drawing.Size(72, 30);
+            this.textBoxTy.Size = new System.Drawing.Size(72, 26);
             this.textBoxTy.TabIndex = 12;
             // 
             // textBoxTd
@@ -249,7 +249,7 @@
             this.textBoxTd.Location = new System.Drawing.Point(183, 275);
             this.textBoxTd.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxTd.Name = "textBoxTd";
-            this.textBoxTd.Size = new System.Drawing.Size(72, 30);
+            this.textBoxTd.Size = new System.Drawing.Size(72, 26);
             this.textBoxTd.TabIndex = 13;
             // 
             // radioButtonStep
@@ -259,10 +259,10 @@
             this.radioButtonStep.Location = new System.Drawing.Point(15, 23);
             this.radioButtonStep.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.radioButtonStep.Name = "radioButtonStep";
-            this.radioButtonStep.Size = new System.Drawing.Size(146, 26);
+            this.radioButtonStep.Size = new System.Drawing.Size(114, 23);
             this.radioButtonStep.TabIndex = 14;
             this.radioButtonStep.TabStop = true;
-            this.radioButtonStep.Text = "Ступеньчатое";
+            this.radioButtonStep.Text = "Ступенчатое";
             this.radioButtonStep.UseVisualStyleBackColor = true;
             // 
             // radioButtonRamp
@@ -271,7 +271,7 @@
             this.radioButtonRamp.Location = new System.Drawing.Point(13, 55);
             this.radioButtonRamp.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.radioButtonRamp.Name = "radioButtonRamp";
-            this.radioButtonRamp.Size = new System.Drawing.Size(235, 26);
+            this.radioButtonRamp.Size = new System.Drawing.Size(190, 23);
             this.radioButtonRamp.TabIndex = 15;
             this.radioButtonRamp.Text = "Линейно возрастающие";
             this.radioButtonRamp.UseVisualStyleBackColor = true;
@@ -280,12 +280,11 @@
             // radioButtonRandom
             // 
             this.radioButtonRandom.AutoSize = true;
-            this.radioButtonRandom.Location = new System.Drawing.Point(13, 86);
+            this.radioButtonRandom.Location = new System.Drawing.Point(13, 90);
             this.radioButtonRandom.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.radioButtonRandom.Name = "radioButtonRandom";
-            this.radioButtonRandom.Size = new System.Drawing.Size(171, 26);
+            this.radioButtonRandom.Size = new System.Drawing.Size(14, 13);
             this.radioButtonRandom.TabIndex = 16;
-            this.radioButtonRandom.Text = "Случайно измен";
             this.radioButtonRandom.UseVisualStyleBackColor = true;
             this.radioButtonRandom.CheckedChanged += new System.EventHandler(this.radioButtonRandom_CheckedChanged);
             // 
@@ -294,7 +293,7 @@
             this.textBoxKRamp.Location = new System.Drawing.Point(400, 275);
             this.textBoxKRamp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxKRamp.Name = "textBoxKRamp";
-            this.textBoxKRamp.Size = new System.Drawing.Size(72, 30);
+            this.textBoxKRamp.Size = new System.Drawing.Size(72, 26);
             this.textBoxKRamp.TabIndex = 17;
             this.textBoxKRamp.Visible = false;
             // 
@@ -304,10 +303,10 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Случайное по равномерному закону",
             "Случайное по нормальному закону"});
-            this.comboBox1.Location = new System.Drawing.Point(37, 81);
+            this.comboBox1.Location = new System.Drawing.Point(38, 84);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(307, 30);
+            this.comboBox1.Size = new System.Drawing.Size(307, 27);
             this.comboBox1.TabIndex = 18;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -359,7 +358,7 @@
             this.textBoxG1.Location = new System.Drawing.Point(507, 307);
             this.textBoxG1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxG1.Name = "textBoxG1";
-            this.textBoxG1.Size = new System.Drawing.Size(72, 30);
+            this.textBoxG1.Size = new System.Drawing.Size(72, 26);
             this.textBoxG1.TabIndex = 38;
             this.textBoxG1.Visible = false;
             // 
@@ -368,7 +367,7 @@
             this.textBoxG2.Location = new System.Drawing.Point(375, 340);
             this.textBoxG2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxG2.Name = "textBoxG2";
-            this.textBoxG2.Size = new System.Drawing.Size(72, 30);
+            this.textBoxG2.Size = new System.Drawing.Size(72, 26);
             this.textBoxG2.TabIndex = 37;
             this.textBoxG2.Visible = false;
             // 
@@ -378,7 +377,7 @@
             this.labelG2.Location = new System.Drawing.Point(266, 343);
             this.labelG2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelG2.Name = "labelG2";
-            this.labelG2.Size = new System.Drawing.Size(103, 22);
+            this.labelG2.Size = new System.Drawing.Size(83, 19);
             this.labelG2.TabIndex = 36;
             this.labelG2.Text = "Дисперсия";
             this.labelG2.Visible = false;
@@ -389,7 +388,7 @@
             this.labelG1.Location = new System.Drawing.Point(266, 310);
             this.labelG1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelG1.Name = "labelG1";
-            this.labelG1.Size = new System.Drawing.Size(240, 22);
+            this.labelG1.Size = new System.Drawing.Size(192, 19);
             this.labelG1.TabIndex = 35;
             this.labelG1.Text = "Математическое ожидание";
             this.labelG1.Visible = false;
@@ -400,7 +399,7 @@
             this.labelRandom.Location = new System.Drawing.Point(266, 278);
             this.labelRandom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelRandom.Name = "labelRandom";
-            this.labelRandom.Size = new System.Drawing.Size(248, 22);
+            this.labelRandom.Size = new System.Drawing.Size(201, 19);
             this.labelRandom.TabIndex = 34;
             this.labelRandom.Text = "Кол-во случайных значений";
             this.labelRandom.Visible = false;
@@ -410,7 +409,7 @@
             this.textBoxRV.Location = new System.Drawing.Point(507, 275);
             this.textBoxRV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxRV.Name = "textBoxRV";
-            this.textBoxRV.Size = new System.Drawing.Size(72, 30);
+            this.textBoxRV.Size = new System.Drawing.Size(72, 26);
             this.textBoxRV.TabIndex = 33;
             this.textBoxRV.Visible = false;
             // 
@@ -420,7 +419,7 @@
             this.labelRamp.Location = new System.Drawing.Point(266, 278);
             this.labelRamp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelRamp.Name = "labelRamp";
-            this.labelRamp.Size = new System.Drawing.Size(134, 22);
+            this.labelRamp.Size = new System.Drawing.Size(106, 19);
             this.labelRamp.TabIndex = 32;
             this.labelRamp.Text = "Коэф. наклона";
             this.labelRamp.Visible = false;
@@ -575,7 +574,7 @@
             // 
             // Form6
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1388, 795);

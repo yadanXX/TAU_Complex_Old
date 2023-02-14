@@ -57,7 +57,7 @@ namespace TAU_Complex
             {
                 XNon = Wlink.NonEnertion(xv - XInte, k1);
                 (XAper, x1A) = Wlink.Aperiodic(XNon, k2, T1, x1A, Dt);
-                (XInte, x1I, x2I) = Wlink.Integrating(XAper, k3, T2, Dt, x1I, x2I);
+                (XInte, x1I, x2I) = Wlink.Integrating(XAper, k3, T2, x1I, x2I, Dt);
                 list_1.Add(i, XInte);
             }
             list1 = list_1;

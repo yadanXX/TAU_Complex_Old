@@ -114,10 +114,10 @@
             this.radioButtonStep.Location = new System.Drawing.Point(15, 25);
             this.radioButtonStep.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.radioButtonStep.Name = "radioButtonStep";
-            this.radioButtonStep.Size = new System.Drawing.Size(146, 26);
+            this.radioButtonStep.Size = new System.Drawing.Size(114, 23);
             this.radioButtonStep.TabIndex = 3;
             this.radioButtonStep.TabStop = true;
-            this.radioButtonStep.Text = "Ступеньчатое";
+            this.radioButtonStep.Text = "Ступенчатое";
             this.radioButtonStep.UseVisualStyleBackColor = true;
             // 
             // radioButtonRamp
@@ -126,7 +126,7 @@
             this.radioButtonRamp.Location = new System.Drawing.Point(15, 55);
             this.radioButtonRamp.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.radioButtonRamp.Name = "radioButtonRamp";
-            this.radioButtonRamp.Size = new System.Drawing.Size(233, 26);
+            this.radioButtonRamp.Size = new System.Drawing.Size(188, 23);
             this.radioButtonRamp.TabIndex = 4;
             this.radioButtonRamp.TabStop = true;
             this.radioButtonRamp.Text = "Линейно возрастающее";
@@ -139,7 +139,7 @@
             this.radioButtonAmp.Location = new System.Drawing.Point(10, 25);
             this.radioButtonAmp.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.radioButtonAmp.Name = "radioButtonAmp";
-            this.radioButtonAmp.Size = new System.Drawing.Size(151, 26);
+            this.radioButtonAmp.Size = new System.Drawing.Size(122, 23);
             this.radioButtonAmp.TabIndex = 5;
             this.radioButtonAmp.TabStop = true;
             this.radioButtonAmp.Text = "Усилительное";
@@ -152,7 +152,7 @@
             this.radioButtonDif.Location = new System.Drawing.Point(10, 57);
             this.radioButtonDif.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.radioButtonDif.Name = "radioButtonDif";
-            this.radioButtonDif.Size = new System.Drawing.Size(288, 26);
+            this.radioButtonDif.Size = new System.Drawing.Size(229, 23);
             this.radioButtonDif.TabIndex = 6;
             this.radioButtonDif.TabStop = true;
             this.radioButtonDif.Text = "Реальное дифференцирующее";
@@ -165,7 +165,7 @@
             this.radioButtonExo.Location = new System.Drawing.Point(10, 88);
             this.radioButtonExo.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.radioButtonExo.Name = "radioButtonExo";
-            this.radioButtonExo.Size = new System.Drawing.Size(135, 26);
+            this.radioButtonExo.Size = new System.Drawing.Size(110, 23);
             this.radioButtonExo.TabIndex = 7;
             this.radioButtonExo.TabStop = true;
             this.radioButtonExo.Text = "Изодромное";
@@ -204,7 +204,7 @@
             this.textBoxK.Location = new System.Drawing.Point(56, 399);
             this.textBoxK.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxK.Name = "textBoxK";
-            this.textBoxK.Size = new System.Drawing.Size(72, 30);
+            this.textBoxK.Size = new System.Drawing.Size(72, 26);
             this.textBoxK.TabIndex = 10;
             this.textBoxK.Visible = false;
             // 
@@ -213,7 +213,7 @@
             this.textBoxT.Location = new System.Drawing.Point(56, 331);
             this.textBoxT.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxT.Name = "textBoxT";
-            this.textBoxT.Size = new System.Drawing.Size(72, 30);
+            this.textBoxT.Size = new System.Drawing.Size(72, 26);
             this.textBoxT.TabIndex = 11;
             // 
             // textBoxtk
@@ -221,7 +221,7 @@
             this.textBoxtk.Location = new System.Drawing.Point(56, 366);
             this.textBoxtk.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxtk.Name = "textBoxtk";
-            this.textBoxtk.Size = new System.Drawing.Size(72, 30);
+            this.textBoxtk.Size = new System.Drawing.Size(72, 26);
             this.textBoxtk.TabIndex = 12;
             // 
             // textBoxTky
@@ -229,7 +229,7 @@
             this.textBoxTky.Location = new System.Drawing.Point(56, 399);
             this.textBoxTky.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxTky.Name = "textBoxTky";
-            this.textBoxTky.Size = new System.Drawing.Size(72, 30);
+            this.textBoxTky.Size = new System.Drawing.Size(72, 26);
             this.textBoxTky.TabIndex = 13;
             this.textBoxTky.Visible = false;
             // 
@@ -252,7 +252,7 @@
             this.textBoxRamp.Location = new System.Drawing.Point(286, 328);
             this.textBoxRamp.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxRamp.Name = "textBoxRamp";
-            this.textBoxRamp.Size = new System.Drawing.Size(72, 30);
+            this.textBoxRamp.Size = new System.Drawing.Size(72, 26);
             this.textBoxRamp.TabIndex = 15;
             this.textBoxRamp.Visible = false;
             // 
@@ -286,7 +286,7 @@
             this.labelKramp.Location = new System.Drawing.Point(152, 331);
             this.labelKramp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelKramp.Name = "labelKramp";
-            this.labelKramp.Size = new System.Drawing.Size(134, 22);
+            this.labelKramp.Size = new System.Drawing.Size(106, 19);
             this.labelKramp.TabIndex = 21;
             this.labelKramp.Text = "Коэф. наклона";
             this.labelKramp.Visible = false;
@@ -351,7 +351,7 @@
             // 
             // Form5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(829, 657);
             this.Controls.Add(this.panel2);
