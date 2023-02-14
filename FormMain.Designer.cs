@@ -69,7 +69,7 @@
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(0);
             this.panelSideMenu.MaximumSize = new System.Drawing.Size(222, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(222, 543);
+            this.panelSideMenu.Size = new System.Drawing.Size(222, 612);
             this.panelSideMenu.TabIndex = 0;
             // 
             // button6
@@ -80,10 +80,10 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button6.ForeColor = System.Drawing.Color.LightGray;
-            this.button6.Location = new System.Drawing.Point(0, 360);
+            this.button6.Location = new System.Drawing.Point(0, 390);
             this.button6.Margin = new System.Windows.Forms.Padding(0);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(222, 64);
+            this.button6.Size = new System.Drawing.Size(222, 70);
             this.button6.TabIndex = 7;
             this.button6.Text = "Исследование инвариантности систем";
             this.button6.UseVisualStyleBackColor = false;
@@ -97,10 +97,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button5.ForeColor = System.Drawing.Color.LightGray;
-            this.button5.Location = new System.Drawing.Point(0, 296);
+            this.button5.Location = new System.Drawing.Point(0, 320);
             this.button5.Margin = new System.Windows.Forms.Padding(0);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(222, 64);
+            this.button5.Size = new System.Drawing.Size(222, 70);
             this.button5.TabIndex = 6;
             this.button5.Text = "Исследование точности САУ";
             this.button5.UseVisualStyleBackColor = false;
@@ -114,10 +114,10 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button4.ForeColor = System.Drawing.Color.LightGray;
-            this.button4.Location = new System.Drawing.Point(0, 232);
+            this.button4.Location = new System.Drawing.Point(0, 250);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(222, 64);
+            this.button4.Size = new System.Drawing.Size(222, 70);
             this.button4.TabIndex = 5;
             this.button4.Text = "Исследование устойчивости САУ со звеном чистого запаздывания";
             this.button4.UseVisualStyleBackColor = false;
@@ -131,12 +131,12 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button3.ForeColor = System.Drawing.Color.LightGray;
-            this.button3.Location = new System.Drawing.Point(0, 168);
+            this.button3.Location = new System.Drawing.Point(0, 180);
             this.button3.Margin = new System.Windows.Forms.Padding(0);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(222, 64);
+            this.button3.Size = new System.Drawing.Size(222, 70);
             this.button3.TabIndex = 4;
-            this.button3.Text = "Исследование устойчивости систем по критерию Найквикста";
+            this.button3.Text = "Исследование устойчивости систем по критерию Найквиста";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -148,10 +148,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button2.ForeColor = System.Drawing.Color.LightGray;
-            this.button2.Location = new System.Drawing.Point(0, 104);
+            this.button2.Location = new System.Drawing.Point(0, 110);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(222, 64);
+            this.button2.Size = new System.Drawing.Size(222, 70);
             this.button2.TabIndex = 3;
             this.button2.Text = "Исследование устойчивости систем по критерию Михайлова";
             this.button2.UseVisualStyleBackColor = false;
@@ -168,7 +168,7 @@
             this.button1.Location = new System.Drawing.Point(0, 40);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(222, 64);
+            this.button1.Size = new System.Drawing.Size(222, 70);
             this.button1.TabIndex = 2;
             this.button1.Text = "Исследование переходных характиристик типовых динамических звеньев";
             this.button1.UseVisualStyleBackColor = false;
@@ -197,7 +197,7 @@
             this.panel2.Location = new System.Drawing.Point(222, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(741, 40);
+            this.panel2.Size = new System.Drawing.Size(919, 40);
             this.panel2.TabIndex = 1;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
@@ -208,7 +208,7 @@
             this.buttonRoll.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonRoll.FlatAppearance.BorderSize = 0;
             this.buttonRoll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRoll.Location = new System.Drawing.Point(653, 0);
+            this.buttonRoll.Location = new System.Drawing.Point(831, 0);
             this.buttonRoll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonRoll.Name = "buttonRoll";
             this.buttonRoll.Size = new System.Drawing.Size(44, 40);
@@ -224,7 +224,7 @@
             this.buttonShut_down.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonShut_down.FlatAppearance.BorderSize = 0;
             this.buttonShut_down.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonShut_down.Location = new System.Drawing.Point(697, 0);
+            this.buttonShut_down.Location = new System.Drawing.Point(875, 0);
             this.buttonShut_down.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonShut_down.Name = "buttonShut_down";
             this.buttonShut_down.Size = new System.Drawing.Size(44, 40);
@@ -310,7 +310,7 @@
             this.panelWorkSpace.Location = new System.Drawing.Point(222, 40);
             this.panelWorkSpace.Margin = new System.Windows.Forms.Padding(0);
             this.panelWorkSpace.Name = "panelWorkSpace";
-            this.panelWorkSpace.Size = new System.Drawing.Size(741, 503);
+            this.panelWorkSpace.Size = new System.Drawing.Size(919, 572);
             this.panelWorkSpace.TabIndex = 2;
             // 
             // pictureBox1
@@ -321,7 +321,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(741, 503);
+            this.pictureBox1.Size = new System.Drawing.Size(919, 572);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -337,7 +337,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(963, 543);
+            this.ClientSize = new System.Drawing.Size(1141, 612);
             this.Controls.Add(this.panelWorkSpace);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelSideMenu);

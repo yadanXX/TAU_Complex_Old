@@ -309,6 +309,7 @@
             this.comboBox1.Size = new System.Drawing.Size(307, 27);
             this.comboBox1.TabIndex = 18;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.SelectedIndex = 1;
             // 
             // panel2
             // 
