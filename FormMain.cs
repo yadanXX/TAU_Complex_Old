@@ -37,7 +37,7 @@ namespace TAU_Complex
                     currentButton = (Button)btnSender;
                     // currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
-                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    currentButton.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     currentButton.BackColor = Color.FromArgb(5, 34, 53);
                     //  panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
                     // ThemeColor.PrimaryColor = color;
@@ -55,7 +55,7 @@ namespace TAU_Complex
                 {
                     previousBtn.BackColor = Color.FromArgb(9, 46, 71);
                     previousBtn.ForeColor = Color.Gainsboro;
-                    previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    previousBtn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
             }
         }

@@ -60,7 +60,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>T_ico.ico</ApplicationIcon>
@@ -68,9 +68,12 @@
   <PropertyGroup>
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MathParser.org-mXparser, Version=5.0.7.0, Culture=neutral, PublicKeyToken=0fbab7add73ed6e2, processorArchitecture=MSIL">
-      <HintPath>packages\MathParser.org-mXparser.5.0.7\lib\net48\MathParser.org-mXparser.dll</HintPath>
+    <Reference Include="MathParser.org-mXparser, Version=5.2.1.0, Culture=neutral, PublicKeyToken=0fbab7add73ed6e2, processorArchitecture=MSIL">
+      <HintPath>packages\MathParser.org-mXparser.5.2.1\lib\net461\MathParser.org-mXparser.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

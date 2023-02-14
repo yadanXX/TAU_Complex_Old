@@ -78,7 +78,7 @@
             this.button6.Dock = System.Windows.Forms.DockStyle.Top;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button6.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button6.ForeColor = System.Drawing.Color.LightGray;
             this.button6.Location = new System.Drawing.Point(0, 450);
             this.button6.Margin = new System.Windows.Forms.Padding(0);
@@ -95,7 +95,7 @@
             this.button5.Dock = System.Windows.Forms.DockStyle.Top;
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button5.ForeColor = System.Drawing.Color.LightGray;
             this.button5.Location = new System.Drawing.Point(0, 370);
             this.button5.Margin = new System.Windows.Forms.Padding(0);
@@ -112,7 +112,7 @@
             this.button4.Dock = System.Windows.Forms.DockStyle.Top;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button4.ForeColor = System.Drawing.Color.LightGray;
             this.button4.Location = new System.Drawing.Point(0, 290);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
@@ -129,7 +129,7 @@
             this.button3.Dock = System.Windows.Forms.DockStyle.Top;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button3.ForeColor = System.Drawing.Color.LightGray;
             this.button3.Location = new System.Drawing.Point(0, 210);
             this.button3.Margin = new System.Windows.Forms.Padding(0);
@@ -146,7 +146,7 @@
             this.button2.Dock = System.Windows.Forms.DockStyle.Top;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button2.ForeColor = System.Drawing.Color.LightGray;
             this.button2.Location = new System.Drawing.Point(0, 130);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
@@ -163,7 +163,7 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button1.ForeColor = System.Drawing.Color.LightGray;
             this.button1.Location = new System.Drawing.Point(0, 50);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
@@ -326,7 +326,7 @@
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
