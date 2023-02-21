@@ -50,6 +50,8 @@ namespace TAU_Complex
                     KRamp = Convert.ToDouble(textBoxRamp.Text);
                     legend += $"Коэф. наклона = {KRamp}  ";
                 }
+                if (k <=0|| T<= 0|| Tky<=0) throw new Exception();
+                
             }
             catch (Exception)
             {

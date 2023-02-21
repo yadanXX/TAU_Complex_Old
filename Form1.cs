@@ -142,7 +142,7 @@ namespace TAU_Complex
             {
                 k = Convert.ToDouble(textBox1k.Text);
                 tk = Convert.ToDouble(textBox1tk.Text);
-                if (tk <= 0) throw new Exception();
+                if (tk <= 0 || k <= 0) throw new Exception();
             }
             catch (Exception)
             {
@@ -184,7 +184,8 @@ namespace TAU_Complex
                 k = Convert.ToDouble(textBox2k.Text);
                 t1 = Convert.ToDouble(textBox2t1.Text);
                 tk = Convert.ToDouble(textBox2tk.Text);
-                if (tk <= 0) throw new Exception();
+                if (tk <= 0 || k <= 0 || t1 <= 0) throw new Exception();
+
             }
             catch (Exception)
             {
@@ -223,7 +224,7 @@ namespace TAU_Complex
                 t1 = Convert.ToDouble(textBox3t1.Text);
                 t2 = Convert.ToDouble(textBox3t2.Text);
                 tk = Convert.ToDouble(textBox3tk.Text);
-                if (tk <= 0) throw new Exception();
+                if (tk <= 0 || k <= 0 || t1 <= 0 || t2 <= 0) throw new Exception();
             }
             catch (Exception)
             {
@@ -265,7 +266,7 @@ namespace TAU_Complex
                 t1 = Convert.ToDouble(textBox4t1.Text);
                 t2 = Convert.ToDouble(textBox4t2.Text);
                 tk = Convert.ToDouble(textBox4tk.Text);
-                if (tk <= 0) throw new Exception();
+                if (tk <= 0 || k <= 0 || t1 <= 0 || t2 <= 0) throw new Exception();
             }
             catch (Exception)
             {
@@ -303,7 +304,7 @@ namespace TAU_Complex
             {
                 k = Convert.ToDouble(textBox5k.Text);
                 tk = Convert.ToDouble(textBox5tk.Text);
-                if (tk <= 0) throw new Exception();
+                if (tk <= 0 || k <= 0) throw new Exception();
             }
             catch (Exception)
             {
@@ -341,7 +342,7 @@ namespace TAU_Complex
                 k = Convert.ToDouble(textBox6k.Text);
                 t1 = Convert.ToDouble(textBox6t1.Text);
                 tk = Convert.ToDouble(textBox6tk.Text);
-                if (tk <= 0) throw new Exception();
+                if (tk <= 0 || k <= 0 || t1 <= 0) throw new Exception();
             }
             catch (Exception)
             {
@@ -379,7 +380,7 @@ namespace TAU_Complex
                 k = Convert.ToDouble(textBox7k.Text);
                 t1 = Convert.ToDouble(textBox7t1.Text);
                 tk = Convert.ToDouble(textBox7tk.Text);
-                if (tk <= 0) throw new Exception();
+                if (tk <= 0 || k <= 0 || t1 <= 0) throw new Exception();
             }
             catch (Exception)
             {

@@ -42,9 +42,10 @@ namespace TAU_Complex
                 k = Convert.ToDouble(textBoxK.Text);
                 T = Convert.ToDouble(textBoxT.Text);
                 tk = Convert.ToDouble(textBoxtk.Text);
-                if (tk <= 0) throw new Exception();
                 tau = Convert.ToDouble(textBoxtau.Text);
                 w = Convert.ToDouble(textBoxw.Text);
+                if (tk <= 0 || T <= 0 || k <= 0 || tau <= 0 || w <= 0) throw new Exception();
+                
             }
             catch (Exception)
             {

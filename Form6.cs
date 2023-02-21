@@ -65,7 +65,6 @@ namespace TAU_Complex
                 }
 
                 tk = Convert.ToDouble(textBoxtk.Text);
-                if (tk <= 0) throw new Exception();
                 if (radioButtonRamp.Checked)
                 {
                     kramp = Convert.ToDouble(textBoxKRamp.Text);
@@ -75,7 +74,9 @@ namespace TAU_Complex
                 {
                     rand_value = Convert.ToDouble(textBoxRV.Text);
                     legend += $"Кол-во случайных значений = {rand_value} ";
+                    if (rand_value <= 0) throw new Exception();
                 }
+                if (tk <= 0 || k <= 0 || kp <= 0 || ky <= 0 || kd <= 0 || kr <= 0 || T <= 0 || T1 <= 0 || T2 <= 0 || Ty <= 0 || Td <= 0) throw new Exception();
             }
             catch (Exception)
             {

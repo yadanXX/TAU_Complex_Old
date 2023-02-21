@@ -35,7 +35,7 @@ namespace TAU_Complex
                 T1 = Convert.ToDouble(textBoxT1.Text);
                 T2 = Convert.ToDouble(textBoxT2.Text);
                 tk = Convert.ToDouble(textBoxtk.Text);
-                if (tk <= 0) throw new Exception();
+                if (tk <= 0 || k1 <= 0 || k2 <= 0 || k3 <= 0 || T1 <= 0 || T2 <= 0) throw new Exception();
                 w = Convert.ToDouble(textBoxW.Text);
             }
             catch (Exception)
