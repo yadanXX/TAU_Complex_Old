@@ -85,10 +85,10 @@
             this.panel2.Controls.Add(this.textBoxK1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panel2.Location = new System.Drawing.Point(0, 131);
+            this.panel2.Location = new System.Drawing.Point(0, 140);
             this.panel2.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(271, 627);
+            this.panel2.Size = new System.Drawing.Size(271, 618);
             this.panel2.TabIndex = 1;
             // 
             // pictureBoxNu
@@ -174,8 +174,8 @@
             this.textBoxT2.Location = new System.Drawing.Point(81, 99);
             this.textBoxT2.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxT2.Name = "textBoxT2";
-            this.textBoxT2.Size = new System.Drawing.Size(72, 30);
-            this.textBoxT2.TabIndex = 15;
+            this.textBoxT2.Size = new System.Drawing.Size(72, 26);
+            this.textBoxT2.TabIndex = 4;
             // 
             // comboBoxNu
             // 
@@ -189,9 +189,8 @@
             this.comboBoxNu.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.comboBoxNu.MaxDropDownItems = 2;
             this.comboBoxNu.Name = "comboBoxNu";
-            this.comboBoxNu.Size = new System.Drawing.Size(72, 30);
-            this.comboBoxNu.TabIndex = 14;
-            this.comboBoxNu.SelectedIndex = 0;
+            this.comboBoxNu.Size = new System.Drawing.Size(72, 27);
+            this.comboBoxNu.TabIndex = 7;
             // 
             // textBoxK2
             // 
@@ -199,8 +198,8 @@
             this.textBoxK2.Location = new System.Drawing.Point(81, 37);
             this.textBoxK2.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxK2.Name = "textBoxK2";
-            this.textBoxK2.Size = new System.Drawing.Size(72, 30);
-            this.textBoxK2.TabIndex = 13;
+            this.textBoxK2.Size = new System.Drawing.Size(72, 26);
+            this.textBoxK2.TabIndex = 2;
             // 
             // button1
             // 
@@ -208,11 +207,11 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.button1.Location = new System.Drawing.Point(0, 573);
+            this.button1.Location = new System.Drawing.Point(0, 564);
             this.button1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(271, 54);
-            this.button1.TabIndex = 12;
+            this.button1.TabIndex = 8;
             this.button1.Text = "Построить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -223,8 +222,8 @@
             this.textBoxW.Location = new System.Drawing.Point(81, 161);
             this.textBoxW.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxW.Name = "textBoxW";
-            this.textBoxW.Size = new System.Drawing.Size(72, 30);
-            this.textBoxW.TabIndex = 11;
+            this.textBoxW.Size = new System.Drawing.Size(72, 26);
+            this.textBoxW.TabIndex = 6;
             // 
             // textBoxtk
             // 
@@ -232,8 +231,8 @@
             this.textBoxtk.Location = new System.Drawing.Point(81, 130);
             this.textBoxtk.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxtk.Name = "textBoxtk";
-            this.textBoxtk.Size = new System.Drawing.Size(72, 30);
-            this.textBoxtk.TabIndex = 10;
+            this.textBoxtk.Size = new System.Drawing.Size(72, 26);
+            this.textBoxtk.TabIndex = 5;
             // 
             // textBoxT1
             // 
@@ -241,8 +240,8 @@
             this.textBoxT1.Location = new System.Drawing.Point(81, 68);
             this.textBoxT1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxT1.Name = "textBoxT1";
-            this.textBoxT1.Size = new System.Drawing.Size(72, 30);
-            this.textBoxT1.TabIndex = 9;
+            this.textBoxT1.Size = new System.Drawing.Size(72, 26);
+            this.textBoxT1.TabIndex = 3;
             // 
             // textBoxK1
             // 
@@ -250,8 +249,8 @@
             this.textBoxK1.Location = new System.Drawing.Point(81, 7);
             this.textBoxK1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.textBoxK1.Name = "textBoxK1";
-            this.textBoxK1.Size = new System.Drawing.Size(72, 30);
-            this.textBoxK1.TabIndex = 8;
+            this.textBoxK1.Size = new System.Drawing.Size(72, 26);
+            this.textBoxK1.TabIndex = 1;
             // 
             // panel3
             // 
@@ -259,10 +258,10 @@
             this.panel3.Controls.Add(this.zedGraphControl2);
             this.panel3.Controls.Add(this.zedGraphControl1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(271, 131);
+            this.panel3.Location = new System.Drawing.Point(271, 140);
             this.panel3.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(818, 627);
+            this.panel3.Size = new System.Drawing.Size(818, 618);
             this.panel3.TabIndex = 2;
             // 
             // zedGraphControl2
@@ -310,7 +309,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1089, 131);
+            this.panel1.Size = new System.Drawing.Size(1089, 140);
             this.panel1.TabIndex = 0;
             // 
             // panel4
@@ -320,7 +319,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1089, 131);
+            this.panel4.Size = new System.Drawing.Size(1089, 140);
             this.panel4.TabIndex = 0;
             // 
             // pictureBox1
@@ -330,14 +329,14 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1089, 131);
+            this.pictureBox1.Size = new System.Drawing.Size(1089, 140);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1089, 758);
             this.Controls.Add(this.panel3);

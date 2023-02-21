@@ -191,6 +191,7 @@ namespace TAU_Complex
             GraphPane pane = zedGraphControl.GraphPane;
             pane.CurveList.Clear();
             LineItem myCurve1 = pane.AddCurve("", list_1, Color.Red, SymbolType.None);
+            myCurve1.Line.Width = 2f;
             pane.Title.Text = TitleText;
             pane.YAxis.Title.Text = YText;
             pane.XAxis.Title.Text = XText;

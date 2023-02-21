@@ -108,15 +108,10 @@ namespace TAU_Complex
             Data.title2 = "Годограф Найквиста";
             Data.Ytitle2 = "jv(w)";
             Data.Xtitle2 = "u(w)";
-        }
 
-        private void Form3_Resize(object sender, EventArgs e)
-        {
-            // событие по равномерному изменению по высоте двух графов 
-            zedGraphControl1.Height = panel3.Size.Height / 2;
-            zedGraphControl2.Height = panel3.Size.Height / 2;
+            
         }
-        private void DrawGraph(ZedGraphControl zedGraphControl, PointPairList list_1, string TitleText, string YText, string XText)
+        public void DrawGraph(ZedGraphControl zedGraphControl, PointPairList list_1, string TitleText, string YText, string XText)
         {
             /*
              * zedGraphControl - рабоячая область Zграфика
@@ -128,6 +123,7 @@ namespace TAU_Complex
             GraphPane pane = zedGraphControl.GraphPane;
             pane.CurveList.Clear();
             LineItem myCurve1 = pane.AddCurve("", list_1, Color.Red, SymbolType.None);
+            myCurve1.Line.Width = 2f;
             pane.Title.Text = TitleText;
             pane.YAxis.Title.Text = YText;
             pane.XAxis.Title.Text = XText;
@@ -170,10 +166,25 @@ namespace TAU_Complex
             myCurve1.Line.IsVisible = true;
             pane.YAxis.Scale.MinAuto = true;
             pane.YAxis.Scale.MaxAuto = true;
+            if (TitleText == "Годограф Найквиста")
+            {
+                pane.XAxis.Scale.Min = -2;
+                pane.XAxis.Scale.Max = 2;
+
+                pane.YAxis.Scale.Min = -2;
+                pane.YAxis.Scale.Max = 2;
+            }
             pane.AxisChange();
             zedGraphControl.AxisChange();
             zedGraphControl.Invalidate();
         }
+        private void Form3_Resize(object sender, EventArgs e)
+        {
+            // событие по равномерному изменению по высоте двух графов 
+            zedGraphControl1.Height = panel3.Size.Height / 2;
+            zedGraphControl2.Height = panel3.Size.Height / 2;
+        }
+        
 
     }
 }

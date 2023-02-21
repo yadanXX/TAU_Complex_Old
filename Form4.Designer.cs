@@ -64,24 +64,24 @@
             // 
             // panelmain
             // 
-            this.panelmain.Controls.Add(this.panel3);
             this.panelmain.Controls.Add(this.panel2);
+            this.panelmain.Controls.Add(this.panel3);
             this.panelmain.Controls.Add(this.panel1);
             this.panelmain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelmain.Location = new System.Drawing.Point(0, 0);
+            this.panelmain.Location = new System.Drawing.Point(0, 140);
             this.panelmain.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panelmain.Name = "panelmain";
-            this.panelmain.Size = new System.Drawing.Size(1115, 772);
+            this.panelmain.Size = new System.Drawing.Size(1115, 632);
             this.panelmain.TabIndex = 0;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.zedGraphControl2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(648, 354);
+            this.panel3.Location = new System.Drawing.Point(648, 303);
             this.panel3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(467, 418);
+            this.panel3.Size = new System.Drawing.Size(467, 329);
             this.panel3.TabIndex = 1;
             // 
             // zedGraphControl2
@@ -97,7 +97,7 @@
             this.zedGraphControl2.ScrollMinX = 0D;
             this.zedGraphControl2.ScrollMinY = 0D;
             this.zedGraphControl2.ScrollMinY2 = 0D;
-            this.zedGraphControl2.Size = new System.Drawing.Size(467, 418);
+            this.zedGraphControl2.Size = new System.Drawing.Size(467, 329);
             this.zedGraphControl2.TabIndex = 1;
             this.zedGraphControl2.UseExtendedPrintDialog = true;
             // 
@@ -108,7 +108,7 @@
             this.panel2.Location = new System.Drawing.Point(648, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(467, 417);
+            this.panel2.Size = new System.Drawing.Size(467, 323);
             this.panel2.TabIndex = 1;
             // 
             // zedGraphControl1
@@ -124,7 +124,7 @@
             this.zedGraphControl1.ScrollMinX = 0D;
             this.zedGraphControl1.ScrollMinY = 0D;
             this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(467, 417);
+            this.zedGraphControl1.Size = new System.Drawing.Size(467, 323);
             this.zedGraphControl1.TabIndex = 0;
             this.zedGraphControl1.UseExtendedPrintDialog = true;
             // 
@@ -136,7 +136,6 @@
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBoxK);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.textBoxtk);
             this.panel1.Controls.Add(this.textBoxw);
@@ -148,13 +147,13 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(648, 772);
+            this.panel1.Size = new System.Drawing.Size(648, 632);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::TAU_Complex.Properties.Resources.tk;
-            this.pictureBox5.Location = new System.Drawing.Point(15, 251);
+            this.pictureBox5.Location = new System.Drawing.Point(13, 148);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(27, 24);
@@ -165,7 +164,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::TAU_Complex.Properties.Resources.Wk;
-            this.pictureBox4.Location = new System.Drawing.Point(9, 211);
+            this.pictureBox4.Location = new System.Drawing.Point(7, 108);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(37, 33);
@@ -176,7 +175,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::TAU_Complex.Properties.Resources.tau;
-            this.pictureBox3.Location = new System.Drawing.Point(15, 180);
+            this.pictureBox3.Location = new System.Drawing.Point(13, 77);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(27, 24);
@@ -187,7 +186,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::TAU_Complex.Properties.Resources.T;
-            this.pictureBox2.Location = new System.Drawing.Point(15, 145);
+            this.pictureBox2.Location = new System.Drawing.Point(13, 42);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(27, 24);
@@ -198,7 +197,7 @@
             // pictureBoxK
             // 
             this.pictureBoxK.Image = global::TAU_Complex.Properties.Resources.KB;
-            this.pictureBoxK.Location = new System.Drawing.Point(15, 110);
+            this.pictureBoxK.Location = new System.Drawing.Point(13, 7);
             this.pictureBoxK.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBoxK.Name = "pictureBoxK";
             this.pictureBoxK.Size = new System.Drawing.Size(27, 24);
@@ -213,7 +212,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(648, 102);
+            this.pictureBox1.Size = new System.Drawing.Size(1115, 140);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
@@ -223,7 +222,7 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 357);
+            this.button1.Location = new System.Drawing.Point(0, 217);
             this.button1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(648, 44);
@@ -234,49 +233,49 @@
             // 
             // textBoxtk
             // 
-            this.textBoxtk.Location = new System.Drawing.Point(54, 251);
+            this.textBoxtk.Location = new System.Drawing.Point(52, 148);
             this.textBoxtk.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxtk.Name = "textBoxtk";
-            this.textBoxtk.Size = new System.Drawing.Size(72, 30);
+            this.textBoxtk.Size = new System.Drawing.Size(72, 26);
             this.textBoxtk.TabIndex = 10;
             // 
             // textBoxw
             // 
-            this.textBoxw.Location = new System.Drawing.Point(54, 216);
+            this.textBoxw.Location = new System.Drawing.Point(52, 113);
             this.textBoxw.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxw.Name = "textBoxw";
-            this.textBoxw.Size = new System.Drawing.Size(72, 30);
+            this.textBoxw.Size = new System.Drawing.Size(72, 26);
             this.textBoxw.TabIndex = 8;
             // 
             // textBoxtau
             // 
-            this.textBoxtau.Location = new System.Drawing.Point(54, 180);
+            this.textBoxtau.Location = new System.Drawing.Point(52, 77);
             this.textBoxtau.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxtau.Name = "textBoxtau";
-            this.textBoxtau.Size = new System.Drawing.Size(72, 30);
+            this.textBoxtau.Size = new System.Drawing.Size(72, 26);
             this.textBoxtau.TabIndex = 6;
             // 
             // textBoxT
             // 
-            this.textBoxT.Location = new System.Drawing.Point(54, 147);
+            this.textBoxT.Location = new System.Drawing.Point(52, 44);
             this.textBoxT.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxT.Name = "textBoxT";
-            this.textBoxT.Size = new System.Drawing.Size(72, 30);
+            this.textBoxT.Size = new System.Drawing.Size(72, 26);
             this.textBoxT.TabIndex = 4;
             // 
             // textBoxK
             // 
-            this.textBoxK.Location = new System.Drawing.Point(54, 110);
+            this.textBoxK.Location = new System.Drawing.Point(52, 7);
             this.textBoxK.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxK.Name = "textBoxK";
-            this.textBoxK.Size = new System.Drawing.Size(72, 30);
+            this.textBoxK.Size = new System.Drawing.Size(72, 26);
             this.textBoxK.TabIndex = 2;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.zedGraphControl3);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 401);
+            this.panel4.Location = new System.Drawing.Point(0, 261);
             this.panel4.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(648, 371);
@@ -301,11 +300,12 @@
             // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1115, 772);
             this.Controls.Add(this.panelmain);
+            this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);

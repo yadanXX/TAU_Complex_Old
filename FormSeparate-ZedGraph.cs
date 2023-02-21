@@ -90,6 +90,7 @@ namespace TAU_Complex
             GraphPane pane = zedGraphControl.GraphPane;
             pane.CurveList.Clear();
             LineItem myCurve1 = pane.AddCurve(legend, list, Color.Red, SymbolType.None);
+            myCurve1.Line.Width = 2f;
             pane.Title.Text = title;
             pane.YAxis.Title.Text = Ytitle;
             pane.XAxis.Title.Text = Xtitle;
@@ -149,6 +150,16 @@ namespace TAU_Complex
             myCurve1.Line.IsVisible = true;
             pane.YAxis.Scale.MinAuto = true;
             pane.YAxis.Scale.MaxAuto = true;
+
+            if (title == "Годограф Найквиста")
+            {
+                pane.XAxis.Scale.Min = -2;
+                pane.XAxis.Scale.Max = 2;
+
+                pane.YAxis.Scale.Min = -2;
+                pane.YAxis.Scale.Max = 2;
+            }
+
             pane.AxisChange();
             zedGraphControl.AxisChange();
             zedGraphControl.Invalidate();

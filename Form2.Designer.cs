@@ -173,8 +173,8 @@
             this.textBoxK3.Location = new System.Drawing.Point(50, 86);
             this.textBoxK3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxK3.Name = "textBoxK3";
-            this.textBoxK3.Size = new System.Drawing.Size(72, 30);
-            this.textBoxK3.TabIndex = 9;
+            this.textBoxK3.Size = new System.Drawing.Size(72, 26);
+            this.textBoxK3.TabIndex = 2;
             // 
             // textBoxK2
             // 
@@ -182,8 +182,8 @@
             this.textBoxK2.Location = new System.Drawing.Point(50, 53);
             this.textBoxK2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxK2.Name = "textBoxK2";
-            this.textBoxK2.Size = new System.Drawing.Size(72, 30);
-            this.textBoxK2.TabIndex = 8;
+            this.textBoxK2.Size = new System.Drawing.Size(72, 26);
+            this.textBoxK2.TabIndex = 1;
             // 
             // textBoxT2
             // 
@@ -191,8 +191,8 @@
             this.textBoxT2.Location = new System.Drawing.Point(50, 147);
             this.textBoxT2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxT2.Name = "textBoxT2";
-            this.textBoxT2.Size = new System.Drawing.Size(72, 30);
-            this.textBoxT2.TabIndex = 7;
+            this.textBoxT2.Size = new System.Drawing.Size(72, 26);
+            this.textBoxT2.TabIndex = 4;
             // 
             // button1
             // 
@@ -204,7 +204,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(270, 44);
-            this.button1.TabIndex = 6;
+            this.button1.TabIndex = 7;
             this.button1.Text = "Построить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -215,8 +215,8 @@
             this.textBoxW.Location = new System.Drawing.Point(50, 209);
             this.textBoxW.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxW.Name = "textBoxW";
-            this.textBoxW.Size = new System.Drawing.Size(72, 30);
-            this.textBoxW.TabIndex = 5;
+            this.textBoxW.Size = new System.Drawing.Size(72, 26);
+            this.textBoxW.TabIndex = 6;
             // 
             // textBoxtk
             // 
@@ -224,8 +224,8 @@
             this.textBoxtk.Location = new System.Drawing.Point(50, 178);
             this.textBoxtk.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxtk.Name = "textBoxtk";
-            this.textBoxtk.Size = new System.Drawing.Size(72, 30);
-            this.textBoxtk.TabIndex = 4;
+            this.textBoxtk.Size = new System.Drawing.Size(72, 26);
+            this.textBoxtk.TabIndex = 5;
             // 
             // textBoxT1
             // 
@@ -233,7 +233,7 @@
             this.textBoxT1.Location = new System.Drawing.Point(50, 117);
             this.textBoxT1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxT1.Name = "textBoxT1";
-            this.textBoxT1.Size = new System.Drawing.Size(72, 30);
+            this.textBoxT1.Size = new System.Drawing.Size(72, 26);
             this.textBoxT1.TabIndex = 3;
             // 
             // textBoxK1
@@ -242,8 +242,8 @@
             this.textBoxK1.Location = new System.Drawing.Point(50, 20);
             this.textBoxK1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxK1.Name = "textBoxK1";
-            this.textBoxK1.Size = new System.Drawing.Size(72, 30);
-            this.textBoxK1.TabIndex = 2;
+            this.textBoxK1.Size = new System.Drawing.Size(72, 26);
+            this.textBoxK1.TabIndex = 0;
             // 
             // zedGraphControl2
             // 
@@ -328,7 +328,7 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1129, 741);

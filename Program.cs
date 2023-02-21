@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
+using ZedGraph;
 
 namespace TAU_Complex
 {
@@ -15,5 +17,6 @@ namespace TAU_Complex
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormMain());
         }
+        
     }
 }

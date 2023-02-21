@@ -69,7 +69,7 @@
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(0);
             this.panelSideMenu.MaximumSize = new System.Drawing.Size(222, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(222, 612);
+            this.panelSideMenu.Size = new System.Drawing.Size(222, 761);
             this.panelSideMenu.TabIndex = 0;
             // 
             // button6
@@ -197,7 +197,7 @@
             this.panel2.Location = new System.Drawing.Point(222, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(919, 40);
+            this.panel2.Size = new System.Drawing.Size(962, 40);
             this.panel2.TabIndex = 1;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
@@ -208,7 +208,7 @@
             this.buttonRoll.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonRoll.FlatAppearance.BorderSize = 0;
             this.buttonRoll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRoll.Location = new System.Drawing.Point(831, 0);
+            this.buttonRoll.Location = new System.Drawing.Point(874, 0);
             this.buttonRoll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonRoll.Name = "buttonRoll";
             this.buttonRoll.Size = new System.Drawing.Size(44, 40);
@@ -224,7 +224,7 @@
             this.buttonShut_down.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonShut_down.FlatAppearance.BorderSize = 0;
             this.buttonShut_down.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonShut_down.Location = new System.Drawing.Point(875, 0);
+            this.buttonShut_down.Location = new System.Drawing.Point(918, 0);
             this.buttonShut_down.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonShut_down.Name = "buttonShut_down";
             this.buttonShut_down.Size = new System.Drawing.Size(44, 40);
@@ -310,7 +310,7 @@
             this.panelWorkSpace.Location = new System.Drawing.Point(222, 40);
             this.panelWorkSpace.Margin = new System.Windows.Forms.Padding(0);
             this.panelWorkSpace.Name = "panelWorkSpace";
-            this.panelWorkSpace.Size = new System.Drawing.Size(919, 572);
+            this.panelWorkSpace.Size = new System.Drawing.Size(962, 721);
             this.panelWorkSpace.TabIndex = 2;
             // 
             // pictureBox1
@@ -321,7 +321,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(919, 572);
+            this.pictureBox1.Size = new System.Drawing.Size(962, 721);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -337,14 +337,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1141, 612);
+            this.ClientSize = new System.Drawing.Size(1184, 761);
             this.Controls.Add(this.panelWorkSpace);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MinimumSize = new System.Drawing.Size(780, 528);
+            this.MinimumSize = new System.Drawing.Size(800, 750);
             this.Name = "FormMain";
             this.Text = "Тау комплекс";
             this.panelSideMenu.ResumeLayout(false);

@@ -140,7 +140,7 @@
             this.comboBoxMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxMain.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxMain.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.comboBoxMain.Font = new System.Drawing.Font("Times New Roman", 16F);
             this.comboBoxMain.FormattingEnabled = true;
             this.comboBoxMain.Items.AddRange(new object[] {
             "Идеальное усилительное (безынерционное) звено",
@@ -153,7 +153,7 @@
             this.comboBoxMain.Location = new System.Drawing.Point(0, 0);
             this.comboBoxMain.Margin = new System.Windows.Forms.Padding(6);
             this.comboBoxMain.Name = "comboBoxMain";
-            this.comboBoxMain.Size = new System.Drawing.Size(1249, 29);
+            this.comboBoxMain.Size = new System.Drawing.Size(1249, 31);
             this.comboBoxMain.TabIndex = 0;
             this.comboBoxMain.SelectedIndexChanged += new System.EventHandler(this.comboBoxMain_SelectedIndexChanged);
             // 
@@ -869,7 +869,7 @@
             this.textBox1tk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1tk.Name = "textBox1tk";
             this.textBox1tk.Size = new System.Drawing.Size(121, 26);
-            this.textBox1tk.TabIndex = 4;
+            this.textBox1tk.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -904,7 +904,7 @@
             this.textBox1k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1k.Name = "textBox1k";
             this.textBox1k.Size = new System.Drawing.Size(121, 26);
-            this.textBox1k.TabIndex = 0;
+            this.textBox1k.TabIndex = 1;
             // 
             // Form1
             // 
@@ -997,7 +997,6 @@
         private System.Windows.Forms.TextBox textBox3k;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.TextBox textBox4tk;
         private System.Windows.Forms.TextBox textBox4t2;
         private System.Windows.Forms.TextBox textBox4t1;
