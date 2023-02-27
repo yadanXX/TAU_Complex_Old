@@ -93,16 +93,16 @@
             this.panel1.Controls.Add(this.zedGraphControl2);
             this.panel1.Controls.Add(this.zedGraphControl1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(621, 140);
+            this.panel1.Location = new System.Drawing.Point(621, 175);
             this.panel1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(767, 655);
+            this.panel1.Size = new System.Drawing.Size(767, 620);
             this.panel1.TabIndex = 0;
             // 
             // zedGraphControl2
             // 
             this.zedGraphControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.zedGraphControl2.Location = new System.Drawing.Point(0, 267);
+            this.zedGraphControl2.Location = new System.Drawing.Point(0, 232);
             this.zedGraphControl2.Margin = new System.Windows.Forms.Padding(7, 3, 7, 3);
             this.zedGraphControl2.Name = "zedGraphControl2";
             this.zedGraphControl2.ScrollGrace = 0D;
@@ -136,7 +136,7 @@
             // zedGraphControl3
             // 
             this.zedGraphControl3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.zedGraphControl3.Location = new System.Drawing.Point(0, 349);
+            this.zedGraphControl3.Location = new System.Drawing.Point(0, 314);
             this.zedGraphControl3.Margin = new System.Windows.Forms.Padding(6, 2, 6, 2);
             this.zedGraphControl3.Name = "zedGraphControl3";
             this.zedGraphControl3.ScrollGrace = 0D;
@@ -155,7 +155,7 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 305);
+            this.button1.Location = new System.Drawing.Point(0, 270);
             this.button1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(621, 44);
@@ -347,10 +347,10 @@
             this.panel2.Controls.Add(this.textBoxTy);
             this.panel2.Controls.Add(this.textBoxT1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 140);
+            this.panel2.Location = new System.Drawing.Point(0, 175);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(621, 655);
+            this.panel2.Size = new System.Drawing.Size(621, 620);
             this.panel2.TabIndex = 20;
             // 
             // textBoxG1
@@ -567,7 +567,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1388, 140);
+            this.pictureBox1.Size = new System.Drawing.Size(1388, 175);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;

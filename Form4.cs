@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using ZedGraph;
+using static System.Net.Mime.MediaTypeNames;
 
 
 namespace TAU_Complex
@@ -13,20 +15,25 @@ namespace TAU_Complex
         {
             InitializeComponent();
             Data.active_value = 10;
+            zedGraphControl1.GraphPane.Title.Text = "График переходной характиристики";
+            zedGraphControl2.GraphPane.Title.Text = "АФЧХ";
+            zedGraphControl3.GraphPane.Title.Text = "Область устойчивости";
+            zedGraphControl1.GraphPane.YAxis.Title.Text = "h(t)";
+            zedGraphControl1.GraphPane.XAxis.Title.Text = "t";
+            zedGraphControl2.GraphPane.YAxis.Title.Text = "jv(w)";
+            zedGraphControl2.GraphPane.XAxis.Title.Text = "u(w)";
+            zedGraphControl3.GraphPane.YAxis.Title.Text = "T";
+            zedGraphControl3.GraphPane.XAxis.Title.Text = "K";
+
         }
 
 
         private void Form4_Resize(object sender, EventArgs e)
         {
-            // !!!!!!!!
             panel1.Height = panelmain.Height / 2;
-            panel1.Width = panelmain.Width / 2;
             panel2.Height = panelmain.Height / 2;
-            panel2.Width = panelmain.Width / 2;
             panel3.Height = panelmain.Height / 2;
-            panel3.Width = panelmain.Width / 2;
             panel4.Height = panelmain.Height / 2;
-            panel4.Width = panelmain.Width / 2;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,7 +52,7 @@ namespace TAU_Complex
                 tau = Convert.ToDouble(textBoxtau.Text);
                 w = Convert.ToDouble(textBoxw.Text);
                 if (tk <= 0 || T <= 0 || k <= 0 || tau <= 0 || w <= 0) throw new Exception();
-                
+
             }
             catch (Exception)
             {
@@ -63,6 +70,8 @@ namespace TAU_Complex
             double Dt;
             if (Data.Dt != 0) Dt = Data.Dt;
             else Dt = tk / 1000;
+
+            if (Program.DtCheck(tk, Dt)) return;
 
             double XInt = 0;
             double x1I = 0, x2I = 0;

@@ -1,4 +1,5 @@
-﻿using ZedGraph;
+﻿using System;
+using ZedGraph;
 
 namespace TAU_Complex
 {
@@ -24,6 +25,8 @@ namespace TAU_Complex
         public static string title3;
         public static string Ytitle3;
         public static string Xtitle3;
+
+        
 
     }
 }

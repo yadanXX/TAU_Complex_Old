@@ -18,9 +18,11 @@ namespace TAU_Complex
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
             HideAllPanel();
             comboBoxMain.SelectedIndex = 0;
+            zedGraphControl1.GraphPane.Title.Text = "График переходной характеристики";
+            zedGraphControl1.GraphPane.YAxis.Title.Text = "h(t)";
+            zedGraphControl1.GraphPane.XAxis.Title.Text = "t";
         }
         private void HideAllPanel()
         {
@@ -154,7 +156,6 @@ namespace TAU_Complex
             double Dt;
             if (Data.Dt != 0) Dt = Data.Dt;
             else Dt = tk / 1000;
-
 
             GraphPane pane = zedGraphControl1.GraphPane;
             pane.CurveList.Clear();

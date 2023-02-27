@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using ZedGraph;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace TAU_Complex
 {
@@ -12,6 +14,15 @@ namespace TAU_Complex
         {
             InitializeComponent();
             Data.active_value = 12;
+            zedGraphControl1.GraphPane.Title.Text = "График переходной характиристики";
+            zedGraphControl2.GraphPane.Title.Text = "Ошибка";
+            zedGraphControl3.GraphPane.Title.Text = "Входной сигнал";
+            zedGraphControl1.GraphPane.YAxis.Title.Text = "h(t)";
+            zedGraphControl1.GraphPane.XAxis.Title.Text = "t";
+            zedGraphControl2.GraphPane.YAxis.Title.Text = "∆Q(t)";
+            zedGraphControl2.GraphPane.XAxis.Title.Text = "t";
+            zedGraphControl3.GraphPane.YAxis.Title.Text = "h(t)";
+            zedGraphControl3.GraphPane.XAxis.Title.Text = "t";
         }
 
         private static Random rnd = new Random();
@@ -90,6 +101,8 @@ namespace TAU_Complex
             if (Data.Dt != 0) Dt = Data.Dt;
             else Dt = tk / 1000;
 
+            if (Program.DtCheck(tk, Dt)) return;
+
             PointPairList list_1 = new PointPairList();
             PointPairList list_2 = new PointPairList();
             PointPairList list_3 = new PointPairList();
@@ -130,7 +143,7 @@ namespace TAU_Complex
                 list_3.Add(i, enter);
             }
             DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
-            DrawGraph(zedGraphControl2, list_2, "Ошибка", "E(t)", "t");
+            DrawGraph(zedGraphControl2, list_2, "Ошибка", "∆Q(t)", "t");
             DrawGraph(zedGraphControl3, list_3, "Входной сигнал", "h(t)", "t");
 
             Data.list1 = list_1;
@@ -142,7 +155,7 @@ namespace TAU_Complex
             Data.list2 = list_2;
             Data.legend2 = legend;
             Data.title2 = "Ошибка";
-            Data.Ytitle2 = "E(t)";
+            Data.Ytitle2 = "∆Q(t)";
             Data.Xtitle2 = "t";
 
             Data.list3 = list_3;
@@ -268,19 +281,22 @@ namespace TAU_Complex
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex == 1)
+            if (radioButtonRandom.Checked)
             {
-                labelG1.Visible = true;
-                textBoxG1.Visible = true;
-                labelG2.Visible = true;
-                textBoxG2.Visible = true;
-            }
-            else
-            {
-                labelG1.Visible = false;
-                textBoxG1.Visible = false;
-                labelG2.Visible = false;
-                textBoxG2.Visible = false;
+                if (comboBox1.SelectedIndex == 1)
+                {
+                    labelG1.Visible = true;
+                    textBoxG1.Visible = true;
+                    labelG2.Visible = true;
+                    textBoxG2.Visible = true;
+                }
+                else
+                {
+                    labelG1.Visible = false;
+                    textBoxG1.Visible = false;
+                    labelG2.Visible = false;
+                    textBoxG2.Visible = false;
+                }
             }
         }
     }

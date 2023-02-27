@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using ZedGraph;
 
 namespace TAU_Complex
@@ -11,10 +12,17 @@ namespace TAU_Complex
         string legend1;
         PointPairList list2;
         string legend2;
+
         public Form2()
         {
             InitializeComponent();
             Data.active_value = 8;
+            zedGraphControl1.GraphPane.Title.Text = "График переходной характеристики";
+            zedGraphControl2.GraphPane.Title.Text = "Годограф Михайлова";
+            zedGraphControl1.GraphPane.YAxis.Title.Text = "h(t)";
+            zedGraphControl1.GraphPane.XAxis.Title.Text = "t";
+            zedGraphControl2.GraphPane.YAxis.Title.Text = "jv(w)";
+            zedGraphControl2.GraphPane.XAxis.Title.Text = "u(w)";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -47,6 +55,9 @@ namespace TAU_Complex
             double Dt;
             if (Data.Dt != 0) Dt = Data.Dt;
             else Dt = tk / 1000;
+
+            if (Program.DtCheck(tk, Dt)) return;
+
             PointPairList list_1 = new PointPairList();
             PointPairList list_2 = new PointPairList();
 

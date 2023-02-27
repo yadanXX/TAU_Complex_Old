@@ -17,6 +17,21 @@ namespace TAU_Complex
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormMain());
         }
-        
+
+        public static bool DtCheck(double t, double Dt)
+        {
+            try
+            {
+                if (t / Dt >= 100000) throw new Exception();
+                return false;
+            }
+            catch (Exception)
+            {
+                Form_error f = new Form_error("Уменьшите шаг дискретизации Dt \rили конечное время построения tk");
+                f.ShowDialog();
+                return true;
+            }
+        }
+
     }
 }

@@ -69,7 +69,7 @@
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(0);
             this.panelSideMenu.MaximumSize = new System.Drawing.Size(222, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(222, 761);
+            this.panelSideMenu.Size = new System.Drawing.Size(222, 776);
             this.panelSideMenu.TabIndex = 0;
             // 
             // button6
@@ -310,7 +310,7 @@
             this.panelWorkSpace.Location = new System.Drawing.Point(222, 40);
             this.panelWorkSpace.Margin = new System.Windows.Forms.Padding(0);
             this.panelWorkSpace.Name = "panelWorkSpace";
-            this.panelWorkSpace.Size = new System.Drawing.Size(962, 721);
+            this.panelWorkSpace.Size = new System.Drawing.Size(962, 736);
             this.panelWorkSpace.TabIndex = 2;
             // 
             // pictureBox1
@@ -321,7 +321,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(962, 721);
+            this.pictureBox1.Size = new System.Drawing.Size(962, 736);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -337,14 +337,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.ClientSize = new System.Drawing.Size(1184, 776);
             this.Controls.Add(this.panelWorkSpace);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MinimumSize = new System.Drawing.Size(800, 750);
+            this.MinimumSize = new System.Drawing.Size(800, 815);
             this.Name = "FormMain";
             this.Text = "Тау комплекс";
             this.panelSideMenu.ResumeLayout(false);
