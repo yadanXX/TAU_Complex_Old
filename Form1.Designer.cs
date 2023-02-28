@@ -210,7 +210,7 @@
             // 
             // pictureBox7k
             // 
-            this.pictureBox7k.Image = global::TAU_Complex.Properties.Resources.k1;
+            this.pictureBox7k.Image = global::TAU_Complex.Properties.Resources.k;
             this.pictureBox7k.Location = new System.Drawing.Point(10, 118);
             this.pictureBox7k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox7k.Name = "pictureBox7k";
@@ -331,7 +331,7 @@
             // 
             // pictureBox5k
             // 
-            this.pictureBox5k.Image = global::TAU_Complex.Properties.Resources.k1;
+            this.pictureBox5k.Image = global::TAU_Complex.Properties.Resources.k;
             this.pictureBox5k.Location = new System.Drawing.Point(10, 88);
             this.pictureBox5k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox5k.Name = "pictureBox5k";
@@ -423,7 +423,7 @@
             // 
             // pictureBox6k
             // 
-            this.pictureBox6k.Image = global::TAU_Complex.Properties.Resources.k1;
+            this.pictureBox6k.Image = global::TAU_Complex.Properties.Resources.k;
             this.pictureBox6k.Location = new System.Drawing.Point(6, 121);
             this.pictureBox6k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox6k.Name = "pictureBox6k";
@@ -536,7 +536,7 @@
             // 
             // pictureBox3k
             // 
-            this.pictureBox3k.Image = global::TAU_Complex.Properties.Resources.k1;
+            this.pictureBox3k.Image = global::TAU_Complex.Properties.Resources.k;
             this.pictureBox3k.Location = new System.Drawing.Point(10, 132);
             this.pictureBox3k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox3k.Name = "pictureBox3k";
@@ -657,7 +657,7 @@
             // 
             // pictureBox4k
             // 
-            this.pictureBox4k.Image = global::TAU_Complex.Properties.Resources.k1;
+            this.pictureBox4k.Image = global::TAU_Complex.Properties.Resources.k;
             this.pictureBox4k.Location = new System.Drawing.Point(10, 120);
             this.pictureBox4k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox4k.Name = "pictureBox4k";
@@ -765,7 +765,7 @@
             // 
             // pictureBox2k1
             // 
-            this.pictureBox2k1.Image = global::TAU_Complex.Properties.Resources.k1;
+            this.pictureBox2k1.Image = global::TAU_Complex.Properties.Resources.k;
             this.pictureBox2k1.Location = new System.Drawing.Point(15, 109);
             this.pictureBox2k1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2k1.Name = "pictureBox2k1";
@@ -854,7 +854,7 @@
             // 
             // pictureBox1k1
             // 
-            this.pictureBox1k1.Image = global::TAU_Complex.Properties.Resources.k1;
+            this.pictureBox1k1.Image = global::TAU_Complex.Properties.Resources.k;
             this.pictureBox1k1.Location = new System.Drawing.Point(15, 107);
             this.pictureBox1k1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox1k1.Name = "pictureBox1k1";

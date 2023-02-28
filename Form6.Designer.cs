@@ -309,7 +309,6 @@
             this.comboBox1.Size = new System.Drawing.Size(307, 27);
             this.comboBox1.TabIndex = 18;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            this.comboBox1.SelectedIndex = 1;
             // 
             // panel2
             // 
@@ -486,10 +485,10 @@
             // pictureBoxT
             // 
             this.pictureBoxT.Image = global::TAU_Complex.Properties.Resources.T;
-            this.pictureBoxT.Location = new System.Drawing.Point(140, 9);
+            this.pictureBoxT.Location = new System.Drawing.Point(135, 9);
             this.pictureBoxT.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBoxT.Name = "pictureBoxT";
-            this.pictureBoxT.Size = new System.Drawing.Size(27, 24);
+            this.pictureBoxT.Size = new System.Drawing.Size(31, 24);
             this.pictureBoxT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxT.TabIndex = 26;
             this.pictureBoxT.TabStop = false;
@@ -500,7 +499,7 @@
             this.pictureBoxtk.Location = new System.Drawing.Point(8, 180);
             this.pictureBoxtk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBoxtk.Name = "pictureBoxtk";
-            this.pictureBoxtk.Size = new System.Drawing.Size(27, 24);
+            this.pictureBoxtk.Size = new System.Drawing.Size(31, 24);
             this.pictureBoxtk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxtk.TabIndex = 25;
             this.pictureBoxtk.TabStop = false;
@@ -552,10 +551,10 @@
             // pictureBoxK
             // 
             this.pictureBoxK.Image = global::TAU_Complex.Properties.Resources.KB;
-            this.pictureBoxK.Location = new System.Drawing.Point(8, 9);
+            this.pictureBoxK.Location = new System.Drawing.Point(3, 9);
             this.pictureBoxK.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBoxK.Name = "pictureBoxK";
-            this.pictureBoxK.Size = new System.Drawing.Size(27, 24);
+            this.pictureBoxK.Size = new System.Drawing.Size(31, 24);
             this.pictureBoxK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxK.TabIndex = 20;
             this.pictureBoxK.TabStop = false;

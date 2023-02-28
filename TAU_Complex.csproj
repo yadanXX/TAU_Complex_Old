@@ -233,7 +233,6 @@
     <None Include="Resources\запаздывание.png" />
     <None Include="Resources\tau.png" />
     <None Include="Resources\T.png" />
-    <None Include="Resources\k.png" />
     <None Include="Resources\Схема запаздывания.jpg" />
     <None Include="Resources\найквист.png" />
     <None Include="Resources\nu.png" />
@@ -282,6 +281,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\k.png" />
     <Content Include="T_ico.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
