@@ -23,6 +23,7 @@ namespace TAU_Complex
             zedGraphControl2.GraphPane.XAxis.Title.Text = "t";
             zedGraphControl3.GraphPane.YAxis.Title.Text = "Qвых(t)";
             zedGraphControl3.GraphPane.XAxis.Title.Text = "t";
+            comboBox1.SelectedIndex = 1;
         }
 
         private static Random rnd = new Random();
