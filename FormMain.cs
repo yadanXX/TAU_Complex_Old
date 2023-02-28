@@ -149,7 +149,7 @@ namespace TAU_Complex
         {
             if (sidebarExpand)
             {
-                panelSideMenu.Width -= 20;
+                panelSideMenu.Width -= 1000;
                 if (panelSideMenu.Width == panelSideMenu.MinimumSize.Width)
                 {
                     sidebarExpand = false;
@@ -158,7 +158,7 @@ namespace TAU_Complex
             }
             else
             {
-                panelSideMenu.Width += 20;
+                panelSideMenu.Width += 1000;
                 if (panelSideMenu.Width == panelSideMenu.MaximumSize.Width)
                 {
                     sidebarExpand = true;

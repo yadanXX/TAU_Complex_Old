@@ -21,7 +21,7 @@ namespace TAU_Complex
             HideAllPanel();
             comboBoxMain.SelectedIndex = 0;
             zedGraphControl1.GraphPane.Title.Text = "График переходной характеристики";
-            zedGraphControl1.GraphPane.YAxis.Title.Text = "h(t)";
+            zedGraphControl1.GraphPane.YAxis.Title.Text = "Qвых(t)";
             zedGraphControl1.GraphPane.XAxis.Title.Text = "t";
         }
         private void HideAllPanel()
@@ -88,7 +88,7 @@ namespace TAU_Complex
             LineItem myCurve1 = pane.AddCurve("", list_1, Color.Red, SymbolType.None);
             myCurve1.Line.Width = 2f;
             pane.Title.Text = "График переходной характеристики";
-            pane.YAxis.Title.Text = "h(t)";
+            pane.YAxis.Title.Text = "Qвых(t)";
             pane.XAxis.Title.Text = "t";
             // !!!
             // Включаем отображение сетки напротив крупных рисок по оси X
@@ -169,7 +169,7 @@ namespace TAU_Complex
             Data.list1 = list_1;
             Data.legend1 = legend;
             Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "h(t)";
+            Data.Ytitle1 = "Qвых(t)";
             Data.Xtitle1 = "t";
 
         }
@@ -209,7 +209,7 @@ namespace TAU_Complex
             Data.list1 = list_1;
             Data.legend1 = legend;
             Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "h(t)";
+            Data.Ytitle1 = "Qвых(t)";
             Data.Xtitle1 = "t";
         }
 
@@ -251,7 +251,7 @@ namespace TAU_Complex
             Data.list1 = list_1;
             Data.legend1 = legend;
             Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "h(t)";
+            Data.Ytitle1 = "Qвых(t)";
             Data.Xtitle1 = "t";
         }
 
@@ -293,7 +293,7 @@ namespace TAU_Complex
             Data.list1 = list_1;
             Data.legend1 = legend;
             Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "h(t)";
+            Data.Ytitle1 = "Qвых(t)";
             Data.Xtitle1 = "t";
         }
 
@@ -329,7 +329,7 @@ namespace TAU_Complex
             Data.list1 = list_1;
             Data.legend1 = legend;
             Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "h(t)";
+            Data.Ytitle1 = "Qвых(t)";
             Data.Xtitle1 = "t";
         }
 
@@ -367,7 +367,7 @@ namespace TAU_Complex
             Data.list1 = list_1;
             Data.legend1 = legend;
             Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "h(t)";
+            Data.Ytitle1 = "Qвых(t)";
             Data.Xtitle1 = "t";
         }
 
@@ -405,7 +405,7 @@ namespace TAU_Complex
             Data.list1 = list_1;
             Data.legend1 = legend;
             Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "h(t)";
+            Data.Ytitle1 = "Qвых(t)";
             Data.Xtitle1 = "t";
         }
     }

@@ -17,11 +17,11 @@ namespace TAU_Complex
             zedGraphControl1.GraphPane.Title.Text = "График переходной характиристики";
             zedGraphControl2.GraphPane.Title.Text = "Ошибка";
             zedGraphControl3.GraphPane.Title.Text = "Входной сигнал";
-            zedGraphControl1.GraphPane.YAxis.Title.Text = "h(t)";
+            zedGraphControl1.GraphPane.YAxis.Title.Text = "Qвых(t)";
             zedGraphControl1.GraphPane.XAxis.Title.Text = "t";
             zedGraphControl2.GraphPane.YAxis.Title.Text = "∆Q(t)";
             zedGraphControl2.GraphPane.XAxis.Title.Text = "t";
-            zedGraphControl3.GraphPane.YAxis.Title.Text = "h(t)";
+            zedGraphControl3.GraphPane.YAxis.Title.Text = "Qвых(t)";
             zedGraphControl3.GraphPane.XAxis.Title.Text = "t";
         }
 
@@ -142,14 +142,14 @@ namespace TAU_Complex
                 list_2.Add(i, enter - wv4);
                 list_3.Add(i, enter);
             }
-            DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
+            DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "Qвых(t)", "t");
             DrawGraph(zedGraphControl2, list_2, "Ошибка", "∆Q(t)", "t");
-            DrawGraph(zedGraphControl3, list_3, "Входной сигнал", "h(t)", "t");
+            DrawGraph(zedGraphControl3, list_3, "Входной сигнал", "Qвых(t)", "t");
 
             Data.list1 = list_1;
             Data.legend1 = legend;
             Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "h(t)";
+            Data.Ytitle1 = "Qвых(t)";
             Data.Xtitle1 = "t";
 
             Data.list2 = list_2;
@@ -161,7 +161,7 @@ namespace TAU_Complex
             Data.list3 = list_3;
             Data.legend3 = legend;
             Data.title3 = "Входной сигнал";
-            Data.Ytitle3 = "h(t)";
+            Data.Ytitle3 = "Qвых(t)";
             Data.Xtitle3 = "t";
         }
         private double ramp(double x, double k)

@@ -7,7 +7,7 @@ namespace TAU_Complex
 {
     public partial class FormSeparate_ZedGraph : Form
     {
-        //public FormSeparate_ZedGraph(PointPairList list, string legend1, string title = "График переходной характеристики", string Ytitle = "h(t)", string Xtitle = "t")
+        //public FormSeparate_ZedGraph(PointPairList list, string legend1, string title = "График переходной характеристики", string Ytitle = "Qвых(t)", string Xtitle = "t")
         //{
         //    list_1 = list;
         //    legend = legend1;

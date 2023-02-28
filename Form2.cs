@@ -19,7 +19,7 @@ namespace TAU_Complex
             Data.active_value = 8;
             zedGraphControl1.GraphPane.Title.Text = "График переходной характеристики";
             zedGraphControl2.GraphPane.Title.Text = "Годограф Михайлова";
-            zedGraphControl1.GraphPane.YAxis.Title.Text = "h(t)";
+            zedGraphControl1.GraphPane.YAxis.Title.Text = "Qвых(t)";
             zedGraphControl1.GraphPane.XAxis.Title.Text = "t";
             zedGraphControl2.GraphPane.YAxis.Title.Text = "jv(w)";
             zedGraphControl2.GraphPane.XAxis.Title.Text = "u(w)";
@@ -79,13 +79,13 @@ namespace TAU_Complex
             }
             list2 = list_2;
             legend2 = $"k1={textBoxK1.Text} k2={textBoxK2.Text} k3={textBoxK3.Text} T1={textBoxT1.Text} T2={textBoxT2.Text} w={textBoxW.Text}";
-            DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
+            DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "Qвых(t)", "t");
             DrawGraph(zedGraphControl2, list_2, "Годограф Михайлова", "jv(w)", "u(w)");
 
             Data.list1 = list_1;
             Data.legend1 = legend1;
             Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "h(t)";
+            Data.Ytitle1 = "Qвых(t)";
             Data.Xtitle1 = "t";
 
             Data.list2 = list_2;

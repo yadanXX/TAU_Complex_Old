@@ -15,7 +15,7 @@ namespace TAU_Complex
             Data.active_value = 11;
             zedGraphControl1.GraphPane.Title.Text = "График переходной характиристики";
             zedGraphControl2.GraphPane.Title.Text = "Ошибка";
-            zedGraphControl1.GraphPane.YAxis.Title.Text = "h(t)";
+            zedGraphControl1.GraphPane.YAxis.Title.Text = "Qвых(t)";
             zedGraphControl1.GraphPane.XAxis.Title.Text = "t";
             zedGraphControl2.GraphPane.YAxis.Title.Text = "∆Q(t)";
             zedGraphControl2.GraphPane.XAxis.Title.Text = "t";
@@ -103,7 +103,7 @@ namespace TAU_Complex
                 list_1.Add(i, wv3);
                 list_2.Add(i, xv(i, KRamp) - wv3);
             }
-            DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "h(t)", "t");
+            DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "Qвых(t)", "t");
             DrawGraph(zedGraphControl2, list_2, "Ошибка", "∆Q(t)", "t");
 
 
@@ -111,7 +111,7 @@ namespace TAU_Complex
             Data.list1 = list_1;
             Data.legend1 = legend;
             Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "h(t)";
+            Data.Ytitle1 = "Qвых(t)";
             Data.Xtitle1 = "t";
 
             Data.list2 = list_2;
