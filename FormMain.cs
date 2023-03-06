@@ -140,6 +140,11 @@ namespace TAU_Complex
             OpenChildForm(new Form6(), sender);
         }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Form7(), sender);
+        }
+
         private void slide_button_Click(object sender, EventArgs e)
         {
             slide_timer.Start();
@@ -176,5 +181,7 @@ namespace TAU_Complex
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+
     }
 }
