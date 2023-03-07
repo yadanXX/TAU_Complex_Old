@@ -72,7 +72,56 @@ namespace TAU_Complex
             }
             else if (radioButtonIFB.Checked)
             {
+                double k1;
+                double k2;
+                double T1;
+                double T2, Tnu;
+                double tk;
+                string legend = "";
+                try
+                {
+                    k1 = Convert.ToDouble(textBoxk1.Text);
+                    k2 = Convert.ToDouble(textBoxk2.Text);
+                    T1 = Convert.ToDouble(textBoxT1.Text);
+                    tk = Convert.ToDouble(textBoxtk.Text);
+                    T2 = Convert.ToDouble(textBoxT2.Text);
+                    Tnu = Convert.ToDouble(textBoxTnu.Text);
+                    if (k1 <= 0 || k1 <= 0 || T1 <= 0 || tk <= 0 || T2 <= 0 || Tnu <= 0) throw new Exception();
+                }
+                catch (Exception)
+                {
+                    Form_error f = new Form_error();
+                    f.ShowDialog();
+                    return;
+                }
 
+                double Dt;
+                if (Data.Dt != 0) Dt = Data.Dt;
+                else Dt = tk / 1000;
+
+                if (Program.DtCheck(tk, Dt)) return;
+
+                PointPairList list_1 = new PointPairList();
+
+                double xv = 1;
+                double wv1 = 0, wv2, temp1 = 0, temp2 = 0;
+
+                for (double i = 0; i < tk; i += Dt)
+                {
+                    (wv1, temp1) = Wlink.Aperiodic(xv - wv1, k1, T1, temp1, Dt);
+                    list_1.Add(i, wv1);
+                    (wv2,temp2) = Wlink.PropDifDelay(wv1, 1 / k2, Tnu, T2, temp2, Dt);
+                    wv1 = wv1 - wv2;
+
+                }
+
+                DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "Qвых(t)", "t");
+
+                Data.list1 = list_1;
+                Data.legend1 = legend;
+                Data.title1 = "График переходной характеристики";
+                Data.Ytitle1 = "Qвых(t)";
+                Data.Xtitle1 = "t";
             }
             else if (radioButton1.Checked)
             {
