@@ -6,6 +6,16 @@
         { //Безынерционное звено (П - регулятор).
             return xv * k;
         }
+        public static double IdealInter(double xv, double k,double x1, double Dt)
+        {
+            /* Идеальное интегрирующее звено (И - регулятор)
+             * xv - вход
+             * k - коэф усиления
+             * x1 - предыдущий выход1(промежуточный), после изменения текущий1
+             * Dt - дельта t
+             */            
+            return x1 + xv * Dt * k;
+        }
         public static (double, double, double) Integrating(double xv, double k, double T, double x1, double x2, double Dt)
         {
             /* Интегрирующее звено с замедлением.

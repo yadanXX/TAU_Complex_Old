@@ -140,13 +140,13 @@ namespace TAU_Complex
         {
             if (radioButtonHFB.Checked)
             {
-                textBoxT2.Visible = false;
-                textBoxTnu.Visible = false;
+                panelT2.Visible = false;
+                panelTnu.Visible = false;
             }
             else if (radioButtonIFB.Checked)
             {
-                textBoxT2.Visible = true;
-                textBoxTnu.Visible = true;
+                panelT2.Visible = true;
+                panelTnu.Visible = true;
             }
         }
 
@@ -160,6 +160,7 @@ namespace TAU_Complex
                 radioButton1.Checked = false;
                 radioButton2.Checked = false;
                 radioButton3.Checked = false;
+                panelk3.Visible = false;
             }
             else if (radioButtonISOL.Checked)
             {
@@ -168,6 +169,7 @@ namespace TAU_Complex
                 radioButtonHFB.Checked = false;
                 radioButtonIFB.Checked = false;
                 radioButton1.Checked = true;
+                panelk3.Visible = true;
             }
         }
 
@@ -231,5 +233,13 @@ namespace TAU_Complex
             zedGraphControl.Invalidate();
         }
 
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked)
+            {
+                panelS.Visible = true;
+            }
+            else panelS.Visible=false;
+        }
     }
 }
