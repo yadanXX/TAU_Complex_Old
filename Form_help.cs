@@ -46,7 +46,10 @@ namespace TAU_Complex
                     pictureBox11.Visible = true;
                     break;
                 case 12:
-                    pictureBox11.Visible = true;
+                    pictureBox12.Visible = true;
+                    break;
+                case 13:
+                    pictureBox13.Visible = true;
                     break;
                 default:
                     break;

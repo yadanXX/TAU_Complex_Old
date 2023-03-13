@@ -67,8 +67,8 @@
             this.labelDt.Name = "labelDt";
             this.labelDt.Size = new System.Drawing.Size(320, 54);
             this.labelDt.TabIndex = 2;
-            this.labelDt.Text = "Значение шага дискретизации\r\n(когда значение равно 0, то шаг в 1000 раз\r\n меньше " +
-    "конечного времение построения tk)";
+            this.labelDt.Text = "Значение шага дискретизации\r\n(когда значение равно 0, то шаг в 10000 раз\r\n меньше" +
+    " конечного времение построения tk)";
             // 
             // checkBox1
             // 

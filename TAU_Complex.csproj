@@ -291,6 +291,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\k.png" />
+    <None Include="Resources\Tnu.jpg" />
+    <None Include="Resources\Улучшение САР.png" />
     <Content Include="T_ico.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
