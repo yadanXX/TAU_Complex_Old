@@ -155,7 +155,7 @@ namespace TAU_Complex
 
             double Dt;
             if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 1000;
+            else Dt = tk / 10000;
 
             GraphPane pane = zedGraphControl1.GraphPane;
             pane.CurveList.Clear();
@@ -196,7 +196,7 @@ namespace TAU_Complex
             }
             double Dt;
             if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 1000;
+            else Dt = tk / 10000;
             GraphPane pane = zedGraphControl1.GraphPane;
             pane.CurveList.Clear();
             list_1 = new PointPairList();
@@ -235,7 +235,7 @@ namespace TAU_Complex
             }
             double Dt;
             if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 1000;
+            else Dt = tk / 10000;
             double t3, t4;
             t3 = t1 / 2.0 + Math.Sqrt(Math.Pow(t1, 2) / 4.0 - Math.Pow(t2, 2));
             t4 = t1 / 2.0 - Math.Sqrt(Math.Pow(t1, 2) / 4.0 - Math.Pow(t2, 2));
@@ -277,7 +277,7 @@ namespace TAU_Complex
             }
             double Dt;
             if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 1000;
+            else Dt = tk / 10000;
             double xi;
             xi = t1 / (2.0 * t2);
             GraphPane pane = zedGraphControl1.GraphPane;
@@ -315,7 +315,7 @@ namespace TAU_Complex
             }
             double Dt;
             if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 1000;
+            else Dt = tk / 10000;
             GraphPane pane = zedGraphControl1.GraphPane;
             pane.CurveList.Clear();
             list_1 = new PointPairList();
@@ -353,7 +353,7 @@ namespace TAU_Complex
             }
             double Dt;
             if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 1000;
+            else Dt = tk / 10000;
             GraphPane pane = zedGraphControl1.GraphPane;
             pane.CurveList.Clear();
             list_1 = new PointPairList();
@@ -391,7 +391,7 @@ namespace TAU_Complex
             }
             double Dt;
             if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 1000;
+            else Dt = tk / 10000;
             GraphPane pane = zedGraphControl1.GraphPane;
             pane.CurveList.Clear();
             list_1 = new PointPairList();

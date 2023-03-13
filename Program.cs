@@ -22,7 +22,7 @@ namespace TAU_Complex
         {
             try
             {
-                if (t / Dt >= 100000) throw new Exception();
+                if (t / Dt >= 1000000) throw new Exception();
                 return false;
             }
             catch (Exception)

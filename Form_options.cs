@@ -10,7 +10,7 @@ namespace TAU_Complex
         {
             InitializeComponent();
             textBoxDt.Text = Data.Dt.ToString();
-            if (Data.active_value <= 7) checkBox1.Visible = true;
+            if (Data.active_value <= 7 || Data.active_value == 13) checkBox1.Visible = true;
             if (Data.active_value == 8 || Data.active_value == 9)
             {
                 checkBox1.Visible = true;

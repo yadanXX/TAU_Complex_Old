@@ -1,4 +1,7 @@
-﻿namespace TAU_Complex
+﻿using System;
+using System.Windows.Forms;
+
+namespace TAU_Complex
 {
     public static class Wlink
     {
@@ -6,14 +9,14 @@
         { //Безынерционное звено (П - регулятор).
             return xv * k;
         }
-        public static double IdealInter(double xv, double k,double x1, double Dt)
+        public static double IdealInter(double xv, double k, double x1, double Dt)
         {
             /* Идеальное интегрирующее звено (И - регулятор)
              * xv - вход
              * k - коэф усиления
              * x1 - предыдущий выход1(промежуточный), после изменения текущий1
              * Dt - дельта t
-             */            
+             */
             return x1 + xv * Dt * k;
         }
         public static (double, double, double) Integrating(double xv, double k, double T, double x1, double x2, double Dt)
@@ -67,9 +70,24 @@
             x = xi1 + xv * T0 / T1 * k;
             return (x, xi1);
         }
+        public static (double, double, double) Oscillatory(double xv, double k, double T0, double T1, double x1, double xi1, double Dt)
+        {
+            /* Колебательное звено
+             * xv - вход
+             * k - коэф усиления
+             * T0,T1 - постоянная времени
+             * x1 - предыдущий выход1(промежуточный), после изменения текущий1
+             * xi1 - предыдущий выход1'(промежуточно производный),после изменения текущий1'
+             * Dt - дельта t
+             * x - выход
+             */
+            xi1 = xi1 + (xv - T1 * xi1 - x1) * Dt / Math.Pow(T0, 2);
+            x1 = x1 + xi1 * Dt;
+            return (k * x1, x1, xi1);
+        }
         public static (double, double) Difdelay(double xv, double k, double T0, double T1, double xi1, double Dt)
         {
-            /* Интегрирующее звено с замедлением.
+            /* Дифференцирующее звено с замедлением.
              * xv - вход
              * k - коэф усиления
              * T0,T1 - постоянная времени
