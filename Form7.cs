@@ -17,6 +17,10 @@ namespace TAU_Complex
         {
             InitializeComponent();
             Data.active_value = 13;
+            zedGraphControl1.GraphPane.Title.Text = "График переходной характиристики";
+            zedGraphControl1.GraphPane.YAxis.Title.Text = "Qвых(t)";
+            zedGraphControl1.GraphPane.XAxis.Title.Text = "t";
+            ShowDio(1);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -291,11 +295,14 @@ namespace TAU_Complex
             {
                 panelT2.Visible = false;
                 panelTnu.Visible = false;
+                ShowDio(1);
+                
             }
             else if (radioButtonIFB.Checked)
             {
                 panelT2.Visible = true;
                 panelTnu.Visible = true;
+                ShowDio(2);
             }
         }
 
@@ -309,7 +316,7 @@ namespace TAU_Complex
                 radioButton1.Checked = false;
                 radioButton2.Checked = false;
                 radioButton3.Checked = false;
-                panelk3.Visible = false;
+                panelk3.Visible = false;                
             }
             else if (radioButtonISOL.Checked)
             {
@@ -320,16 +327,49 @@ namespace TAU_Complex
                 radioButton1.Checked = true;
                 panelk3.Visible = true;
                 panelTnu.Visible = false;
+                ShowDio(3);
             }
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
+            if (radioButton1.Checked) ShowDio(3);
+            if (radioButton3.Checked) ShowDio(5);
             if (radioButton2.Checked)
             {
                 panelT2.Visible = true;
+                ShowDio(4);
             }
             else panelT2.Visible = false;
+        }
+
+        private void ShowDio(int select) 
+        {
+            pictureBox1.Visible = false;
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
+            pictureBox5.Visible = false;
+            switch (select)
+            {
+                case 1:
+                    pictureBox1.Visible = true;
+                    break;
+                case 2:
+                    pictureBox2.Visible = true;
+                    break;
+                case 3:
+                    pictureBox3.Visible = true;
+                    break;
+                case 4:
+                    pictureBox4.Visible = true;
+                    break;
+                case 5:
+                    pictureBox5.Visible = true;
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void DrawGraph(ZedGraphControl zedGraphControl, PointPairList list_1, string TitleText, string YText, string XText)
@@ -392,6 +432,19 @@ namespace TAU_Complex
             zedGraphControl.Invalidate();
         }
 
-       
+        private void pictureBoxBut1_Click(object sender, EventArgs e)
+        {
+            radioButton1.Checked = true;
+        }
+
+        private void pictureBoxBut2_Click(object sender, EventArgs e)
+        {
+            radioButton2.Checked = true;
+        }
+
+        private void pictureBoxBut3_Click(object sender, EventArgs e)
+        {
+            radioButton3.Checked = true;
+        }
     }
 }
