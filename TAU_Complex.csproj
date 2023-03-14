@@ -293,6 +293,14 @@
     <None Include="Resources\k.png" />
     <None Include="Resources\Tnu.jpg" />
     <None Include="Resources\Улучшение САР.png" />
+    <None Include="Resources\Схема САР-1.jpg" />
+    <None Include="Resources\Схема САР-2.jpg" />
+    <None Include="Resources\Схема САР-3.jpg" />
+    <None Include="Resources\Схема САР-4.jpg" />
+    <None Include="Resources\Схема САР-5.jpg" />
+    <None Include="Resources\САР кнопка -1.jpg" />
+    <None Include="Resources\САР кнопка -2.jpg" />
+    <None Include="Resources\САР кнопка -3.jpg" />
     <Content Include="T_ico.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
