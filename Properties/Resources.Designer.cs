@@ -303,6 +303,16 @@ namespace TAU_Complex.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Tnu {
+            get {
+                object obj = ResourceManager.GetObject("Tnu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap togu {
             get {
                 object obj = ResourceManager.GetObject("togu", resourceCulture);
@@ -523,6 +533,36 @@ namespace TAU_Complex.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap САР_кнопка__1 {
+            get {
+                object obj = ResourceManager.GetObject("САР кнопка -1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap САР_кнопка__2 {
+            get {
+                object obj = ResourceManager.GetObject("САР кнопка -2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap САР_кнопка__3 {
+            get {
+                object obj = ResourceManager.GetObject("САР кнопка -3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Схема_запаздывания {
             get {
                 object obj = ResourceManager.GetObject("Схема запаздывания", resourceCulture);
@@ -563,6 +603,56 @@ namespace TAU_Complex.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Схема_САР_1 {
+            get {
+                object obj = ResourceManager.GetObject("Схема САР-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Схема_САР_2 {
+            get {
+                object obj = ResourceManager.GetObject("Схема САР-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Схема_САР_3 {
+            get {
+                object obj = ResourceManager.GetObject("Схема САР-3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Схема_САР_4 {
+            get {
+                object obj = ResourceManager.GetObject("Схема САР-4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Схема_САР_5 {
+            get {
+                object obj = ResourceManager.GetObject("Схема САР-5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Схема_точности {
             get {
                 object obj = ResourceManager.GetObject("Схема точности", resourceCulture);
@@ -576,6 +666,16 @@ namespace TAU_Complex.Properties {
         public static System.Drawing.Bitmap точность {
             get {
                 object obj = ResourceManager.GetObject("точность", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Улучшение_САР {
+            get {
+                object obj = ResourceManager.GetObject("Улучшение САР", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

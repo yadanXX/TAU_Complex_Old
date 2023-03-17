@@ -118,11 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="САР кнопка -2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\САР кнопка -2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tau" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tau.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Схема САР-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Схема САР-3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="k1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\k1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tnu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tnu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Апериодическое инерционное" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Апериодическое инерционное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,6 +178,9 @@
   <data name="Инерционное дифферинцирующие" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Инерционное дифферинцирующие.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="k" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\k.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Апериодическое звено ворого порядка" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Апериодическое звено ворого порядка.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -177,6 +189,9 @@
   </data>
   <data name="точность" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\точность.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="САР кнопка -1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\САР кнопка -1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Kд" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kд.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -189,6 +204,9 @@
   </data>
   <data name="Апериодическое инерционное " type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Апериодическое инерционное .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Схема САР-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Схема САР-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -204,6 +222,9 @@
   </data>
   <data name="Инвариантность" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Инвариантность.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Схема САР-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Схема САР-5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,8 +277,14 @@
   <data name="Tд" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tд.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Улучшение САР" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Улучшение САР.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Tу" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tу.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Схема САР-4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Схема САР-4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Идеальное усилительное" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Идеальное усилительное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -268,10 +295,13 @@
   <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Схема САР-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Схема САР-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="схема найквист" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\схема найквист.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="k" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\k.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="САР кнопка -3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\САР кнопка -3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -16,6 +16,11 @@ namespace TAU_Complex
         public Form7()
         {
             InitializeComponent();
+            Data.active_value = 13;
+            zedGraphControl1.GraphPane.Title.Text = "График переходной характиристики";
+            zedGraphControl1.GraphPane.YAxis.Title.Text = "Qвых(t)";
+            zedGraphControl1.GraphPane.XAxis.Title.Text = "t";
+            ShowDio(1);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,7 +50,7 @@ namespace TAU_Complex
 
                 double Dt;
                 if (Data.Dt != 0) Dt = Data.Dt;
-                else Dt = tk / 1000;
+                else Dt = tk / 10000;
 
                 if (Program.DtCheck(tk, Dt)) return;
 
@@ -99,21 +104,21 @@ namespace TAU_Complex
 
                 double Dt;
                 if (Data.Dt != 0) Dt = Data.Dt;
-                else Dt = tk / 1000;
+                else Dt = tk / 10000;
 
                 if (Program.DtCheck(tk, Dt)) return;
 
                 PointPairList list_1 = new PointPairList();
 
                 double xv = 1;
-                double wv1 = 0, wv2, temp1 = 0, temp2 = 0;
+                double wv1 = 0, wv2 = 0, temp1 = 0, temp2 = 0;
 
                 for (double i = 0; i < tk; i += Dt)
                 {
+                    wv1 = wv1 - wv2;
                     (wv1, temp1) = Wlink.Aperiodic(xv - wv1, k1, T1, temp1, Dt);
                     list_1.Add(i, wv1);
                     (wv2, temp2) = Wlink.PropDifDelay(wv1, 1 / k2, Tnu, T2, temp2, Dt);
-                    wv1 = wv1 - wv2;
 
                 }
 
@@ -152,7 +157,7 @@ namespace TAU_Complex
 
                 double Dt;
                 if (Data.Dt != 0) Dt = Data.Dt;
-                else Dt = tk / 1000;
+                else Dt = tk / 10000;
 
                 if (Program.DtCheck(tk, Dt)) return;
 
@@ -183,7 +188,7 @@ namespace TAU_Complex
                 double k2;
                 double k3;
                 double T1;
-                double S;
+                double T2;
                 double tk;
                 string legend = "";
                 try
@@ -192,10 +197,10 @@ namespace TAU_Complex
                     k2 = Convert.ToDouble(textBoxk2.Text);
                     k3 = Convert.ToDouble(textBoxk3.Text);
                     T1 = Convert.ToDouble(textBoxT1.Text);
-                    S = Convert.ToDouble(textBoxS.Text);
+                    T2 = Convert.ToDouble(textBoxT2.Text);
                     tk = Convert.ToDouble(textBoxtk.Text);
-                    legend += $"k1 = {k1} k2 = {k2} k3 = {k3} T1 = {T1} S = {S}";
-                    if (k1 <= 0 || k1 <= 0 || T1 <= 0 || tk <= 0 || k3 <= 0) throw new Exception();
+                    legend += $"k1 = {k1} k2 = {k2} k3 = {k3} T1 = {T1} T2 = {T2}";
+                    if (k1 <= 0 || k2 <= 0 || T1 <= 0 || T2 <= 0 || tk <= 0 || k3 <= 0) throw new Exception();
                 }
                 catch (Exception)
                 {
@@ -206,21 +211,20 @@ namespace TAU_Complex
 
                 double Dt;
                 if (Data.Dt != 0) Dt = Data.Dt;
-                else Dt = tk / 1000;
+                else Dt = tk / 10000;
 
                 if (Program.DtCheck(tk, Dt)) return;
 
                 PointPairList list_1 = new PointPairList();
 
                 double xv = 1;
-                double wv1 = 0, wv2 = 0, wv3, temp1 = 0;
+                double wv1 = 0, wv2 = 0, wv3, temp11 = 0, temp12 = 0;
 
                 for (double i = 0; i < tk; i += Dt)
                 {
                     wv2 = Wlink.IdealInter(xv - wv1, k2, wv2, Dt);
                     wv3 = Wlink.NonEnertion(xv - wv1, k3);
-
-                    (wv1, temp1) = Wlink.Aperiodic(wv2 + wv3, k1, T1, temp1, Dt);
+                    (wv1, temp11, temp12) = Wlink.Oscillatory(wv2 + wv3, k1, T1, T2, temp11, temp12, Dt);
                     list_1.Add(i, wv1);
                 }
 
@@ -234,7 +238,55 @@ namespace TAU_Complex
             }
             else if (radioButton3.Checked)
             {
+                double k1;
+                double k2;
+                double k3;
+                double T1;
+                double tk;
+                string legend = "";
+                try
+                {
+                    k1 = Convert.ToDouble(textBoxk1.Text);
+                    k2 = Convert.ToDouble(textBoxk2.Text);
+                    k3 = Convert.ToDouble(textBoxk3.Text);
+                    T1 = Convert.ToDouble(textBoxT1.Text);
+                    tk = Convert.ToDouble(textBoxtk.Text);
+                    legend += $"k1 = {k1} k2 = {k2} k3 = {k3} T1 = {T1}";
+                    if (k1 <= 0 || k2 <= 0 || T1 <= 0 || tk <= 0 || k3 <= 0) throw new Exception();
+                }
+                catch (Exception)
+                {
+                    Form_error f = new Form_error();
+                    f.ShowDialog();
+                    return;
+                }
 
+                double Dt;
+                if (Data.Dt != 0) Dt = Data.Dt;
+                else Dt = tk / 10000;
+
+                if (Program.DtCheck(tk, Dt)) return;
+
+                PointPairList list_1 = new PointPairList();
+
+                double xv = 1;
+                double wv1 = 0, wv2 = 0, wv3, temp11 = 0, temp12 = 0;
+
+                for (double i = 0; i < tk; i += Dt)
+                {
+                    wv2 = Wlink.IdealInter(xv - wv1, k2, wv2, Dt);
+                    wv3 = Wlink.NonEnertion(xv - wv1, k3);
+                    (wv1, temp11, temp12) = Wlink.Integrating(wv2 + wv3, k1, T1, temp11, temp12, Dt);
+                    list_1.Add(i, wv1);
+                }
+
+                DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "Qвых(t)", "t");
+
+                Data.list1 = list_1;
+                Data.legend1 = legend;
+                Data.title1 = "График переходной характеристики";
+                Data.Ytitle1 = "Qвых(t)";
+                Data.Xtitle1 = "t";
             }
         }
         private void radioButtonHFB_CheckedChanged(object sender, EventArgs e)
@@ -243,11 +295,14 @@ namespace TAU_Complex
             {
                 panelT2.Visible = false;
                 panelTnu.Visible = false;
+                ShowDio(1);
+                
             }
             else if (radioButtonIFB.Checked)
             {
                 panelT2.Visible = true;
                 panelTnu.Visible = true;
+                ShowDio(2);
             }
         }
 
@@ -261,7 +316,7 @@ namespace TAU_Complex
                 radioButton1.Checked = false;
                 radioButton2.Checked = false;
                 radioButton3.Checked = false;
-                panelk3.Visible = false;
+                panelk3.Visible = false;                
             }
             else if (radioButtonISOL.Checked)
             {
@@ -271,6 +326,49 @@ namespace TAU_Complex
                 radioButtonIFB.Checked = false;
                 radioButton1.Checked = true;
                 panelk3.Visible = true;
+                panelTnu.Visible = false;
+                ShowDio(3);
+            }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked) ShowDio(3);
+            if (radioButton3.Checked) ShowDio(5);
+            if (radioButton2.Checked)
+            {
+                panelT2.Visible = true;
+                ShowDio(4);
+            }
+            else panelT2.Visible = false;
+        }
+
+        private void ShowDio(int select) 
+        {
+            pictureBox1.Visible = false;
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
+            pictureBox5.Visible = false;
+            switch (select)
+            {
+                case 1:
+                    pictureBox1.Visible = true;
+                    break;
+                case 2:
+                    pictureBox2.Visible = true;
+                    break;
+                case 3:
+                    pictureBox3.Visible = true;
+                    break;
+                case 4:
+                    pictureBox4.Visible = true;
+                    break;
+                case 5:
+                    pictureBox5.Visible = true;
+                    break;
+                default:
+                    break;
             }
         }
 
@@ -334,13 +432,19 @@ namespace TAU_Complex
             zedGraphControl.Invalidate();
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void pictureBoxBut1_Click(object sender, EventArgs e)
         {
-            if (radioButton2.Checked)
-            {
-                panelS.Visible = true;
-            }
-            else panelS.Visible = false;
+            radioButton1.Checked = true;
+        }
+
+        private void pictureBoxBut2_Click(object sender, EventArgs e)
+        {
+            radioButton2.Checked = true;
+        }
+
+        private void pictureBoxBut3_Click(object sender, EventArgs e)
+        {
+            radioButton3.Checked = true;
         }
     }
 }

@@ -70,7 +70,7 @@ namespace TAU_Complex
 
             double Dt;
             if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 1000;
+            else Dt = tk / 10000;
 
             if (Program.DtCheck(tk, Dt)) return;
 
