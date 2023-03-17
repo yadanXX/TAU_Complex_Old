@@ -39,7 +39,7 @@ namespace TAU_Complex
                     T1 = Convert.ToDouble(textBoxT1.Text);
                     tk = Convert.ToDouble(textBoxtk.Text);
                     legend += $"k1 = {k1} k2 = {k2} T1 = {T1}";
-                    if (k1 <= 0 || k1 <= 0 || T1 <= 0 || tk <= 0) throw new Exception();
+                    if (k1 <= 0 || k2 <= 0 || T1 <= 0 || tk <= 0) throw new Exception();
                 }
                 catch (Exception)
                 {
@@ -93,7 +93,7 @@ namespace TAU_Complex
                     T2 = Convert.ToDouble(textBoxT2.Text);
                     Tnu = Convert.ToDouble(textBoxTnu.Text);
                     legend += $"k1 = {k1} k2 = {k2} T1 = {T1} T2 = {T2} Tnu = {Tnu}";
-                    if (k1 <= 0 || k1 <= 0 || T1 <= 0 || tk <= 0 || T2 <= 0 || Tnu <= 0) throw new Exception();
+                    if (k1 <= 0 || k2 <= 0 || T1 <= 0 || tk <= 0 || T2 <= 0 || Tnu <= 0) throw new Exception();
                 }
                 catch (Exception)
                 {
@@ -146,7 +146,7 @@ namespace TAU_Complex
                     T1 = Convert.ToDouble(textBoxT1.Text);
                     tk = Convert.ToDouble(textBoxtk.Text);
                     legend += $"k1 = {k1} k2 = {k2} k3 = {k3} T1 = {T1}";
-                    if (k1 <= 0 || k1 <= 0 || T1 <= 0 || tk <= 0 || k3 <= 0) throw new Exception();
+                    if (k1 <= 0 || k2 <= 0 || T1 <= 0 || tk <= 0 || k3 <= 0) throw new Exception();
                 }
                 catch (Exception)
                 {
