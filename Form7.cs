@@ -188,7 +188,7 @@ namespace TAU_Complex
                 double k2;
                 double k3;
                 double T1;
-                double T2;
+                double ξ;
                 double tk;
                 string legend = "";
                 try
@@ -197,10 +197,10 @@ namespace TAU_Complex
                     k2 = Convert.ToDouble(textBoxk2.Text);
                     k3 = Convert.ToDouble(textBoxk3.Text);
                     T1 = Convert.ToDouble(textBoxT1.Text);
-                    T2 = Convert.ToDouble(textBoxT2.Text);
+                    ξ = Convert.ToDouble(textBoxξ.Text);
                     tk = Convert.ToDouble(textBoxtk.Text);
-                    legend += $"k1 = {k1} k2 = {k2} k3 = {k3} T1 = {T1} T2 = {T2}";
-                    if (k1 <= 0 || k2 <= 0 || T1 <= 0 || T2 <= 0 || tk <= 0 || k3 <= 0) throw new Exception();
+                    legend += $"k1 = {k1} k2 = {k2} k3 = {k3} T1 = {T1} ξ = {ξ}";
+                    if (k1 <= 0 || k2 <= 0 || T1 <= 0 || ξ <= 0 || tk <= 0 || k3 <= 0) throw new Exception();
                 }
                 catch (Exception)
                 {
@@ -224,7 +224,7 @@ namespace TAU_Complex
                 {
                     wv2 = Wlink.IdealInter(xv - wv1, k2, wv2, Dt);
                     wv3 = Wlink.NonEnertion(xv - wv1, k3);
-                    (wv1, temp11, temp12) = Wlink.Oscillatory(wv2 + wv3, k1, T1, T2, temp11, temp12, Dt);
+                    (wv1, temp11, temp12) = Wlink.Oscillatory(wv2 + wv3, k1, T1, 2 * ξ * T1, temp11, temp12, Dt);
                     list_1.Add(i, wv1);
                 }
 
@@ -296,7 +296,7 @@ namespace TAU_Complex
                 panelT2.Visible = false;
                 panelTnu.Visible = false;
                 ShowDio(1);
-                
+
             }
             else if (radioButtonIFB.Checked)
             {
@@ -308,6 +308,7 @@ namespace TAU_Complex
 
         private void radioButtonNSFB_CheckedChanged(object sender, EventArgs e)
         {
+            panelT2.Visible = false;
             if (radioButtonNSFB.Checked)
             {
                 groupBox1.Visible = true;
@@ -316,7 +317,7 @@ namespace TAU_Complex
                 radioButton1.Checked = false;
                 radioButton2.Checked = false;
                 radioButton3.Checked = false;
-                panelk3.Visible = false;                
+                panelk3.Visible = false;
             }
             else if (radioButtonISOL.Checked)
             {
@@ -337,13 +338,14 @@ namespace TAU_Complex
             if (radioButton3.Checked) ShowDio(5);
             if (radioButton2.Checked)
             {
-                panelT2.Visible = true;
+                panelT2.Visible = false;
+                panelξ.Visible = true;
                 ShowDio(4);
             }
-            else panelT2.Visible = false;
+            else panelξ.Visible = false;
         }
 
-        private void ShowDio(int select) 
+        private void ShowDio(int select)
         {
             pictureBox1.Visible = false;
             pictureBox2.Visible = false;
