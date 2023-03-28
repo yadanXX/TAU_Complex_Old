@@ -92,7 +92,7 @@ namespace TAU_Complex
                     tk = Convert.ToDouble(textBoxtk.Text);
                     T2 = Convert.ToDouble(textBoxT2.Text);
                     Tnu = Convert.ToDouble(textBoxTnu.Text);
-                    legend += $"k1 = {k1} k2 = {k2} T1 = {T1} T2 = {T2} Tnu = {Tnu}";
+                    legend += $"k1 = {k1} k2 = {k2} T1 = {T1} T2 = {T2} Tν = {Tnu}";
                     if (k1 <= 0 || k2 <= 0 || T1 <= 0 || tk <= 0 || T2 <= 0 || Tnu <= 0) throw new Exception();
                 }
                 catch (Exception)

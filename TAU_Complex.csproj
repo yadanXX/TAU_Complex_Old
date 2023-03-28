@@ -310,6 +310,7 @@
     <None Include="Resources\САР кнопка -1.jpg" />
     <None Include="Resources\САР кнопка -2.jpg" />
     <None Include="Resources\САР кнопка -3.jpg" />
+    <None Include="Resources\ξ1.png" />
     <Content Include="T_ico.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
