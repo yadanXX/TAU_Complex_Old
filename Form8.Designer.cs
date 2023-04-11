@@ -32,26 +32,36 @@
             this.panelPic = new System.Windows.Forms.Panel();
             this.panelWS = new System.Windows.Forms.Panel();
             this.panelC3 = new System.Windows.Forms.Panel();
-            this.panelξ2 = new System.Windows.Forms.Panel();
-            this.textBoxξ2 = new System.Windows.Forms.TextBox();
-            this.panelk1 = new System.Windows.Forms.Panel();
-            this.textBoxT31 = new System.Windows.Forms.TextBox();
             this.panelT2 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.textBoxT2 = new System.Windows.Forms.TextBox();
             this.panelTnu = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.textBoxTnu = new System.Windows.Forms.TextBox();
             this.panelT1 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.textBoxT1 = new System.Windows.Forms.TextBox();
             this.panelT = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.textBoxT = new System.Windows.Forms.TextBox();
             this.panelC2 = new System.Windows.Forms.Panel();
             this.paneltk = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.textBoxtk = new System.Windows.Forms.TextBox();
+            this.panelξ1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxξ1 = new System.Windows.Forms.TextBox();
             this.panelξ = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.textBoxξ = new System.Windows.Forms.TextBox();
             this.panelk2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBoxk2 = new System.Windows.Forms.TextBox();
+            this.panelk1 = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.textBoxk1 = new System.Windows.Forms.TextBox();
             this.panelk = new System.Windows.Forms.Panel();
+            this.pictureBoxk1 = new System.Windows.Forms.PictureBox();
             this.textBoxk = new System.Windows.Forms.TextBox();
             this.panelC1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -59,43 +69,45 @@
             this.radioButtonVoz = new System.Windows.Forms.RadioButton();
             this.radioButtonRaz = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonOsci = new System.Windows.Forms.RadioButton();
+            this.radioButtonAper = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxk1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.checkBoxFilter = new System.Windows.Forms.CheckBox();
+            this.panelFilter = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.textBoxTf = new System.Windows.Forms.TextBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.textBoxkf = new System.Windows.Forms.TextBox();
             this.panelWS.SuspendLayout();
             this.panelC3.SuspendLayout();
-            this.panelξ2.SuspendLayout();
-            this.panelk1.SuspendLayout();
             this.panelT2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panelTnu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panelT1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panelT.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panelC2.SuspendLayout();
             this.paneltk.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panelξ1.SuspendLayout();
             this.panelξ.SuspendLayout();
             this.panelk2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelk1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panelk.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxk1)).BeginInit();
+            this.panelC1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxk1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelFilter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // panelPic
@@ -132,42 +144,6 @@
             this.panelC3.Size = new System.Drawing.Size(125, 228);
             this.panelC3.TabIndex = 4;
             // 
-            // panelξ2
-            // 
-            this.panelξ2.Controls.Add(this.label2);
-            this.panelξ2.Controls.Add(this.textBoxξ2);
-            this.panelξ2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelξ2.Location = new System.Drawing.Point(0, 140);
-            this.panelξ2.Name = "panelξ2";
-            this.panelξ2.Size = new System.Drawing.Size(125, 35);
-            this.panelξ2.TabIndex = 18;
-            this.panelξ2.Visible = false;
-            // 
-            // textBoxξ2
-            // 
-            this.textBoxξ2.Location = new System.Drawing.Point(44, 6);
-            this.textBoxξ2.Name = "textBoxξ2";
-            this.textBoxξ2.Size = new System.Drawing.Size(72, 26);
-            this.textBoxξ2.TabIndex = 7;
-            // 
-            // panelk1
-            // 
-            this.panelk1.Controls.Add(this.pictureBox8);
-            this.panelk1.Controls.Add(this.textBoxT31);
-            this.panelk1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelk1.Location = new System.Drawing.Point(0, 35);
-            this.panelk1.Name = "panelk1";
-            this.panelk1.Size = new System.Drawing.Size(125, 35);
-            this.panelk1.TabIndex = 17;
-            this.panelk1.Visible = false;
-            // 
-            // textBoxT31
-            // 
-            this.textBoxT31.Location = new System.Drawing.Point(44, 6);
-            this.textBoxT31.Name = "textBoxT31";
-            this.textBoxT31.Size = new System.Drawing.Size(72, 26);
-            this.textBoxT31.TabIndex = 7;
-            // 
             // panelT2
             // 
             this.panelT2.Controls.Add(this.pictureBox5);
@@ -178,6 +154,16 @@
             this.panelT2.Size = new System.Drawing.Size(125, 35);
             this.panelT2.TabIndex = 15;
             this.panelT2.Visible = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::TAU_Complex.Properties.Resources.T2;
+            this.pictureBox5.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 16;
+            this.pictureBox5.TabStop = false;
             // 
             // textBoxT2
             // 
@@ -197,6 +183,16 @@
             this.panelTnu.TabIndex = 16;
             this.panelTnu.Visible = false;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::TAU_Complex.Properties.Resources.Tnu;
+            this.pictureBox6.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 16;
+            this.pictureBox6.TabStop = false;
+            // 
             // textBoxTnu
             // 
             this.textBoxTnu.Location = new System.Drawing.Point(44, 6);
@@ -214,6 +210,16 @@
             this.panelT1.Size = new System.Drawing.Size(125, 35);
             this.panelT1.TabIndex = 14;
             this.panelT1.Visible = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::TAU_Complex.Properties.Resources.T1;
+            this.pictureBox4.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 16;
+            this.pictureBox4.TabStop = false;
             // 
             // textBoxT1
             // 
@@ -233,6 +239,16 @@
             this.panelT.TabIndex = 13;
             this.panelT.Visible = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::TAU_Complex.Properties.Resources.T;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 16;
+            this.pictureBox3.TabStop = false;
+            // 
             // textBoxT
             // 
             this.textBoxT.Location = new System.Drawing.Point(44, 6);
@@ -243,7 +259,7 @@
             // panelC2
             // 
             this.panelC2.Controls.Add(this.paneltk);
-            this.panelC2.Controls.Add(this.panelξ2);
+            this.panelC2.Controls.Add(this.panelξ1);
             this.panelC2.Controls.Add(this.panelξ);
             this.panelC2.Controls.Add(this.panelk2);
             this.panelC2.Controls.Add(this.panelk1);
@@ -265,12 +281,50 @@
             this.paneltk.TabIndex = 16;
             this.paneltk.Visible = false;
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::TAU_Complex.Properties.Resources.tk;
+            this.pictureBox7.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 16;
+            this.pictureBox7.TabStop = false;
+            // 
             // textBoxtk
             // 
             this.textBoxtk.Location = new System.Drawing.Point(44, 6);
             this.textBoxtk.Name = "textBoxtk";
             this.textBoxtk.Size = new System.Drawing.Size(72, 26);
             this.textBoxtk.TabIndex = 7;
+            // 
+            // panelξ1
+            // 
+            this.panelξ1.Controls.Add(this.label2);
+            this.panelξ1.Controls.Add(this.textBoxξ1);
+            this.panelξ1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelξ1.Location = new System.Drawing.Point(0, 140);
+            this.panelξ1.Name = "panelξ1";
+            this.panelξ1.Size = new System.Drawing.Size(125, 35);
+            this.panelξ1.TabIndex = 18;
+            this.panelξ1.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(12, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(30, 26);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "ξ₁";
+            // 
+            // textBoxξ1
+            // 
+            this.textBoxξ1.Location = new System.Drawing.Point(44, 6);
+            this.textBoxξ1.Name = "textBoxξ1";
+            this.textBoxξ1.Size = new System.Drawing.Size(72, 26);
+            this.textBoxξ1.TabIndex = 7;
             // 
             // panelξ
             // 
@@ -283,6 +337,16 @@
             this.panelξ.TabIndex = 15;
             this.panelξ.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(12, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(23, 26);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "ξ";
+            // 
             // textBoxξ
             // 
             this.textBoxξ.Location = new System.Drawing.Point(44, 6);
@@ -293,13 +357,51 @@
             // panelk2
             // 
             this.panelk2.Controls.Add(this.pictureBox1);
-            this.panelk2.Controls.Add(this.textBoxk1);
+            this.panelk2.Controls.Add(this.textBoxk2);
             this.panelk2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelk2.Location = new System.Drawing.Point(0, 70);
             this.panelk2.Name = "panelk2";
             this.panelk2.Size = new System.Drawing.Size(125, 35);
             this.panelk2.TabIndex = 14;
             this.panelk2.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TAU_Complex.Properties.Resources.k2;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // textBoxk2
+            // 
+            this.textBoxk2.Location = new System.Drawing.Point(44, 6);
+            this.textBoxk2.Name = "textBoxk2";
+            this.textBoxk2.Size = new System.Drawing.Size(72, 26);
+            this.textBoxk2.TabIndex = 7;
+            // 
+            // panelk1
+            // 
+            this.panelk1.Controls.Add(this.pictureBox8);
+            this.panelk1.Controls.Add(this.textBoxk1);
+            this.panelk1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelk1.Location = new System.Drawing.Point(0, 35);
+            this.panelk1.Name = "panelk1";
+            this.panelk1.Size = new System.Drawing.Size(125, 35);
+            this.panelk1.TabIndex = 17;
+            this.panelk1.Visible = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::TAU_Complex.Properties.Resources.k1;
+            this.pictureBox8.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 16;
+            this.pictureBox8.TabStop = false;
             // 
             // textBoxk1
             // 
@@ -319,6 +421,16 @@
             this.panelk.TabIndex = 13;
             this.panelk.Visible = false;
             // 
+            // pictureBoxk1
+            // 
+            this.pictureBoxk1.Image = global::TAU_Complex.Properties.Resources.KB;
+            this.pictureBoxk1.Location = new System.Drawing.Point(12, 6);
+            this.pictureBoxk1.Name = "pictureBoxk1";
+            this.pictureBoxk1.Size = new System.Drawing.Size(23, 23);
+            this.pictureBoxk1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxk1.TabIndex = 16;
+            this.pictureBoxk1.TabStop = false;
+            // 
             // textBoxk
             // 
             this.textBoxk.Location = new System.Drawing.Point(44, 6);
@@ -328,6 +440,7 @@
             // 
             // panelC1
             // 
+            this.panelC1.Controls.Add(this.panelFilter);
             this.panelC1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelC1.Location = new System.Drawing.Point(0, 248);
             this.panelC1.Name = "panelC1";
@@ -381,8 +494,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.radioButtonOsci);
+            this.groupBox1.Controls.Add(this.radioButtonAper);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
@@ -391,27 +504,29 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Объект регулирования";
             // 
-            // radioButton2
+            // radioButtonOsci
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(182, 39);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(106, 23);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButtonOsci.AutoSize = true;
+            this.radioButtonOsci.Location = new System.Drawing.Point(182, 39);
+            this.radioButtonOsci.Name = "radioButtonOsci";
+            this.radioButtonOsci.Size = new System.Drawing.Size(126, 23);
+            this.radioButtonOsci.TabIndex = 1;
+            this.radioButtonOsci.Text = "radioButtonOsci";
+            this.radioButtonOsci.UseVisualStyleBackColor = true;
+            this.radioButtonOsci.CheckedChanged += new System.EventHandler(this.radioButtonOsci_CheckedChanged);
             // 
-            // radioButton1
+            // radioButtonAper
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(12, 39);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(106, 23);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButtonAper.AutoSize = true;
+            this.radioButtonAper.Checked = true;
+            this.radioButtonAper.Location = new System.Drawing.Point(12, 39);
+            this.radioButtonAper.Name = "radioButtonAper";
+            this.radioButtonAper.Size = new System.Drawing.Size(129, 23);
+            this.radioButtonAper.TabIndex = 0;
+            this.radioButtonAper.TabStop = true;
+            this.radioButtonAper.Text = "radioButtonAper";
+            this.radioButtonAper.UseVisualStyleBackColor = true;
+            this.radioButtonAper.CheckedChanged += new System.EventHandler(this.radioButtonAper_CheckedChanged);
             // 
             // button1
             // 
@@ -444,105 +559,72 @@
             this.zedGraphControl1.TabIndex = 2;
             this.zedGraphControl1.UseExtendedPrintDialog = true;
             // 
-            // label1
+            // pictureBox2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(12, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 26);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "ξ";
+            this.pictureBox2.Location = new System.Drawing.Point(18, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
-            // pictureBox5
+            // checkBoxFilter
             // 
-            this.pictureBox5.Image = global::TAU_Complex.Properties.Resources.T2;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 6);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 16;
-            this.pictureBox5.TabStop = false;
+            this.checkBoxFilter.AutoSize = true;
+            this.checkBoxFilter.Location = new System.Drawing.Point(3, 35);
+            this.checkBoxFilter.Name = "checkBoxFilter";
+            this.checkBoxFilter.Size = new System.Drawing.Size(97, 23);
+            this.checkBoxFilter.TabIndex = 1;
+            this.checkBoxFilter.Text = "checkBox1";
+            this.checkBoxFilter.UseVisualStyleBackColor = true;
             // 
-            // pictureBox6
+            // panelFilter
             // 
-            this.pictureBox6.Image = global::TAU_Complex.Properties.Resources.Tnu;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 6);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 16;
-            this.pictureBox6.TabStop = false;
+            this.panelFilter.Controls.Add(this.pictureBox10);
+            this.panelFilter.Controls.Add(this.textBoxkf);
+            this.panelFilter.Controls.Add(this.pictureBox9);
+            this.panelFilter.Controls.Add(this.textBoxTf);
+            this.panelFilter.Controls.Add(this.pictureBox2);
+            this.panelFilter.Controls.Add(this.checkBoxFilter);
+            this.panelFilter.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelFilter.Location = new System.Drawing.Point(0, 0);
+            this.panelFilter.Name = "panelFilter";
+            this.panelFilter.Size = new System.Drawing.Size(147, 140);
+            this.panelFilter.TabIndex = 3;
+            this.panelFilter.Visible = false;
             // 
-            // pictureBox4
+            // pictureBox9
             // 
-            this.pictureBox4.Image = global::TAU_Complex.Properties.Resources.T1;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 6);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
+            this.pictureBox9.Image = global::TAU_Complex.Properties.Resources.tk;
+            this.pictureBox9.Location = new System.Drawing.Point(14, 73);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 18;
+            this.pictureBox9.TabStop = false;
             // 
-            // pictureBox3
+            // textBoxTf
             // 
-            this.pictureBox3.Image = global::TAU_Complex.Properties.Resources.T;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 16;
-            this.pictureBox3.TabStop = false;
+            this.textBoxTf.Location = new System.Drawing.Point(46, 73);
+            this.textBoxTf.Name = "textBoxTf";
+            this.textBoxTf.Size = new System.Drawing.Size(72, 26);
+            this.textBoxTf.TabIndex = 17;
             // 
-            // pictureBox7
+            // pictureBox10
             // 
-            this.pictureBox7.Image = global::TAU_Complex.Properties.Resources.tk;
-            this.pictureBox7.Location = new System.Drawing.Point(12, 6);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 16;
-            this.pictureBox7.TabStop = false;
+            this.pictureBox10.Image = global::TAU_Complex.Properties.Resources.tk;
+            this.pictureBox10.Location = new System.Drawing.Point(14, 105);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 20;
+            this.pictureBox10.TabStop = false;
             // 
-            // pictureBox1
+            // textBoxkf
             // 
-            this.pictureBox1.Image = global::TAU_Complex.Properties.Resources.k2;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::TAU_Complex.Properties.Resources.k1;
-            this.pictureBox8.Location = new System.Drawing.Point(12, 6);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 16;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBoxk1
-            // 
-            this.pictureBoxk1.Image = global::TAU_Complex.Properties.Resources.KB;
-            this.pictureBoxk1.Location = new System.Drawing.Point(12, 6);
-            this.pictureBoxk1.Name = "pictureBoxk1";
-            this.pictureBoxk1.Size = new System.Drawing.Size(23, 23);
-            this.pictureBoxk1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxk1.TabIndex = 16;
-            this.pictureBoxk1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(12, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 26);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "ξ₁";
+            this.textBoxkf.Location = new System.Drawing.Point(46, 105);
+            this.textBoxkf.Name = "textBoxkf";
+            this.textBoxkf.Size = new System.Drawing.Size(72, 26);
+            this.textBoxkf.TabIndex = 19;
             // 
             // Form8
             // 
@@ -561,39 +643,45 @@
             this.Text = "Form8";
             this.panelWS.ResumeLayout(false);
             this.panelC3.ResumeLayout(false);
-            this.panelξ2.ResumeLayout(false);
-            this.panelξ2.PerformLayout();
-            this.panelk1.ResumeLayout(false);
-            this.panelk1.PerformLayout();
             this.panelT2.ResumeLayout(false);
             this.panelT2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panelTnu.ResumeLayout(false);
             this.panelTnu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panelT1.ResumeLayout(false);
             this.panelT1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panelT.ResumeLayout(false);
             this.panelT.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panelC2.ResumeLayout(false);
             this.paneltk.ResumeLayout(false);
             this.paneltk.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panelξ1.ResumeLayout(false);
+            this.panelξ1.PerformLayout();
             this.panelξ.ResumeLayout(false);
             this.panelξ.PerformLayout();
             this.panelk2.ResumeLayout(false);
             this.panelk2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelk1.ResumeLayout(false);
+            this.panelk1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panelk.ResumeLayout(false);
             this.panelk.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxk1)).EndInit();
+            this.panelC1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxk1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelFilter.ResumeLayout(false);
+            this.panelFilter.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -611,8 +699,8 @@
         private System.Windows.Forms.RadioButton radioButtonOtk;
         private System.Windows.Forms.RadioButton radioButtonVoz;
         private System.Windows.Forms.RadioButton radioButtonRaz;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButtonOsci;
+        private System.Windows.Forms.RadioButton radioButtonAper;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel paneltk;
         private System.Windows.Forms.PictureBox pictureBox7;
@@ -633,16 +721,23 @@
         private System.Windows.Forms.TextBox textBoxξ;
         private System.Windows.Forms.Panel panelk2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBoxk1;
+        private System.Windows.Forms.TextBox textBoxk2;
         private System.Windows.Forms.Panel panelk;
         private System.Windows.Forms.PictureBox pictureBoxk1;
         private System.Windows.Forms.TextBox textBoxk;
-        private System.Windows.Forms.Panel panelξ2;
-        private System.Windows.Forms.TextBox textBoxξ2;
+        private System.Windows.Forms.Panel panelξ1;
+        private System.Windows.Forms.TextBox textBoxξ1;
         private System.Windows.Forms.Panel panelk1;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.TextBox textBoxT31;
+        private System.Windows.Forms.TextBox textBoxk1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panelFilter;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.TextBox textBoxkf;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.TextBox textBoxTf;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.CheckBox checkBoxFilter;
     }
 }
