@@ -34,10 +34,10 @@ namespace TAU_Complex
                 string legend = "";
                 try
                 {
-                    k1 = Convert.ToDouble(textBoxk1.Text);
-                    k2 = Convert.ToDouble(textBoxk2.Text);
-                    T1 = Convert.ToDouble(textBoxT1.Text);
-                    tk = Convert.ToDouble(textBoxtk.Text);
+                    k1 = Convert.ToDouble(textBoxk1.Text.Replace(".",","));
+                    k2 = Convert.ToDouble(textBoxk2.Text.Replace(".", ","));
+                    T1 = Convert.ToDouble(textBoxT1.Text.Replace(".", ","));
+                    tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
                     legend += $"k1 = {k1} k2 = {k2} T1 = {T1}";
                     if (k1 <= 0 || k2 <= 0 || T1 <= 0 || tk <= 0) throw new Exception();
                 }
@@ -86,12 +86,12 @@ namespace TAU_Complex
                 string legend = "";
                 try
                 {
-                    k1 = Convert.ToDouble(textBoxk1.Text);
-                    k2 = Convert.ToDouble(textBoxk2.Text);
-                    T1 = Convert.ToDouble(textBoxT1.Text);
-                    tk = Convert.ToDouble(textBoxtk.Text);
-                    T2 = Convert.ToDouble(textBoxT2.Text);
-                    Tnu = Convert.ToDouble(textBoxTnu.Text);
+                    k1 = Convert.ToDouble(textBoxk1.Text.Replace(".", ","));
+                    k2 = Convert.ToDouble(textBoxk2.Text.Replace(".", ","));
+                    T1 = Convert.ToDouble(textBoxT1.Text.Replace(".", ","));
+                    tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
+                    T2 = Convert.ToDouble(textBoxT2.Text.Replace(".", ","));
+                    Tnu = Convert.ToDouble(textBoxTnu.Text.Replace(".", ","));
                     legend += $"k1 = {k1} k2 = {k2} T1 = {T1} T2 = {T2} Tν = {Tnu}";
                     if (k1 <= 0 || k2 <= 0 || T1 <= 0 || tk <= 0 || T2 <= 0 || Tnu <= 0) throw new Exception();
                 }
@@ -140,11 +140,11 @@ namespace TAU_Complex
                 string legend = "";
                 try
                 {
-                    k1 = Convert.ToDouble(textBoxk1.Text);
-                    k2 = Convert.ToDouble(textBoxk2.Text);
-                    k3 = Convert.ToDouble(textBoxk3.Text);
-                    T1 = Convert.ToDouble(textBoxT1.Text);
-                    tk = Convert.ToDouble(textBoxtk.Text);
+                    k1 = Convert.ToDouble(textBoxk1.Text.Replace(".", ","));
+                    k2 = Convert.ToDouble(textBoxk2.Text.Replace(".", ","));
+                    k3 = Convert.ToDouble(textBoxk3.Text.Replace(".", ","));
+                    T1 = Convert.ToDouble(textBoxT1.Text.Replace(".", ","));
+                    tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
                     legend += $"k1 = {k1} k2 = {k2} k3 = {k3} T1 = {T1}";
                     if (k1 <= 0 || k2 <= 0 || T1 <= 0 || tk <= 0 || k3 <= 0) throw new Exception();
                 }
@@ -193,12 +193,12 @@ namespace TAU_Complex
                 string legend = "";
                 try
                 {
-                    k1 = Convert.ToDouble(textBoxk1.Text);
-                    k2 = Convert.ToDouble(textBoxk2.Text);
-                    k3 = Convert.ToDouble(textBoxk3.Text);
-                    T1 = Convert.ToDouble(textBoxT1.Text);
-                    ξ = Convert.ToDouble(textBoxξ.Text);
-                    tk = Convert.ToDouble(textBoxtk.Text);
+                    k1 = Convert.ToDouble(textBoxk1.Text.Replace(".", ","));
+                    k2 = Convert.ToDouble(textBoxk2.Text.Replace(".", ","));
+                    k3 = Convert.ToDouble(textBoxk3.Text.Replace(".", ","));
+                    T1 = Convert.ToDouble(textBoxT1.Text.Replace(".", ","));
+                    ξ = Convert.ToDouble(textBoxξ.Text.Replace(".", ","));
+                    tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
                     legend += $"k1 = {k1} k2 = {k2} k3 = {k3} T1 = {T1} ξ = {ξ}";
                     if (k1 <= 0 || k2 <= 0 || T1 <= 0 || ξ <= 0 || tk <= 0 || k3 <= 0) throw new Exception();
                 }
@@ -246,11 +246,11 @@ namespace TAU_Complex
                 string legend = "";
                 try
                 {
-                    k1 = Convert.ToDouble(textBoxk1.Text);
-                    k2 = Convert.ToDouble(textBoxk2.Text);
-                    k3 = Convert.ToDouble(textBoxk3.Text);
-                    T1 = Convert.ToDouble(textBoxT1.Text);
-                    tk = Convert.ToDouble(textBoxtk.Text);
+                    k1 = Convert.ToDouble(textBoxk1.Text.Replace(".", ","));
+                    k2 = Convert.ToDouble(textBoxk2.Text.Replace(".", ","));
+                    k3 = Convert.ToDouble(textBoxk3.Text.Replace(".", ","));
+                    T1 = Convert.ToDouble(textBoxT1.Text.Replace(".", ","));
+                    tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
                     legend += $"k1 = {k1} k2 = {k2} k3 = {k3} T1 = {T1}";
                     if (k1 <= 0 || k2 <= 0 || T1 <= 0 || tk <= 0 || k3 <= 0) throw new Exception();
                 }

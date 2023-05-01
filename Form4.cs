@@ -46,11 +46,11 @@ namespace TAU_Complex
 
             try
             {
-                k = Convert.ToDouble(textBoxK.Text);
-                T = Convert.ToDouble(textBoxT.Text);
-                tk = Convert.ToDouble(textBoxtk.Text);
-                tau = Convert.ToDouble(textBoxtau.Text);
-                w = Convert.ToDouble(textBoxw.Text);
+                k = Convert.ToDouble(textBoxK.Text.Replace(".", ","));
+                T = Convert.ToDouble(textBoxT.Text.Replace(".", ","));
+                tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
+                tau = Convert.ToDouble(textBoxtau.Text.Replace(".", ","));
+                w = Convert.ToDouble(textBoxw.Text.Replace(".", ","));
                 if (tk <= 0 || T <= 0 || k <= 0 || tau <= 0 || w <= 0) throw new Exception();
 
             }

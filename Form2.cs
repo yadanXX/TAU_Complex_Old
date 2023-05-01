@@ -36,15 +36,15 @@ namespace TAU_Complex
             double tk;
             double w;
             try
-            {
-                k1 = Convert.ToDouble(textBoxK1.Text);
-                k2 = Convert.ToDouble(textBoxK2.Text);
-                k3 = Convert.ToDouble(textBoxK3.Text);
-                T1 = Convert.ToDouble(textBoxT1.Text);
-                T2 = Convert.ToDouble(textBoxT2.Text);
-                tk = Convert.ToDouble(textBoxtk.Text);
+            {  
+                k1 = Convert.ToDouble(textBoxK1.Text.Replace(".", ","));
+                k2 = Convert.ToDouble(textBoxK2.Text.Replace(".", ","));
+                k3 = Convert.ToDouble(textBoxK3.Text.Replace(".", ","));
+                T1 = Convert.ToDouble(textBoxT1.Text.Replace(".", ","));
+                T2 = Convert.ToDouble(textBoxT2.Text.Replace(".", ","));
+                tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
                 if (tk <= 0 || k1 <= 0 || k2 <= 0 || k3 <= 0 || T1 <= 0 || T2 <= 0) throw new Exception();
-                w = Convert.ToDouble(textBoxW.Text);
+                w = Convert.ToDouble(textBoxW.Text.Replace(".", ","));
             }
             catch (Exception)
             {

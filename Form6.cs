@@ -56,35 +56,35 @@ namespace TAU_Complex
             string legend = "";
             try
             {
-                k = Convert.ToDouble(textBoxK.Text);
-                kp = Convert.ToDouble(textBoxKp.Text);
-                ky = Convert.ToDouble(textBoxKy.Text);
-                kd = Convert.ToDouble(textBoxKd.Text);
-                kr = Convert.ToDouble(textBoxKr.Text);
-                T = Convert.ToDouble(textBoxT.Text);
-                T1 = Convert.ToDouble(textBoxT1.Text);
-                T2 = Convert.ToDouble(textBoxT2.Text);
-                Ty = Convert.ToDouble(textBoxTy.Text);
-                Td = Convert.ToDouble(textBoxTd.Text);
+                k = Convert.ToDouble(textBoxK.Text.Replace(".", ","));
+                kp = Convert.ToDouble(textBoxKp.Text.Replace(".", ","));
+                ky = Convert.ToDouble(textBoxKy.Text.Replace(".", ","));
+                kd = Convert.ToDouble(textBoxKd.Text.Replace(".", ","));
+                kr = Convert.ToDouble(textBoxKr.Text.Replace(".", ","));
+                T = Convert.ToDouble(textBoxT.Text.Replace(".", ","));
+                T1 = Convert.ToDouble(textBoxT1.Text.Replace(".", ","));
+                T2 = Convert.ToDouble(textBoxT2.Text.Replace(".", ","));
+                Ty = Convert.ToDouble(textBoxTy.Text.Replace(".", ","));
+                Td = Convert.ToDouble(textBoxTd.Text.Replace(".", ","));
                 legend += $"K = {k} Kp = {kp} Ky = {ky} Kd = {kd} Kr = {kr} T = {T} T1 = {T1} T2 = {T2} Ty = {Ty} Td = {Td} ";
                 if (radioButtonRandom.Checked && comboBox1.SelectedIndex == 1)
                 {
-                    mu = Convert.ToDouble(textBoxG1.Text);
-                    sigma = Convert.ToDouble(textBoxG2.Text);
+                    mu = Convert.ToDouble(textBoxG1.Text.Replace(".", ","));
+                    sigma = Convert.ToDouble(textBoxG2.Text.Replace(".", ","));
                     if (sigma <= 0) throw new Exception();
                     legend += $"Мат. Ожидание = {mu} Дисперсия = {sigma} ";
 
                 }
 
-                tk = Convert.ToDouble(textBoxtk.Text);
+                tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
                 if (radioButtonRamp.Checked)
                 {
-                    kramp = Convert.ToDouble(textBoxKRamp.Text);
+                    kramp = Convert.ToDouble(textBoxKRamp.Text.Replace(".", ","));
                     legend += $"Коэф. наклона = {kramp} ";
                 }
                 if (radioButtonRandom.Checked)
                 {
-                    rand_value = Convert.ToDouble(textBoxRV.Text);
+                    rand_value = Convert.ToDouble(textBoxRV.Text.Replace(".", ","));
                     legend += $"Кол-во случайных значений = {rand_value} ";
                     if (rand_value <= 0) throw new Exception();
                 }

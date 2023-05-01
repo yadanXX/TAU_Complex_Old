@@ -41,21 +41,21 @@ namespace TAU_Complex
             {
                 if (radioButtonAmp.Checked)
                 {
-                    k = Convert.ToDouble(textBoxK.Text);
+                    k = Convert.ToDouble(textBoxK.Text.Replace(".", ","));
                     legend += $"k = {k} ";
                 }
-                T = Convert.ToDouble(textBoxT.Text);
+                T = Convert.ToDouble(textBoxT.Text.Replace(".", ","));
                 legend += $"T = {T} ";
-                tk = Convert.ToDouble(textBoxtk.Text);
+                tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
                 if (tk <= 0) throw new Exception();
                 if (radioButtonDif.Checked || radioButtonExo.Checked)
                 {
-                    Tky = Convert.ToDouble(textBoxTky.Text);
+                    Tky = Convert.ToDouble(textBoxTky.Text.Replace(".", ","));
                     legend += $"Tky = {Tky} ";
                 }
                 if (radioButtonRamp.Checked)
                 {
-                    KRamp = Convert.ToDouble(textBoxRamp.Text);
+                    KRamp = Convert.ToDouble(textBoxRamp.Text.Replace(".", ","));
                     legend += $"Коэф. наклона = {KRamp}  ";
                 }
                 if (k <= 0 || T <= 0 || Tky <= 0) throw new Exception();

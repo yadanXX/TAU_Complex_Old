@@ -36,12 +36,12 @@ namespace TAU_Complex
                     string legend = "";
                     try
                     {
-                        k1 = Convert.ToDouble(textBoxk1.Text);
-                        k = Convert.ToDouble(textBoxk.Text);
-                        T1 = Convert.ToDouble(textBoxT1.Text);
-                        T = Convert.ToDouble(textBoxT.Text);
-                        Tnu = Convert.ToDouble(textBoxTnu.Text);
-                        tk = Convert.ToDouble(textBoxtk.Text);
+                        k1 = Convert.ToDouble(textBoxk1.Text.Replace(".", ","));
+                        k = Convert.ToDouble(textBoxk.Text.Replace(".", ","));
+                        T1 = Convert.ToDouble(textBoxT1.Text.Replace(".", ","));
+                        T = Convert.ToDouble(textBoxT.Text.Replace(".", ","));
+                        Tnu = Convert.ToDouble(textBoxTnu.Text.Replace(".", ","));
+                        tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
                         legend += $"K1 = {k1} K = {k} T1 = {T1} T = {T} Tν = {Tnu}";
                         if (k1 <= 0 || k <= 0 || T1 <= 0 || T <= 0 || tk <= 0 || Tnu <= 0) throw new Exception();
                     }
@@ -87,14 +87,14 @@ namespace TAU_Complex
                     string legend = "";
                     try
                     {
-                        k1 = Convert.ToDouble(textBoxk1.Text);
-                        k = Convert.ToDouble(textBoxk.Text);
-                        T1 = Convert.ToDouble(textBoxT1.Text);
-                        T = Convert.ToDouble(textBoxT.Text);
-                        Tnu = Convert.ToDouble(textBoxTnu.Text);
-                        tk = Convert.ToDouble(textBoxtk.Text);
-                        ξ = Convert.ToDouble(textBoxξ.Text);
-                        ξ1 = Convert.ToDouble(textBoxξ1.Text);
+                        k1 = Convert.ToDouble(textBoxk1.Text.Replace(".", ","));
+                        k = Convert.ToDouble(textBoxk.Text.Replace(".", ","));
+                        T1 = Convert.ToDouble(textBoxT1.Text.Replace(".", ","));
+                        T = Convert.ToDouble(textBoxT.Text.Replace(".", ","));
+                        Tnu = Convert.ToDouble(textBoxTnu.Text.Replace(".", ","));
+                        tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
+                        ξ = Convert.ToDouble(textBoxξ.Text.Replace(".", ","));
+                        ξ1 = Convert.ToDouble(textBoxξ1.Text.Replace(".", ","));
                         legend += $"K1 = {k1} K = {k} T1 = {T1} T = {T} Tν = {Tnu} ξ = {ξ} ξ₁ = {ξ1}";
                         if (k1 <= 0 || k <= 0 || T1 <= 0 || T <= 0 || tk <= 0 || Tnu < 0 || ξ < 0 || ξ1 < 0) throw new Exception();
                     }
