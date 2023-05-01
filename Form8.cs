@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using ZedGraph;
+using System.CodeDom.Compiler;
 
 namespace TAU_Complex
 {
@@ -24,8 +25,38 @@ namespace TAU_Complex
             radioButtonAper_CheckedChanged(null, null);
         }
 
+        delegate (double, double) Filter(double xv, double k, double T, double x1, double Dt);
+
         private void button1_Click(object sender, EventArgs e)
         {
+            string legend = "";
+            double kf = 0, Tf = 0;
+            double wvf, tempf = 0;
+
+            Filter filter = delegate (double xv, double k, double T, double x1, double Dt) // анонимное объявление функции для глобалтно определённого делагата Filter
+            {
+                return (1, 0);
+            };
+
+            if (checkBoxFilter.Checked)
+            {
+                filter = Wlink.Aperiodic; // нереопределение делегата на другую функцию
+
+                try
+                {
+                    kf = Convert.ToDouble(textBoxkf.Text.Replace(".", ","));
+                    Tf = Convert.ToDouble(textBoxTf.Text.Replace(".", ","));
+                    legend += $"Kf = {kf} Tf = {Tf} ";
+                    if (kf <= 0 || Tf <= 0) throw new Exception();
+                }
+                catch (Exception)
+                {
+                    Form_error f = new Form_error();
+                    f.ShowDialog();
+                    return;
+                }
+            }
+
             if (radioButtonRaz.Checked)
             {
                 if (radioButtonAper.Checked)
@@ -33,7 +64,7 @@ namespace TAU_Complex
                     double k1, k;
                     double T1, T, Tnu;
                     double tk;
-                    string legend = "";
+
                     try
                     {
                         k1 = Convert.ToDouble(textBoxk1.Text.Replace(".", ","));
@@ -61,11 +92,12 @@ namespace TAU_Complex
                     PointPairList list_1 = new PointPairList();
 
                     double xv = 1;
-                    double wv1 = 0, wv2, temp1 = 0, temp2 = 0;
+                    double wv1, wv2, temp1 = 0, temp2 = 0;
 
                     for (double i = 0; i < tk; i += Dt)
                     {
-                        (wv1, temp1) = Wlink.PropDifDelay(xv, 1 / k1, Tnu, T1, temp1, Dt);
+                        (wvf, tempf) = filter(xv, kf, Tf, tempf, Dt);
+                        (wv1, temp1) = Wlink.PropDifDelay(wvf, 1 / k1, Tnu, T1, temp1, Dt);
                         (wv2, temp2) = Wlink.Aperiodic(wv1, k, T, temp2, Dt);
                         list_1.Add(i, wv2);
                     }
@@ -84,7 +116,6 @@ namespace TAU_Complex
                     double T1, T, Tnu;
                     double tk;
                     double ξ, ξ1;
-                    string legend = "";
                     try
                     {
                         k1 = Convert.ToDouble(textBoxk1.Text.Replace(".", ","));
@@ -114,12 +145,13 @@ namespace TAU_Complex
                     PointPairList list_1 = new PointPairList();
 
                     double xv = 1;
-                    double wvf = xv;
                     double temp111 = 0, temp112 = 0, temp121 = 0, temp122 = 0, temp131 = 0, temp132 = 0, temp21 = 0, temp22 = 0;
                     double wv111, wv112, wv121, wv122, wv131, wv132, wv2;
 
                     for (double i = 0; i < tk; i += Dt)
                     {
+                        (wvf, tempf) = filter(xv, kf, Tf, tempf, Dt);
+
                         (wv111, temp111) = Wlink.Difdelay(wvf, 1 / k1, Tnu, T1, temp111, Dt);
                         (wv112, temp112) = Wlink.Difdelay(wv111, 1, Tnu, T1, temp112, Dt);
 
@@ -265,6 +297,24 @@ namespace TAU_Complex
             paneltk.Visible = true;
             panelξ.Visible = true;
             panelξ1.Visible = true;
+        }
+
+        private void checkBoxFilter_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxFilter.Checked)
+            {
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+                textBoxkf.Visible = true;
+                textBoxTf.Visible = true;
+            }
+            else
+            {
+                pictureBox9.Visible = false;
+                pictureBox10.Visible = false;
+                textBoxkf.Visible = false;
+                textBoxTf.Visible = false;
+            }
         }
     }
 }
