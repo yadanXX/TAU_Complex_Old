@@ -311,6 +311,11 @@
     <None Include="Resources\САР кнопка -2.jpg" />
     <None Include="Resources\САР кнопка -3.jpg" />
     <None Include="Resources\ξ1.png" />
+    <None Include="Resources\фильтр.png" />
+    <None Include="Resources\апериодическое-блок.png" />
+    <None Include="Resources\колебательное-блок.png" />
+    <None Include="Resources\Тф.png" />
+    <None Include="Resources\Kф.png" />
     <Content Include="T_ico.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

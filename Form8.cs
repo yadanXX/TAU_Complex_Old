@@ -316,5 +316,11 @@ namespace TAU_Complex
                 textBoxTf.Visible = false;
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (checkBoxFilter.Checked) checkBoxFilter.Checked = false;
+            else checkBoxFilter.Checked = true;
+        }
     }
 }

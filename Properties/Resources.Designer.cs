@@ -203,6 +203,16 @@ namespace TAU_Complex.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Kф {
+            get {
+                object obj = ResourceManager.GetObject("Kф", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap min {
             get {
                 object obj = ResourceManager.GetObject("min", resourceCulture);
@@ -363,6 +373,16 @@ namespace TAU_Complex.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap апериодическое_блок {
+            get {
+                object obj = ResourceManager.GetObject("апериодическое-блок", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Апериодическое_второго_порядка {
             get {
                 object obj = ResourceManager.GetObject("Апериодическое второго порядка", resourceCulture);
@@ -506,6 +526,16 @@ namespace TAU_Complex.Properties {
         public static System.Drawing.Bitmap Колебательное {
             get {
                 object obj = ResourceManager.GetObject("Колебательное", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap колебательное_блок {
+            get {
+                object obj = ResourceManager.GetObject("колебательное-блок", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -683,9 +713,29 @@ namespace TAU_Complex.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Тф {
+            get {
+                object obj = ResourceManager.GetObject("Тф", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Улучшение_САР {
             get {
                 object obj = ResourceManager.GetObject("Улучшение САР", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap фильтр {
+            get {
+                object obj = ResourceManager.GetObject("фильтр", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
