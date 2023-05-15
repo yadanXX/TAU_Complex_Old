@@ -40,7 +40,7 @@ namespace TAU_Complex
 
             if (checkBoxFilter.Checked)
             {
-                filter = Wlink.Aperiodic; // нереопределение делегата на другую функцию
+                filter = Wlink.Aperiodic; // переопределение делегата на другую функцию
 
                 try
                 {
@@ -176,7 +176,52 @@ namespace TAU_Complex
             {
                 if (radioButtonAper.Checked)
                 {
+                    double k1, k;
+                    double T1, T, Tnu;
+                    double tk;
 
+                    try
+                    {
+                        k1 = Convert.ToDouble(textBoxk1.Text.Replace(".", ","));
+                        k = Convert.ToDouble(textBoxk.Text.Replace(".", ","));
+                        T1 = Convert.ToDouble(textBoxT1.Text.Replace(".", ","));
+                        T = Convert.ToDouble(textBoxT.Text.Replace(".", ","));
+                        Tnu = Convert.ToDouble(textBoxTnu.Text.Replace(".", ","));
+                        tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
+                        legend += $"K1 = {k1} K = {k} T1 = {T1} T = {T} Tν = {Tnu}";
+                        if (k1 <= 0 || k <= 0 || T1 <= 0 || T <= 0 || tk <= 0 || Tnu <= 0) throw new Exception();
+                    }
+                    catch (Exception)
+                    {
+                        Form_error f = new Form_error();
+                        f.ShowDialog();
+                        return;
+                    }
+
+                    Program.SetDt(tk, new List<double>() { T1, T, Tnu });
+                    double Dt = Data.Dt;
+                    if (Program.DtCheck(tk, Dt)) return;
+
+                    PointPairList list_1 = new PointPairList();
+
+                    double xv = 1;
+                    double wv1, wv2, temp1 = 0, temp2 = 0;
+
+                    for (double i = 0; i < tk; i += Dt)
+                    {
+                        (wvf, tempf) = filter(xv, kf, Tf, tempf, Dt);
+                        (wv1, temp1) = Wlink.PropDifDelay(wvf, 1 / k1, Tnu, T1, temp1, Dt);
+                        (wv2, temp2) = Wlink.Aperiodic(wv1, k, T, temp2, Dt);
+                        list_1.Add(i, wv2);
+                    }
+
+                    DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "Qвых(t)", "t");
+
+                    Data.list1 = list_1;
+                    Data.legend1 = legend;
+                    Data.title1 = "График переходной характеристики";
+                    Data.Ytitle1 = "Qвых(t)";
+                    Data.Xtitle1 = "t";
                 }
                 else if (radioButtonOsci.Checked)
                 {
