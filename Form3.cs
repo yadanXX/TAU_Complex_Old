@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Xml.Linq;
@@ -53,10 +54,9 @@ namespace TAU_Complex
             }
             PointPairList list_1 = new PointPairList();
             PointPairList list_2 = new PointPairList();
-            double Dt;
-            if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 10000;
 
+            Program.SetDt(tk, new List<double>() {T1,T2 });
+            double Dt = Data.Dt;
             if (Program.DtCheck(tk, Dt)) return;
 
             double XAper = 0, XInt = 0;

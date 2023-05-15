@@ -83,10 +83,8 @@ namespace TAU_Complex
                         return;
                     }
 
-                    double Dt;
-                    if (Data.Dt != 0) Dt = Data.Dt;
-                    else Dt = tk / 10000;
-
+                    Program.SetDt(tk, new List<double>() { T1, T, Tnu });
+                    double Dt = Data.Dt;
                     if (Program.DtCheck(tk, Dt)) return;
 
                     PointPairList list_1 = new PointPairList();
@@ -136,10 +134,8 @@ namespace TAU_Complex
                         return;
                     }
 
-                    double Dt;
-                    if (Data.Dt != 0) Dt = Data.Dt;
-                    else Dt = tk / 10000;
-
+                    Program.SetDt(tk, new List<double>() { T1, T, Tnu, ξ, ξ1 });
+                    double Dt = Data.Dt;
                     if (Program.DtCheck(tk, Dt)) return;
 
                     PointPairList list_1 = new PointPairList();
@@ -321,6 +317,16 @@ namespace TAU_Complex
         {
             if (checkBoxFilter.Checked) checkBoxFilter.Checked = false;
             else checkBoxFilter.Checked = true;
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            radioButtonOsci.Checked = true;
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            radioButtonAper.Checked = true;
         }
     }
 }

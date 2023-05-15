@@ -48,10 +48,8 @@ namespace TAU_Complex
                     return;
                 }
 
-                double Dt;
-                if (Data.Dt != 0) Dt = Data.Dt;
-                else Dt = tk / 10000;
-
+                Program.SetDt(tk, new List<double>() {T1 });
+                double Dt = Data.Dt;
                 if (Program.DtCheck(tk, Dt)) return;
 
                 PointPairList list_1 = new PointPairList();
@@ -102,10 +100,8 @@ namespace TAU_Complex
                     return;
                 }
 
-                double Dt;
-                if (Data.Dt != 0) Dt = Data.Dt;
-                else Dt = tk / 10000;
-
+                Program.SetDt(tk, new List<double>() {T1,T2,Tnu });
+                double Dt = Data.Dt;
                 if (Program.DtCheck(tk, Dt)) return;
 
                 PointPairList list_1 = new PointPairList();
@@ -155,10 +151,8 @@ namespace TAU_Complex
                     return;
                 }
 
-                double Dt;
-                if (Data.Dt != 0) Dt = Data.Dt;
-                else Dt = tk / 10000;
-
+                Program.SetDt(tk, new List<double>() { T1});
+                double Dt = Data.Dt;
                 if (Program.DtCheck(tk, Dt)) return;
 
                 PointPairList list_1 = new PointPairList();
@@ -209,10 +203,8 @@ namespace TAU_Complex
                     return;
                 }
 
-                double Dt;
-                if (Data.Dt != 0) Dt = Data.Dt;
-                else Dt = tk / 10000;
-
+                Program.SetDt(tk, new List<double>() {T1, ξ });
+                double Dt = Data.Dt;
                 if (Program.DtCheck(tk, Dt)) return;
 
                 PointPairList list_1 = new PointPairList();
@@ -261,10 +253,8 @@ namespace TAU_Complex
                     return;
                 }
 
-                double Dt;
-                if (Data.Dt != 0) Dt = Data.Dt;
-                else Dt = tk / 10000;
-
+                Program.SetDt(tk, new List<double>() { T1 });
+                double Dt = Data.Dt;
                 if (Program.DtCheck(tk, Dt)) return;
 
                 PointPairList list_1 = new PointPairList();

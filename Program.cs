@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 using ZedGraph;
 
 namespace TAU_Complex
@@ -22,7 +25,7 @@ namespace TAU_Complex
         {
             try
             {
-                if (t / Dt >= 1000000) throw new Exception();
+                if (t / Dt >= 10000000) throw new Exception();
                 return false;
             }
             catch (Exception)
@@ -31,6 +34,28 @@ namespace TAU_Complex
                 f.ShowDialog();
                 return true;
             }
+        }
+        public static void SetDt(double tk, List<double> listT)
+        {
+            switch (Data.TypeDt)
+            {
+                case 1: Data.Dt = tk / 10000; break;
+                case 2:
+                    try
+                    {
+                        Data.Dt = listT.Min() / 100;
+                        break;
+                    }
+                    catch (Exception)
+                    {
+                        Form_error f = new Form_error();
+                        f.ShowDialog();
+                        return;
+                    }
+
+                case 3: break; // Присваивание Dt произошло в options                
+            }
+
         }
 
     }

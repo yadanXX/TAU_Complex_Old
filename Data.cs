@@ -6,7 +6,9 @@ namespace TAU_Complex
     public static class Data
     {
         public static int active_value;
-        public static double Dt = 0;
+        public static double Dt = 1;
+
+        public static int TypeDt = 1;
 
         public static PointPairList list1;
         public static string legend1;

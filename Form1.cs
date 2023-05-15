@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using ZedGraph;
@@ -153,9 +154,9 @@ namespace TAU_Complex
                 return;
             }
 
-            double Dt;
-            if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 10000;
+            Program.SetDt(tk, new List<double>() {});
+            double Dt = Data.Dt;
+            if (Program.DtCheck(tk, Dt)) return;
 
             GraphPane pane = zedGraphControl1.GraphPane;
             pane.CurveList.Clear();
@@ -194,9 +195,10 @@ namespace TAU_Complex
                 f.ShowDialog();
                 return;
             }
-            double Dt;
-            if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 10000;
+            Program.SetDt(tk, new List<double>() { t1});
+            double Dt = Data.Dt;
+            if (Program.DtCheck(tk, Dt)) return;
+           
             GraphPane pane = zedGraphControl1.GraphPane;
             pane.CurveList.Clear();
             list_1 = new PointPairList();
@@ -233,9 +235,11 @@ namespace TAU_Complex
                 f.ShowDialog();
                 return;
             }
-            double Dt;
-            if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 10000;
+
+            Program.SetDt(tk, new List<double>() {t1,t2 });
+            double Dt = Data.Dt;
+            if (Program.DtCheck(tk, Dt)) return;
+
             double t3, t4;
             t3 = t1 / 2.0 + Math.Sqrt(Math.Pow(t1, 2) / 4.0 - Math.Pow(t2, 2));
             t4 = t1 / 2.0 - Math.Sqrt(Math.Pow(t1, 2) / 4.0 - Math.Pow(t2, 2));
@@ -275,9 +279,10 @@ namespace TAU_Complex
                 f.ShowDialog();
                 return;
             }
-            double Dt;
-            if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 10000;
+            Program.SetDt(tk, new List<double>() {t1,t2 });
+            double Dt = Data.Dt;
+            if (Program.DtCheck(tk, Dt)) return;
+
             double xi;
             xi = t1 / (2.0 * t2);
             GraphPane pane = zedGraphControl1.GraphPane;
@@ -313,9 +318,10 @@ namespace TAU_Complex
                 f.ShowDialog();
                 return;
             }
-            double Dt;
-            if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 10000;
+            Program.SetDt(tk, new List<double>() { });
+            double Dt = Data.Dt;
+            if (Program.DtCheck(tk, Dt)) return;
+
             GraphPane pane = zedGraphControl1.GraphPane;
             pane.CurveList.Clear();
             list_1 = new PointPairList();
@@ -351,9 +357,10 @@ namespace TAU_Complex
                 f.ShowDialog();
                 return;
             }
-            double Dt;
-            if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 10000;
+            Program.SetDt(tk, new List<double>() {t1 });
+            double Dt = Data.Dt;
+            if (Program.DtCheck(tk, Dt)) return;
+
             GraphPane pane = zedGraphControl1.GraphPane;
             pane.CurveList.Clear();
             list_1 = new PointPairList();
@@ -389,9 +396,10 @@ namespace TAU_Complex
                 f.ShowDialog();
                 return;
             }
-            double Dt;
-            if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 10000;
+            Program.SetDt(tk, new List<double>() {t1 });
+            double Dt = Data.Dt;
+            if (Program.DtCheck(tk, Dt)) return;
+
             GraphPane pane = zedGraphControl1.GraphPane;
             pane.CurveList.Clear();
             list_1 = new PointPairList();

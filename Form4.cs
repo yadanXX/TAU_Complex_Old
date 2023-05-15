@@ -67,10 +67,8 @@ namespace TAU_Complex
             PointPairList list_3 = new PointPairList();
 
 
-            double Dt;
-            if (Data.Dt != 0) Dt = Data.Dt;
-            else Dt = tk / 10000;
-
+            Program.SetDt(tk, new List<double>() {T });
+            double Dt = Data.Dt;
             if (Program.DtCheck(tk, Dt)) return;
 
             double XInt = 0;

@@ -33,15 +33,29 @@ namespace TAU_Complex
                 checkBox2.Visible = true;
                 checkBox3.Visible = true;
             }
+
+            switch (Data.TypeDt)
+            {
+                case 1: radioButton1.Checked = true; break;
+                case 2: radioButton2.Checked = true; break;
+                case 3: radioButton3.Checked = true; break;
+                
+            }
         }
 
         private void Form_options_FormClosing(object sender, FormClosingEventArgs e)
         {
             try
             {
-                Data.Dt = Convert.ToDouble(textBoxDt.Text);
+                Data.Dt = Convert.ToDouble(textBoxDt.Text.Replace(".", ","));
+                if (Data.Dt == 0) throw new Exception();
             }
-            catch { }
+            catch 
+            {
+                Form_error er = new Form_error();
+                er.ShowDialog();
+                return;
+            }
 
             FormSeparate_ZedGraph f = new FormSeparate_ZedGraph();
 
@@ -75,6 +89,21 @@ namespace TAU_Complex
                 f.Show();
             }
 
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked) Data.TypeDt = 1;
+            if (radioButton2.Checked) Data.TypeDt = 2;
+            if (radioButton3.Checked)
+            {
+                Data.TypeDt = 3;
+                textBoxDt.Enabled = true;
+            }
+            else
+            {
+                textBoxDt.Enabled = false;
+            }
         }
     }
 }
