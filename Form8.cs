@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using ZedGraph;
 using System.CodeDom.Compiler;
+using System.Drawing.Text;
 
 namespace TAU_Complex
 {
@@ -26,6 +27,7 @@ namespace TAU_Complex
         }
 
         delegate (double, double) Filter(double xv, double k, double T, double x1, double Dt);
+        delegate double OutRage(double a, double b);
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -174,6 +176,30 @@ namespace TAU_Complex
             }
             else if (radioButtonVoz.Checked)
             {
+                OutRage outRage = delegate (double a, double b)
+                {
+                    return 0;
+                };
+                switch (comboBoxOutRage.SelectedIndex)
+                {
+                    case 0:
+                        outRage = delegate (double amplit,double b) 
+                        {
+                            return amplit;
+                        };
+                        break;
+                    case 1:
+                        outRage = delegate (double amplit, double frequancy) 
+                        {
+                            Math.Sin();//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                            return 0;
+                        };
+                        break;
+                    case 2:
+                        break;
+
+                }
+
                 if (radioButtonAper.Checked)
                 {
                     double k1, k;
@@ -207,11 +233,14 @@ namespace TAU_Complex
                     double xv = 1;
                     double wv1, wv2, temp1 = 0, temp2 = 0;
 
+
+
                     for (double i = 0; i < tk; i += Dt)
                     {
-                        (wvf, tempf) = filter(xv, kf, Tf, tempf, Dt);
+
+                        (wvf, tempf) = filter(xv - outRage, kf, Tf, tempf, Dt);
                         (wv1, temp1) = Wlink.PropDifDelay(wvf, 1 / k1, Tnu, T1, temp1, Dt);
-                        (wv2, temp2) = Wlink.Aperiodic(wv1, k, T, temp2, Dt);
+                        (wv2, temp2) = Wlink.Aperiodic(wv1 + outRage, k, T, temp2, Dt);
                         list_1.Add(i, wv2);
                     }
 
@@ -372,6 +401,53 @@ namespace TAU_Complex
         private void pictureBox11_Click(object sender, EventArgs e)
         {
             radioButtonAper.Checked = true;
+        }
+
+        private void radioButtonVoz_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonVoz.Checked || radioButtonOtk.Checked)
+            {
+                panelOutRageWS.Visible = true;
+                comboBoxOutRage.SelectedIndex = 0;
+            }
+            else
+            {
+                panelOutRageWS.Visible = false;
+            }
+
+        }
+
+        private void comboBoxOutRage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBoxOutRage.SelectedIndex)
+            {
+                case 0:
+                    HideOutRageText();
+                    panelAmplit.Visible = true;
+                    panelInvTime.Visible = true;
+                    break;
+                case 1:
+                    HideOutRageText();
+                    panelAmplit.Visible = true;
+                    panelInvTime.Visible = true;
+                    panelFrequency.Visible = true;
+                    break;
+                case 2:
+                    HideOutRageText();
+                    panelInvTime.Visible = true;
+                    panelExpect.Visible = true;
+                    panelDispertion.Visible = true;
+                    break;
+            }
+        }
+        private void HideOutRageText()
+        {
+            panelAmplit.Visible = false;
+            panelDispertion.Visible = false;
+            panelExpect.Visible = false;
+            panelFrequency.Visible = false;
+            panelInvTime.Visible = false;
+            panelPointCount.Visible = false;
         }
     }
 }

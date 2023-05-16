@@ -64,6 +64,28 @@
             this.pictureBoxk1 = new System.Windows.Forms.PictureBox();
             this.textBoxk = new System.Windows.Forms.TextBox();
             this.panelC1 = new System.Windows.Forms.Panel();
+            this.panelOutRageWS = new System.Windows.Forms.Panel();
+            this.panelDispertion = new System.Windows.Forms.Panel();
+            this.textBoxDispertion = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panelExpect = new System.Windows.Forms.Panel();
+            this.textBoxExpect = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panelPointCount = new System.Windows.Forms.Panel();
+            this.textBoxPointCount = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panelFrequency = new System.Windows.Forms.Panel();
+            this.textBoxFrequency = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panelAmplit = new System.Windows.Forms.Panel();
+            this.textBoxAmplit = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panelInvTime = new System.Windows.Forms.Panel();
+            this.textBoxInvTime = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panelOutRageHat = new System.Windows.Forms.Panel();
+            this.comboBoxOutRage = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panelFilter = new System.Windows.Forms.Panel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -104,6 +126,14 @@
             this.panelk.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxk1)).BeginInit();
             this.panelC1.SuspendLayout();
+            this.panelOutRageWS.SuspendLayout();
+            this.panelDispertion.SuspendLayout();
+            this.panelExpect.SuspendLayout();
+            this.panelPointCount.SuspendLayout();
+            this.panelFrequency.SuspendLayout();
+            this.panelAmplit.SuspendLayout();
+            this.panelInvTime.SuspendLayout();
+            this.panelOutRageHat.SuspendLayout();
             this.panelFilter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -119,7 +149,7 @@
             this.panelPic.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelPic.Location = new System.Drawing.Point(0, 0);
             this.panelPic.Name = "panelPic";
-            this.panelPic.Size = new System.Drawing.Size(1085, 181);
+            this.panelPic.Size = new System.Drawing.Size(1101, 181);
             this.panelPic.TabIndex = 0;
             // 
             // panelWS
@@ -133,7 +163,7 @@
             this.panelWS.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelWS.Location = new System.Drawing.Point(0, 181);
             this.panelWS.Name = "panelWS";
-            this.panelWS.Size = new System.Drawing.Size(419, 520);
+            this.panelWS.Size = new System.Drawing.Size(473, 686);
             this.panelWS.TabIndex = 1;
             // 
             // panelC3
@@ -143,9 +173,9 @@
             this.panelC3.Controls.Add(this.panelT1);
             this.panelC3.Controls.Add(this.panelT);
             this.panelC3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelC3.Location = new System.Drawing.Point(272, 248);
+            this.panelC3.Location = new System.Drawing.Point(351, 248);
             this.panelC3.Name = "panelC3";
-            this.panelC3.Size = new System.Drawing.Size(125, 228);
+            this.panelC3.Size = new System.Drawing.Size(201, 394);
             this.panelC3.TabIndex = 4;
             // 
             // panelT2
@@ -155,7 +185,7 @@
             this.panelT2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelT2.Location = new System.Drawing.Point(0, 105);
             this.panelT2.Name = "panelT2";
-            this.panelT2.Size = new System.Drawing.Size(125, 35);
+            this.panelT2.Size = new System.Drawing.Size(201, 35);
             this.panelT2.TabIndex = 15;
             this.panelT2.Visible = false;
             // 
@@ -183,7 +213,7 @@
             this.panelTnu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTnu.Location = new System.Drawing.Point(0, 70);
             this.panelTnu.Name = "panelTnu";
-            this.panelTnu.Size = new System.Drawing.Size(125, 35);
+            this.panelTnu.Size = new System.Drawing.Size(201, 35);
             this.panelTnu.TabIndex = 16;
             this.panelTnu.Visible = false;
             // 
@@ -211,7 +241,7 @@
             this.panelT1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelT1.Location = new System.Drawing.Point(0, 35);
             this.panelT1.Name = "panelT1";
-            this.panelT1.Size = new System.Drawing.Size(125, 35);
+            this.panelT1.Size = new System.Drawing.Size(201, 35);
             this.panelT1.TabIndex = 14;
             this.panelT1.Visible = false;
             // 
@@ -239,7 +269,7 @@
             this.panelT.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelT.Location = new System.Drawing.Point(0, 0);
             this.panelT.Name = "panelT";
-            this.panelT.Size = new System.Drawing.Size(125, 35);
+            this.panelT.Size = new System.Drawing.Size(201, 35);
             this.panelT.TabIndex = 13;
             this.panelT.Visible = false;
             // 
@@ -269,9 +299,9 @@
             this.panelC2.Controls.Add(this.panelk1);
             this.panelC2.Controls.Add(this.panelk);
             this.panelC2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelC2.Location = new System.Drawing.Point(147, 248);
+            this.panelC2.Location = new System.Drawing.Point(228, 248);
             this.panelC2.Name = "panelC2";
-            this.panelC2.Size = new System.Drawing.Size(125, 228);
+            this.panelC2.Size = new System.Drawing.Size(123, 394);
             this.panelC2.TabIndex = 3;
             // 
             // paneltk
@@ -281,7 +311,7 @@
             this.paneltk.Dock = System.Windows.Forms.DockStyle.Top;
             this.paneltk.Location = new System.Drawing.Point(0, 175);
             this.paneltk.Name = "paneltk";
-            this.paneltk.Size = new System.Drawing.Size(125, 35);
+            this.paneltk.Size = new System.Drawing.Size(123, 35);
             this.paneltk.TabIndex = 16;
             this.paneltk.Visible = false;
             // 
@@ -309,7 +339,7 @@
             this.panelξ1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelξ1.Location = new System.Drawing.Point(0, 140);
             this.panelξ1.Name = "panelξ1";
-            this.panelξ1.Size = new System.Drawing.Size(125, 35);
+            this.panelξ1.Size = new System.Drawing.Size(123, 35);
             this.panelξ1.TabIndex = 18;
             this.panelξ1.Visible = false;
             // 
@@ -337,7 +367,7 @@
             this.panelξ.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelξ.Location = new System.Drawing.Point(0, 105);
             this.panelξ.Name = "panelξ";
-            this.panelξ.Size = new System.Drawing.Size(125, 35);
+            this.panelξ.Size = new System.Drawing.Size(123, 35);
             this.panelξ.TabIndex = 15;
             this.panelξ.Visible = false;
             // 
@@ -365,7 +395,7 @@
             this.panelk2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelk2.Location = new System.Drawing.Point(0, 70);
             this.panelk2.Name = "panelk2";
-            this.panelk2.Size = new System.Drawing.Size(125, 35);
+            this.panelk2.Size = new System.Drawing.Size(123, 35);
             this.panelk2.TabIndex = 14;
             this.panelk2.Visible = false;
             // 
@@ -393,7 +423,7 @@
             this.panelk1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelk1.Location = new System.Drawing.Point(0, 35);
             this.panelk1.Name = "panelk1";
-            this.panelk1.Size = new System.Drawing.Size(125, 35);
+            this.panelk1.Size = new System.Drawing.Size(123, 35);
             this.panelk1.TabIndex = 17;
             this.panelk1.Visible = false;
             // 
@@ -421,7 +451,7 @@
             this.panelk.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelk.Location = new System.Drawing.Point(0, 0);
             this.panelk.Name = "panelk";
-            this.panelk.Size = new System.Drawing.Size(125, 35);
+            this.panelk.Size = new System.Drawing.Size(123, 35);
             this.panelk.TabIndex = 13;
             this.panelk.Visible = false;
             // 
@@ -444,12 +474,225 @@
             // 
             // panelC1
             // 
+            this.panelC1.Controls.Add(this.panelOutRageWS);
             this.panelC1.Controls.Add(this.panelFilter);
             this.panelC1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelC1.Location = new System.Drawing.Point(0, 248);
             this.panelC1.Name = "panelC1";
-            this.panelC1.Size = new System.Drawing.Size(147, 228);
+            this.panelC1.Size = new System.Drawing.Size(228, 394);
             this.panelC1.TabIndex = 2;
+            // 
+            // panelOutRageWS
+            // 
+            this.panelOutRageWS.Controls.Add(this.panelDispertion);
+            this.panelOutRageWS.Controls.Add(this.panelExpect);
+            this.panelOutRageWS.Controls.Add(this.panelPointCount);
+            this.panelOutRageWS.Controls.Add(this.panelFrequency);
+            this.panelOutRageWS.Controls.Add(this.panelAmplit);
+            this.panelOutRageWS.Controls.Add(this.panelInvTime);
+            this.panelOutRageWS.Controls.Add(this.panelOutRageHat);
+            this.panelOutRageWS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelOutRageWS.Location = new System.Drawing.Point(0, 70);
+            this.panelOutRageWS.Name = "panelOutRageWS";
+            this.panelOutRageWS.Size = new System.Drawing.Size(228, 324);
+            this.panelOutRageWS.TabIndex = 4;
+            this.panelOutRageWS.Visible = false;
+            // 
+            // panelDispertion
+            // 
+            this.panelDispertion.Controls.Add(this.textBoxDispertion);
+            this.panelDispertion.Controls.Add(this.label9);
+            this.panelDispertion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelDispertion.Location = new System.Drawing.Point(0, 239);
+            this.panelDispertion.Name = "panelDispertion";
+            this.panelDispertion.Size = new System.Drawing.Size(228, 35);
+            this.panelDispertion.TabIndex = 28;
+            this.panelDispertion.Visible = false;
+            // 
+            // textBoxDispertion
+            // 
+            this.textBoxDispertion.Location = new System.Drawing.Point(150, 6);
+            this.textBoxDispertion.Name = "textBoxDispertion";
+            this.textBoxDispertion.Size = new System.Drawing.Size(72, 26);
+            this.textBoxDispertion.TabIndex = 21;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(8, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(83, 19);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Дисперсия";
+            // 
+            // panelExpect
+            // 
+            this.panelExpect.Controls.Add(this.textBoxExpect);
+            this.panelExpect.Controls.Add(this.label8);
+            this.panelExpect.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelExpect.Location = new System.Drawing.Point(0, 204);
+            this.panelExpect.Name = "panelExpect";
+            this.panelExpect.Size = new System.Drawing.Size(228, 35);
+            this.panelExpect.TabIndex = 27;
+            this.panelExpect.Visible = false;
+            // 
+            // textBoxExpect
+            // 
+            this.textBoxExpect.Location = new System.Drawing.Point(150, 6);
+            this.textBoxExpect.Name = "textBoxExpect";
+            this.textBoxExpect.Size = new System.Drawing.Size(72, 26);
+            this.textBoxExpect.TabIndex = 21;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(8, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(192, 19);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Математическое ожидание";
+            // 
+            // panelPointCount
+            // 
+            this.panelPointCount.Controls.Add(this.textBoxPointCount);
+            this.panelPointCount.Controls.Add(this.label7);
+            this.panelPointCount.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelPointCount.Location = new System.Drawing.Point(0, 169);
+            this.panelPointCount.Name = "panelPointCount";
+            this.panelPointCount.Size = new System.Drawing.Size(228, 35);
+            this.panelPointCount.TabIndex = 26;
+            this.panelPointCount.Visible = false;
+            // 
+            // textBoxPointCount
+            // 
+            this.textBoxPointCount.Location = new System.Drawing.Point(150, 6);
+            this.textBoxPointCount.Name = "textBoxPointCount";
+            this.textBoxPointCount.Size = new System.Drawing.Size(72, 26);
+            this.textBoxPointCount.TabIndex = 21;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(8, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(201, 19);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Кол-во случайных значений";
+            // 
+            // panelFrequency
+            // 
+            this.panelFrequency.Controls.Add(this.textBoxFrequency);
+            this.panelFrequency.Controls.Add(this.label6);
+            this.panelFrequency.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelFrequency.Location = new System.Drawing.Point(0, 134);
+            this.panelFrequency.Name = "panelFrequency";
+            this.panelFrequency.Size = new System.Drawing.Size(228, 35);
+            this.panelFrequency.TabIndex = 25;
+            this.panelFrequency.Visible = false;
+            // 
+            // textBoxFrequency
+            // 
+            this.textBoxFrequency.Location = new System.Drawing.Point(150, 6);
+            this.textBoxFrequency.Name = "textBoxFrequency";
+            this.textBoxFrequency.Size = new System.Drawing.Size(72, 26);
+            this.textBoxFrequency.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(8, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 19);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Частота";
+            // 
+            // panelAmplit
+            // 
+            this.panelAmplit.Controls.Add(this.textBoxAmplit);
+            this.panelAmplit.Controls.Add(this.label5);
+            this.panelAmplit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelAmplit.Location = new System.Drawing.Point(0, 99);
+            this.panelAmplit.Name = "panelAmplit";
+            this.panelAmplit.Size = new System.Drawing.Size(228, 35);
+            this.panelAmplit.TabIndex = 24;
+            this.panelAmplit.Visible = false;
+            // 
+            // textBoxAmplit
+            // 
+            this.textBoxAmplit.Location = new System.Drawing.Point(150, 6);
+            this.textBoxAmplit.Name = "textBoxAmplit";
+            this.textBoxAmplit.Size = new System.Drawing.Size(72, 26);
+            this.textBoxAmplit.TabIndex = 21;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(8, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(84, 19);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Амплитуда";
+            // 
+            // panelInvTime
+            // 
+            this.panelInvTime.Controls.Add(this.textBoxInvTime);
+            this.panelInvTime.Controls.Add(this.label4);
+            this.panelInvTime.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelInvTime.Location = new System.Drawing.Point(0, 64);
+            this.panelInvTime.Name = "panelInvTime";
+            this.panelInvTime.Size = new System.Drawing.Size(228, 35);
+            this.panelInvTime.TabIndex = 23;
+            this.panelInvTime.Visible = false;
+            // 
+            // textBoxInvTime
+            // 
+            this.textBoxInvTime.Location = new System.Drawing.Point(150, 3);
+            this.textBoxInvTime.Name = "textBoxInvTime";
+            this.textBoxInvTime.Size = new System.Drawing.Size(72, 26);
+            this.textBoxInvTime.TabIndex = 20;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(8, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(137, 19);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Время возмущения";
+            // 
+            // panelOutRageHat
+            // 
+            this.panelOutRageHat.Controls.Add(this.comboBoxOutRage);
+            this.panelOutRageHat.Controls.Add(this.label3);
+            this.panelOutRageHat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelOutRageHat.Location = new System.Drawing.Point(0, 0);
+            this.panelOutRageHat.Name = "panelOutRageHat";
+            this.panelOutRageHat.Size = new System.Drawing.Size(228, 64);
+            this.panelOutRageHat.TabIndex = 17;
+            // 
+            // comboBoxOutRage
+            // 
+            this.comboBoxOutRage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxOutRage.ItemHeight = 19;
+            this.comboBoxOutRage.Items.AddRange(new object[] {
+            "Ступенчатое ",
+            "Синусоидальное ",
+            "Случайное "});
+            this.comboBoxOutRage.Location = new System.Drawing.Point(8, 26);
+            this.comboBoxOutRage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.comboBoxOutRage.Name = "comboBoxOutRage";
+            this.comboBoxOutRage.Size = new System.Drawing.Size(209, 27);
+            this.comboBoxOutRage.TabIndex = 19;
+            this.comboBoxOutRage.SelectedIndexChanged += new System.EventHandler(this.comboBoxOutRage_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(8, 4);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(186, 19);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Случайное воздейсвие f(t)";
             // 
             // panelFilter
             // 
@@ -462,13 +705,13 @@
             this.panelFilter.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelFilter.Location = new System.Drawing.Point(0, 0);
             this.panelFilter.Name = "panelFilter";
-            this.panelFilter.Size = new System.Drawing.Size(147, 140);
+            this.panelFilter.Size = new System.Drawing.Size(228, 70);
             this.panelFilter.TabIndex = 3;
             // 
             // pictureBox10
             // 
             this.pictureBox10.Image = global::TAU_Complex.Properties.Resources.Kф;
-            this.pictureBox10.Location = new System.Drawing.Point(14, 73);
+            this.pictureBox10.Location = new System.Drawing.Point(121, 3);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(26, 26);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -479,7 +722,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::TAU_Complex.Properties.Resources.Тф;
-            this.pictureBox9.Location = new System.Drawing.Point(14, 105);
+            this.pictureBox9.Location = new System.Drawing.Point(121, 35);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(26, 26);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -489,7 +732,7 @@
             // 
             // textBoxTf
             // 
-            this.textBoxTf.Location = new System.Drawing.Point(46, 105);
+            this.textBoxTf.Location = new System.Drawing.Point(153, 35);
             this.textBoxTf.Name = "textBoxTf";
             this.textBoxTf.Size = new System.Drawing.Size(72, 26);
             this.textBoxTf.TabIndex = 17;
@@ -497,7 +740,7 @@
             // 
             // textBoxkf
             // 
-            this.textBoxkf.Location = new System.Drawing.Point(46, 73);
+            this.textBoxkf.Location = new System.Drawing.Point(153, 3);
             this.textBoxkf.Name = "textBoxkf";
             this.textBoxkf.Size = new System.Drawing.Size(72, 26);
             this.textBoxkf.TabIndex = 19;
@@ -506,7 +749,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::TAU_Complex.Properties.Resources.фильтр;
-            this.pictureBox2.Location = new System.Drawing.Point(18, 17);
+            this.pictureBox2.Location = new System.Drawing.Point(23, 6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -517,7 +760,7 @@
             // checkBoxFilter
             // 
             this.checkBoxFilter.AutoSize = true;
-            this.checkBoxFilter.Location = new System.Drawing.Point(3, 35);
+            this.checkBoxFilter.Location = new System.Drawing.Point(8, 24);
             this.checkBoxFilter.Name = "checkBoxFilter";
             this.checkBoxFilter.Size = new System.Drawing.Size(97, 23);
             this.checkBoxFilter.TabIndex = 1;
@@ -533,7 +776,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox2.Location = new System.Drawing.Point(0, 100);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(419, 148);
+            this.groupBox2.Size = new System.Drawing.Size(473, 148);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Принцип регулирования";
@@ -541,28 +784,30 @@
             // radioButtonOtk
             // 
             this.radioButtonOtk.AutoSize = true;
-            this.radioButtonOtk.Location = new System.Drawing.Point(12, 119);
+            this.radioButtonOtk.Location = new System.Drawing.Point(12, 83);
             this.radioButtonOtk.Name = "radioButtonOtk";
             this.radioButtonOtk.Size = new System.Drawing.Size(237, 23);
             this.radioButtonOtk.TabIndex = 3;
             this.radioButtonOtk.Text = "Регулирование по отклонению";
             this.radioButtonOtk.UseVisualStyleBackColor = true;
+            this.radioButtonOtk.CheckedChanged += new System.EventHandler(this.radioButtonVoz_CheckedChanged);
             // 
             // radioButtonVoz
             // 
             this.radioButtonVoz.AutoSize = true;
-            this.radioButtonVoz.Location = new System.Drawing.Point(12, 90);
+            this.radioButtonVoz.Location = new System.Drawing.Point(12, 54);
             this.radioButtonVoz.Name = "radioButtonVoz";
             this.radioButtonVoz.Size = new System.Drawing.Size(240, 23);
             this.radioButtonVoz.TabIndex = 2;
             this.radioButtonVoz.Text = "Регулирование по возмущению";
             this.radioButtonVoz.UseVisualStyleBackColor = true;
+            this.radioButtonVoz.CheckedChanged += new System.EventHandler(this.radioButtonVoz_CheckedChanged);
             // 
             // radioButtonRaz
             // 
             this.radioButtonRaz.AutoSize = true;
             this.radioButtonRaz.Checked = true;
-            this.radioButtonRaz.Location = new System.Drawing.Point(12, 61);
+            this.radioButtonRaz.Location = new System.Drawing.Point(12, 25);
             this.radioButtonRaz.Name = "radioButtonRaz";
             this.radioButtonRaz.Size = new System.Drawing.Size(216, 23);
             this.radioButtonRaz.TabIndex = 1;
@@ -579,7 +824,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(419, 100);
+            this.groupBox1.Size = new System.Drawing.Size(473, 100);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Объект регулирования";
@@ -635,10 +880,10 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 476);
+            this.button1.Location = new System.Drawing.Point(0, 642);
             this.button1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(419, 44);
+            this.button1.Size = new System.Drawing.Size(473, 44);
             this.button1.TabIndex = 5;
             this.button1.Text = "Построить";
             this.button1.UseVisualStyleBackColor = true;
@@ -647,7 +892,7 @@
             // zedGraphControl1
             // 
             this.zedGraphControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.zedGraphControl1.Location = new System.Drawing.Point(419, 181);
+            this.zedGraphControl1.Location = new System.Drawing.Point(473, 181);
             this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4);
             this.zedGraphControl1.Name = "zedGraphControl1";
             this.zedGraphControl1.ScrollGrace = 0D;
@@ -657,7 +902,7 @@
             this.zedGraphControl1.ScrollMinX = 0D;
             this.zedGraphControl1.ScrollMinY = 0D;
             this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(666, 520);
+            this.zedGraphControl1.Size = new System.Drawing.Size(628, 686);
             this.zedGraphControl1.TabIndex = 2;
             this.zedGraphControl1.UseExtendedPrintDialog = true;
             // 
@@ -667,7 +912,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1085, 701);
+            this.ClientSize = new System.Drawing.Size(1101, 867);
             this.Controls.Add(this.zedGraphControl1);
             this.Controls.Add(this.panelWS);
             this.Controls.Add(this.panelPic);
@@ -708,6 +953,21 @@
             this.panelk.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxk1)).EndInit();
             this.panelC1.ResumeLayout(false);
+            this.panelOutRageWS.ResumeLayout(false);
+            this.panelDispertion.ResumeLayout(false);
+            this.panelDispertion.PerformLayout();
+            this.panelExpect.ResumeLayout(false);
+            this.panelExpect.PerformLayout();
+            this.panelPointCount.ResumeLayout(false);
+            this.panelPointCount.PerformLayout();
+            this.panelFrequency.ResumeLayout(false);
+            this.panelFrequency.PerformLayout();
+            this.panelAmplit.ResumeLayout(false);
+            this.panelAmplit.PerformLayout();
+            this.panelInvTime.ResumeLayout(false);
+            this.panelInvTime.PerformLayout();
+            this.panelOutRageHat.ResumeLayout(false);
+            this.panelOutRageHat.PerformLayout();
             this.panelFilter.ResumeLayout(false);
             this.panelFilter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -778,5 +1038,27 @@
         private System.Windows.Forms.CheckBox checkBoxFilter;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Panel panelOutRageWS;
+        private System.Windows.Forms.ComboBox comboBoxOutRage;
+        private System.Windows.Forms.TextBox textBoxAmplit;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBoxInvTime;
+        private System.Windows.Forms.Panel panelPointCount;
+        private System.Windows.Forms.TextBox textBoxPointCount;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panelFrequency;
+        private System.Windows.Forms.TextBox textBoxFrequency;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panelAmplit;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panelInvTime;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panelOutRageHat;
+        private System.Windows.Forms.Panel panelDispertion;
+        private System.Windows.Forms.TextBox textBoxDispertion;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panelExpect;
+        private System.Windows.Forms.TextBox textBoxExpect;
+        private System.Windows.Forms.Label label8;
     }
 }

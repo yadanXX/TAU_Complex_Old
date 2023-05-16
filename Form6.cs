@@ -103,8 +103,6 @@ namespace TAU_Complex
             double Dt = Data.Dt;
             if (Program.DtCheck(tk, Dt)) return;
 
-            if (Program.DtCheck(tk, Dt)) return;
-
             PointPairList list_1 = new PointPairList();
             PointPairList list_2 = new PointPairList();
             PointPairList list_3 = new PointPairList();
