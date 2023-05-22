@@ -11,6 +11,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using ZedGraph;
 using System.CodeDom.Compiler;
 using System.Drawing.Text;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace TAU_Complex
 {
@@ -27,7 +28,7 @@ namespace TAU_Complex
         }
 
         delegate (double, double) Filter(double xv, double k, double T, double x1, double Dt);
-        delegate double OutRage(double a, double b);
+        private static Random rnd = new Random();
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -176,30 +177,6 @@ namespace TAU_Complex
             }
             else if (radioButtonVoz.Checked)
             {
-                OutRage outRage = delegate (double a, double b)
-                {
-                    return 0;
-                };
-                switch (comboBoxOutRage.SelectedIndex)
-                {
-                    case 0:
-                        outRage = delegate (double amplit,double b) 
-                        {
-                            return amplit;
-                        };
-                        break;
-                    case 1:
-                        outRage = delegate (double amplit, double frequancy) 
-                        {
-                            Math.Sin();//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                            return 0;
-                        };
-                        break;
-                    case 2:
-                        break;
-
-                }
-
                 if (radioButtonAper.Checked)
                 {
                     double k1, k;
@@ -233,15 +210,94 @@ namespace TAU_Complex
                     double xv = 1;
                     double wv1, wv2, temp1 = 0, temp2 = 0;
 
+                    double invTime, amplit, freq, pointCounter, mathEx, disper;
 
-
-                    for (double i = 0; i < tk; i += Dt)
+                    switch (comboBoxOutRage.SelectedIndex)
                     {
+                        case 0:
+                            try
+                            {
+                                invTime = Convert.ToDouble(textBoxInvTime.Text.Replace(".", ","));
+                                amplit = Convert.ToDouble(textBoxAmplit.Text.Replace(".", ","));
+                                if (invTime < 0 || amplit <= 0) throw new Exception();
+                            }
+                            catch (Exception)
+                            {
+                                Form_error f = new Form_error();
+                                f.ShowDialog();
+                                return;
+                            }
 
-                        (wvf, tempf) = filter(xv - outRage, kf, Tf, tempf, Dt);
-                        (wv1, temp1) = Wlink.PropDifDelay(wvf, 1 / k1, Tnu, T1, temp1, Dt);
-                        (wv2, temp2) = Wlink.Aperiodic(wv1 + outRage, k, T, temp2, Dt);
-                        list_1.Add(i, wv2);
+                            for (double i = 0; i < tk; i += Dt)
+                            {
+
+                                (wvf, tempf) = filter(xv - outRageStep(amplit, invTime, i), kf, Tf, tempf, Dt);
+                                (wv1, temp1) = Wlink.PropDifDelay(wvf, 1 / k1, Tnu, T1, temp1, Dt);
+                                (wv2, temp2) = Wlink.Aperiodic(wv1 + outRageStep(amplit, invTime, i), k, T, temp2, Dt);
+                                list_1.Add(i, wv2);
+                            }
+                            break;
+
+                        case 1:
+
+                            try
+                            {
+                                invTime = Convert.ToDouble(textBoxInvTime.Text.Replace(".", ","));
+                                amplit = Convert.ToDouble(textBoxAmplit.Text.Replace(".", ","));
+                                freq = Convert.ToDouble(textBoxFrequency.Text.Replace(".", ","));
+                                if (invTime < 0 || amplit <= 0 || freq <= 0) throw new Exception();
+                            }
+                            catch (Exception)
+                            {
+                                Form_error f = new Form_error();
+                                f.ShowDialog();
+                                return;
+                            }
+
+                            for (double i = 0; i < tk; i += Dt)
+                            {
+
+                                (wvf, tempf) = filter(xv - outRageSin(amplit, freq, i, invTime), kf, Tf, tempf, Dt);
+                                (wv1, temp1) = Wlink.PropDifDelay(wvf, 1 / k1, Tnu, T1, temp1, Dt);
+                                (wv2, temp2) = Wlink.Aperiodic(wv1 + outRageSin(amplit, freq, i, invTime), k, T, temp2, Dt);
+                                list_1.Add(i, wv2);
+                            }
+                            break;
+
+                        case 2:
+                            try
+                            {
+                                invTime = Convert.ToDouble(textBoxInvTime.Text.Replace(".", ","));
+                                pointCounter = Convert.ToDouble(textBoxPointCount.Text.Replace(".", ","));
+                                mathEx = Convert.ToDouble(textBoxExpect.Text.Replace(".", ","));
+                                disper = Convert.ToDouble(textBoxDispertion.Text.Replace(".", ","));
+                                if (invTime < 0 || pointCounter <= 0 || disper <= 0) throw new Exception();
+                            }
+                            catch (Exception)
+                            {
+                                Form_error f = new Form_error();
+                                f.ShowDialog();
+                                return;
+                            }
+
+                            double outRageRand = 0;
+                            double randFreq = (tk - invTime) / pointCounter;
+                            double randCurStage = invTime;
+
+                            for (double i = 0; i < tk; i += Dt)
+                            {
+                                if (i >= randCurStage)
+                                {
+                                    outRageRand = NextGaussian(mathEx, disper);
+                                    randCurStage += randFreq;
+                                }
+
+                                (wvf, tempf) = filter(xv - outRageRand, kf, Tf, tempf, Dt);
+                                (wv1, temp1) = Wlink.PropDifDelay(wvf, 1 / k1, Tnu, T1, temp1, Dt);
+                                (wv2, temp2) = Wlink.Aperiodic(wv1 + outRageRand, k, T, temp2, Dt);
+                                list_1.Add(i, wv2);
+                            }
+                            break;
                     }
 
                     DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "Qвых(t)", "t");
@@ -437,6 +493,7 @@ namespace TAU_Complex
                     panelInvTime.Visible = true;
                     panelExpect.Visible = true;
                     panelDispertion.Visible = true;
+                    panelPointCount.Visible = true;
                     break;
             }
         }
@@ -449,5 +506,44 @@ namespace TAU_Complex
             panelInvTime.Visible = false;
             panelPointCount.Visible = false;
         }
+
+
+
+        private double outRageStep(double amplit, double invTime, double time)
+        {
+            if (time >= invTime)
+            {
+                return amplit;
+            }
+            else return 0;
+        }
+
+        private double outRageSin(double amplit, double frequancy, double time, double invTime)
+        {
+            if (time >= invTime)
+            {
+                return amplit * Math.Sin(frequancy * time * 2.0 * Math.PI - invTime * 2.0 * Math.PI);
+            }
+            else return 0;
+        }
+        private static double NextGaussian(double mu, double sigma)
+        {
+            // рандом по нормальному закону 
+            // mu - пик
+            // sigma - разброс
+            double rand_normal;
+            // do
+            // {
+            //double mu = 0.5;
+            // double sigma = mu / 3;
+            var u1 = rnd.NextDouble();
+            var u2 = rnd.NextDouble();
+            var rand_std_normal = Math.Sqrt(-2.0 * Math.Log(u1)) * Math.Sin(2.0 * Math.PI * u2);
+            rand_normal = mu + sigma * rand_std_normal;
+            //} while (rand_normal < 0 || rand_normal > 1);
+            return Math.Round(rand_normal, 1);
+        }
     }
 }
+
+// кол-во случ точек
