@@ -24,7 +24,9 @@ namespace TAU_Complex
             zedGraphControl1.GraphPane.Title.Text = "График переходной характиристики";
             zedGraphControl1.GraphPane.YAxis.Title.Text = "Qвых(t)";
             zedGraphControl1.GraphPane.XAxis.Title.Text = "t";
-            radioButtonAper_CheckedChanged(null, null);
+            radioButtonBlock_CheckedChanged(null, null);
+            pictureBoxDiagram.Image = Properties.Resources.разомкнутое_апериодическое;
+
         }
 
         delegate (double, double) Filter(double xv, double k, double T, double x1, double Dt);
@@ -38,7 +40,7 @@ namespace TAU_Complex
 
             Filter filter = delegate (double xv, double k, double T, double x1, double Dt) // анонимное объявление функции для глобалтно определённого делагата Filter
             {
-                return (1, 0);
+                return (xv, 0);
             };
 
             if (checkBoxFilter.Checked)
@@ -219,7 +221,7 @@ namespace TAU_Complex
                             {
                                 invTime = Convert.ToDouble(textBoxInvTime.Text.Replace(".", ","));
                                 amplit = Convert.ToDouble(textBoxAmplit.Text.Replace(".", ","));
-                                if (invTime < 0 || amplit <= 0) throw new Exception();
+                                if (invTime <= 0 || amplit <= 0) throw new Exception();
                             }
                             catch (Exception)
                             {
@@ -233,7 +235,8 @@ namespace TAU_Complex
 
                                 (wvf, tempf) = filter(xv - outRageStep(amplit, invTime, i), kf, Tf, tempf, Dt);
                                 (wv1, temp1) = Wlink.PropDifDelay(wvf, 1 / k1, Tnu, T1, temp1, Dt);
-                                (wv2, temp2) = Wlink.Aperiodic(wv1 + outRageStep(amplit, invTime, i), k, T, temp2, Dt);
+                                (wv2, temp2) = Wlink.Aperiodic(wv1, k, T, temp2, Dt);
+                                wv2 += outRageStep(amplit, invTime, i);
                                 list_1.Add(i, wv2);
                             }
                             break;
@@ -245,7 +248,7 @@ namespace TAU_Complex
                                 invTime = Convert.ToDouble(textBoxInvTime.Text.Replace(".", ","));
                                 amplit = Convert.ToDouble(textBoxAmplit.Text.Replace(".", ","));
                                 freq = Convert.ToDouble(textBoxFrequency.Text.Replace(".", ","));
-                                if (invTime < 0 || amplit <= 0 || freq <= 0) throw new Exception();
+                                if (invTime <= 0 || amplit <= 0 || freq <= 0) throw new Exception();
                             }
                             catch (Exception)
                             {
@@ -259,7 +262,8 @@ namespace TAU_Complex
 
                                 (wvf, tempf) = filter(xv - outRageSin(amplit, freq, i, invTime), kf, Tf, tempf, Dt);
                                 (wv1, temp1) = Wlink.PropDifDelay(wvf, 1 / k1, Tnu, T1, temp1, Dt);
-                                (wv2, temp2) = Wlink.Aperiodic(wv1 + outRageSin(amplit, freq, i, invTime), k, T, temp2, Dt);
+                                (wv2, temp2) = Wlink.Aperiodic(wv1, k, T, temp2, Dt);
+                                wv2 += outRageSin(amplit, freq, i, invTime);
                                 list_1.Add(i, wv2);
                             }
                             break;
@@ -271,7 +275,7 @@ namespace TAU_Complex
                                 pointCounter = Convert.ToDouble(textBoxPointCount.Text.Replace(".", ","));
                                 mathEx = Convert.ToDouble(textBoxExpect.Text.Replace(".", ","));
                                 disper = Convert.ToDouble(textBoxDispertion.Text.Replace(".", ","));
-                                if (invTime < 0 || pointCounter <= 0 || disper <= 0) throw new Exception();
+                                if (invTime <= 0 || pointCounter <= 0 || disper <= 0) throw new Exception();
                             }
                             catch (Exception)
                             {
@@ -294,7 +298,8 @@ namespace TAU_Complex
 
                                 (wvf, tempf) = filter(xv - outRageRand, kf, Tf, tempf, Dt);
                                 (wv1, temp1) = Wlink.PropDifDelay(wvf, 1 / k1, Tnu, T1, temp1, Dt);
-                                (wv2, temp2) = Wlink.Aperiodic(wv1 + outRageRand, k, T, temp2, Dt);
+                                (wv2, temp2) = Wlink.Aperiodic(wv1, k, T, temp2, Dt);
+                                wv2 += outRageRand;
                                 list_1.Add(i, wv2);
                             }
                             break;
@@ -310,18 +315,487 @@ namespace TAU_Complex
                 }
                 else if (radioButtonOsci.Checked)
                 {
+                    double k1, k;
+                    double T1, T, Tnu;
+                    double tk;
+                    double ξ, ξ1;
+                    try
+                    {
+                        k1 = Convert.ToDouble(textBoxk1.Text.Replace(".", ","));
+                        k = Convert.ToDouble(textBoxk.Text.Replace(".", ","));
+                        T1 = Convert.ToDouble(textBoxT1.Text.Replace(".", ","));
+                        T = Convert.ToDouble(textBoxT.Text.Replace(".", ","));
+                        Tnu = Convert.ToDouble(textBoxTnu.Text.Replace(".", ","));
+                        tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
+                        ξ = Convert.ToDouble(textBoxξ.Text.Replace(".", ","));
+                        ξ1 = Convert.ToDouble(textBoxξ1.Text.Replace(".", ","));
+                        legend += $"K1 = {k1} K = {k} T1 = {T1} T = {T} Tν = {Tnu} ξ = {ξ} ξ₁ = {ξ1}";
+                        if (k1 <= 0 || k <= 0 || T1 <= 0 || T <= 0 || tk <= 0 || Tnu < 0 || ξ < 0 || ξ1 < 0) throw new Exception();
+                    }
+                    catch (Exception)
+                    {
+                        Form_error f = new Form_error();
+                        f.ShowDialog();
+                        return;
+                    }
 
+                    Program.SetDt(tk, new List<double>() { T1, T, Tnu, ξ, ξ1 });
+                    double Dt = Data.Dt;
+                    if (Program.DtCheck(tk, Dt)) return;
+
+                    PointPairList list_1 = new PointPairList();
+
+                    double invTime, amplit, freq, pointCounter, mathEx, disper;
+
+                    double xv = 1;
+                    double temp111 = 0, temp112 = 0, temp121 = 0, temp122 = 0, temp131 = 0, temp132 = 0, temp21 = 0, temp22 = 0;
+                    double wv111, wv112, wv121, wv122, wv131, wv132, wv2;
+
+                    switch (comboBoxOutRage.SelectedIndex)
+                    {
+                        case 0:
+                            try
+                            {
+                                invTime = Convert.ToDouble(textBoxInvTime.Text.Replace(".", ","));
+                                amplit = Convert.ToDouble(textBoxAmplit.Text.Replace(".", ","));
+                                if (invTime <= 0 || amplit <= 0) throw new Exception();
+                            }
+                            catch (Exception)
+                            {
+                                Form_error f = new Form_error();
+                                f.ShowDialog();
+                                return;
+                            }
+
+                            for (double i = 0; i < tk; i += Dt)
+                            {
+                                (wvf, tempf) = filter(xv - outRageStep(amplit, invTime, i), kf, Tf, tempf, Dt);
+
+                                (wv111, temp111) = Wlink.Difdelay(wvf, 1 / k1, Tnu, T1, temp111, Dt);
+                                (wv112, temp112) = Wlink.Difdelay(wv111, 1, Tnu, T1, temp112, Dt);
+
+                                (wv121, temp121) = Wlink.Difdelay(wvf, ξ1, Tnu, T1, temp121, Dt);
+                                (wv122, temp122) = Wlink.Aperiodic(wv121, 1 / k1, Tnu, temp122, Dt);
+
+                                (wv131, temp131) = Wlink.Aperiodic(wvf, 1 / k1, Tnu, temp131, Dt);
+                                (wv132, temp132) = Wlink.Aperiodic(wv131, 1, Tnu, temp132, Dt);
+
+                                (wv2, temp21, temp22) = Wlink.Oscillatory(wv112 + wv122 + wv132, k, T, 2 * T * ξ, temp21, temp22, Dt);
+
+                                wv2 += outRageStep(amplit, invTime, i);
+
+                                list_1.Add(i, wv2);
+                            }
+                            break;
+
+                        case 1:
+
+                            try
+                            {
+                                invTime = Convert.ToDouble(textBoxInvTime.Text.Replace(".", ","));
+                                amplit = Convert.ToDouble(textBoxAmplit.Text.Replace(".", ","));
+                                freq = Convert.ToDouble(textBoxFrequency.Text.Replace(".", ","));
+                                if (invTime <= 0 || amplit <= 0 || freq <= 0) throw new Exception();
+                            }
+                            catch (Exception)
+                            {
+                                Form_error f = new Form_error();
+                                f.ShowDialog();
+                                return;
+                            }
+
+                            for (double i = 0; i < tk; i += Dt)
+                            {
+                                (wvf, tempf) = filter(xv - outRageSin(amplit, freq, i, invTime), kf, Tf, tempf, Dt);
+
+                                (wv111, temp111) = Wlink.Difdelay(wvf, 1 / k1, Tnu, T1, temp111, Dt);
+                                (wv112, temp112) = Wlink.Difdelay(wv111, 1, Tnu, T1, temp112, Dt);
+
+                                (wv121, temp121) = Wlink.Difdelay(wvf, ξ1, Tnu, T1, temp121, Dt);
+                                (wv122, temp122) = Wlink.Aperiodic(wv121, 1 / k1, Tnu, temp122, Dt);
+
+                                (wv131, temp131) = Wlink.Aperiodic(wvf, 1 / k1, Tnu, temp131, Dt);
+                                (wv132, temp132) = Wlink.Aperiodic(wv131, 1, Tnu, temp132, Dt);
+
+                                (wv2, temp21, temp22) = Wlink.Oscillatory(wv112 + wv122 + wv132, k, T, 2 * T * ξ, temp21, temp22, Dt);
+
+                                wv2 += outRageSin(amplit, freq, i, invTime);
+
+                                list_1.Add(i, wv2);
+                            }
+                            break;
+
+                        case 2:
+                            try
+                            {
+                                invTime = Convert.ToDouble(textBoxInvTime.Text.Replace(".", ","));
+                                pointCounter = Convert.ToDouble(textBoxPointCount.Text.Replace(".", ","));
+                                mathEx = Convert.ToDouble(textBoxExpect.Text.Replace(".", ","));
+                                disper = Convert.ToDouble(textBoxDispertion.Text.Replace(".", ","));
+                                if (invTime <= 0 || pointCounter <= 0 || disper <= 0) throw new Exception();
+                            }
+                            catch (Exception)
+                            {
+                                Form_error f = new Form_error();
+                                f.ShowDialog();
+                                return;
+                            }
+
+                            double outRageRand = 0;
+                            double randFreq = (tk - invTime) / pointCounter;
+                            double randCurStage = invTime;
+
+                            for (double i = 0; i < tk; i += Dt)
+                            {
+                                if (i >= randCurStage)
+                                {
+                                    outRageRand = NextGaussian(mathEx, disper);
+                                    randCurStage += randFreq;
+                                }
+
+                                (wvf, tempf) = filter(xv - outRageRand, kf, Tf, tempf, Dt);
+
+                                (wv111, temp111) = Wlink.Difdelay(wvf, 1 / k1, Tnu, T1, temp111, Dt);
+                                (wv112, temp112) = Wlink.Difdelay(wv111, 1, Tnu, T1, temp112, Dt);
+
+                                (wv121, temp121) = Wlink.Difdelay(wvf, ξ1, Tnu, T1, temp121, Dt);
+                                (wv122, temp122) = Wlink.Aperiodic(wv121, 1 / k1, Tnu, temp122, Dt);
+
+                                (wv131, temp131) = Wlink.Aperiodic(wvf, 1 / k1, Tnu, temp131, Dt);
+                                (wv132, temp132) = Wlink.Aperiodic(wv131, 1, Tnu, temp132, Dt);
+
+                                (wv2, temp21, temp22) = Wlink.Oscillatory(wv112 + wv122 + wv132, k, T, 2 * T * ξ, temp21, temp22, Dt);
+
+                                wv2 += outRageRand;
+
+                                list_1.Add(i, wv2);
+                            }
+                            break;
+                    }
+                    DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "Qвых(t)", "t");
+
+                    Data.list1 = list_1;
+                    Data.legend1 = legend;
+                    Data.title1 = "График переходной характеристики";
+                    Data.Ytitle1 = "Qвых(t)";
+                    Data.Xtitle1 = "t";
                 }
             }
             else if (radioButtonOtk.Checked)
             {
                 if (radioButtonAper.Checked)
                 {
+                    double k1, k;
+                    double T1, T, Tnu;
+                    double tk;
 
+                    try
+                    {
+                        k1 = Convert.ToDouble(textBoxk1.Text.Replace(".", ","));
+                        k = Convert.ToDouble(textBoxk.Text.Replace(".", ","));
+                        T1 = Convert.ToDouble(textBoxT1.Text.Replace(".", ","));
+                        T = Convert.ToDouble(textBoxT.Text.Replace(".", ","));
+                        Tnu = Convert.ToDouble(textBoxTnu.Text.Replace(".", ","));
+                        tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
+                        legend += $"K1 = {k1} K = {k} T1 = {T1} T = {T} Tν = {Tnu}";
+                        if (k1 <= 0 || k <= 0 || T1 <= 0 || T <= 0 || tk <= 0 || Tnu <= 0) throw new Exception();
+                    }
+                    catch (Exception)
+                    {
+                        Form_error f = new Form_error();
+                        f.ShowDialog();
+                        return;
+                    }
+
+                    Program.SetDt(tk, new List<double>() { T1, T, Tnu });
+                    double Dt = Data.Dt;
+                    if (Program.DtCheck(tk, Dt)) return;
+
+                    PointPairList list_1 = new PointPairList();
+
+                    double xv = 1;
+                    double wv1, wv2 = 0, wv2pos = 0, temp1 = 0, temp2 = 0;
+
+                    double invTime, amplit, freq, pointCounter, mathEx, disper;
+
+                    switch (comboBoxOutRage.SelectedIndex)
+                    {
+                        case 0:
+                            try
+                            {
+                                invTime = Convert.ToDouble(textBoxInvTime.Text.Replace(".", ","));
+                                amplit = Convert.ToDouble(textBoxAmplit.Text.Replace(".", ","));
+                                if (invTime <= 0 || amplit <= 0) throw new Exception();
+                            }
+                            catch (Exception)
+                            {
+                                Form_error f = new Form_error();
+                                f.ShowDialog();
+                                return;
+                            }
+
+                            for (double i = 0; i < tk; i += Dt)
+                            {
+                                (wvf, tempf) = filter(xv + wv2pos - wv2, kf, Tf, tempf, Dt);
+                                (wv1, temp1) = Wlink.PropDifDelay(wvf, 1 / k1, Tnu, T1, temp1, Dt);
+
+                                (wv2, temp2) = Wlink.Aperiodic(wv1, k, T, temp2, Dt);
+                                wv2pos = wv2;
+                                wv2 += outRageStep(amplit, invTime, i);
+                                list_1.Add(i, wv2);
+                            }
+                            break;
+
+                        case 1:
+
+                            try
+                            {
+                                invTime = Convert.ToDouble(textBoxInvTime.Text.Replace(".", ","));
+                                amplit = Convert.ToDouble(textBoxAmplit.Text.Replace(".", ","));
+                                freq = Convert.ToDouble(textBoxFrequency.Text.Replace(".", ","));
+                                if (invTime <= 0 || amplit <= 0 || freq <= 0) throw new Exception();
+                            }
+                            catch (Exception)
+                            {
+                                Form_error f = new Form_error();
+                                f.ShowDialog();
+                                return;
+                            }
+
+                            for (double i = 0; i < tk; i += Dt)
+                            {
+
+                                (wvf, tempf) = filter(xv + wv2pos - wv2, kf, Tf, tempf, Dt);
+                                (wv1, temp1) = Wlink.PropDifDelay(wvf, 1 / k1, Tnu, T1, temp1, Dt);
+
+                                (wv2, temp2) = Wlink.Aperiodic(wv1, k, T, temp2, Dt);
+                                wv2pos = wv2;
+                                wv2 += outRageSin(amplit, freq, i, invTime);
+                                list_1.Add(i, wv2);
+                            }
+                            break;
+
+                        case 2:
+                            try
+                            {
+                                invTime = Convert.ToDouble(textBoxInvTime.Text.Replace(".", ","));
+                                pointCounter = Convert.ToDouble(textBoxPointCount.Text.Replace(".", ","));
+                                mathEx = Convert.ToDouble(textBoxExpect.Text.Replace(".", ","));
+                                disper = Convert.ToDouble(textBoxDispertion.Text.Replace(".", ","));
+                                if (invTime <= 0 || pointCounter <= 0 || disper <= 0) throw new Exception();
+                            }
+                            catch (Exception)
+                            {
+                                Form_error f = new Form_error();
+                                f.ShowDialog();
+                                return;
+                            }
+
+                            double outRageRand = 0;
+                            double randFreq = (tk - invTime) / pointCounter;
+                            double randCurStage = invTime;
+
+                            for (double i = 0; i < tk; i += Dt)
+                            {
+                                if (i >= randCurStage)
+                                {
+                                    outRageRand = NextGaussian(mathEx, disper);
+                                    randCurStage += randFreq;
+                                }
+
+
+                                (wvf, tempf) = filter(xv + wv2pos - wv2, kf, Tf, tempf, Dt);
+                                (wv1, temp1) = Wlink.PropDifDelay(wvf, 1 / k1, Tnu, T1, temp1, Dt);
+
+                                (wv2, temp2) = Wlink.Aperiodic(wv1, k, T, temp2, Dt);
+                                wv2pos = wv2;
+                                wv2 += outRageRand;
+                                list_1.Add(i, wv2);
+                            }
+                            break;
+                    }
+
+                    DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "Qвых(t)", "t");
+
+                    Data.list1 = list_1;
+                    Data.legend1 = legend;
+                    Data.title1 = "График переходной характеристики";
+                    Data.Ytitle1 = "Qвых(t)";
+                    Data.Xtitle1 = "t";
                 }
                 else if (radioButtonOsci.Checked)
                 {
+                    double k1, k;
+                    double T1, T, Tnu;
+                    double tk;
+                    double ξ, ξ1;
+                    try
+                    {
+                        k1 = Convert.ToDouble(textBoxk1.Text.Replace(".", ","));
+                        k = Convert.ToDouble(textBoxk.Text.Replace(".", ","));
+                        T1 = Convert.ToDouble(textBoxT1.Text.Replace(".", ","));
+                        T = Convert.ToDouble(textBoxT.Text.Replace(".", ","));
+                        Tnu = Convert.ToDouble(textBoxTnu.Text.Replace(".", ","));
+                        tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
+                        ξ = Convert.ToDouble(textBoxξ.Text.Replace(".", ","));
+                        ξ1 = Convert.ToDouble(textBoxξ1.Text.Replace(".", ","));
+                        legend += $"K1 = {k1} K = {k} T1 = {T1} T = {T} Tν = {Tnu} ξ = {ξ} ξ₁ = {ξ1}";
+                        if (k1 <= 0 || k <= 0 || T1 <= 0 || T <= 0 || tk <= 0 || Tnu < 0 || ξ < 0 || ξ1 < 0) throw new Exception();
+                    }
+                    catch (Exception)
+                    {
+                        Form_error f = new Form_error();
+                        f.ShowDialog();
+                        return;
+                    }
 
+                    Program.SetDt(tk, new List<double>() { T1, T, Tnu, ξ, ξ1 });
+                    double Dt = Data.Dt;
+                    if (Program.DtCheck(tk, Dt)) return;
+
+                    PointPairList list_1 = new PointPairList();
+
+                    double invTime, amplit, freq, pointCounter, mathEx, disper;
+
+                    double xv = 1;
+                    double temp111 = 0, temp112 = 0, temp121 = 0, temp122 = 0, temp131 = 0, temp132 = 0, temp21 = 0, temp22 = 0;
+                    double wv111, wv112, wv121, wv122, wv131, wv132, wv2 = 0;
+                    double wv2pos = 0;
+
+                    switch (comboBoxOutRage.SelectedIndex)
+                    {
+                        case 0:
+                            try
+                            {
+                                invTime = Convert.ToDouble(textBoxInvTime.Text.Replace(".", ","));
+                                amplit = Convert.ToDouble(textBoxAmplit.Text.Replace(".", ","));
+                                if (invTime <= 0 || amplit <= 0) throw new Exception();
+                            }
+                            catch (Exception)
+                            {
+                                Form_error f = new Form_error();
+                                f.ShowDialog();
+                                return;
+                            }
+
+                            for (double i = 0; i < tk; i += Dt)
+                            {
+                                (wvf, tempf) = filter(xv + wv2pos - wv2, kf, Tf, tempf, Dt);
+
+                                (wv111, temp111) = Wlink.Difdelay(wvf, 1 / k1, Tnu, T1, temp111, Dt);
+                                (wv112, temp112) = Wlink.Difdelay(wv111, 1, Tnu, T1, temp112, Dt);
+
+                                (wv121, temp121) = Wlink.Difdelay(wvf, ξ1, Tnu, T1, temp121, Dt);
+                                (wv122, temp122) = Wlink.Aperiodic(wv121, 1 / k1, Tnu, temp122, Dt);
+
+                                (wv131, temp131) = Wlink.Aperiodic(wvf, 1 / k1, Tnu, temp131, Dt);
+                                (wv132, temp132) = Wlink.Aperiodic(wv131, 1, Tnu, temp132, Dt);
+
+                                (wv2, temp21, temp22) = Wlink.Oscillatory(wv112 + wv122 + wv132, k, T, 2 * T * ξ, temp21, temp22, Dt);
+
+                                wv2pos = wv2;
+
+                                wv2 += outRageStep(amplit, invTime, i);
+
+                                list_1.Add(i, wv2);
+                            }
+                            break;
+
+                        case 1:
+
+                            try
+                            {
+                                invTime = Convert.ToDouble(textBoxInvTime.Text.Replace(".", ","));
+                                amplit = Convert.ToDouble(textBoxAmplit.Text.Replace(".", ","));
+                                freq = Convert.ToDouble(textBoxFrequency.Text.Replace(".", ","));
+                                if (invTime <= 0 || amplit <= 0 || freq <= 0) throw new Exception();
+                            }
+                            catch (Exception)
+                            {
+                                Form_error f = new Form_error();
+                                f.ShowDialog();
+                                return;
+                            }
+
+                            for (double i = 0; i < tk; i += Dt)
+                            {
+                                (wvf, tempf) = filter(xv + wv2pos - wv2, kf, Tf, tempf, Dt);
+
+                                (wv111, temp111) = Wlink.Difdelay(wvf, 1 / k1, Tnu, T1, temp111, Dt);
+                                (wv112, temp112) = Wlink.Difdelay(wv111, 1, Tnu, T1, temp112, Dt);
+
+                                (wv121, temp121) = Wlink.Difdelay(wvf, ξ1, Tnu, T1, temp121, Dt);
+                                (wv122, temp122) = Wlink.Aperiodic(wv121, 1 / k1, Tnu, temp122, Dt);
+
+                                (wv131, temp131) = Wlink.Aperiodic(wvf, 1 / k1, Tnu, temp131, Dt);
+                                (wv132, temp132) = Wlink.Aperiodic(wv131, 1, Tnu, temp132, Dt);
+
+                                (wv2, temp21, temp22) = Wlink.Oscillatory(wv112 + wv122 + wv132, k, T, 2 * T * ξ, temp21, temp22, Dt);
+
+                                wv2pos = wv2;
+
+                                wv2 += outRageSin(amplit, freq, i, invTime);
+
+                                list_1.Add(i, wv2);
+                            }
+                            break;
+
+                        case 2:
+                            try
+                            {
+                                invTime = Convert.ToDouble(textBoxInvTime.Text.Replace(".", ","));
+                                pointCounter = Convert.ToDouble(textBoxPointCount.Text.Replace(".", ","));
+                                mathEx = Convert.ToDouble(textBoxExpect.Text.Replace(".", ","));
+                                disper = Convert.ToDouble(textBoxDispertion.Text.Replace(".", ","));
+                                if (invTime <= 0 || pointCounter <= 0 || disper <= 0) throw new Exception();
+                            }
+                            catch (Exception)
+                            {
+                                Form_error f = new Form_error();
+                                f.ShowDialog();
+                                return;
+                            }
+
+                            double outRageRand = 0;
+                            double randFreq = (tk - invTime) / pointCounter;
+                            double randCurStage = invTime;
+
+                            for (double i = 0; i < tk; i += Dt)
+                            {
+                                if (i >= randCurStage)
+                                {
+                                    outRageRand = NextGaussian(mathEx, disper);
+                                    randCurStage += randFreq;
+                                }
+
+                                (wvf, tempf) = filter(xv + wv2pos - wv2, kf, Tf, tempf, Dt);
+
+                                (wv111, temp111) = Wlink.Difdelay(wvf, 1 / k1, Tnu, T1, temp111, Dt);
+                                (wv112, temp112) = Wlink.Difdelay(wv111, 1, Tnu, T1, temp112, Dt);
+
+                                (wv121, temp121) = Wlink.Difdelay(wvf, ξ1, Tnu, T1, temp121, Dt);
+                                (wv122, temp122) = Wlink.Aperiodic(wv121, 1 / k1, Tnu, temp122, Dt);
+
+                                (wv131, temp131) = Wlink.Aperiodic(wvf, 1 / k1, Tnu, temp131, Dt);
+                                (wv132, temp132) = Wlink.Aperiodic(wv131, 1, Tnu, temp132, Dt);
+
+                                (wv2, temp21, temp22) = Wlink.Oscillatory(wv112 + wv122 + wv132, k, T, 2 * T * ξ, temp21, temp22, Dt);
+
+                                wv2pos = wv2;
+
+                                wv2 += outRageRand;
+
+                                list_1.Add(i, wv2);
+                            }
+                            break;
+                    }
+                    DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "Qвых(t)", "t");
+
+                    Data.list1 = list_1;
+                    Data.legend1 = legend;
+                    Data.title1 = "График переходной характеристики";
+                    Data.Ytitle1 = "Qвых(t)";
+                    Data.Xtitle1 = "t";
                 }
             }
         }
@@ -401,32 +875,96 @@ namespace TAU_Complex
             panelTnu.Visible = false;
         }
 
-        private void radioButtonAper_CheckedChanged(object sender, EventArgs e)
+        private void radioButtonBlock_CheckedChanged(object sender, EventArgs e)
         {
-            CloseAllPanel();
-            panelk.Visible = true;
-            panelk1.Visible = true;
-            panelT.Visible = true;
-            panelT1.Visible = true;
-            panelTnu.Visible = true;
-            paneltk.Visible = true;
+            setDiagram();
+            if (radioButtonAper.Checked)
+            {
+                CloseAllPanel();
+                panelk.Visible = true;
+                panelk1.Visible = true;
+                panelT.Visible = true;
+                panelT1.Visible = true;
+                panelTnu.Visible = true;
+                paneltk.Visible = true;
+            }
+            else if (radioButtonOsci.Checked)
+            {
+                CloseAllPanel();
+                panelk.Visible = true;
+                panelk1.Visible = true;
+                panelT.Visible = true;
+                panelT1.Visible = true;
+                panelTnu.Visible = true;
+                paneltk.Visible = true;
+                panelξ.Visible = true;
+                panelξ1.Visible = true;
+            }
+
         }
 
-        private void radioButtonOsci_CheckedChanged(object sender, EventArgs e)
+        private void radioButtonDiagram_CheckedChanged(object sender, EventArgs e)
         {
-            CloseAllPanel();
-            panelk.Visible = true;
-            panelk1.Visible = true;
-            panelT.Visible = true;
-            panelT1.Visible = true;
-            panelTnu.Visible = true;
-            paneltk.Visible = true;
-            panelξ.Visible = true;
-            panelξ1.Visible = true;
+            setDiagram();
+            if (radioButtonVoz.Checked || radioButtonOtk.Checked)
+            {
+                panelOutRageWS.Visible = true;
+                comboBoxOutRage.SelectedIndex = 0;
+            }
+            else
+            {
+                panelOutRageWS.Visible = false;
+            }
+
         }
+
+        private void setDiagram()
+        {
+            if (radioButtonAper.Checked)
+            {
+                if (radioButtonRaz.Checked)
+                {
+                    if (checkBoxFilter.Checked) pictureBoxDiagram.Image = Properties.Resources.разомкнутое_апериодическое_с_фильтром;
+                    else pictureBoxDiagram.Image = Properties.Resources.разомкнутое_апериодическое;
+                }
+                if (radioButtonVoz.Checked)
+                {
+                    if (checkBoxFilter.Checked) pictureBoxDiagram.Image = Properties.Resources.по_возмущению_апериодическое_с_фильтром;
+                    else pictureBoxDiagram.Image = Properties.Resources.по_возмущению_апериодическое;
+                }
+                if (radioButtonOtk.Checked)
+                {
+                    if (checkBoxFilter.Checked) pictureBoxDiagram.Image.Dispose();
+                    else pictureBoxDiagram.Image.Dispose();
+                }
+            }
+            else
+            {
+                if (radioButtonRaz.Checked)
+                {
+                    if (checkBoxFilter.Checked) pictureBoxDiagram.Image = Properties.Resources.разомкнутое_колебательное_с_фильтром;
+                    else pictureBoxDiagram.Image = Properties.Resources.разомкнутое_колебательное;
+                }
+                if (radioButtonVoz.Checked)
+                {
+                    if (checkBoxFilter.Checked) pictureBoxDiagram.Image = Properties.Resources.по_возмущению_колебательное_с_фильтром;
+                    else pictureBoxDiagram.Image = Properties.Resources.по_возмущению_колебательное;
+                }
+                if (radioButtonOtk.Checked)
+                {
+                    if (checkBoxFilter.Checked) pictureBoxDiagram.Image.Dispose();
+                    else pictureBoxDiagram.Image.Dispose();
+                }
+
+            }
+            pictureBoxDiagram.SizeMode = PictureBoxSizeMode.Zoom;
+
+        }
+
 
         private void checkBoxFilter_CheckedChanged(object sender, EventArgs e)
         {
+            setDiagram();
             if (checkBoxFilter.Checked)
             {
                 pictureBox9.Visible = true;
@@ -459,20 +997,6 @@ namespace TAU_Complex
             radioButtonAper.Checked = true;
         }
 
-        private void radioButtonVoz_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButtonVoz.Checked || radioButtonOtk.Checked)
-            {
-                panelOutRageWS.Visible = true;
-                comboBoxOutRage.SelectedIndex = 0;
-            }
-            else
-            {
-                panelOutRageWS.Visible = false;
-            }
-
-        }
-
         private void comboBoxOutRage_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (comboBoxOutRage.SelectedIndex)
@@ -497,6 +1021,7 @@ namespace TAU_Complex
                     break;
             }
         }
+
         private void HideOutRageText()
         {
             panelAmplit.Visible = false;
@@ -506,8 +1031,6 @@ namespace TAU_Complex
             panelInvTime.Visible = false;
             panelPointCount.Visible = false;
         }
-
-
 
         private double outRageStep(double amplit, double invTime, double time)
         {
@@ -526,6 +1049,7 @@ namespace TAU_Complex
             }
             else return 0;
         }
+
         private static double NextGaussian(double mu, double sigma)
         {
             // рандом по нормальному закону 
@@ -546,4 +1070,3 @@ namespace TAU_Complex
     }
 }
 
-// кол-во случ точек

@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panelPic = new System.Windows.Forms.Panel();
+            this.pictureBoxDiagram = new System.Windows.Forms.PictureBox();
             this.panelWS = new System.Windows.Forms.Panel();
             this.panelC3 = new System.Windows.Forms.Panel();
             this.panelT2 = new System.Windows.Forms.Panel();
@@ -104,6 +105,8 @@
             this.radioButtonAper = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
+            this.panelPic.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDiagram)).BeginInit();
             this.panelWS.SuspendLayout();
             this.panelC3.SuspendLayout();
             this.panelT2.SuspendLayout();
@@ -146,11 +149,22 @@
             // 
             // panelPic
             // 
+            this.panelPic.Controls.Add(this.pictureBoxDiagram);
             this.panelPic.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelPic.Location = new System.Drawing.Point(0, 0);
             this.panelPic.Name = "panelPic";
-            this.panelPic.Size = new System.Drawing.Size(1101, 181);
+            this.panelPic.Size = new System.Drawing.Size(1101, 136);
             this.panelPic.TabIndex = 0;
+            // 
+            // pictureBoxDiagram
+            // 
+            this.pictureBoxDiagram.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxDiagram.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxDiagram.Name = "pictureBoxDiagram";
+            this.pictureBoxDiagram.Size = new System.Drawing.Size(1101, 136);
+            this.pictureBoxDiagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxDiagram.TabIndex = 0;
+            this.pictureBoxDiagram.TabStop = false;
             // 
             // panelWS
             // 
@@ -161,9 +175,9 @@
             this.panelWS.Controls.Add(this.groupBox1);
             this.panelWS.Controls.Add(this.button1);
             this.panelWS.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelWS.Location = new System.Drawing.Point(0, 181);
+            this.panelWS.Location = new System.Drawing.Point(0, 136);
             this.panelWS.Name = "panelWS";
-            this.panelWS.Size = new System.Drawing.Size(473, 686);
+            this.panelWS.Size = new System.Drawing.Size(473, 731);
             this.panelWS.TabIndex = 1;
             // 
             // panelC3
@@ -175,7 +189,7 @@
             this.panelC3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelC3.Location = new System.Drawing.Point(351, 248);
             this.panelC3.Name = "panelC3";
-            this.panelC3.Size = new System.Drawing.Size(201, 394);
+            this.panelC3.Size = new System.Drawing.Size(201, 439);
             this.panelC3.TabIndex = 4;
             // 
             // panelT2
@@ -301,7 +315,7 @@
             this.panelC2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelC2.Location = new System.Drawing.Point(228, 248);
             this.panelC2.Name = "panelC2";
-            this.panelC2.Size = new System.Drawing.Size(123, 394);
+            this.panelC2.Size = new System.Drawing.Size(123, 439);
             this.panelC2.TabIndex = 3;
             // 
             // paneltk
@@ -479,7 +493,7 @@
             this.panelC1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelC1.Location = new System.Drawing.Point(0, 248);
             this.panelC1.Name = "panelC1";
-            this.panelC1.Size = new System.Drawing.Size(228, 394);
+            this.panelC1.Size = new System.Drawing.Size(228, 439);
             this.panelC1.TabIndex = 2;
             // 
             // panelOutRageWS
@@ -494,7 +508,7 @@
             this.panelOutRageWS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelOutRageWS.Location = new System.Drawing.Point(0, 70);
             this.panelOutRageWS.Name = "panelOutRageWS";
-            this.panelOutRageWS.Size = new System.Drawing.Size(228, 324);
+            this.panelOutRageWS.Size = new System.Drawing.Size(228, 369);
             this.panelOutRageWS.TabIndex = 4;
             this.panelOutRageWS.Visible = false;
             // 
@@ -790,7 +804,7 @@
             this.radioButtonOtk.TabIndex = 3;
             this.radioButtonOtk.Text = "Регулирование по отклонению";
             this.radioButtonOtk.UseVisualStyleBackColor = true;
-            this.radioButtonOtk.CheckedChanged += new System.EventHandler(this.radioButtonVoz_CheckedChanged);
+            this.radioButtonOtk.CheckedChanged += new System.EventHandler(this.radioButtonDiagram_CheckedChanged);
             // 
             // radioButtonVoz
             // 
@@ -801,7 +815,7 @@
             this.radioButtonVoz.TabIndex = 2;
             this.radioButtonVoz.Text = "Регулирование по возмущению";
             this.radioButtonVoz.UseVisualStyleBackColor = true;
-            this.radioButtonVoz.CheckedChanged += new System.EventHandler(this.radioButtonVoz_CheckedChanged);
+            this.radioButtonVoz.CheckedChanged += new System.EventHandler(this.radioButtonDiagram_CheckedChanged);
             // 
             // radioButtonRaz
             // 
@@ -843,9 +857,9 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::TAU_Complex.Properties.Resources.апериодическое_блок;
-            this.pictureBox11.Location = new System.Drawing.Point(23, 25);
+            this.pictureBox11.Location = new System.Drawing.Point(32, 25);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(118, 61);
+            this.pictureBox11.Size = new System.Drawing.Size(90, 61);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 4;
             this.pictureBox11.TabStop = false;
@@ -854,33 +868,31 @@
             // radioButtonOsci
             // 
             this.radioButtonOsci.AutoSize = true;
-            this.radioButtonOsci.Location = new System.Drawing.Point(163, 44);
+            this.radioButtonOsci.Location = new System.Drawing.Point(160, 52);
             this.radioButtonOsci.Name = "radioButtonOsci";
-            this.radioButtonOsci.Size = new System.Drawing.Size(126, 23);
+            this.radioButtonOsci.Size = new System.Drawing.Size(14, 13);
             this.radioButtonOsci.TabIndex = 1;
-            this.radioButtonOsci.Text = "radioButtonOsci";
             this.radioButtonOsci.UseVisualStyleBackColor = true;
-            this.radioButtonOsci.CheckedChanged += new System.EventHandler(this.radioButtonOsci_CheckedChanged);
+            this.radioButtonOsci.CheckedChanged += new System.EventHandler(this.radioButtonBlock_CheckedChanged);
             // 
             // radioButtonAper
             // 
             this.radioButtonAper.AutoSize = true;
             this.radioButtonAper.Checked = true;
-            this.radioButtonAper.Location = new System.Drawing.Point(12, 39);
+            this.radioButtonAper.Location = new System.Drawing.Point(12, 52);
             this.radioButtonAper.Name = "radioButtonAper";
-            this.radioButtonAper.Size = new System.Drawing.Size(129, 23);
+            this.radioButtonAper.Size = new System.Drawing.Size(14, 13);
             this.radioButtonAper.TabIndex = 0;
             this.radioButtonAper.TabStop = true;
-            this.radioButtonAper.Text = "radioButtonAper";
             this.radioButtonAper.UseVisualStyleBackColor = true;
-            this.radioButtonAper.CheckedChanged += new System.EventHandler(this.radioButtonAper_CheckedChanged);
+            this.radioButtonAper.CheckedChanged += new System.EventHandler(this.radioButtonBlock_CheckedChanged);
             // 
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 642);
+            this.button1.Location = new System.Drawing.Point(0, 687);
             this.button1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(473, 44);
@@ -892,7 +904,7 @@
             // zedGraphControl1
             // 
             this.zedGraphControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.zedGraphControl1.Location = new System.Drawing.Point(473, 181);
+            this.zedGraphControl1.Location = new System.Drawing.Point(473, 136);
             this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4);
             this.zedGraphControl1.Name = "zedGraphControl1";
             this.zedGraphControl1.ScrollGrace = 0D;
@@ -902,7 +914,7 @@
             this.zedGraphControl1.ScrollMinX = 0D;
             this.zedGraphControl1.ScrollMinY = 0D;
             this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(628, 686);
+            this.zedGraphControl1.Size = new System.Drawing.Size(628, 731);
             this.zedGraphControl1.TabIndex = 2;
             this.zedGraphControl1.UseExtendedPrintDialog = true;
             // 
@@ -921,6 +933,8 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form8";
             this.Text = "Form8";
+            this.panelPic.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDiagram)).EndInit();
             this.panelWS.ResumeLayout(false);
             this.panelC3.ResumeLayout(false);
             this.panelT2.ResumeLayout(false);
@@ -1060,5 +1074,6 @@
         private System.Windows.Forms.Panel panelExpect;
         private System.Windows.Forms.TextBox textBoxExpect;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pictureBoxDiagram;
     }
 }

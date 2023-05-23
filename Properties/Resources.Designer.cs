@@ -573,6 +573,86 @@ namespace TAU_Complex.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap по_возмущению_апериодическое {
+            get {
+                object obj = ResourceManager.GetObject("по_возмущению_апериодическое", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap по_возмущению_апериодическое_с_фильтром {
+            get {
+                object obj = ResourceManager.GetObject("по_возмущению_апериодическое_с_фильтром", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap по_возмущению_колебательное {
+            get {
+                object obj = ResourceManager.GetObject("по_возмущению_колебательное", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap по_возмущению_колебательное_с_фильтром {
+            get {
+                object obj = ResourceManager.GetObject("по_возмущению_колебательное_с_фильтром", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap разомкнутое_апериодическое {
+            get {
+                object obj = ResourceManager.GetObject("разомкнутое_апериодическое", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap разомкнутое_апериодическое_с_фильтром {
+            get {
+                object obj = ResourceManager.GetObject("разомкнутое_апериодическое_с_фильтром", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap разомкнутое_колебательное {
+            get {
+                object obj = ResourceManager.GetObject("разомкнутое_колебательное", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap разомкнутое_колебательное_с_фильтром {
+            get {
+                object obj = ResourceManager.GetObject("разомкнутое_колебательное_с_фильтром", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap САР_кнопка__1 {
             get {
                 object obj = ResourceManager.GetObject("САР кнопка -1", resourceCulture);
