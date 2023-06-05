@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="T1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\T1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="запаздывание" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\запаздывание.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,6 +130,9 @@
   <data name="Tnu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tnu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="разомкнутое_апериодическое" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\разомкнутое апериодическое.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Схема запаздывания" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Схема запаздывания.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,11 +142,17 @@
   <data name="САР кнопка -3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\САР кнопка -3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ξ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ξ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ξ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ξ1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="САР кнопка -2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\САР кнопка -2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="по_возмущению_колебательное_с_фильтром" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\по возмущению колебательное с фильтром.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Инерционное реально интегрирующие" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Инерционное реально интегрирующие.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -165,9 +174,6 @@
   </data>
   <data name="slide_button_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\slide_button_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="T1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\T1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Тф" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Тф.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -207,6 +213,12 @@
   </data>
   <data name="фильтр" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\фильтр.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="разомкнутое_колебательное" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\разомкнутое колебательное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="по_возмущению_апериодическое" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\по возмущению апериодическое.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Kр" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kр.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,8 +277,14 @@
   <data name="Схема САР-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Схема САР-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="по_возмущению_апериодическое_с_фильтром" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\по возмущению апериодическое с фильтром.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Апериодическое инерционное " type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Апериодическое инерционное .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="разомкнутое_колебательное_с_фильтром" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\разомкнутое колебательное с фильтром.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="min" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\min.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -295,6 +313,9 @@
   <data name="точность" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\точность.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Kф" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kф.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="схема инвариатность" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\схема инвариатность.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -307,8 +328,17 @@
   <data name="Идеальное интегрирующие" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Идеальное интегрирующие.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="по_возмущению_колебательное" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\по возмущению колебательное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Идеально интегрирующие" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Идеально интегрирующие.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="разомкнутое_апериодическое_с_фильтром" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\разомкнутое апериодическое с фильтром.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Идеальное усилительное безынерционное" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Идеальное усилительное безынерционное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -319,31 +349,7 @@
   <data name="Wk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Kф" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kф.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="по_возмущению_апериодическое" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\по возмущению апериодическое.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="по_возмущению_апериодическое_с_фильтром" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\по возмущению апериодическое с фильтром.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="по_возмущению_колебательное" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\по возмущению колебательное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="по_возмущению_колебательное_с_фильтром" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\по возмущению колебательное с фильтром.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="разомкнутое_апериодическое" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\разомкнутое апериодическое.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="разомкнутое_апериодическое_с_фильтром" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\разомкнутое апериодическое с фильтром.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="разомкнутое_колебательное" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\разомкнутое колебательное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="разомкнутое_колебательное_с_фильтром" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\разомкнутое колебательное с фильтром.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="T3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\T3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -283,6 +283,16 @@ namespace TAU_Complex.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap T3 {
+            get {
+                object obj = ResourceManager.GetObject("T3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap tau {
             get {
                 object obj = ResourceManager.GetObject("tau", resourceCulture);
@@ -356,6 +366,16 @@ namespace TAU_Complex.Properties {
         public static System.Drawing.Bitmap Wk {
             get {
                 object obj = ResourceManager.GetObject("Wk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ξ {
+            get {
+                object obj = ResourceManager.GetObject("ξ", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
