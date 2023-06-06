@@ -344,6 +344,10 @@
     <None Include="Resources\разомкнутое колебательное.png" />
     <None Include="Resources\ξ.png" />
     <None Include="Resources\T3.png" />
+    <None Include="Resources\Qвх1.png" />
+    <None Include="Resources\Qвхsin.png" />
+    <None Include="Resources\k4.png" />
+    <None Include="Resources\T4.png" />
     <Content Include="T_ico.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

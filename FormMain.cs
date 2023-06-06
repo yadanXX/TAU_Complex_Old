@@ -153,6 +153,10 @@ namespace TAU_Complex
         {
             OpenChildForm(new Form9(), sender);
         }
+        private void button10_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Form10(), sender);
+        }
         private void slide_button_Click(object sender, EventArgs e)
         {
             slide_timer.Start();

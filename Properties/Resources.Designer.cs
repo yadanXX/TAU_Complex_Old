@@ -153,6 +153,16 @@ namespace TAU_Complex.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap k4 {
+            get {
+                object obj = ResourceManager.GetObject("k4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap KB {
             get {
                 object obj = ResourceManager.GetObject("KB", resourceCulture);
@@ -243,6 +253,26 @@ namespace TAU_Complex.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Qвх1 {
+            get {
+                object obj = ResourceManager.GetObject("Qвх1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Qвхsin {
+            get {
+                object obj = ResourceManager.GetObject("Qвхsin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap slide_button_icon {
             get {
                 object obj = ResourceManager.GetObject("slide_button_icon", resourceCulture);
@@ -286,6 +316,16 @@ namespace TAU_Complex.Properties {
         public static System.Drawing.Bitmap T3 {
             get {
                 object obj = ResourceManager.GetObject("T3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap T4 {
+            get {
+                object obj = ResourceManager.GetObject("T4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
