@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -19,7 +20,10 @@ namespace TAU_Complex
             buttonClose.Visible = false;
             button_help.Visible = false;
             button_options.Visible = false;
+            ActivateButton(buttonCh1);
         }
+
+
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
 
@@ -157,6 +161,14 @@ namespace TAU_Complex
         {
             OpenChildForm(new Form10(), sender);
         }
+        private void button11_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Form11(), sender);
+        }
+        private void button12_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Form12(), sender);
+        }
         private void slide_button_Click(object sender, EventArgs e)
         {
             slide_timer.Start();
@@ -194,6 +206,28 @@ namespace TAU_Complex
             this.WindowState = FormWindowState.Minimized;
         }
 
-        
+        private void buttonCh1_Click(object sender, EventArgs e)
+        {
+            var a = new List<Button> { button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11, button12 };
+            for (int i = 0; i < 6; i++) a[i].Visible = true;
+            for (int i = 6; i < 12; i++) a[i].Visible = false;
+            ActivateButton(sender);
+            buttonCh2.BackColor = Color.FromArgb(9, 46, 71);
+            buttonCh2.ForeColor = Color.Gainsboro;
+            buttonCh2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+        }
+
+        private void buttonCh2_Click(object sender, EventArgs e)
+        {
+            var a = new List<Button> { button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11, button12 };
+            for (int i = 0; i < 6; i++) a[i].Visible = false;
+            for (int i = 6; i < 12; i++) a[i].Visible = true;
+            ActivateButton(sender);
+            buttonCh1.BackColor = Color.FromArgb(9, 46, 71);
+            buttonCh1.ForeColor = Color.Gainsboro;
+            buttonCh1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+        }
     }
 }

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -51,8 +52,12 @@
             this.panelWorkSpace = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.slide_timer = new System.Windows.Forms.Timer(this.components);
-            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.buttonCh1 = new System.Windows.Forms.Button();
+            this.buttonCh2 = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
+            this.panel_tool_menu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelWorkSpace.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,6 +66,8 @@
             // panelSideMenu
             // 
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            this.panelSideMenu.Controls.Add(this.button12);
+            this.panelSideMenu.Controls.Add(this.button11);
             this.panelSideMenu.Controls.Add(this.button10);
             this.panelSideMenu.Controls.Add(this.button9);
             this.panelSideMenu.Controls.Add(this.button8);
@@ -80,6 +87,24 @@
             this.panelSideMenu.Size = new System.Drawing.Size(222, 776);
             this.panelSideMenu.TabIndex = 0;
             // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.button10.ForeColor = System.Drawing.Color.LightGray;
+            this.button10.Location = new System.Drawing.Point(0, 670);
+            this.button10.Margin = new System.Windows.Forms.Padding(0);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(222, 70);
+            this.button10.TabIndex = 11;
+            this.button10.Text = "Синтез нелинейной следящей системы";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Visible = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
@@ -95,6 +120,7 @@
             this.button9.TabIndex = 10;
             this.button9.Text = "Корневые и частотные методы анлиза САУ";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Visible = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
@@ -112,6 +138,7 @@
             this.button8.TabIndex = 9;
             this.button8.Text = "Построение оптимальных регуляторов";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Visible = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
@@ -129,6 +156,7 @@
             this.button7.TabIndex = 8;
             this.button7.Text = "Улучшение качества работы САР";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Visible = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
@@ -236,6 +264,8 @@
             // panel_tool_menu
             // 
             this.panel_tool_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            this.panel_tool_menu.Controls.Add(this.buttonCh2);
+            this.panel_tool_menu.Controls.Add(this.buttonCh1);
             this.panel_tool_menu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_tool_menu.Location = new System.Drawing.Point(0, 0);
             this.panel_tool_menu.Margin = new System.Windows.Forms.Padding(0);
@@ -390,22 +420,76 @@
             this.slide_timer.Interval = 1;
             this.slide_timer.Tick += new System.EventHandler(this.slide_timer_Tick);
             // 
-            // button10
+            // button11
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
-            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.button10.ForeColor = System.Drawing.Color.LightGray;
-            this.button10.Location = new System.Drawing.Point(0, 670);
-            this.button10.Margin = new System.Windows.Forms.Padding(0);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(222, 70);
-            this.button10.TabIndex = 11;
-            this.button10.Text = "Синтез нелинейной следящей системы";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.button11.ForeColor = System.Drawing.Color.LightGray;
+            this.button11.Location = new System.Drawing.Point(0, 740);
+            this.button11.Margin = new System.Windows.Forms.Padding(0);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(222, 70);
+            this.button11.TabIndex = 12;
+            this.button11.Text = "Модальное управление";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Visible = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.button12.ForeColor = System.Drawing.Color.LightGray;
+            this.button12.Location = new System.Drawing.Point(0, 810);
+            this.button12.Margin = new System.Windows.Forms.Padding(0);
+            this.button12.Name = "button12";
+            this.button12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button12.Size = new System.Drawing.Size(222, 70);
+            this.button12.TabIndex = 13;
+            this.button12.Text = "Исследование устойчивости линейной дискретной САУ";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Visible = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // buttonCh1
+            // 
+            this.buttonCh1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            this.buttonCh1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonCh1.FlatAppearance.BorderSize = 0;
+            this.buttonCh1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCh1.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.buttonCh1.ForeColor = System.Drawing.Color.LightGray;
+            this.buttonCh1.Location = new System.Drawing.Point(0, 0);
+            this.buttonCh1.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonCh1.Name = "buttonCh1";
+            this.buttonCh1.Size = new System.Drawing.Size(111, 40);
+            this.buttonCh1.TabIndex = 3;
+            this.buttonCh1.Text = "Часть 1";
+            this.buttonCh1.UseVisualStyleBackColor = false;
+            this.buttonCh1.Click += new System.EventHandler(this.buttonCh1_Click);
+            // 
+            // buttonCh2
+            // 
+            this.buttonCh2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            this.buttonCh2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonCh2.FlatAppearance.BorderSize = 0;
+            this.buttonCh2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCh2.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.buttonCh2.ForeColor = System.Drawing.Color.LightGray;
+            this.buttonCh2.Location = new System.Drawing.Point(111, 0);
+            this.buttonCh2.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonCh2.Name = "buttonCh2";
+            this.buttonCh2.Size = new System.Drawing.Size(111, 40);
+            this.buttonCh2.TabIndex = 4;
+            this.buttonCh2.Text = "Часть 2";
+            this.buttonCh2.UseVisualStyleBackColor = false;
+            this.buttonCh2.Click += new System.EventHandler(this.buttonCh2_Click);
             // 
             // FormMain
             // 
@@ -424,6 +508,7 @@
             this.Name = "FormMain";
             this.Text = "Тау комплекс";
             this.panelSideMenu.ResumeLayout(false);
+            this.panel_tool_menu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panelWorkSpace.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -455,6 +540,10 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button buttonCh2;
+        private System.Windows.Forms.Button buttonCh1;
     }
 }
 

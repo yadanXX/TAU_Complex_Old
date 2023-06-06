@@ -50,7 +50,7 @@ namespace TAU_Complex
         private void button1_Click(object sender, EventArgs e)
         {
             double k1, k2, k3, k4;
-            double si, T3, T4;
+            double T3, T4;
             double tk;
             try
             {
@@ -60,9 +60,8 @@ namespace TAU_Complex
                 k4 = Convert.ToDouble(textBoxk4.Text.Replace(".", ","));
                 T3 = Convert.ToDouble(textBoxT3.Text.Replace(".", ","));
                 T4 = Convert.ToDouble(textBoxT4.Text.Replace(".", ","));
-                si = Convert.ToDouble(textBoxsi.Text.Replace(".", ","));
                 tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
-                if (tk <= 0 || T3 <= 0 || T4 <= 0 || si <= 0 || k1 <= 0 || k2 <= 0 || k3 <= 0 || k4 <= 0) throw new Exception();
+                if (tk <= 0 || T3 <= 0 || T4 <= 0 || k1 <= 0 || k2 <= 0 || k3 <= 0 || k4 <= 0) throw new Exception();
 
             }
             catch (Exception)
@@ -76,7 +75,7 @@ namespace TAU_Complex
             PointPairList list_1 = new PointPairList();
             PointPairList list_2 = new PointPairList();
 
-            Program.SetDt(tk, new List<double>() { T3, T4, si * 2 * T4 });
+            Program.SetDt(tk, new List<double>() { T3, T4,});
             double Dt = Data.Dt;
             if (Program.DtCheck(tk, Dt)) return;
 
@@ -108,7 +107,7 @@ namespace TAU_Complex
             DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "Qвых(t)", "t");
             DrawGraph(zedGraphControl2, list_2, "Ошибка", "∆Q(t)", "t");
 
-            string legend = $" k1={textBoxk1.Text} k2={textBoxk2.Text} k3={textBoxk3.Text} k4={textBoxk4.Text} T3={textBoxT3.Text} T4={textBoxT4.Text} ξ={textBoxsi.Text}";
+            string legend = $" k1={textBoxk1.Text} k2={textBoxk2.Text} k3={textBoxk3.Text} k4={textBoxk4.Text} T3={textBoxT3.Text} T4={textBoxT4.Text} ";
             Data.list1 = list_1;
             Data.legend1 = legend;
             Data.title1 = "График переходной характеристики";
