@@ -11,6 +11,8 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using ZedGraph;
 using System.Xml.Linq;
 using System.Security.Cryptography;
+using System.Collections;
+using System.Numerics;
 
 namespace TAU_Complex
 {
@@ -34,14 +36,16 @@ namespace TAU_Complex
             zedGraphControl2.Height = panelGraph.Height / 2;
         }
 
-        PointPairList list_1 = new PointPairList(); // карта корней
+        PointPairList list_11 = new PointPairList(); // карта корней нули
+        PointPairList list_12 = new PointPairList(); // карта корней полюса
         PointPairList list_2 = new PointPairList(); // переходная
         PointPairList list_3 = new PointPairList(); // лачх
         PointPairList list_32 = new PointPairList(); // лачх
 
         private void button1_Click(object sender, EventArgs e)
         {
-            list_1.Clear();
+            list_11.Clear();
+            list_12.Clear();
             list_2.Clear();
             list_3.Clear();
             list_32.Clear();
@@ -75,6 +79,9 @@ namespace TAU_Complex
 
             if (radioButton1.Checked)
             {
+                list_11.Add(-k1 * k2 / (k1 * k2 * T2), 0);
+                list_12.Add((-1 * (k1 * k2 * T2 + T1 + T3) + Math.Pow(Math.Pow(k1 * k2 * T2 + T1 + T3, 2) - 4 * T1 * T3 * (1 + k1 * k2), 0.5)) / (2 * T1 * T3), 0);
+                list_12.Add((-1 * (k1 * k2 * T2 + T1 + T3) - Math.Pow(Math.Pow(k1 * k2 * T2 + T1 + T3, 2) - 4 * T1 * T3 * (1 + k1 * k2), 0.5)) / (2 * T1 * T3), 0);
                 for (double i = 0; i < tk; i += Dt)
                 {
                     (wv1, temp1) = Wlink.PropDifDelay(1 - wv2, k2, T3, T2, temp1, Dt);
@@ -93,6 +100,7 @@ namespace TAU_Complex
             }
             else if (radioButton2.Checked)
             {
+
                 double si;
                 try
                 {
@@ -103,9 +111,13 @@ namespace TAU_Complex
                 {
                     Form_error f = new Form_error();
                     f.ShowDialog();
-                    throw;
+                    return;
                 }
 
+                List<Complex> polis = GetRootsOfCubicEquations((2 * si * T1 * T3 + Math.Pow(T1, 2)) / (T3 * Math.Pow(T1, 2)), (2 * si * T1 + T3 + k1 * k2 * T2) / (T3 * Math.Pow(T1, 2)), (k1 * k2 + 1) / (T3 * Math.Pow(T1, 2)));
+                list_11.Add(-k1 * k2 / (k1 * k2 * T2), 0);
+                foreach (var i in polis) list_12.Add(i.Real, i.Imaginary);
+                        
                 for (double i = 0; i < tk; i += Dt)
                 {
                     (wv1, temp1) = Wlink.PropDifDelay(1 - wv2, k2, T3, T2, temp1, Dt);
@@ -125,6 +137,10 @@ namespace TAU_Complex
             }
             else if (radioButton3.Checked)
             {
+                List<Complex> polis = GetRootsOfCubicEquations((T1 + T3) / (T1 * T3), (k1 * k2 * T2 + 1) / (T1 * T3), (k1 * k2) / (T1 * T3));
+                list_11.Add(-k1 * k2 / (k1 * k2 * T2), 0);
+                foreach (var i in polis) list_12.Add(i.Real, i.Imaginary);
+
                 for (double i = 0; i < tk; i += Dt)
                 {
                     (wv1, temp1) = Wlink.PropDifDelay(1 - wv2, k2, T3, T2, temp1, Dt);
@@ -149,20 +165,22 @@ namespace TAU_Complex
             else if (radioButtonHz.Checked)
             {
                 DrawGraphLg(zedGraphControl2, list_3, "ЛАЧХ", "Амплитуда (дБ)", "Частота (рад/сек)", list_32);
-            }           
+            }
+
+            DrawGraphRoot(zedGraphControl1, list_11, list_12, "Карта корней", "Мнимая ось", "Вещественная ось");
 
             string legend = $" k1={textBoxk1.Text} k2={textBoxk2.Text}  T1={textBoxT1.Text} T2={textBoxT2.Text} T3={textBoxT3.Text}";
-            Data.list1 = list_2;
-            Data.legend1 = legend;
-            Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "Qвых(t)";
-            Data.Xtitle1 = "t";
-
             Data.list2 = list_2;
             Data.legend2 = legend;
-            Data.title2 = "";
-            Data.Ytitle2 = "";
-            Data.Xtitle2 = "";
+            Data.title2 = "График переходной характеристики";
+            Data.Ytitle2 = "Qвых(t)";
+            Data.Xtitle2 = "t";
+
+            Data.list1 = list_2;
+            Data.legend1 = legend;
+            Data.title1 = "Карта корней";
+            Data.Ytitle1 = "Мнимая ось";
+            Data.Xtitle1 = "Вещественная ось";
 
         }
 
@@ -287,6 +305,95 @@ namespace TAU_Complex
             pane.AxisChange();
             zedGraph.AxisChange();
             zedGraph.Invalidate();
+        }
+
+        private void DrawGraphRoot(ZedGraphControl zedGraphControl, PointPairList list_1, PointPairList list_2, string TitleText, string YText, string XText)
+        {
+            GraphPane pane = zedGraphControl.GraphPane;
+            pane.CurveList.Clear();
+            LineItem myCurve1 = pane.AddCurve("Ноль", list_1, Color.Red, SymbolType.Triangle);
+            LineItem myCurve2 = pane.AddCurve("Полюса", list_2, Color.Blue, SymbolType.TriangleDown);
+
+            myCurve1.Line.IsVisible = false;
+            myCurve1.Symbol.Size = 15;
+            myCurve1.Symbol.Fill.Color = Color.Red;
+            myCurve1.Symbol.Fill.Type = FillType.Solid;
+
+            myCurve2.Line.IsVisible = false;
+            myCurve2.Symbol.Size = 15;
+            myCurve2.Symbol.Fill.Color = Color.Blue;
+            myCurve2.Symbol.Fill.Type = FillType.Solid;
+            // !!!
+            // Включаем отображение сетки напротив крупных рисок по оси X
+            pane.XAxis.MajorGrid.IsVisible = true;
+
+            // Задаем вид пунктирной линии для крупных рисок по оси X:
+            // Длина штрихов равна 10 пикселям, ...
+            pane.XAxis.MajorGrid.DashOn = 10;
+
+            // затем 5 пикселей - пропуск
+            pane.XAxis.MajorGrid.DashOff = 5;
+
+
+            // Включаем отображение сетки напротив крупных рисок по оси Y
+            pane.YAxis.MajorGrid.IsVisible = true;
+
+            // !!!
+            // Указываем, что расположение легенды мы будет задавать
+            // в виде координат левого верхнего угла
+            pane.Legend.Position = LegendPos.Float;
+
+            // Координаты будут отсчитываться в системе координат окна графика
+            pane.Legend.Location.CoordinateFrame = CoordType.ChartFraction;
+
+            // Задаем выравнивание, относительно которого мы будем задавать координаты
+            // В данном случае мы будем располагать легенду справа внизу
+            pane.Legend.Location.AlignH = AlignH.Right;
+            pane.Legend.Location.AlignV = AlignV.Bottom;
+
+            // Задаем координаты легенды
+            // Вычитаем 0.02f, чтобы был небольшой зазор между осями и легендой
+            pane.Legend.Location.TopLeft = new PointF(1.0f - 0.02f, 1.0f - 0.02f);
+
+            // Аналогично задаем вид пунктирной линии для крупных рисок по оси Y
+            pane.YAxis.MajorGrid.DashOn = 10;
+            pane.YAxis.MajorGrid.DashOff = 5;
+            pane.YAxis.Scale.MinAuto = true;
+            pane.YAxis.Scale.MaxAuto = true;
+            pane.AxisChange();
+            zedGraphControl.AxisChange();
+            zedGraphControl.Invalidate();
+        }
+
+        public static List<Complex> GetRootsOfCubicEquations(double a, double b, double c)
+        {
+            var q = (Math.Pow(a, 2) - 3 * b) / 9;
+            var r = (2 * Math.Pow(a, 3) - 9 * a * b + 27 * c) / 54;
+
+            if (Math.Pow(r, 2) < Math.Pow(q, 3))
+            {
+                var t = Math.Acos(r / Math.Sqrt(Math.Pow(q, 3))) / 3;
+                var x1 = -2 * Math.Sqrt(q) * Math.Cos(t) - a / 3;
+                var x2 = -2 * Math.Sqrt(q) * Math.Cos(t + (2 * Math.PI / 3)) - a / 3;
+                var x3 = -2 * Math.Sqrt(q) * Math.Cos(t - (2 * Math.PI / 3)) - a / 3;
+                return new List<Complex> { x1, x2, x3 };
+            }
+            else
+            {
+                var A = -Math.Sign(r) * Math.Pow(Math.Abs(r) + Math.Sqrt(Math.Pow(r, 2) - Math.Pow(q, 3)), (1.0 / 3.0));
+                var B = (A == 0) ? 0.0 : q / A;
+
+                var x1 = (A + B) - a / 3;
+                var x2 = -(A + B) / 2 - (a / 3) + (Complex.ImaginaryOne * Math.Sqrt(3) * (A - B) / 2);
+                var x3 = -(A + B) / 2 - (a / 3) - (Complex.ImaginaryOne * Math.Sqrt(3) * (A - B) / 2);
+
+                if (A == B)
+                {
+                    x2 = -A - a / 3;
+                    return new List<Complex> { x1, x2 };
+                }
+                return new List<Complex> { x1, x2, x3 };
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
