@@ -38,9 +38,9 @@
             this.ClientSize = new System.Drawing.Size(1058, 712);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form11";
-            this.Text = "Form11";
+            this.Text = "-";
             this.ResumeLayout(false);
 
         }

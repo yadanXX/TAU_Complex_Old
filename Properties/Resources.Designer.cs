@@ -73,6 +73,36 @@ namespace TAU_Complex.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap cхема_с_апериодическим {
+            get {
+                object obj = ResourceManager.GetObject("cхема_с_апериодическим", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap cхема_с_интегрирующим {
+            get {
+                object obj = ResourceManager.GetObject("cхема_с_интегрирующим", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap cхема_с_колебательным {
+            get {
+                object obj = ResourceManager.GetObject("cхема_с_колебательным", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Dt {
             get {
                 object obj = ResourceManager.GetObject("Dt", resourceCulture);
@@ -435,7 +465,7 @@ namespace TAU_Complex.Properties {
         /// </summary>
         public static System.Drawing.Bitmap апериодическое_блок {
             get {
-                object obj = ResourceManager.GetObject("апериодическое-блок", resourceCulture);
+                object obj = ResourceManager.GetObject("апериодическое_блок", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -476,6 +506,16 @@ namespace TAU_Complex.Properties {
         public static System.Drawing.Bitmap Апериодическое_инерционное_ {
             get {
                 object obj = ResourceManager.GetObject("Апериодическое инерционное ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap апериодическое1 {
+            get {
+                object obj = ResourceManager.GetObject("апериодическое1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -583,6 +623,26 @@ namespace TAU_Complex.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap интегрирующее_с_запаздыванием {
+            get {
+                object obj = ResourceManager.GetObject("интегрирующее_с_запаздыванием", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap интегрирующие_блок {
+            get {
+                object obj = ResourceManager.GetObject("интегрирующие_блок", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Колебательное {
             get {
                 object obj = ResourceManager.GetObject("Колебательное", resourceCulture);
@@ -666,6 +726,46 @@ namespace TAU_Complex.Properties {
         public static System.Drawing.Bitmap по_возмущению_колебательное_с_фильтром {
             get {
                 object obj = ResourceManager.GetObject("по_возмущению_колебательное_с_фильтром", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap по_отклонению_апериодическое {
+            get {
+                object obj = ResourceManager.GetObject("по_отклонению_апериодическое", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap по_отклонению_апериодическое_с_фильтром {
+            get {
+                object obj = ResourceManager.GetObject("по_отклонению_апериодическое_с_фильтром", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap по_отклонению_колебательное {
+            get {
+                object obj = ResourceManager.GetObject("по_отклонению_колебательное", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap по_отклонению_колебательное_с_фильтром {
+            get {
+                object obj = ResourceManager.GetObject("по_отклонению_колебательное_с_фильтром", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -826,6 +926,16 @@ namespace TAU_Complex.Properties {
         public static System.Drawing.Bitmap Схема_САР_5 {
             get {
                 object obj = ResourceManager.GetObject("Схема САР-5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Схема_следящей {
+            get {
+                object obj = ResourceManager.GetObject("Схема_следящей", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

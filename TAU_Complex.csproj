@@ -366,6 +366,18 @@
     <None Include="Resources\Qвхsin.png" />
     <None Include="Resources\k4.png" />
     <None Include="Resources\T4.png" />
+    <None Include="Resources\апериодическое_блок.png" />
+    <None Include="Resources\по отклонению апериодическое с фильтром.png" />
+    <None Include="Resources\по отклонению апериодическое.png" />
+    <None Include="Resources\по отклонению колебательное с фильтром.png" />
+    <None Include="Resources\по отклонению колебательное.png" />
+    <None Include="Resources\cхема с апериодическим.png" />
+    <None Include="Resources\cхема с интегрирующим.png" />
+    <None Include="Resources\cхема с колебательным.png" />
+    <None Include="Resources\апериодическое1.png" />
+    <None Include="Resources\интегрирующее с запаздыванием.png" />
+    <None Include="Resources\интегрирующие-блок.png" />
+    <None Include="Resources\Схема_следящей.jpg" />
     <Content Include="T_ico.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

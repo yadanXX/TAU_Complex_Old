@@ -934,8 +934,8 @@ namespace TAU_Complex
                 }
                 if (radioButtonOtk.Checked)
                 {
-                    if (checkBoxFilter.Checked) pictureBoxDiagram.Image.Dispose();
-                    else pictureBoxDiagram.Image.Dispose();
+                    if (checkBoxFilter.Checked) pictureBoxDiagram.Image = Properties.Resources.по_отклонению_апериодическое_с_фильтром;
+                    else pictureBoxDiagram.Image = Properties.Resources.по_отклонению_апериодическое;
                 }
             }
             else
@@ -952,8 +952,8 @@ namespace TAU_Complex
                 }
                 if (radioButtonOtk.Checked)
                 {
-                    if (checkBoxFilter.Checked) pictureBoxDiagram.Image.Dispose();
-                    else pictureBoxDiagram.Image.Dispose();
+                    if (checkBoxFilter.Checked) pictureBoxDiagram.Image = Properties.Resources.по_отклонению_колебательное_с_фильтром;
+                    else pictureBoxDiagram.Image = Properties.Resources.по_отклонению_колебательное;
                 }
 
             }
