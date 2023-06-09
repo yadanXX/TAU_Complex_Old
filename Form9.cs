@@ -28,7 +28,7 @@ namespace TAU_Complex
 
             zedGraphControl2.GraphPane.Title.Text = "Переходная характеристика/ЛАЧХ";
             zedGraphControl2.GraphPane.YAxis.Title.Text = "Q(t)/Амплитуда (дБ)";
-            zedGraphControl2.GraphPane.XAxis.Title.Text = "t/Частота (Гц)";
+            zedGraphControl2.GraphPane.XAxis.Title.Text = "t/Частота (рад/сек)";
         }
         private void Form9_Resize(object sender, EventArgs e)
         {
