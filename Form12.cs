@@ -57,10 +57,15 @@ namespace TAU_Complex
             double wv1 = 0;
             double temp11 = 0, temp12 = 0;
 
-            for (double i = 0; i < tk; i += Dt)
+            list_1.Add(0, 0);
+            list_1.Add(D, 0);
+            
+
+            for (double i = D*2; i < tk; i += D)
             {
-                (wv1, temp11, temp12) = Wlink.Oscillatory(1 - wv1, k, 1, T1, temp11, temp12, Dt);
-                list_1.Add(i, wv1);
+                list_1.Add(i, list_1.Last().Y);
+                list_1.Add(i, -T1 * list_1[list_1.Count - 2].Y - (T2+k) * list_1[list_1.Count - 3].Y + k );
+
             }
 
             DrawGraph(zedGraphControl1, list_1, "График переходной характиристики", "Qвых(t)", "t");
