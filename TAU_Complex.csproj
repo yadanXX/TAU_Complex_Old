@@ -379,6 +379,11 @@
     <None Include="Resources\интегрирующее с запаздыванием.png" />
     <None Include="Resources\интегрирующие-блок.png" />
     <None Include="Resources\Схема_следящей.jpg" />
+    <None Include="Resources\a1.png" />
+    <None Include="Resources\a2.png" />
+    <None Include="Resources\a3.png" />
+    <None Include="Resources\передаточная функция системы управления.png" />
+    <None Include="Resources\Линейная дискретная САУ.png" />
     <Content Include="T_ico.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

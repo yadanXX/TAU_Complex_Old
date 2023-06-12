@@ -53,10 +53,6 @@ namespace TAU_Complex
             double Dt = Data.Dt;
             if (Program.DtCheck(tk, Dt)) return;
 
-
-            double wv1 = 0;
-            double temp11 = 0, temp12 = 0;
-
             list_1.Add(0, 0);
             list_1.Add(D, 0);
             

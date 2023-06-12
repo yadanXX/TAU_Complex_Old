@@ -132,5 +132,26 @@ namespace TAU_Complex
             x = k * (xi1 + xi1d1 * T1);
             return (x, xi1);
         }
+        public static (double, double, double, double) Mod(double xv, double k, double a1, double a2, double a3, double xid2, double xid1, double xid, double Dt)
+        {
+            /* Кастомное звено третьго порядка k/s3+a1s2+a2s+a3
+                             * xv - вход
+                             * k - коэф усиления
+                             * a1,a2,a3 - постоянная времени
+                             * xid2,xid1,xid - предыдущий выход1(промежуточный), после изменения текущий1
+                             * xi3, xi2, xi1, xi - текущие(промежуточные)
+                             * Dt - дельта t
+                             * x - выход
+                             */
+            double x;
+            double xi3, xi2, xi1, xi;
+
+            xi3 = xv - a1 * xid2 - a2 * xid1 - a3 * xid;
+            xi2 = xid2 + xi3 * Dt;
+            xi1 = xid1 + xi2 * Dt;
+            xi = xid + xi1 * Dt;
+            x = xi * k;
+            return (x, xi2, xi1, xi);
+        }
     }
 }
