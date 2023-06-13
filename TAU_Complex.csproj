@@ -384,6 +384,11 @@
     <None Include="Resources\a3.png" />
     <None Include="Resources\передаточная функция системы управления.png" />
     <None Include="Resources\Линейная дискретная САУ.png" />
+    <None Include="Resources\лабораторная 2.png" />
+    <None Include="Resources\Лабораторная 3.png" />
+    <None Include="Resources\Лабораторная 4.png" />
+    <None Include="Resources\В пространстве состояний с обратной связью.png" />
+    <None Include="Resources\В пространстве состояний без обратной связи.png" />
     <Content Include="T_ico.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

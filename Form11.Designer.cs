@@ -29,57 +29,69 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panelRight = new System.Windows.Forms.Panel();
             this.zedGraphControlRight = new ZedGraph.ZedGraphControl();
             this.paneltk = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.textBoxtk = new System.Windows.Forms.TextBox();
             this.panelk = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.textBoxk = new System.Windows.Forms.TextBox();
             this.panela3 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.textBoxa3 = new System.Windows.Forms.TextBox();
             this.panela2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBoxa2 = new System.Windows.Forms.TextBox();
             this.panela1 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.textBoxa1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonRight = new System.Windows.Forms.Button();
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBoxtkLeft = new System.Windows.Forms.TextBox();
+            this.dataGridViewB = new System.Windows.Forms.DataGridView();
             this.dataGridViewA = new System.Windows.Forms.DataGridView();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.zedGraphControlLeft = new ZedGraph.ZedGraphControl();
-            this.pictureBoxLeft = new System.Windows.Forms.PictureBox();
             this.buttonLeft = new System.Windows.Forms.Button();
-            this.dataGridViewB = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridViewD = new System.Windows.Forms.DataGridView();
+            this.panelA = new System.Windows.Forms.Panel();
+            this.labelA = new System.Windows.Forms.Label();
+            this.panelB = new System.Windows.Forms.Panel();
+            this.labelB = new System.Windows.Forms.Label();
+            this.panelD = new System.Windows.Forms.Panel();
+            this.labelD = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.textBoxtkLeft = new System.Windows.Forms.TextBox();
+            this.pictureBoxLeft = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panelMain.SuspendLayout();
             this.panelRight.SuspendLayout();
             this.paneltk.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panelk.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panela3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panela2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panela1.SuspendLayout();
+            this.panelLeft.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewD)).BeginInit();
+            this.panelA.SuspendLayout();
+            this.panelB.SuspendLayout();
+            this.panelD.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewB)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeft)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMain
@@ -112,7 +124,7 @@
             // zedGraphControlRight
             // 
             this.zedGraphControlRight.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.zedGraphControlRight.Location = new System.Drawing.Point(0, 437);
+            this.zedGraphControlRight.Location = new System.Drawing.Point(0, 339);
             this.zedGraphControlRight.Margin = new System.Windows.Forms.Padding(6);
             this.zedGraphControlRight.Name = "zedGraphControlRight";
             this.zedGraphControlRight.ScrollGrace = 0D;
@@ -122,7 +134,7 @@
             this.zedGraphControlRight.ScrollMinX = 0D;
             this.zedGraphControlRight.ScrollMinY = 0D;
             this.zedGraphControlRight.ScrollMinY2 = 0D;
-            this.zedGraphControlRight.Size = new System.Drawing.Size(529, 231);
+            this.zedGraphControlRight.Size = new System.Drawing.Size(529, 329);
             this.zedGraphControlRight.TabIndex = 19;
             this.zedGraphControlRight.UseExtendedPrintDialog = true;
             // 
@@ -134,16 +146,6 @@
             this.paneltk.Name = "paneltk";
             this.paneltk.Size = new System.Drawing.Size(201, 41);
             this.paneltk.TabIndex = 18;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::TAU_Complex.Properties.Resources.tk;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 6);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 16;
-            this.pictureBox6.TabStop = false;
             // 
             // textBoxtk
             // 
@@ -161,16 +163,6 @@
             this.panelk.Size = new System.Drawing.Size(201, 41);
             this.panelk.TabIndex = 18;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::TAU_Complex.Properties.Resources.KB;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 6);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 16;
-            this.pictureBox5.TabStop = false;
-            // 
             // textBoxk
             // 
             this.textBoxk.Location = new System.Drawing.Point(44, 6);
@@ -186,16 +178,6 @@
             this.panela3.Name = "panela3";
             this.panela3.Size = new System.Drawing.Size(201, 41);
             this.panela3.TabIndex = 18;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::TAU_Complex.Properties.Resources.a3;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 16;
-            this.pictureBox3.TabStop = false;
             // 
             // textBoxa3
             // 
@@ -213,16 +195,6 @@
             this.panela2.Size = new System.Drawing.Size(201, 41);
             this.panela2.TabIndex = 18;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::TAU_Complex.Properties.Resources.a2;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 16;
-            this.pictureBox2.TabStop = false;
-            // 
             // textBoxa2
             // 
             this.textBoxa2.Location = new System.Drawing.Point(44, 6);
@@ -239,33 +211,12 @@
             this.panela1.Size = new System.Drawing.Size(201, 41);
             this.panela1.TabIndex = 18;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::TAU_Complex.Properties.Resources.a1;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 6);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
-            // 
             // textBoxa1
             // 
             this.textBoxa1.Location = new System.Drawing.Point(44, 6);
             this.textBoxa1.Name = "textBoxa1";
             this.textBoxa1.Size = new System.Drawing.Size(72, 26);
             this.textBoxa1.TabIndex = 7;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::TAU_Complex.Properties.Resources.передаточная_функция_системы_управления;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(529, 140);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // buttonRight
             // 
@@ -283,11 +234,7 @@
             // 
             // panelLeft
             // 
-            this.panelLeft.Controls.Add(this.panel1);
-            this.panelLeft.Controls.Add(this.dataGridViewB);
-            this.panelLeft.Controls.Add(this.dataGridViewA);
-            this.panelLeft.Controls.Add(this.radioButton2);
-            this.panelLeft.Controls.Add(this.radioButton1);
+            this.panelLeft.Controls.Add(this.panel2);
             this.panelLeft.Controls.Add(this.zedGraphControlLeft);
             this.panelLeft.Controls.Add(this.pictureBoxLeft);
             this.panelLeft.Controls.Add(this.buttonLeft);
@@ -296,6 +243,39 @@
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(507, 712);
             this.panelLeft.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pictureBox7);
+            this.panel1.Controls.Add(this.textBoxtkLeft);
+            this.panel1.Location = new System.Drawing.Point(12, 141);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(201, 42);
+            this.panel1.TabIndex = 19;
+            // 
+            // textBoxtkLeft
+            // 
+            this.textBoxtkLeft.Location = new System.Drawing.Point(44, 6);
+            this.textBoxtkLeft.Name = "textBoxtkLeft";
+            this.textBoxtkLeft.Size = new System.Drawing.Size(72, 26);
+            this.textBoxtkLeft.TabIndex = 7;
+            // 
+            // dataGridViewB
+            // 
+            this.dataGridViewB.AllowUserToAddRows = false;
+            this.dataGridViewB.AllowUserToDeleteRows = false;
+            this.dataGridViewB.AllowUserToResizeColumns = false;
+            this.dataGridViewB.AllowUserToResizeRows = false;
+            this.dataGridViewB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridViewB.ColumnHeadersVisible = false;
+            this.dataGridViewB.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dataGridViewB.Location = new System.Drawing.Point(50, 17);
+            this.dataGridViewB.Name = "dataGridViewB";
+            this.dataGridViewB.RowHeadersVisible = false;
+            this.dataGridViewB.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataGridViewB.Size = new System.Drawing.Size(40, 67);
+            this.dataGridViewB.TabIndex = 10;
             // 
             // dataGridViewA
             // 
@@ -306,16 +286,8 @@
             this.dataGridViewA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewA.ColumnHeadersVisible = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewA.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewA.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dataGridViewA.Location = new System.Drawing.Point(42, 199);
+            this.dataGridViewA.Location = new System.Drawing.Point(48, 17);
             this.dataGridViewA.Name = "dataGridViewA";
             this.dataGridViewA.RowHeadersVisible = false;
             this.dataGridViewA.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
@@ -325,29 +297,30 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(125, 146);
+            this.radioButton2.Location = new System.Drawing.Point(171, 6);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(106, 23);
+            this.radioButton2.Size = new System.Drawing.Size(157, 23);
             this.radioButton2.TabIndex = 8;
-            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.Text = "С обратной связью";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(13, 147);
+            this.radioButton1.Location = new System.Drawing.Point(7, 6);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(106, 23);
+            this.radioButton1.Size = new System.Drawing.Size(158, 23);
             this.radioButton1.TabIndex = 7;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.Text = "Без обратной связи";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // zedGraphControlLeft
             // 
             this.zedGraphControlLeft.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.zedGraphControlLeft.Location = new System.Drawing.Point(0, 442);
+            this.zedGraphControlLeft.Location = new System.Drawing.Point(0, 339);
             this.zedGraphControlLeft.Margin = new System.Windows.Forms.Padding(4);
             this.zedGraphControlLeft.Name = "zedGraphControlLeft";
             this.zedGraphControlLeft.ScrollGrace = 0D;
@@ -357,19 +330,9 @@
             this.zedGraphControlLeft.ScrollMinX = 0D;
             this.zedGraphControlLeft.ScrollMinY = 0D;
             this.zedGraphControlLeft.ScrollMinY2 = 0D;
-            this.zedGraphControlLeft.Size = new System.Drawing.Size(507, 226);
+            this.zedGraphControlLeft.Size = new System.Drawing.Size(507, 329);
             this.zedGraphControlLeft.TabIndex = 6;
             this.zedGraphControlLeft.UseExtendedPrintDialog = true;
-            // 
-            // pictureBoxLeft
-            // 
-            this.pictureBoxLeft.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBoxLeft.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxLeft.Name = "pictureBoxLeft";
-            this.pictureBoxLeft.Size = new System.Drawing.Size(507, 140);
-            this.pictureBoxLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLeft.TabIndex = 5;
-            this.pictureBoxLeft.TabStop = false;
             // 
             // buttonLeft
             // 
@@ -385,31 +348,141 @@
             this.buttonLeft.UseVisualStyleBackColor = true;
             this.buttonLeft.Click += new System.EventHandler(this.buttonLeft_Click);
             // 
-            // dataGridViewB
+            // dataGridViewD
             // 
-            this.dataGridViewB.AllowUserToAddRows = false;
-            this.dataGridViewB.AllowUserToDeleteRows = false;
-            this.dataGridViewB.AllowUserToResizeColumns = false;
-            this.dataGridViewB.AllowUserToResizeRows = false;
-            this.dataGridViewB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridViewB.ColumnHeadersVisible = false;
-            this.dataGridViewB.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dataGridViewB.Location = new System.Drawing.Point(212, 199);
-            this.dataGridViewB.Name = "dataGridViewB";
-            this.dataGridViewB.RowHeadersVisible = false;
-            this.dataGridViewB.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dataGridViewB.Size = new System.Drawing.Size(40, 67);
-            this.dataGridViewB.TabIndex = 10;
+            this.dataGridViewD.AllowUserToAddRows = false;
+            this.dataGridViewD.AllowUserToDeleteRows = false;
+            this.dataGridViewD.AllowUserToResizeColumns = false;
+            this.dataGridViewD.AllowUserToResizeRows = false;
+            this.dataGridViewD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridViewD.ColumnHeadersVisible = false;
+            this.dataGridViewD.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dataGridViewD.Location = new System.Drawing.Point(54, 41);
+            this.dataGridViewD.Name = "dataGridViewD";
+            this.dataGridViewD.RowHeadersVisible = false;
+            this.dataGridViewD.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataGridViewD.Size = new System.Drawing.Size(120, 23);
+            this.dataGridViewD.TabIndex = 20;
             // 
-            // panel1
+            // panelA
             // 
-            this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.textBoxtkLeft);
-            this.panel1.Location = new System.Drawing.Point(153, 336);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(201, 41);
-            this.panel1.TabIndex = 19;
+            this.panelA.Controls.Add(this.labelA);
+            this.panelA.Controls.Add(this.dataGridViewA);
+            this.panelA.Location = new System.Drawing.Point(12, 35);
+            this.panelA.Name = "panelA";
+            this.panelA.Size = new System.Drawing.Size(175, 100);
+            this.panelA.TabIndex = 21;
+            // 
+            // labelA
+            // 
+            this.labelA.AutoSize = true;
+            this.labelA.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelA.Location = new System.Drawing.Point(2, 41);
+            this.labelA.Name = "labelA";
+            this.labelA.Size = new System.Drawing.Size(40, 23);
+            this.labelA.TabIndex = 10;
+            this.labelA.Text = "A =";
+            // 
+            // panelB
+            // 
+            this.panelB.Controls.Add(this.labelB);
+            this.panelB.Controls.Add(this.dataGridViewB);
+            this.panelB.Location = new System.Drawing.Point(193, 35);
+            this.panelB.Name = "panelB";
+            this.panelB.Size = new System.Drawing.Size(102, 100);
+            this.panelB.TabIndex = 22;
+            // 
+            // labelB
+            // 
+            this.labelB.AutoSize = true;
+            this.labelB.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelB.Location = new System.Drawing.Point(3, 41);
+            this.labelB.Name = "labelB";
+            this.labelB.Size = new System.Drawing.Size(41, 23);
+            this.labelB.TabIndex = 11;
+            this.labelB.Text = "B =";
+            // 
+            // panelD
+            // 
+            this.panelD.Controls.Add(this.labelD);
+            this.panelD.Controls.Add(this.dataGridViewD);
+            this.panelD.Location = new System.Drawing.Point(301, 35);
+            this.panelD.Name = "panelD";
+            this.panelD.Size = new System.Drawing.Size(177, 100);
+            this.panelD.TabIndex = 23;
+            this.panelD.Visible = false;
+            // 
+            // labelD
+            // 
+            this.labelD.AutoSize = true;
+            this.labelD.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelD.Location = new System.Drawing.Point(3, 41);
+            this.labelD.Name = "labelD";
+            this.labelD.Size = new System.Drawing.Size(42, 23);
+            this.labelD.TabIndex = 12;
+            this.labelD.Text = "D =";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::TAU_Complex.Properties.Resources.tk;
+            this.pictureBox6.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 16;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::TAU_Complex.Properties.Resources.KB;
+            this.pictureBox5.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 16;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::TAU_Complex.Properties.Resources.a3;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 16;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::TAU_Complex.Properties.Resources.a2;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::TAU_Complex.Properties.Resources.a1;
+            this.pictureBox4.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 16;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::TAU_Complex.Properties.Resources.передаточная_функция_системы_управления;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(529, 140);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // pictureBox7
             // 
@@ -421,12 +494,30 @@
             this.pictureBox7.TabIndex = 16;
             this.pictureBox7.TabStop = false;
             // 
-            // textBoxtkLeft
+            // pictureBoxLeft
             // 
-            this.textBoxtkLeft.Location = new System.Drawing.Point(44, 6);
-            this.textBoxtkLeft.Name = "textBoxtkLeft";
-            this.textBoxtkLeft.Size = new System.Drawing.Size(72, 26);
-            this.textBoxtkLeft.TabIndex = 7;
+            this.pictureBoxLeft.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBoxLeft.Image = global::TAU_Complex.Properties.Resources.В_пространстве_состояний_без_обратной_связи;
+            this.pictureBoxLeft.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxLeft.Name = "pictureBoxLeft";
+            this.pictureBoxLeft.Size = new System.Drawing.Size(507, 140);
+            this.pictureBoxLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLeft.TabIndex = 5;
+            this.pictureBoxLeft.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.radioButton2);
+            this.panel2.Controls.Add(this.panelD);
+            this.panel2.Controls.Add(this.panelB);
+            this.panel2.Controls.Add(this.radioButton1);
+            this.panel2.Controls.Add(this.panelA);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 140);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(507, 199);
+            this.panel2.TabIndex = 24;
             // 
             // Form11
             // 
@@ -444,28 +535,36 @@
             this.panelRight.ResumeLayout(false);
             this.paneltk.ResumeLayout(false);
             this.paneltk.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panelk.ResumeLayout(false);
             this.panelk.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panela3.ResumeLayout(false);
             this.panela3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panela2.ResumeLayout(false);
             this.panela2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panela1.ResumeLayout(false);
             this.panela1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelLeft.ResumeLayout(false);
-            this.panelLeft.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewB)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewD)).EndInit();
+            this.panelA.ResumeLayout(false);
+            this.panelA.PerformLayout();
+            this.panelB.ResumeLayout(false);
+            this.panelB.PerformLayout();
+            this.panelD.ResumeLayout(false);
+            this.panelD.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeft)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -503,5 +602,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.TextBox textBoxtkLeft;
+        private System.Windows.Forms.DataGridView dataGridViewD;
+        private System.Windows.Forms.Panel panelD;
+        private System.Windows.Forms.Label labelD;
+        private System.Windows.Forms.Panel panelB;
+        private System.Windows.Forms.Label labelB;
+        private System.Windows.Forms.Panel panelA;
+        private System.Windows.Forms.Label labelA;
+        private System.Windows.Forms.Panel panel2;
     }
 }

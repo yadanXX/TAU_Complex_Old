@@ -28,7 +28,5 @@ namespace TAU_Complex
         public static string Ytitle3;
         public static string Xtitle3;
 
-        
-
     }
 }

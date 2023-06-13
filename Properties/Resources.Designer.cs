@@ -553,6 +553,26 @@ namespace TAU_Complex.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap В_пространстве_состояний_без_обратной_связи {
+            get {
+                object obj = ResourceManager.GetObject("В_пространстве_состояний_без_обратной_связи", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap В_пространстве_состояний_с_обратной_связью {
+            get {
+                object obj = ResourceManager.GetObject("В_пространстве_состояний_с_обратной_связью", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap запаздывание {
             get {
                 object obj = ResourceManager.GetObject("запаздывание", resourceCulture);
@@ -696,6 +716,36 @@ namespace TAU_Complex.Properties {
         public static System.Drawing.Bitmap Колебательное_звено {
             get {
                 object obj = ResourceManager.GetObject("Колебательное звено", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap лабораторная_2 {
+            get {
+                object obj = ResourceManager.GetObject("лабораторная_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Лабораторная_3 {
+            get {
+                object obj = ResourceManager.GetObject("Лабораторная_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Лабораторная_4 {
+            get {
+                object obj = ResourceManager.GetObject("Лабораторная_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

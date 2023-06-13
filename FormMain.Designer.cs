@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -42,6 +44,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel_tool_menu = new System.Windows.Forms.Panel();
+            this.buttonCh2 = new System.Windows.Forms.Button();
+            this.buttonCh1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonRoll = new System.Windows.Forms.Button();
             this.buttonShut_down = new System.Windows.Forms.Button();
@@ -52,10 +56,6 @@
             this.panelWorkSpace = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.slide_timer = new System.Windows.Forms.Timer(this.components);
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.buttonCh1 = new System.Windows.Forms.Button();
-            this.buttonCh2 = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panel_tool_menu.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -86,6 +86,43 @@
             this.panelSideMenu.Name = "panelSideMenu";
             this.panelSideMenu.Size = new System.Drawing.Size(222, 776);
             this.panelSideMenu.TabIndex = 0;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.button12.ForeColor = System.Drawing.Color.LightGray;
+            this.button12.Location = new System.Drawing.Point(0, 810);
+            this.button12.Margin = new System.Windows.Forms.Padding(0);
+            this.button12.Name = "button12";
+            this.button12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button12.Size = new System.Drawing.Size(222, 70);
+            this.button12.TabIndex = 13;
+            this.button12.Text = "Исследование устойчивости линейной дискретной САУ";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Visible = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.button11.ForeColor = System.Drawing.Color.LightGray;
+            this.button11.Location = new System.Drawing.Point(0, 740);
+            this.button11.Margin = new System.Windows.Forms.Padding(0);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(222, 70);
+            this.button11.TabIndex = 12;
+            this.button11.Text = "Модальное управление";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Visible = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button10
             // 
@@ -273,6 +310,40 @@
             this.panel_tool_menu.Size = new System.Drawing.Size(222, 40);
             this.panel_tool_menu.TabIndex = 1;
             // 
+            // buttonCh2
+            // 
+            this.buttonCh2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            this.buttonCh2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonCh2.FlatAppearance.BorderSize = 0;
+            this.buttonCh2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCh2.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.buttonCh2.ForeColor = System.Drawing.Color.LightGray;
+            this.buttonCh2.Location = new System.Drawing.Point(111, 0);
+            this.buttonCh2.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonCh2.Name = "buttonCh2";
+            this.buttonCh2.Size = new System.Drawing.Size(111, 40);
+            this.buttonCh2.TabIndex = 4;
+            this.buttonCh2.Text = "Часть 2";
+            this.buttonCh2.UseVisualStyleBackColor = false;
+            this.buttonCh2.Click += new System.EventHandler(this.buttonCh2_Click);
+            // 
+            // buttonCh1
+            // 
+            this.buttonCh1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            this.buttonCh1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonCh1.FlatAppearance.BorderSize = 0;
+            this.buttonCh1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCh1.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.buttonCh1.ForeColor = System.Drawing.Color.LightGray;
+            this.buttonCh1.Location = new System.Drawing.Point(0, 0);
+            this.buttonCh1.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonCh1.Name = "buttonCh1";
+            this.buttonCh1.Size = new System.Drawing.Size(111, 40);
+            this.buttonCh1.TabIndex = 3;
+            this.buttonCh1.Text = "Часть 1";
+            this.buttonCh1.UseVisualStyleBackColor = false;
+            this.buttonCh1.Click += new System.EventHandler(this.buttonCh1_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
@@ -420,77 +491,6 @@
             this.slide_timer.Interval = 1;
             this.slide_timer.Tick += new System.EventHandler(this.slide_timer_Tick);
             // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
-            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.button11.ForeColor = System.Drawing.Color.LightGray;
-            this.button11.Location = new System.Drawing.Point(0, 740);
-            this.button11.Margin = new System.Windows.Forms.Padding(0);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(222, 70);
-            this.button11.TabIndex = 12;
-            this.button11.Text = "Модальное управление";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Visible = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
-            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.button12.ForeColor = System.Drawing.Color.LightGray;
-            this.button12.Location = new System.Drawing.Point(0, 810);
-            this.button12.Margin = new System.Windows.Forms.Padding(0);
-            this.button12.Name = "button12";
-            this.button12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button12.Size = new System.Drawing.Size(222, 70);
-            this.button12.TabIndex = 13;
-            this.button12.Text = "Исследование устойчивости линейной дискретной САУ";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Visible = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // buttonCh1
-            // 
-            this.buttonCh1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
-            this.buttonCh1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buttonCh1.FlatAppearance.BorderSize = 0;
-            this.buttonCh1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCh1.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.buttonCh1.ForeColor = System.Drawing.Color.LightGray;
-            this.buttonCh1.Location = new System.Drawing.Point(0, 0);
-            this.buttonCh1.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonCh1.Name = "buttonCh1";
-            this.buttonCh1.Size = new System.Drawing.Size(111, 40);
-            this.buttonCh1.TabIndex = 3;
-            this.buttonCh1.Text = "Часть 1";
-            this.buttonCh1.UseVisualStyleBackColor = false;
-            this.buttonCh1.Click += new System.EventHandler(this.buttonCh1_Click);
-            // 
-            // buttonCh2
-            // 
-            this.buttonCh2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
-            this.buttonCh2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonCh2.FlatAppearance.BorderSize = 0;
-            this.buttonCh2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCh2.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.buttonCh2.ForeColor = System.Drawing.Color.LightGray;
-            this.buttonCh2.Location = new System.Drawing.Point(111, 0);
-            this.buttonCh2.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonCh2.Name = "buttonCh2";
-            this.buttonCh2.Size = new System.Drawing.Size(111, 40);
-            this.buttonCh2.TabIndex = 4;
-            this.buttonCh2.Text = "Часть 2";
-            this.buttonCh2.UseVisualStyleBackColor = false;
-            this.buttonCh2.Click += new System.EventHandler(this.buttonCh2_Click);
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -504,7 +504,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MinimumSize = new System.Drawing.Size(800, 815);
+            this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "FormMain";
             this.Text = "Тау комплекс";
             this.panelSideMenu.ResumeLayout(false);

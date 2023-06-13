@@ -33,6 +33,27 @@ namespace TAU_Complex
             dataGridViewB.RowCount = 3;
             dataGridViewB.ColumnCount = 1;
             dataGridViewB.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            dataGridViewD.RowCount = 1;
+            dataGridViewD.ColumnCount = 3;
+            dataGridViewD.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            for (int i = 0; i < 2; i++) for (int j = 0; j < 3; j++)
+                {
+                    dataGridViewA.Rows[i].Cells[j].Value = 0;
+                    dataGridViewA.Rows[i].Cells[j].ReadOnly = true;
+                    dataGridViewB.Rows[i].Cells[0].Value = 0;
+                }
+            dataGridViewA.Rows[0].Cells[1].Value = 1;
+            dataGridViewA.Rows[1].Cells[2].Value = 1;
+
+            for (int i = 0; i < 3; i++) dataGridViewA.Rows[2].Cells[i].Value = -1;
+            dataGridViewB.Rows[0].Cells[0].ReadOnly = true;
+            dataGridViewB.Rows[1].Cells[0].ReadOnly = true;
+            dataGridViewB.Rows[2].Cells[0].Value = 1;
+
+            for (int i = 0; i < 3; i++) dataGridViewD.Rows[0].Cells[i].Value = 0;
+
         }
 
 
@@ -43,11 +64,17 @@ namespace TAU_Complex
             double tk;
             try
             {
-                k = Convert.ToDouble(textBoxk.Text.Replace(".", ","));
-                a1 = Convert.ToDouble(textBoxa1.Text.Replace(".", ","));
-                a2 = Convert.ToDouble(textBoxa2.Text.Replace(".", ","));
-                a3 = Convert.ToDouble(textBoxa3.Text.Replace(".", ","));
-                tk = Convert.ToDouble(textBoxtk.Text.Replace(".", ","));
+                k = Convert.ToDouble(dataGridViewB.Rows[2].Cells[0].Value.ToString().Replace(".", ","));
+                a1 = -1 * Convert.ToDouble(dataGridViewA.Rows[2].Cells[2].Value.ToString().Replace(".", ","));
+                a2 = -1 * Convert.ToDouble(dataGridViewA.Rows[2].Cells[1].Value.ToString().Replace(".", ","));
+                a3 = -1 * Convert.ToDouble(dataGridViewA.Rows[2].Cells[0].Value.ToString().Replace(".", ","));
+                tk = Convert.ToDouble(textBoxtkLeft.Text.Replace(".", ","));
+                if (radioButton2.Checked)
+                {
+                    a1 += Convert.ToDouble(dataGridViewD.Rows[0].Cells[2].Value.ToString().Replace(".", ","));
+                    a2 += Convert.ToDouble(dataGridViewD.Rows[0].Cells[1].Value.ToString().Replace(".", ","));
+                    a3 += Convert.ToDouble(dataGridViewD.Rows[0].Cells[0].Value.ToString().Replace(".", ","));
+                }
                 if (tk <= 0 || a1 <= 0 || a2 <= 0 || a3 <= 0 || k <= 0) throw new Exception();
 
             }
@@ -70,13 +97,14 @@ namespace TAU_Complex
             double temp1 = 0, temp2 = 0, temp3 = 0;
 
 
+
             for (double i = 0; i < tk; i += Dt)
             {
                 (wv1, temp1, temp2, temp3) = Wlink.Mod(1, k, a1, a2, a3, temp1, temp2, temp3, Dt);
                 list_1.Add(i, wv1);
             }
 
-            DrawGraph(zedGraphControlRight, list_1, "График переходной характиристики", "Qвых(t)", "t");
+            DrawGraph(zedGraphControlLeft, list_1, "График переходной характиристики", "Qвых(t)", "t");
 
             string legend = $" k={textBoxk.Text} a1={textBoxa1.Text} a2={textBoxa2.Text} a3={textBoxa3.Text}";
             Data.list1 = list_1;
@@ -217,5 +245,22 @@ namespace TAU_Complex
             zedGraphControl.AxisChange();
             zedGraphControl.Invalidate();
         }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked)
+            {
+                panelD.Visible = true;
+                pictureBoxLeft.Image = Properties.Resources.В_пространстве_состояний_с_обратной_связью;
+                pictureBoxLeft.Height = 249;
+            }
+            else
+            {
+                panelD.Visible = false;
+                pictureBoxLeft.Image = Properties.Resources.В_пространстве_состояний_без_обратной_связи;
+                pictureBoxLeft.Height = 140;
+            }
+        }
+
     }
 }

@@ -41,6 +41,25 @@ namespace TAU_Complex
             {
                 checkBox1.Visible = true;
             }
+            if (Data.active_value == 15)
+            {
+                checkBox1.Visible = true;
+                checkBox2.Visible = true;
+            }
+            if (Data.active_value == 16)
+            {
+                checkBox1.Visible = true;
+                checkBox2.Visible = true;
+            }
+            if (Data.active_value == 17)
+            {
+                checkBox1.Visible = true;
+                checkBox2.Visible = true;
+            }
+            if (Data.active_value == 18)
+            {
+                checkBox1.Visible = true;
+            }
 
             switch (Data.TypeDt)
             {
