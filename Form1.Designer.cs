@@ -32,104 +32,104 @@
             this.comboBoxMain = new System.Windows.Forms.ComboBox();
             this.panelComboBox = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox7tk = new System.Windows.Forms.PictureBox();
+            this.pictureBox7t1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7k = new System.Windows.Forms.PictureBox();
             this.textBox7tk = new System.Windows.Forms.TextBox();
             this.textBox7t1 = new System.Windows.Forms.TextBox();
             this.textBox7k = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
             this.panelSideMain = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox5tk = new System.Windows.Forms.PictureBox();
+            this.pictureBox5k = new System.Windows.Forms.PictureBox();
             this.textBox5tk = new System.Windows.Forms.TextBox();
             this.textBox5k = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox6tk = new System.Windows.Forms.PictureBox();
+            this.pictureBox6t1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6k = new System.Windows.Forms.PictureBox();
             this.textBox6tk = new System.Windows.Forms.TextBox();
             this.textBox6t1 = new System.Windows.Forms.TextBox();
             this.textBox6k = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox3tk = new System.Windows.Forms.TextBox();
-            this.textBox3t2 = new System.Windows.Forms.TextBox();
-            this.textBox3t1 = new System.Windows.Forms.TextBox();
-            this.textBox3k = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox4tk = new System.Windows.Forms.TextBox();
-            this.textBox4t2 = new System.Windows.Forms.TextBox();
-            this.textBox4t1 = new System.Windows.Forms.TextBox();
-            this.textBox4k = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2tk = new System.Windows.Forms.TextBox();
-            this.textBox2t1 = new System.Windows.Forms.TextBox();
-            this.textBox2k = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1tk = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1k = new System.Windows.Forms.TextBox();
-            this.pictureBox7tk = new System.Windows.Forms.PictureBox();
-            this.pictureBox7t1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7k = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5tk = new System.Windows.Forms.PictureBox();
-            this.pictureBox5k = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6tk = new System.Windows.Forms.PictureBox();
-            this.pictureBox6t1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6k = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3tk = new System.Windows.Forms.PictureBox();
             this.pictureBox3t2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3t1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3k = new System.Windows.Forms.PictureBox();
+            this.textBox3tk = new System.Windows.Forms.TextBox();
+            this.textBox3t2 = new System.Windows.Forms.TextBox();
+            this.textBox3t1 = new System.Windows.Forms.TextBox();
+            this.textBox3k = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox4tk = new System.Windows.Forms.PictureBox();
             this.pictureBox4t2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4t1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4k = new System.Windows.Forms.PictureBox();
+            this.textBox4tk = new System.Windows.Forms.TextBox();
+            this.textBox4t2 = new System.Windows.Forms.TextBox();
+            this.textBox4t1 = new System.Windows.Forms.TextBox();
+            this.textBox4k = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2T1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2tk = new System.Windows.Forms.PictureBox();
             this.pictureBox2k1 = new System.Windows.Forms.PictureBox();
+            this.textBox2tk = new System.Windows.Forms.TextBox();
+            this.textBox2t1 = new System.Windows.Forms.TextBox();
+            this.textBox2k = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1tk = new System.Windows.Forms.PictureBox();
             this.pictureBox1k1 = new System.Windows.Forms.PictureBox();
+            this.textBox1tk = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1k = new System.Windows.Forms.TextBox();
             this.panelComboBox.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panelSideMain.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7tk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7t1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7k)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panelSideMain.SuspendLayout();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5tk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5k)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6tk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6t1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6k)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3tk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3t2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3t1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3k)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4tk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4t2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4t1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4k)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2T1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2tk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2k1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1tk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1k1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -145,11 +145,11 @@
             this.comboBoxMain.Items.AddRange(new object[] {
             "Идеальное усилительное (безынерционное) звено",
             "Апериодическое (инерционное) звено",
-            "Апериодическое звено вторго порядка",
-            "Колебательно звено ",
+            "Апериодическое звено второго порядка",
+            "Колебательное звено",
             "Идеальное интегрирующее звено",
-            "Инерционное (реальное звено) интегрирующие звено",
-            "Инерционнон дифференцирующие звено"});
+            "Инерционное (реальное) интегрирующее звено",
+            "Инерционное дифференцирующее звено"});
             this.comboBoxMain.Location = new System.Drawing.Point(0, 0);
             this.comboBoxMain.Margin = new System.Windows.Forms.Padding(6);
             this.comboBoxMain.Name = "comboBoxMain";
@@ -185,6 +185,39 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(440, 747);
             this.panel7.TabIndex = 6;
+            // 
+            // pictureBox7tk
+            // 
+            this.pictureBox7tk.Image = global::TAU_Complex.Properties.Resources.tk;
+            this.pictureBox7tk.Location = new System.Drawing.Point(10, 179);
+            this.pictureBox7tk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox7tk.Name = "pictureBox7tk";
+            this.pictureBox7tk.Size = new System.Drawing.Size(27, 24);
+            this.pictureBox7tk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7tk.TabIndex = 27;
+            this.pictureBox7tk.TabStop = false;
+            // 
+            // pictureBox7t1
+            // 
+            this.pictureBox7t1.Image = global::TAU_Complex.Properties.Resources.T1;
+            this.pictureBox7t1.Location = new System.Drawing.Point(10, 149);
+            this.pictureBox7t1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox7t1.Name = "pictureBox7t1";
+            this.pictureBox7t1.Size = new System.Drawing.Size(27, 24);
+            this.pictureBox7t1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7t1.TabIndex = 26;
+            this.pictureBox7t1.TabStop = false;
+            // 
+            // pictureBox7k
+            // 
+            this.pictureBox7k.Image = global::TAU_Complex.Properties.Resources.k;
+            this.pictureBox7k.Location = new System.Drawing.Point(10, 118);
+            this.pictureBox7k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox7k.Name = "pictureBox7k";
+            this.pictureBox7k.Size = new System.Drawing.Size(27, 24);
+            this.pictureBox7k.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7k.TabIndex = 25;
+            this.pictureBox7k.TabStop = false;
             // 
             // textBox7tk
             // 
@@ -224,6 +257,16 @@
             this.button7.Text = "Построить";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::TAU_Complex.Properties.Resources.Инерционно_дифферинцирующие_;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 7);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(438, 105);
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
             // 
             // zedGraphControl1
             // 
@@ -275,6 +318,28 @@
             this.panel5.Size = new System.Drawing.Size(440, 747);
             this.panel5.TabIndex = 4;
             // 
+            // pictureBox5tk
+            // 
+            this.pictureBox5tk.Image = global::TAU_Complex.Properties.Resources.tk;
+            this.pictureBox5tk.Location = new System.Drawing.Point(10, 119);
+            this.pictureBox5tk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox5tk.Name = "pictureBox5tk";
+            this.pictureBox5tk.Size = new System.Drawing.Size(27, 24);
+            this.pictureBox5tk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5tk.TabIndex = 23;
+            this.pictureBox5tk.TabStop = false;
+            // 
+            // pictureBox5k
+            // 
+            this.pictureBox5k.Image = global::TAU_Complex.Properties.Resources.k;
+            this.pictureBox5k.Location = new System.Drawing.Point(10, 88);
+            this.pictureBox5k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox5k.Name = "pictureBox5k";
+            this.pictureBox5k.Size = new System.Drawing.Size(27, 24);
+            this.pictureBox5k.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5k.TabIndex = 22;
+            this.pictureBox5k.TabStop = false;
+            // 
             // textBox5tk
             // 
             this.textBox5tk.Location = new System.Drawing.Point(51, 119);
@@ -290,6 +355,16 @@
             this.textBox5k.Name = "textBox5k";
             this.textBox5k.Size = new System.Drawing.Size(121, 26);
             this.textBox5k.TabIndex = 18;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::TAU_Complex.Properties.Resources.Идеально_интегрирующие;
+            this.pictureBox5.Location = new System.Drawing.Point(4, 7);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(438, 75);
+            this.pictureBox5.TabIndex = 6;
+            this.pictureBox5.TabStop = false;
             // 
             // button5
             // 
@@ -323,6 +398,39 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(440, 747);
             this.panel6.TabIndex = 5;
+            // 
+            // pictureBox6tk
+            // 
+            this.pictureBox6tk.Image = global::TAU_Complex.Properties.Resources.tk;
+            this.pictureBox6tk.Location = new System.Drawing.Point(6, 183);
+            this.pictureBox6tk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox6tk.Name = "pictureBox6tk";
+            this.pictureBox6tk.Size = new System.Drawing.Size(27, 24);
+            this.pictureBox6tk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6tk.TabIndex = 27;
+            this.pictureBox6tk.TabStop = false;
+            // 
+            // pictureBox6t1
+            // 
+            this.pictureBox6t1.Image = global::TAU_Complex.Properties.Resources.T1;
+            this.pictureBox6t1.Location = new System.Drawing.Point(6, 152);
+            this.pictureBox6t1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox6t1.Name = "pictureBox6t1";
+            this.pictureBox6t1.Size = new System.Drawing.Size(27, 24);
+            this.pictureBox6t1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6t1.TabIndex = 26;
+            this.pictureBox6t1.TabStop = false;
+            // 
+            // pictureBox6k
+            // 
+            this.pictureBox6k.Image = global::TAU_Complex.Properties.Resources.k;
+            this.pictureBox6k.Location = new System.Drawing.Point(6, 121);
+            this.pictureBox6k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox6k.Name = "pictureBox6k";
+            this.pictureBox6k.Size = new System.Drawing.Size(27, 24);
+            this.pictureBox6k.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6k.TabIndex = 25;
+            this.pictureBox6k.TabStop = false;
             // 
             // textBox6tk
             // 
@@ -363,6 +471,16 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::TAU_Complex.Properties.Resources.Инерционное_реально_интегрирующие;
+            this.pictureBox6.Location = new System.Drawing.Point(4, 7);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(436, 108);
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -382,342 +500,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(440, 747);
             this.panel3.TabIndex = 2;
-            // 
-            // textBox3tk
-            // 
-            this.textBox3tk.Location = new System.Drawing.Point(51, 224);
-            this.textBox3tk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox3tk.Name = "textBox3tk";
-            this.textBox3tk.Size = new System.Drawing.Size(121, 26);
-            this.textBox3tk.TabIndex = 8;
-            // 
-            // textBox3t2
-            // 
-            this.textBox3t2.Location = new System.Drawing.Point(51, 194);
-            this.textBox3t2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox3t2.Name = "textBox3t2";
-            this.textBox3t2.Size = new System.Drawing.Size(121, 26);
-            this.textBox3t2.TabIndex = 7;
-            // 
-            // textBox3t1
-            // 
-            this.textBox3t1.Location = new System.Drawing.Point(51, 163);
-            this.textBox3t1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox3t1.Name = "textBox3t1";
-            this.textBox3t1.Size = new System.Drawing.Size(121, 26);
-            this.textBox3t1.TabIndex = 6;
-            // 
-            // textBox3k
-            // 
-            this.textBox3k.Location = new System.Drawing.Point(51, 132);
-            this.textBox3k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox3k.Name = "textBox3k";
-            this.textBox3k.Size = new System.Drawing.Size(121, 26);
-            this.textBox3k.TabIndex = 5;
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.button3.Location = new System.Drawing.Point(0, 703);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(440, 44);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Построить";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel4.Controls.Add(this.pictureBox4tk);
-            this.panel4.Controls.Add(this.pictureBox4t2);
-            this.panel4.Controls.Add(this.pictureBox4t1);
-            this.panel4.Controls.Add(this.pictureBox4k);
-            this.panel4.Controls.Add(this.textBox4tk);
-            this.panel4.Controls.Add(this.textBox4t2);
-            this.panel4.Controls.Add(this.textBox4t1);
-            this.panel4.Controls.Add(this.textBox4k);
-            this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Controls.Add(this.button4);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(440, 747);
-            this.panel4.TabIndex = 3;
-            // 
-            // textBox4tk
-            // 
-            this.textBox4tk.Location = new System.Drawing.Point(51, 212);
-            this.textBox4tk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox4tk.Name = "textBox4tk";
-            this.textBox4tk.Size = new System.Drawing.Size(121, 26);
-            this.textBox4tk.TabIndex = 16;
-            // 
-            // textBox4t2
-            // 
-            this.textBox4t2.Location = new System.Drawing.Point(51, 182);
-            this.textBox4t2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox4t2.Name = "textBox4t2";
-            this.textBox4t2.Size = new System.Drawing.Size(121, 26);
-            this.textBox4t2.TabIndex = 14;
-            // 
-            // textBox4t1
-            // 
-            this.textBox4t1.Location = new System.Drawing.Point(51, 151);
-            this.textBox4t1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox4t1.Name = "textBox4t1";
-            this.textBox4t1.Size = new System.Drawing.Size(121, 26);
-            this.textBox4t1.TabIndex = 13;
-            // 
-            // textBox4k
-            // 
-            this.textBox4k.Location = new System.Drawing.Point(51, 120);
-            this.textBox4k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox4k.Name = "textBox4k";
-            this.textBox4k.Size = new System.Drawing.Size(121, 26);
-            this.textBox4k.TabIndex = 12;
-            // 
-            // button4
-            // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.button4.Location = new System.Drawing.Point(0, 703);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(440, 44);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Построить";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel2.Controls.Add(this.pictureBox2T1);
-            this.panel2.Controls.Add(this.pictureBox2tk);
-            this.panel2.Controls.Add(this.pictureBox2k1);
-            this.panel2.Controls.Add(this.textBox2tk);
-            this.panel2.Controls.Add(this.textBox2t1);
-            this.panel2.Controls.Add(this.textBox2k);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(440, 747);
-            this.panel2.TabIndex = 1;
-            // 
-            // textBox2tk
-            // 
-            this.textBox2tk.Location = new System.Drawing.Point(51, 171);
-            this.textBox2tk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox2tk.Name = "textBox2tk";
-            this.textBox2tk.Size = new System.Drawing.Size(121, 26);
-            this.textBox2tk.TabIndex = 6;
-            // 
-            // textBox2t1
-            // 
-            this.textBox2t1.Location = new System.Drawing.Point(51, 140);
-            this.textBox2t1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox2t1.Name = "textBox2t1";
-            this.textBox2t1.Size = new System.Drawing.Size(121, 26);
-            this.textBox2t1.TabIndex = 5;
-            // 
-            // textBox2k
-            // 
-            this.textBox2k.Location = new System.Drawing.Point(51, 109);
-            this.textBox2k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox2k.Name = "textBox2k";
-            this.textBox2k.Size = new System.Drawing.Size(121, 26);
-            this.textBox2k.TabIndex = 4;
-            // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.button2.Location = new System.Drawing.Point(0, 703);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(440, 44);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Построить";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Controls.Add(this.pictureBox1tk);
-            this.panel1.Controls.Add(this.pictureBox1k1);
-            this.panel1.Controls.Add(this.textBox1tk);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox1k);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(440, 747);
-            this.panel1.TabIndex = 0;
-            // 
-            // textBox1tk
-            // 
-            this.textBox1tk.Location = new System.Drawing.Point(51, 138);
-            this.textBox1tk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox1tk.Name = "textBox1tk";
-            this.textBox1tk.Size = new System.Drawing.Size(121, 26);
-            this.textBox1tk.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.button1.Location = new System.Drawing.Point(0, 703);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(440, 44);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Построить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox1k
-            // 
-            this.textBox1k.Location = new System.Drawing.Point(51, 107);
-            this.textBox1k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox1k.Name = "textBox1k";
-            this.textBox1k.Size = new System.Drawing.Size(121, 26);
-            this.textBox1k.TabIndex = 1;
-            // 
-            // pictureBox7tk
-            // 
-            this.pictureBox7tk.Image = global::TAU_Complex.Properties.Resources.tk;
-            this.pictureBox7tk.Location = new System.Drawing.Point(10, 179);
-            this.pictureBox7tk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox7tk.Name = "pictureBox7tk";
-            this.pictureBox7tk.Size = new System.Drawing.Size(27, 24);
-            this.pictureBox7tk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7tk.TabIndex = 27;
-            this.pictureBox7tk.TabStop = false;
-            // 
-            // pictureBox7t1
-            // 
-            this.pictureBox7t1.Image = global::TAU_Complex.Properties.Resources.T1;
-            this.pictureBox7t1.Location = new System.Drawing.Point(10, 149);
-            this.pictureBox7t1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox7t1.Name = "pictureBox7t1";
-            this.pictureBox7t1.Size = new System.Drawing.Size(27, 24);
-            this.pictureBox7t1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7t1.TabIndex = 26;
-            this.pictureBox7t1.TabStop = false;
-            // 
-            // pictureBox7k
-            // 
-            this.pictureBox7k.Image = global::TAU_Complex.Properties.Resources.k;
-            this.pictureBox7k.Location = new System.Drawing.Point(10, 118);
-            this.pictureBox7k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox7k.Name = "pictureBox7k";
-            this.pictureBox7k.Size = new System.Drawing.Size(27, 24);
-            this.pictureBox7k.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7k.TabIndex = 25;
-            this.pictureBox7k.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::TAU_Complex.Properties.Resources.Инерционно_дифферинцирующие_;
-            this.pictureBox7.Location = new System.Drawing.Point(0, 7);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(438, 105);
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox5tk
-            // 
-            this.pictureBox5tk.Image = global::TAU_Complex.Properties.Resources.tk;
-            this.pictureBox5tk.Location = new System.Drawing.Point(10, 119);
-            this.pictureBox5tk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox5tk.Name = "pictureBox5tk";
-            this.pictureBox5tk.Size = new System.Drawing.Size(27, 24);
-            this.pictureBox5tk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5tk.TabIndex = 23;
-            this.pictureBox5tk.TabStop = false;
-            // 
-            // pictureBox5k
-            // 
-            this.pictureBox5k.Image = global::TAU_Complex.Properties.Resources.k;
-            this.pictureBox5k.Location = new System.Drawing.Point(10, 88);
-            this.pictureBox5k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox5k.Name = "pictureBox5k";
-            this.pictureBox5k.Size = new System.Drawing.Size(27, 24);
-            this.pictureBox5k.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5k.TabIndex = 22;
-            this.pictureBox5k.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::TAU_Complex.Properties.Resources.Идеально_интегрирующие;
-            this.pictureBox5.Location = new System.Drawing.Point(4, 7);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(438, 75);
-            this.pictureBox5.TabIndex = 6;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6tk
-            // 
-            this.pictureBox6tk.Image = global::TAU_Complex.Properties.Resources.tk;
-            this.pictureBox6tk.Location = new System.Drawing.Point(6, 183);
-            this.pictureBox6tk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox6tk.Name = "pictureBox6tk";
-            this.pictureBox6tk.Size = new System.Drawing.Size(27, 24);
-            this.pictureBox6tk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6tk.TabIndex = 27;
-            this.pictureBox6tk.TabStop = false;
-            // 
-            // pictureBox6t1
-            // 
-            this.pictureBox6t1.Image = global::TAU_Complex.Properties.Resources.T1;
-            this.pictureBox6t1.Location = new System.Drawing.Point(6, 152);
-            this.pictureBox6t1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox6t1.Name = "pictureBox6t1";
-            this.pictureBox6t1.Size = new System.Drawing.Size(27, 24);
-            this.pictureBox6t1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6t1.TabIndex = 26;
-            this.pictureBox6t1.TabStop = false;
-            // 
-            // pictureBox6k
-            // 
-            this.pictureBox6k.Image = global::TAU_Complex.Properties.Resources.k;
-            this.pictureBox6k.Location = new System.Drawing.Point(6, 121);
-            this.pictureBox6k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox6k.Name = "pictureBox6k";
-            this.pictureBox6k.Size = new System.Drawing.Size(27, 24);
-            this.pictureBox6k.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6k.TabIndex = 25;
-            this.pictureBox6k.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::TAU_Complex.Properties.Resources.Инерционное_реально_интегрирующие;
-            this.pictureBox6.Location = new System.Drawing.Point(4, 7);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(436, 108);
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
             // 
             // pictureBox3tk
             // 
@@ -763,6 +545,38 @@
             this.pictureBox3k.TabIndex = 9;
             this.pictureBox3k.TabStop = false;
             // 
+            // textBox3tk
+            // 
+            this.textBox3tk.Location = new System.Drawing.Point(51, 224);
+            this.textBox3tk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox3tk.Name = "textBox3tk";
+            this.textBox3tk.Size = new System.Drawing.Size(121, 26);
+            this.textBox3tk.TabIndex = 8;
+            // 
+            // textBox3t2
+            // 
+            this.textBox3t2.Location = new System.Drawing.Point(51, 194);
+            this.textBox3t2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox3t2.Name = "textBox3t2";
+            this.textBox3t2.Size = new System.Drawing.Size(121, 26);
+            this.textBox3t2.TabIndex = 7;
+            // 
+            // textBox3t1
+            // 
+            this.textBox3t1.Location = new System.Drawing.Point(51, 163);
+            this.textBox3t1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox3t1.Name = "textBox3t1";
+            this.textBox3t1.Size = new System.Drawing.Size(121, 26);
+            this.textBox3t1.TabIndex = 6;
+            // 
+            // textBox3k
+            // 
+            this.textBox3k.Location = new System.Drawing.Point(51, 132);
+            this.textBox3k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox3k.Name = "textBox3k";
+            this.textBox3k.Size = new System.Drawing.Size(121, 26);
+            this.textBox3k.TabIndex = 5;
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::TAU_Complex.Properties.Resources.Апериодическое_звено_ворого_порядка;
@@ -772,6 +586,41 @@
             this.pictureBox3.Size = new System.Drawing.Size(424, 110);
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.button3.Location = new System.Drawing.Point(0, 703);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(440, 44);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Построить";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel4.Controls.Add(this.pictureBox4tk);
+            this.panel4.Controls.Add(this.pictureBox4t2);
+            this.panel4.Controls.Add(this.pictureBox4t1);
+            this.panel4.Controls.Add(this.pictureBox4k);
+            this.panel4.Controls.Add(this.textBox4tk);
+            this.panel4.Controls.Add(this.textBox4t2);
+            this.panel4.Controls.Add(this.textBox4t1);
+            this.panel4.Controls.Add(this.textBox4k);
+            this.panel4.Controls.Add(this.pictureBox4);
+            this.panel4.Controls.Add(this.button4);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(440, 747);
+            this.panel4.TabIndex = 3;
             // 
             // pictureBox4tk
             // 
@@ -817,6 +666,38 @@
             this.pictureBox4k.TabIndex = 17;
             this.pictureBox4k.TabStop = false;
             // 
+            // textBox4tk
+            // 
+            this.textBox4tk.Location = new System.Drawing.Point(51, 212);
+            this.textBox4tk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox4tk.Name = "textBox4tk";
+            this.textBox4tk.Size = new System.Drawing.Size(121, 26);
+            this.textBox4tk.TabIndex = 16;
+            // 
+            // textBox4t2
+            // 
+            this.textBox4t2.Location = new System.Drawing.Point(51, 182);
+            this.textBox4t2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox4t2.Name = "textBox4t2";
+            this.textBox4t2.Size = new System.Drawing.Size(121, 26);
+            this.textBox4t2.TabIndex = 14;
+            // 
+            // textBox4t1
+            // 
+            this.textBox4t1.Location = new System.Drawing.Point(51, 151);
+            this.textBox4t1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox4t1.Name = "textBox4t1";
+            this.textBox4t1.Size = new System.Drawing.Size(121, 26);
+            this.textBox4t1.TabIndex = 13;
+            // 
+            // textBox4k
+            // 
+            this.textBox4k.Location = new System.Drawing.Point(51, 120);
+            this.textBox4k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox4k.Name = "textBox4k";
+            this.textBox4k.Size = new System.Drawing.Size(121, 26);
+            this.textBox4k.TabIndex = 12;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::TAU_Complex.Properties.Resources.Колебательное_звено;
@@ -826,6 +707,39 @@
             this.pictureBox4.Size = new System.Drawing.Size(422, 106);
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
+            // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.button4.Location = new System.Drawing.Point(0, 703);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(440, 44);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Построить";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel2.Controls.Add(this.pictureBox2T1);
+            this.panel2.Controls.Add(this.pictureBox2tk);
+            this.panel2.Controls.Add(this.pictureBox2k1);
+            this.panel2.Controls.Add(this.textBox2tk);
+            this.panel2.Controls.Add(this.textBox2t1);
+            this.panel2.Controls.Add(this.textBox2k);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(440, 747);
+            this.panel2.TabIndex = 1;
             // 
             // pictureBox2T1
             // 
@@ -860,6 +774,30 @@
             this.pictureBox2k1.TabIndex = 7;
             this.pictureBox2k1.TabStop = false;
             // 
+            // textBox2tk
+            // 
+            this.textBox2tk.Location = new System.Drawing.Point(51, 171);
+            this.textBox2tk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox2tk.Name = "textBox2tk";
+            this.textBox2tk.Size = new System.Drawing.Size(121, 26);
+            this.textBox2tk.TabIndex = 6;
+            // 
+            // textBox2t1
+            // 
+            this.textBox2t1.Location = new System.Drawing.Point(51, 140);
+            this.textBox2t1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox2t1.Name = "textBox2t1";
+            this.textBox2t1.Size = new System.Drawing.Size(121, 26);
+            this.textBox2t1.TabIndex = 5;
+            // 
+            // textBox2k
+            // 
+            this.textBox2k.Location = new System.Drawing.Point(51, 109);
+            this.textBox2k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox2k.Name = "textBox2k";
+            this.textBox2k.Size = new System.Drawing.Size(121, 26);
+            this.textBox2k.TabIndex = 4;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -871,6 +809,37 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.button2.Location = new System.Drawing.Point(0, 703);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(440, 44);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Построить";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.Controls.Add(this.pictureBox1tk);
+            this.panel1.Controls.Add(this.pictureBox1k1);
+            this.panel1.Controls.Add(this.textBox1tk);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.textBox1k);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(440, 747);
+            this.panel1.TabIndex = 0;
             // 
             // pictureBox1tk
             // 
@@ -894,6 +863,14 @@
             this.pictureBox1k1.TabIndex = 5;
             this.pictureBox1k1.TabStop = false;
             // 
+            // textBox1tk
+            // 
+            this.textBox1tk.Location = new System.Drawing.Point(51, 138);
+            this.textBox1tk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox1tk.Name = "textBox1tk";
+            this.textBox1tk.Size = new System.Drawing.Size(121, 26);
+            this.textBox1tk.TabIndex = 2;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -905,6 +882,29 @@
             this.pictureBox1.Size = new System.Drawing.Size(440, 73);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.button1.Location = new System.Drawing.Point(0, 703);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(440, 44);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Построить";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1k
+            // 
+            this.textBox1k.Location = new System.Drawing.Point(51, 107);
+            this.textBox1k.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox1k.Name = "textBox1k";
+            this.textBox1k.Size = new System.Drawing.Size(121, 26);
+            this.textBox1k.TabIndex = 1;
             // 
             // Form1
             // 
@@ -924,44 +924,44 @@
             this.panelComboBox.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panelSideMain.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7tk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7t1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7k)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panelSideMain.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5tk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5k)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6tk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6t1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6k)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3tk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3t2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3t1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3k)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4tk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4t2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4t1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4k)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2T1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2tk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2k1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1tk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1k1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

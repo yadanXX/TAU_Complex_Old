@@ -389,6 +389,7 @@
     <None Include="Resources\Лабораторная 4.png" />
     <None Include="Resources\В пространстве состояний с обратной связью.png" />
     <None Include="Resources\В пространстве состояний без обратной связи.png" />
+    <Content Include="License-LGPL.txt" />
     <Content Include="T_ico.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
