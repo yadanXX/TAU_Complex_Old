@@ -12,6 +12,21 @@ namespace TAU_Complex
 
         public Button currentButton;
         public Form activeForm;
+
+        public Form1 form1 = new Form1();
+        public Form2 form2 = new Form2();
+        public Form3 form3 = new Form3();
+        public Form4 form4 = new Form4();
+        public Form5 form5 = new Form5();
+
+        public Form6 form6 = new Form6();
+        public Form7 form7 = new Form7();
+        public Form8 form8 = new Form8();
+        public Form9 form9 = new Form9();
+        public Form10 form10 = new Form10();
+        public Form11 form11 = new Form11();
+        public Form12 form12 = new Form12();
+
         public FormMain()
         {
             InitializeComponent();
@@ -66,8 +81,8 @@ namespace TAU_Complex
 
         private void OpenChildForm(Form childForm, object btnSender)
         {
-            if (activeForm != null)
-                activeForm.Close();
+            //if (activeForm != null)
+            //    activeForm.Close();
             ActivateButton(btnSender);
             activeForm = childForm;
             childForm.TopLevel = false;
@@ -88,17 +103,14 @@ namespace TAU_Complex
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Form1(), sender);
-        }
+
 
         private void buttonClose_Click(object sender, EventArgs e)
         {
-            if (activeForm != null)
-            {
-                activeForm.Close();
-            }
+            //if (activeForm != null)
+            //{
+            //    activeForm.Close();
+            //}
             DisableButton();
             currentButton = null;
             buttonClose.Visible = false;
@@ -118,56 +130,59 @@ namespace TAU_Complex
             Form_options f = new Form_options();
             f.ShowDialog();
         }
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(form1, sender);
+        }
         private void button2_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Form2(), sender);
+            OpenChildForm(form2, sender);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Form3(), sender);
+            OpenChildForm(form3, sender);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Form4(), sender);
+            OpenChildForm(form4, sender);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Form5(), sender);
+            OpenChildForm(form5, sender);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Form6(), sender);
+            OpenChildForm(form6, sender);
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Form7(), sender);
+            OpenChildForm(form7, sender);
         }
         private void button8_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Form8(), sender);
+            OpenChildForm(form8, sender);
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Form9(), sender);
+            OpenChildForm(form9, sender);
         }
         private void button10_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Form10(), sender);
+            OpenChildForm(form10, sender);
         }
         private void button11_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Form11(), sender);
+            OpenChildForm(form11, sender);
         }
         private void button12_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Form12(), sender);
+            OpenChildForm(form12, sender);
         }
         private void slide_button_Click(object sender, EventArgs e)
         {
