@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using TAU_Complex.Module1;
 using ZedGraph;
 
 
@@ -11,7 +12,13 @@ namespace TAU_Complex
     {
         PointPairList list_1;
         string legend;
-
+        private UserControl subMod1 = new SubMod1();
+        private UserControl subMod2 = new SubMod2();
+        private UserControl subMod3 = new SubMod3();
+        private UserControl subMod4 = new SubMod4();
+        private UserControl subMod5 = new SubMod5();
+        private UserControl subMod6 = new SubMod6();
+        private UserControl subMod7 = new SubMod7();
         public Form1()
         {
             InitializeComponent();
@@ -46,37 +53,44 @@ namespace TAU_Complex
                 case 0:
                     Data.active_value = 1;
                     HideAllPanel();
-                    panel1.Show();
+                    panelSideMain.Controls.Add(subMod1);
+                    //panel1.Show();
                     break;
                 case 1:
                     Data.active_value = 2;
                     HideAllPanel();
-                    panel2.Show();
+                    panelSideMain.Controls.Add(subMod2);
+                    //panel2.Show();
                     break;
                 case 2:
                     Data.active_value = 3;
                     HideAllPanel();
-                    panel3.Show();
+                    panelSideMain.Controls.Add(subMod3);
+                    //panel3.Show();
                     break;
                 case 3:
                     Data.active_value = 4;
                     HideAllPanel();
-                    panel4.Show();
+                    panelSideMain.Controls.Add(subMod4);
+                    //panel4.Show();
                     break;
                 case 4:
                     Data.active_value = 5;
                     HideAllPanel();
-                    panel5.Show();
+                    panelSideMain.Controls.Add(subMod5);
+                    //panel5.Show();
                     break;
                 case 5:
                     Data.active_value = 6;
                     HideAllPanel();
-                    panel6.Show();
+                    panelSideMain.Controls.Add(subMod6);
+                    //panel6.Show();
                     break;
                 case 6:
                     Data.active_value = 7;
                     HideAllPanel();
-                    panel7.Show();
+                    panelSideMain.Controls.Add(subMod7);
+                    //panel7.Show();
                     break;
                 default:
                     break;
@@ -154,7 +168,7 @@ namespace TAU_Complex
                 return;
             }
 
-            Program.SetDt(tk, new List<double>() {});
+            Program.SetDt(tk, new List<double>() { });
             double Dt = Data.Dt;
             if (Program.DtCheck(tk, Dt)) return;
 
@@ -174,7 +188,6 @@ namespace TAU_Complex
             Data.Xtitle1 = "t";
 
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
 
@@ -195,10 +208,10 @@ namespace TAU_Complex
                 f.ShowDialog();
                 return;
             }
-            Program.SetDt(tk, new List<double>() { t1});
+            Program.SetDt(tk, new List<double>() { t1 });
             double Dt = Data.Dt;
             if (Program.DtCheck(tk, Dt)) return;
-           
+
             GraphPane pane = zedGraphControl1.GraphPane;
             pane.CurveList.Clear();
             list_1 = new PointPairList();
@@ -214,7 +227,6 @@ namespace TAU_Complex
             Data.Ytitle1 = "Qвых(t)";
             Data.Xtitle1 = "t";
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             double k;
@@ -236,7 +248,7 @@ namespace TAU_Complex
                 return;
             }
 
-            Program.SetDt(tk, new List<double>() {t1,t2 });
+            Program.SetDt(tk, new List<double>() { t1, t2 });
             double Dt = Data.Dt;
             if (Program.DtCheck(tk, Dt)) return;
 
@@ -258,7 +270,6 @@ namespace TAU_Complex
             Data.Ytitle1 = "Qвых(t)";
             Data.Xtitle1 = "t";
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             double k;
@@ -279,7 +290,7 @@ namespace TAU_Complex
                 f.ShowDialog();
                 return;
             }
-            Program.SetDt(tk, new List<double>() {t1,t2 });
+            Program.SetDt(tk, new List<double>() { t1, t2 });
             double Dt = Data.Dt;
             if (Program.DtCheck(tk, Dt)) return;
 
@@ -301,7 +312,6 @@ namespace TAU_Complex
             Data.Ytitle1 = "Qвых(t)";
             Data.Xtitle1 = "t";
         }
-
         private void button5_Click(object sender, EventArgs e)
         {
             double k;
@@ -338,7 +348,6 @@ namespace TAU_Complex
             Data.Ytitle1 = "Qвых(t)";
             Data.Xtitle1 = "t";
         }
-
         private void button6_Click(object sender, EventArgs e)
         {
             double k;
@@ -357,7 +366,7 @@ namespace TAU_Complex
                 f.ShowDialog();
                 return;
             }
-            Program.SetDt(tk, new List<double>() {t1 });
+            Program.SetDt(tk, new List<double>() { t1 });
             double Dt = Data.Dt;
             if (Program.DtCheck(tk, Dt)) return;
 
@@ -377,7 +386,6 @@ namespace TAU_Complex
             Data.Ytitle1 = "Qвых(t)";
             Data.Xtitle1 = "t";
         }
-
         private void button7_Click(object sender, EventArgs e)
         {
             double k;
@@ -396,7 +404,7 @@ namespace TAU_Complex
                 f.ShowDialog();
                 return;
             }
-            Program.SetDt(tk, new List<double>() {t1 });
+            Program.SetDt(tk, new List<double>() { t1 });
             double Dt = Data.Dt;
             if (Program.DtCheck(tk, Dt)) return;
 

@@ -162,10 +162,10 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Module1\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Module1\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSeparate-ZedGraph.cs">
@@ -191,6 +191,48 @@
     </Compile>
     <Compile Include="Form_options.Designer.cs">
       <DependentUpon>Form_options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module1\SubMod7.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module1\SubMod7.Designer.cs">
+      <DependentUpon>SubMod7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module1\SubMod6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module1\SubMod6.Designer.cs">
+      <DependentUpon>SubMod6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module1\SubMod5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module1\SubMod5.Designer.cs">
+      <DependentUpon>SubMod5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module1\SubMod4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module1\SubMod4.Designer.cs">
+      <DependentUpon>SubMod4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module1\SubMod3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module1\SubMod3.Designer.cs">
+      <DependentUpon>SubMod3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module1\SubMod2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module1\SubMod2.Designer.cs">
+      <DependentUpon>SubMod2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module1\SubMod1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module1\SubMod1.Designer.cs">
+      <DependentUpon>SubMod1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -236,7 +278,7 @@
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Module1\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSeparate-ZedGraph.resx">
@@ -250,6 +292,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_options.resx">
       <DependentUpon>Form_options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module1\SubMod1.resx">
+      <DependentUpon>SubMod1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module1\SubMod2.resx">
+      <DependentUpon>SubMod2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module1\SubMod3.resx">
+      <DependentUpon>SubMod3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module1\SubMod4.resx">
+      <DependentUpon>SubMod4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module1\SubMod5.resx">
+      <DependentUpon>SubMod5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module1\SubMod6.resx">
+      <DependentUpon>SubMod6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module1\SubMod7.resx">
+      <DependentUpon>SubMod7.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
