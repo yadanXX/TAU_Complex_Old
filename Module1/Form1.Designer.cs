@@ -110,7 +110,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panelComboBox.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -10,8 +10,11 @@ namespace TAU_Complex
 {
     public partial class Form1 : Form
     {
-        PointPairList list_1;
-        string legend;
+        public static List<PointPairList> lists = new List<PointPairList>() { null, null, null, null, null, null, null };
+        static PointPairList currentList;
+        static ZedGraphControl zedControl;
+        static GraphPane pane;
+
         private UserControl subMod1 = new SubMod1();
         private UserControl subMod2 = new SubMod2();
         private UserControl subMod3 = new SubMod3();
@@ -24,27 +27,22 @@ namespace TAU_Complex
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
             HideAllPanel();
             comboBoxMain.SelectedIndex = 0;
             zedGraphControl1.GraphPane.Title.Text = "График переходной характеристики";
             zedGraphControl1.GraphPane.YAxis.Title.Text = "Qвых(t)";
             zedGraphControl1.GraphPane.XAxis.Title.Text = "t";
+            zedControl = zedGraphControl1;
         }
         private void HideAllPanel()
         {
-            panel1.Hide();
-            panel2.Hide();
-            panel3.Hide();
-            panel4.Hide();
-            panel5.Hide();
-            panel6.Hide();
-            panel7.Hide();
-            GraphPane pane = zedGraphControl1.GraphPane;
+            pane = zedGraphControl1.GraphPane;
             pane.CurveList.Clear();
             pane.AxisChange();
             zedGraphControl1.Invalidate();
+            panelSideMain.Controls.Clear();
         }
         public void comboBoxMain_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -54,42 +52,49 @@ namespace TAU_Complex
                     Data.active_value = 1;
                     HideAllPanel();
                     panelSideMain.Controls.Add(subMod1);
+                    DrawGraph();
                     //panel1.Show();
                     break;
                 case 1:
                     Data.active_value = 2;
                     HideAllPanel();
                     panelSideMain.Controls.Add(subMod2);
+                    DrawGraph();
                     //panel2.Show();
                     break;
                 case 2:
                     Data.active_value = 3;
                     HideAllPanel();
                     panelSideMain.Controls.Add(subMod3);
+                    DrawGraph();
                     //panel3.Show();
                     break;
                 case 3:
                     Data.active_value = 4;
                     HideAllPanel();
                     panelSideMain.Controls.Add(subMod4);
+                    DrawGraph();
                     //panel4.Show();
                     break;
                 case 4:
                     Data.active_value = 5;
                     HideAllPanel();
                     panelSideMain.Controls.Add(subMod5);
+                    DrawGraph();
                     //panel5.Show();
                     break;
                 case 5:
                     Data.active_value = 6;
                     HideAllPanel();
                     panelSideMain.Controls.Add(subMod6);
+                    DrawGraph();
                     //panel6.Show();
                     break;
                 case 6:
                     Data.active_value = 7;
                     HideAllPanel();
                     panelSideMain.Controls.Add(subMod7);
+                    DrawGraph();
                     //panel7.Show();
                     break;
                 default:
@@ -98,9 +103,14 @@ namespace TAU_Complex
 
         }
 
-        private void DrawGraph(GraphPane pane)
+        public static void DrawGraph()
         {
-            LineItem myCurve1 = pane.AddCurve("", list_1, Color.Red, SymbolType.None);
+            currentList = lists[Data.active_value - 1];
+            if (currentList == null)
+            {
+                return;
+            }
+            LineItem myCurve1 = pane.AddCurve("", currentList, Color.Red, SymbolType.None);
             myCurve1.Line.Width = 2f;
             pane.Title.Text = "График переходной характеристики";
             pane.YAxis.Title.Text = "Qвых(t)";
@@ -145,284 +155,11 @@ namespace TAU_Complex
             pane.YAxis.Scale.MinAuto = true;
             pane.YAxis.Scale.MaxAuto = true;
             pane.AxisChange();
-            zedGraphControl1.Invalidate();
-            zedGraphControl1.AxisChange();
-
-            zedGraphControl1.Invalidate();
+            zedControl.Invalidate();
+            zedControl.AxisChange();
+            zedControl.Invalidate();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            double k;
-            double tk;
-            try
-            {
-                k = Convert.ToDouble(textBox1k.Text.Replace(".", ","));
-                tk = Convert.ToDouble(textBox1tk.Text.Replace(".", ","));
-                if (tk <= 0 || k <= 0) throw new Exception();
-            }
-            catch (Exception)
-            {
-                Form_error f = new Form_error();
-                f.ShowDialog();
-                return;
-            }
 
-            Program.SetDt(tk, new List<double>() { });
-            double Dt = Data.Dt;
-            if (Program.DtCheck(tk, Dt)) return;
-
-            GraphPane pane = zedGraphControl1.GraphPane;
-            pane.CurveList.Clear();
-            list_1 = new PointPairList();
-            for (double i = 0; i < tk; i += Dt)
-            {
-                list_1.Add(i, k);
-            }
-            DrawGraph(pane);
-            legend = $"k={textBox1k.Text} tk={textBox1tk.Text}";
-            Data.list1 = list_1;
-            Data.legend1 = legend;
-            Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "Qвых(t)";
-            Data.Xtitle1 = "t";
-
-        }
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-            double k;
-            double t1;
-            double tk;
-            try
-            {
-                k = Convert.ToDouble(textBox2k.Text.Replace(".", ","));
-                t1 = Convert.ToDouble(textBox2t1.Text.Replace(".", ","));
-                tk = Convert.ToDouble(textBox2tk.Text.Replace(".", ","));
-                if (tk <= 0 || k <= 0 || t1 <= 0) throw new Exception();
-
-            }
-            catch (Exception)
-            {
-                Form_error f = new Form_error();
-                f.ShowDialog();
-                return;
-            }
-            Program.SetDt(tk, new List<double>() { t1 });
-            double Dt = Data.Dt;
-            if (Program.DtCheck(tk, Dt)) return;
-
-            GraphPane pane = zedGraphControl1.GraphPane;
-            pane.CurveList.Clear();
-            list_1 = new PointPairList();
-            for (double i = 0; i < tk; i += Dt)
-            {
-                list_1.Add(i, k * (1.0 - Math.Exp(-i / t1)));
-            }
-            DrawGraph(pane);
-            legend = $"k={textBox2k.Text} T={textBox2t1.Text} tk={textBox2tk.Text}";
-            Data.list1 = list_1;
-            Data.legend1 = legend;
-            Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "Qвых(t)";
-            Data.Xtitle1 = "t";
-        }
-        private void button3_Click(object sender, EventArgs e)
-        {
-            double k;
-            double t1;
-            double t2;
-            double tk;
-            try
-            {
-                k = Convert.ToDouble(textBox3k.Text.Replace(".", ","));
-                t1 = Convert.ToDouble(textBox3t1.Text.Replace(".", ","));
-                t2 = Convert.ToDouble(textBox3t2.Text.Replace(".", ","));
-                tk = Convert.ToDouble(textBox3tk.Text.Replace(".", ","));
-                if (tk <= 0 || k <= 0 || t1 <= 0 || t2 <= 0) throw new Exception();
-            }
-            catch (Exception)
-            {
-                Form_error f = new Form_error();
-                f.ShowDialog();
-                return;
-            }
-
-            Program.SetDt(tk, new List<double>() { t1, t2 });
-            double Dt = Data.Dt;
-            if (Program.DtCheck(tk, Dt)) return;
-
-            double t3, t4;
-            t3 = t1 / 2.0 + Math.Sqrt(Math.Pow(t1, 2) / 4.0 - Math.Pow(t2, 2));
-            t4 = t1 / 2.0 - Math.Sqrt(Math.Pow(t1, 2) / 4.0 - Math.Pow(t2, 2));
-            GraphPane pane = zedGraphControl1.GraphPane;
-            pane.CurveList.Clear();
-            list_1 = new PointPairList();
-            for (double i = 0; i < tk; i += Dt)
-            {
-                list_1.Add(i, k * (1.0 - t3 / (t3 - t4) * Math.Exp(-i / t3) + t4 / (t3 - t4) * Math.Exp(-i / t4)));
-            }
-            DrawGraph(pane);
-            legend = $"k={textBox3k.Text} T1={textBox3t1.Text} T2={textBox3t2.Text} tk={textBox3tk.Text}";
-            Data.list1 = list_1;
-            Data.legend1 = legend;
-            Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "Qвых(t)";
-            Data.Xtitle1 = "t";
-        }
-        private void button4_Click(object sender, EventArgs e)
-        {
-            double k;
-            double t1;
-            double t2;
-            double tk;
-            try
-            {
-                k = Convert.ToDouble(textBox4k.Text.Replace(".", ","));
-                t1 = Convert.ToDouble(textBox4t1.Text.Replace(".", ","));
-                t2 = Convert.ToDouble(textBox4t2.Text.Replace(".", ","));
-                tk = Convert.ToDouble(textBox4tk.Text.Replace(".", ","));
-                if (tk <= 0 || k <= 0 || t1 <= 0 || t2 <= 0) throw new Exception();
-            }
-            catch (Exception)
-            {
-                Form_error f = new Form_error();
-                f.ShowDialog();
-                return;
-            }
-            Program.SetDt(tk, new List<double>() { t1, t2 });
-            double Dt = Data.Dt;
-            if (Program.DtCheck(tk, Dt)) return;
-
-            double xi;
-            xi = t1 / (2.0 * t2);
-            GraphPane pane = zedGraphControl1.GraphPane;
-            pane.CurveList.Clear();
-            list_1 = new PointPairList();
-
-            for (double i = 0; i < tk; i += Dt)
-            {
-                list_1.Add(i, k * (1.0 - Math.Exp((-xi * i) / t2) * (Math.Cos(i * Math.Sqrt(1.0 - Math.Pow(xi, 2)) / t2) + xi / (Math.Sqrt(1.0 - Math.Pow(xi, 2))) * Math.Sin(i * Math.Sqrt(1.0 - Math.Pow(xi, 2)) / t2))));
-            }
-            DrawGraph(pane);
-            legend = $"k={textBox4k.Text} T1={textBox4t1.Text} T2={textBox4t2.Text} tk={textBox4tk.Text}";
-            Data.list1 = list_1;
-            Data.legend1 = legend;
-            Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "Qвых(t)";
-            Data.Xtitle1 = "t";
-        }
-        private void button5_Click(object sender, EventArgs e)
-        {
-            double k;
-            double tk;
-            try
-            {
-                k = Convert.ToDouble(textBox5k.Text.Replace(".", ","));
-                tk = Convert.ToDouble(textBox5tk.Text.Replace(".", ","));
-                if (tk <= 0 || k <= 0) throw new Exception();
-            }
-            catch (Exception)
-            {
-                Form_error f = new Form_error();
-                f.ShowDialog();
-                return;
-            }
-            Program.SetDt(tk, new List<double>() { });
-            double Dt = Data.Dt;
-            if (Program.DtCheck(tk, Dt)) return;
-
-            GraphPane pane = zedGraphControl1.GraphPane;
-            pane.CurveList.Clear();
-            list_1 = new PointPairList();
-
-            for (double i = 0; i < tk; i += Dt)
-            {
-                list_1.Add(i, k * i);
-            }
-            DrawGraph(pane);
-            legend = $"k={textBox5k.Text} tk={textBox5tk.Text}";
-            Data.list1 = list_1;
-            Data.legend1 = legend;
-            Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "Qвых(t)";
-            Data.Xtitle1 = "t";
-        }
-        private void button6_Click(object sender, EventArgs e)
-        {
-            double k;
-            double t1;
-            double tk;
-            try
-            {
-                k = Convert.ToDouble(textBox6k.Text.Replace(".", ","));
-                t1 = Convert.ToDouble(textBox6t1.Text.Replace(".", ","));
-                tk = Convert.ToDouble(textBox6tk.Text.Replace(".", ","));
-                if (tk <= 0 || k <= 0 || t1 <= 0) throw new Exception();
-            }
-            catch (Exception)
-            {
-                Form_error f = new Form_error();
-                f.ShowDialog();
-                return;
-            }
-            Program.SetDt(tk, new List<double>() { t1 });
-            double Dt = Data.Dt;
-            if (Program.DtCheck(tk, Dt)) return;
-
-            GraphPane pane = zedGraphControl1.GraphPane;
-            pane.CurveList.Clear();
-            list_1 = new PointPairList();
-
-            for (double i = 0; i < tk; i += Dt)
-            {
-                list_1.Add(i, k * (i - t1 * (1.0 - Math.Exp(-i / t1))));
-            }
-            DrawGraph(pane);
-            legend = $"k={textBox6k.Text} T={textBox6t1.Text} tk={textBox6tk.Text}";
-            Data.list1 = list_1;
-            Data.legend1 = legend;
-            Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "Qвых(t)";
-            Data.Xtitle1 = "t";
-        }
-        private void button7_Click(object sender, EventArgs e)
-        {
-            double k;
-            double t1;
-            double tk;
-            try
-            {
-                k = Convert.ToDouble(textBox7k.Text.Replace(".", ","));
-                t1 = Convert.ToDouble(textBox7t1.Text.Replace(".", ","));
-                tk = Convert.ToDouble(textBox7tk.Text.Replace(".", ","));
-                if (tk <= 0 || k <= 0 || t1 <= 0) throw new Exception();
-            }
-            catch (Exception)
-            {
-                Form_error f = new Form_error();
-                f.ShowDialog();
-                return;
-            }
-            Program.SetDt(tk, new List<double>() { t1 });
-            double Dt = Data.Dt;
-            if (Program.DtCheck(tk, Dt)) return;
-
-            GraphPane pane = zedGraphControl1.GraphPane;
-            pane.CurveList.Clear();
-            list_1 = new PointPairList();
-
-            for (double i = 0; i < tk; i += Dt)
-            {
-                list_1.Add(i, k / t1 * Math.Exp(-i / t1));
-            }
-            DrawGraph(pane);
-            legend = $"k={textBox7k.Text} T={textBox7t1.Text} tk={textBox7tk.Text}";
-            Data.list1 = list_1;
-            Data.legend1 = legend;
-            Data.title1 = "График переходной характеристики";
-            Data.Ytitle1 = "Qвых(t)";
-            Data.Xtitle1 = "t";
-        }
     }
 }
